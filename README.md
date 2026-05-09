@@ -82,3 +82,49 @@ Para ver qué hay que hacer y cuándo, consultar `00-start-here/roadmap.md`.
 - **v0.3 (mayo 2026):** integración de Good Services (Lou Downe). Carpeta nueva `07-runbook/` con procedimientos paso a paso por escenario. Carpeta nueva `08-training/` con plan de capacitación de 4 semanas.
 - **v0.2 (mayo 2026):** reestructuración con principios SSOT y onboarding-ready. Pricing definido. Roadmap separado del playbook.
 - **v0.1 (mayo 2026):** primera versión del playbook con metodología, caso de referencia y plantillas.
+
+###prompt para el proximo paso
+
+Quiero reestructurar este repo (playbook de Yellow) para que funcione como un sistema de aprendizaje continuo, inspirado en el harness de agentes long-running de Anthropic (initializer + coding agent con progress file).
+
+CONTEXTO
+- Yellow es mi empresa de service design. Este repo es el SSOT de mi metodología: service design by doing, jobs to be done, etc.
+- Hoy te clono y te paso entrevistas de cliente para que me devuelvas diagnóstico y plan de implementación basados en el playbook.
+- Problema: cuando aprendo cosas nuevas o te corrijo en una sesión, ese conocimiento se pierde. El playbook queda desactualizado.
+
+OBJETIVO
+Armar una estructura de repo + reglas en CLAUDE.md que separen tres capas:
+1. Playbook estable (solo se modifica con mi aprobación explícita).
+2. Casos (un folder por entrevista de cliente, con inputs y outputs).
+3. Aprendizajes pendientes (append-only, capturados automáticamente al final de cada caso, revisados y consolidados al playbook por mí).
+
+QUE QUIERO QUE HAGAS AHORA
+
+Paso 1 — Diagnóstico
+- Listá la estructura actual del repo y leé los archivos principales del playbook.
+- Identificá qué piezas ya tengo y qué falta para soportar la estructura propuesta.
+- No modifiques nada todavía. Mostrame el diagnóstico y esperá luz verde.
+
+Paso 2 — Propuesta (después de mi OK)
+- Proponé estructura concreta de carpetas: playbook/, cases/, learnings/.
+- Proponé el formato de:
+  - cases/<slug-cliente>/ con: transcript.md, diagnostico.md, plan.md, case-notes.md
+  - learnings/learnings-pending.md (append-only, formato: [fecha] [caso] [tipo: refinamiento|gap|contraejemplo] [descripción] [implicancia para playbook])
+  - playbook/quality-checklist.json (criterios de calidad que todo diagnóstico debe cumplir, en JSON porque los modelos lo respetan más que markdown)
+- Proponé el contenido de CLAUDE.md con reglas duras:
+  - Nunca modificar playbook/ directamente. Los cambios se proponen como diff en learnings-pending.md y requieren mi aprobación.
+  - Antes de diagnosticar un caso: leer playbook/ Y learnings/learnings-pending.md (los pendientes son conocimiento vigente).
+  - Al terminar un caso: escribir obligatoriamente en learnings-pending.md cualquier insight, corrección que te di durante la sesión, gap del playbook, o contraejemplo. Si no detectaste nada, dejarlo explícito.
+  - Auto-evaluar el diagnóstico contra quality-checklist.json antes de entregármelo.
+- Proponé también un prompt de consolidación separado: cuando yo lo dispare, leés learnings-pending.md + playbook actual y me proponés un diff concreto al playbook (qué sección tocar, qué agregar, qué reformular). Yo apruebo el commit.
+- Mostrame todo como propuesta, no apliques cambios.
+
+Paso 3 — Implementación (después de mi OK al paso 2)
+- Aplicá la reestructuración en commits chicos y descriptivos.
+- Si hay contenido del playbook actual que conviene reorganizar para encajar en la nueva estructura, mostrame el plan de movimiento antes de tocar archivos.
+- Al final, dejame un README breve que explique cómo usar el repo en el día a día (cómo arrancar un caso nuevo, cómo correr la consolidación).
+
+REGLAS DURANTE ESTA SESIÓN
+- Trabajá incremental, paso por paso. No intentes one-shot todo.
+- Después de cada paso, parás y esperás mi confirmación.
+- Si encontrás ambigüedad, preguntá antes de asumir.
