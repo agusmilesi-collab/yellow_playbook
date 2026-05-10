@@ -6,33 +6,33 @@
 
 ## Tagline (oficial)
 
-> Ayudo a profesionales independientes a transformar su servicio en una experiencia que justifica cobrar 30-50% más, sin tocar lo que hacen bien.
+> Ayudo a profesionales independientes a rediseñar cómo entregan su servicio: una experiencia distinta al resto, alineada con lo que el cliente realmente busca.
 
 ---
 
 ## Oferta principal (oficial)
 
-> Transformo servicios profesionales y rediseño la experiencia del cliente para que justifiquen cobrar 30-50% más, sin cambiar lo que ya hacen bien.
+> Rediseño cómo los profesionales independientes entregan su servicio al cliente: el servicio se diferencia del resto, ofrece una experiencia alineada con lo que el cliente realmente busca y, como consecuencia, habilita cobrar más por lo mismo.
 
 ---
 
 ## Tres niveles de pitch (uso conversacional)
 
-### Nivel 1 — Respuesta corta (10 segundos)
+### Nivel 1 — Versión llana (15-20 segundos)
 
-> "Ayudo a negocios de servicios a cobrar más caro sin cambiar lo que hacen."
+> "Rediseño servicios. Eso quiere decir que ayudo a un profesional —pongamos una psicóloga, un abogado, un contador— a mejorar cómo le entrega su trabajo al cliente. El trabajo lo sigue haciendo igual; lo que cambia es la forma en que el cliente lo vive."
 
-**Cuándo usar:** primera respuesta a "¿a qué te dedicás?". En bares, eventos, conversaciones casuales. Después se queda en silencio para que el otro pregunte.
+**Cuándo usar:** primera respuesta a "¿a qué te dedicás?" cuando el otro está fuera del rubro (familia, amigos, conversaciones casuales). Sin jerga, con oficios concretos para que se entienda. Después se queda en silencio para que el otro pregunte.
 
 ### Nivel 2 — Si te preguntan cómo (30 segundos)
 
-> "Hay muchos profesionales y emprendimientos que hacen un trabajo buenísimo, pero lo entregan de cualquier manera o sin estrategia. Yo entro y rediseño cómo lo entregan, cómo se ve, cómo se vive desde el lado del cliente. El servicio parece el mismo, pero entrega valor de otra manera. Ahí pueden cobrar 30%, 50% más sin que nadie se queje."
+> "Hay muchos profesionales que hacen un trabajo buenísimo, pero la forma en que lo entregan no acompaña. Yo entro y rediseño la entrega: cómo se ve, cómo se vive desde el lado del cliente, qué experiencia genera. El trabajo de fondo sigue siendo el mismo, pero el servicio se vuelve distinto al resto y se alinea con lo que el cliente realmente busca. Como consecuencia, también habilita cobrar más por lo mismo."
 
 **Cuándo usar:** cuando el otro muestra interés y pregunta "¿pero cómo, qué hacés exactamente?".
 
 ### Nivel 3 — Si te piden un ejemplo (1 minuto)
 
-> "Te doy un ejemplo. Una psicóloga independiente hacía evaluaciones psicotécnicas. Trabajo serio, hace bien lo suyo. Pero entregaba un PDF de 16 páginas que el cliente no leía. Le rediseñé la entrega: informe de una página visual, con un click si querés ir al detalle. Mismo trabajo, otra experiencia. Eso le permitió subir el precio y diferenciarse de cualquier otro psicólogo de la zona."
+> "Te doy un ejemplo. Una psicóloga independiente hacía evaluaciones psicotécnicas. Trabajo serio, hace bien lo suyo. Pero entregaba un PDF de 16 páginas que el cliente no leía. Le rediseñé la entrega: informe de una página visual, con un click si querés ir al detalle. Mismo trabajo, otra experiencia. Pasó a diferenciarse de cualquier otro psicólogo de la zona y eso le permitió subir el precio."
 
 **Cuándo usar:** cuando el otro pide concretizar. **Importante:** una vez ejecutado el caso real, actualizar este texto con resultados reales en lugar de "le permitió". Los números son la prueba.
 
@@ -40,7 +40,7 @@
 
 ## Pitch profesional (90 segundos para reuniones)
 
-> "El servicio era una evaluación psicotécnica entregada como PDF de 16 páginas. Hice un service blueprint y detecté que el formato no estaba alineado con el job-to-be-done del cliente: él contrata 'tomar una decisión sobre una persona', no 'leer un informe técnico'. Rediseñé la entrega usando progressive disclosure: el cliente recibe un one-pager con la conclusión y, si quiere profundizar, accede al detalle por capas. Cambiamos el medio de PDF a HTML interactivo y sumamos asistencia de IA en la codificación. La hipótesis es que el rediseño habilita un aumento de precio del 30–50% y mejora throughput sin tocar el core profesional."
+> "El servicio era una evaluación psicotécnica entregada como PDF de 16 páginas. Hice un service blueprint y detecté que el formato no estaba alineado con el job-to-be-done del cliente: él contrata 'tomar una decisión sobre una persona', no 'leer un informe técnico'. Rediseñé la entrega usando progressive disclosure: el cliente recibe un one-pager con la conclusión y, si quiere profundizar, accede al detalle por capas. Cambiamos el medio de PDF a HTML interactivo y sumamos asistencia de IA en la codificación. La hipótesis es que el rediseño mejora la percepción de valor y el throughput, y habilita un aumento de precio relevante, manteniendo intacto el core profesional."
 
 **Cuándo usar:** primera reunión formal con un prospect. Sirve como demostración de método.
 
@@ -113,4 +113,5 @@ Si un prospect pide alguna de estas cosas, derivamos o declinamos. Ver `01-ident
 
 ## Changelog del archivo
 
+- **2026-05-09:** v0.3 — reescritura de tagline, oferta principal y los tres niveles de pitch. Se elimina el "30-50% más" como número específico (no validado empíricamente). Se reordena la jerarquía: rediseño de la entrega + diferenciación + experiencia alineada con el cliente como promesas primarias; cobrar más pasa a consecuencia. Nivel 1 reemplazado por versión llana con oficios concretos para audiencia fuera del rubro. Copy convertido a afirmativo.
 - **Mayo 2026:** versión inicial v0.2.

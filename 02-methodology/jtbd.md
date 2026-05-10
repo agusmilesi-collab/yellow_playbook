@@ -58,7 +58,7 @@ Cómo quiere ser percibido por otros.
 
 *"Que me vean como alguien profesional." "Que mis amigos vean que tengo buen gusto." "Que mi jefe vea que soy decisivo."*
 
-**Idea central:** los productos que solo cumplen el functional son commodity. Los productos premium cumplen los tres. **Por eso justifican cobrar 30-50% más.** Esto se conecta directo con nuestra oferta (`01-identity/offer.md`).
+**Idea central:** los productos que solo cumplen el functional son commodity. Los productos premium cumplen los tres. **Por eso pueden sostener un precio más alto que un commodity.** Esto se conecta directo con nuestra oferta (`01-identity/offer.md`).
 
 ---
 

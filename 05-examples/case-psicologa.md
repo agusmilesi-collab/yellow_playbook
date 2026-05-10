@@ -98,7 +98,7 @@ Cada evaluación requiere horas de codificación manual de tests, lo que limita 
 
 > El problema no es que el informe sea malo. El informe es excelente desde lo profesional. El problema es que el formato del informe NO está alineado con el trabajo real que viene a hacer el cliente cuando contrata: tomar una decisión clara sobre una persona. Por eso el cliente lee parcialmente, percibe el servicio como "uno más", y el precio queda anclado a "cuánto cuesta un informe psicológico" en lugar de "cuánto vale tomar una buena decisión de contratación".
 >
-> El rediseño no toca el oficio profesional. Toca cómo se entrega el resultado para que cumpla los tres jobs (functional, emotional, social) simultáneamente, justificando un pricing 30-50% mayor.
+> El rediseño no toca el oficio profesional. Toca cómo se entrega el resultado para que cumpla los tres jobs (functional, emotional, social) simultáneamente, habilitando un pricing más alto sin caída de demanda.
 
 ---
 
@@ -153,7 +153,7 @@ Cada evaluación requiere horas de codificación manual de tests, lo que limita 
 |---|---|---|
 | **NPS / satisfacción del cliente final** | Sube significativamente | Encuesta post-entrega |
 | **Time-to-decision del cliente** | Baja de horas a minutos | Time-tracking en cliente piloto |
-| **Willingness to pay** | Aumento de precio 30-50% sin caída de demanda | Test de pricing en próximas evaluaciones |
+| **Willingness to pay** | Aumento de precio sin caída de demanda | Test de pricing en próximas evaluaciones |
 | **Throughput de la profesional** | +40-60% de evaluaciones/mes con el mismo esfuerzo | Tracking interno de horas/evaluación |
 | **Tasa de recomendación** | Sube por mejor experiencia + diferenciación | Tracking de origen de nuevos clientes |
 
@@ -183,7 +183,7 @@ Cada evaluación requiere horas de codificación manual de tests, lo que limita 
 
 ## 10. Pitch profesional aplicado al caso (90 segundos)
 
-> "El servicio era una evaluación psicotécnica entregada como PDF de 16 páginas. Hice un service blueprint y detecté que el formato no estaba alineado con el job-to-be-done del cliente: él contrata 'tomar una decisión sobre una persona', no 'leer un informe técnico'. Rediseñé la entrega usando progressive disclosure: el cliente recibe un one-pager con la conclusión y, si quiere profundizar, accede al detalle por capas. Cambiamos el medio de PDF a HTML interactivo y sumamos asistencia de IA en la codificación. La hipótesis es que el rediseño habilita un aumento de precio del 30–50% y mejora throughput sin tocar el core profesional."
+> "El servicio era una evaluación psicotécnica entregada como PDF de 16 páginas. Hice un service blueprint y detecté que el formato no estaba alineado con el job-to-be-done del cliente: él contrata 'tomar una decisión sobre una persona', no 'leer un informe técnico'. Rediseñé la entrega usando progressive disclosure: el cliente recibe un one-pager con la conclusión y, si quiere profundizar, accede al detalle por capas. Cambiamos el medio de PDF a HTML interactivo y sumamos asistencia de IA en la codificación. La hipótesis es que el rediseño mejora la percepción de valor y el throughput, y habilita un aumento de precio relevante, manteniendo intacto el core profesional."
 
 ---
 

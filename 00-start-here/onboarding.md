@@ -6,7 +6,7 @@
 
 ## Qué es este negocio en una frase
 
-Una consultoría de UX Strategy especializada en rediseñar servicios profesionales artesanales para que justifiquen cobrar 30-50% más, sin cambiar el oficio del profesional.
+Una consultoría de UX Strategy especializada en rediseñar cómo los profesionales artesanales entregan su servicio al cliente, para que se diferencien y la experiencia se alinee con lo que el cliente realmente busca, sin cambiar el oficio del profesional.
 
 ---
 
