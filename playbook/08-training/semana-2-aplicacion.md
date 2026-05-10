@@ -1,4 +1,4 @@
-# Semana 2 — Aplicación
+# Semana 2: Aplicación
 
 Objetivo: aplicar Service Design y JTBD a un servicio real, no a ejercicios abstractos. Al final de la semana, tenés un blueprint y un análisis JTBD hechos por vos.
 
@@ -18,7 +18,7 @@ Ejemplos: la consulta del dentista que vas, el gimnasio donde entrenás, el rest
 
 ---
 
-## Día 1 — Mapear el journey completo
+## Día 1: Mapear el journey completo
 
 **Acción:** del servicio elegido, mapeá el customer journey completo.
 
@@ -51,7 +51,7 @@ DESPUÉS:
 
 ---
 
-## Día 2 — Construir el service blueprint
+## Día 2: Construir el service blueprint
 
 **Acción:** convertí el journey del Día 1 en un service blueprint formal de 4 capas.
 
@@ -74,7 +74,7 @@ Una fila por cada momento del journey. Cronológico.
 
 ---
 
-## Día 3 — Identificar pain points
+## Día 3: Identificar pain points
 
 **Acción:** para cada touchpoint del blueprint, evaluar si hay pain.
 
@@ -92,7 +92,7 @@ Una fila por cada momento del journey. Cronológico.
 
 ---
 
-## Día 4 — Hipotetizar el JTBD
+## Día 4: Hipotetizar el JTBD
 
 **Acción:** para el cliente final del servicio que elegiste, hipotetizar el job dominante.
 
@@ -117,7 +117,7 @@ Una fila por cada momento del journey. Cronológico.
 
 ---
 
-## Día 5 — Validar con un cliente real
+## Día 5: Validar con un cliente real
 
 **Acción:** entrevistar a UN cliente real de ese servicio (no al dueño).
 
@@ -145,7 +145,7 @@ Las 5 preguntas JTBD del playbook:
 
 ---
 
-## Día 6 — Comparar hipótesis vs realidad
+## Día 6: Comparar hipótesis vs realidad
 
 **Acción:** comparar lo que hipotetizaste el Día 4 con lo que aprendiste en la entrevista del Día 5.
 
@@ -163,7 +163,7 @@ Las 5 preguntas JTBD del playbook:
 
 ---
 
-## Día 7 — Self-check de la semana
+## Día 7: Self-check de la semana
 
 **Tiempo:** 1 hora.
 

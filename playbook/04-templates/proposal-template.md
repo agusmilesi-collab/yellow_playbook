@@ -1,4 +1,4 @@
-# Plantilla — Propuesta
+# Plantilla: Propuesta
 
 **SSOT** de la plantilla de propuesta. Todas las propuestas siguen esta estructura.
 
@@ -10,7 +10,7 @@ Para pricing exacto, ver `../06-operations/pricing.md`.
 ## Estructura obligatoria
 
 ```markdown
-# Propuesta de [tipo de proyecto] — [Nombre del cliente]
+# Propuesta de [tipo de proyecto]: [Nombre del cliente]
 
 **De:** Agustin · UX Strategist
 **Para:** [Nombre del cliente]
@@ -56,13 +56,13 @@ Mi lectura es que el problema no es [síntoma percibido]. Es [causa raíz que el
 
 ### Cómo se desarrolla
 
-**Fase 1 — [Nombre]** ([X semanas])
+**Fase 1, [Nombre]** ([X semanas])
 [Qué pasa en esta fase, qué se entrega]
 
-**Fase 2 — [Nombre]** ([X semanas])
+**Fase 2, [Nombre]** ([X semanas])
 [Qué pasa en esta fase, qué se entrega]
 
-**Fase 3 — [Nombre]** ([X semanas])
+**Fase 3, [Nombre]** ([X semanas])
 [Qué pasa en esta fase, qué se entrega]
 
 ### Lo que NO incluye

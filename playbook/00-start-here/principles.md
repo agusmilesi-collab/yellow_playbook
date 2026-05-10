@@ -1,4 +1,4 @@
-# Principios — Reglas no-negociables del negocio
+# Principios: Reglas no-negociables del negocio
 
 Estos principios rigen todas las decisiones operativas y comerciales. Cualquier persona o IA que opere este negocio los aplica sin excepción.
 
@@ -10,7 +10,7 @@ Si una decisión contradice un principio, la decisión está mal. No el principi
 
 Nunca rediseñamos lo que el profesional sabe hacer. Solo rediseñamos cómo lo entrega, cómo se ve y cómo se vive desde el lado del cliente.
 
-**En operación:** si una propuesta sugiere que el profesional cambie su técnica, su disciplina o su core, está mal y se reescribe.
+**En operación:** si una propuesta sugiere que el profesional cambie su técnica, su disciplina o su oficio, está mal y se reescribe.
 
 ---
 

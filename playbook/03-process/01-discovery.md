@@ -1,4 +1,4 @@
-# 01 — Discovery Call
+# 01: Discovery Call
 
 **SSOT** del proceso de la primera conversación con un prospect.
 
@@ -54,9 +54,9 @@ Texto sugerido:
 
 ---
 
-### Las 4 preguntas core (20 minutos)
+### Las 4 preguntas centrales (20 minutos)
 
-#### Pregunta 1 — Contame tu negocio en 3 minutos
+#### Pregunta 1: Contame tu negocio en 3 minutos
 
 > "Para arrancar, contame tu negocio en 3 minutos. ¿A qué te dedicás, hace cuánto, cómo funciona hoy?"
 
@@ -71,7 +71,7 @@ Texto sugerido:
 
 ---
 
-#### Pregunta 2 — ¿Qué te está costando hoy?
+#### Pregunta 2: ¿Qué te está costando hoy?
 
 > "Si te tuviera que pedir que me digas qué te está costando hoy en tu negocio, qué no termina de funcionar como vos querés... ¿qué dirías?"
 
@@ -90,7 +90,7 @@ Texto sugerido:
 
 ---
 
-#### Pregunta 3 — ¿Qué pasaría si no se resuelve?
+#### Pregunta 3: ¿Qué pasaría si no se resuelve?
 
 > "Imaginate que dejás todo como está. Que no hacemos nada. Que pasa lo mismo en 6 meses. ¿Qué consecuencia tendría eso para vos?"
 
@@ -108,7 +108,7 @@ Texto sugerido:
 
 ---
 
-#### Pregunta 4 — Si pudieras chasquear los dedos
+#### Pregunta 4: Si pudieras chasquear los dedos
 
 > "Última. Si pudieras chasquear los dedos y resolver esto mañana, ¿cómo se vería? ¿Qué cambiaría en tu día a día, en tu negocio, en cómo te sentís?"
 
@@ -190,7 +190,7 @@ Buenas señales para avanzar:
 
 Cuando recibas notas crudas de una discovery call:
 
-1. **Estructurar** por las 4 preguntas core.
+1. **Estructurar** por las 4 preguntas centrales.
 2. **Identificar frases textuales** clave del cliente (entre comillas).
 3. **Calificar** contra ICP usando el sistema de scoring.
 4. **Hipotetizar** los 3 jobs (functional / emotional / social) con marcador 🔵 (hipótesis).

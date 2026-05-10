@@ -67,42 +67,42 @@ Inercia del hábito que retiene al cliente en su solución actual (Klement).
 ### Demand-side innovation
 Enfoque de innovación que parte de los jobs no satisfechos del cliente, no de las features posibles del producto.
 
-### Willingness to pay (WTP)
-Disposición del cliente a pagar por un servicio. Indicador clave: alta WTP indica que se cumplen los tres jobs.
+### Disposición a pagar (willingness to pay, WTP)
+Cuánto está dispuesto a pagar el cliente por un servicio. Indicador clave: una disposición alta señala que el servicio cumple los tres jobs.
 
 ---
 
 ## Términos de UX Strategy aplicada
 
-### Progressive disclosure
-Patrón de diseño que muestra información en capas. Lo esencial primero, el detalle bajo demanda.
+### Revelación progresiva (progressive disclosure)
+Patrón de diseño que muestra la información en capas. Lo esencial primero, el detalle a pedido.
 
-### Drill-down
-Acción del usuario de profundizar en una capa más detallada de información.
+### Profundización por capas (drill-down)
+Acción del usuario de avanzar hacia una capa más detallada de información.
 
-### Layered architecture
-Organización de contenido en múltiples capas de profundidad, cada una usable por sí sola.
+### Arquitectura por capas
+Organización del contenido en múltiples niveles de profundidad, cada uno usable por sí solo.
 
-### Medium reframing
-Cambio del soporte/medio del entregable (ej: de PDF a HTML, de texto a video, de presencial a digital). El contenido es el mismo, el medio cambia la experiencia.
+### Cambio de soporte (medium reframing)
+Cambio del medio del entregable (de PDF a HTML, de texto a video, de presencial a digital). El contenido es el mismo; el medio cambia la experiencia.
 
-### Information overload
-Sobrecarga informativa del entregable. Pain point típico cuando el formato no respeta la capacidad de procesamiento del usuario final.
+### Sobrecarga informativa (information overload)
+Saturación del entregable cuando el formato no respeta la capacidad de procesamiento del usuario final. Pain point frecuente.
 
-### Value perception uplift
-Aumento de la percepción de valor del servicio por parte del cliente, que habilita pricing más alto sin caída de demanda.
+### Aumento de la percepción de valor (value perception uplift)
+Cambio en cómo el cliente percibe el valor del servicio. Habilita un precio más alto sin caída de demanda.
 
-### Time-to-decision
-Tiempo que tarda el usuario en tomar una decisión usando el entregable. Métrica de calidad del rediseño cuando el job es decisional.
+### Tiempo hasta decisión (time-to-decision)
+Cuánto tarda el usuario en tomar una decisión a partir del entregable. Métrica de calidad cuando el job es decisional.
 
-### Throughput
-Capacidad de producción / cantidad de output del profesional por unidad de tiempo. Métrica relevante cuando el rediseño busca escalar sin perder calidad.
+### Rendimiento (throughput)
+Capacidad de producción del profesional por unidad de tiempo. Métrica relevante cuando el rediseño busca escalar sin perder calidad.
 
-### KPI framework
-Conjunto de métricas definidas al inicio del proyecto para medir el éxito del rediseño post-implementación.
+### Marco de KPIs
+Conjunto de métricas definidas al inicio del proyecto para medir el éxito del rediseño después de implementarlo.
 
-### Hypothesis validation
-Proceso de validar empíricamente las hipótesis del rediseño con clientes reales antes de implementación masiva.
+### Validación de hipótesis
+Proceso de validar empíricamente las hipótesis del rediseño con clientes reales antes de la implementación masiva.
 
 ---
 
@@ -131,16 +131,16 @@ Tabla de traducción rápida entre el lenguaje del cliente y nuestro vocabulario
 | Encuentro dónde se traba el usuario | Pain point identification |
 | Rediseño qué muestra primero el informe | Progressive disclosure |
 | Capa básica + capas profundas | Layered information architecture |
-| Cambio de PDF a HTML interactivo | Medium reframing |
+| Cambio de PDF a HTML interactivo | Cambio de soporte |
 | El servicio sigue siendo el mismo, cambia el envoltorio | Service redesign |
-| Sube el precio sin perder demanda | Value perception uplift |
-| Métricas para validar el rediseño | KPI framework |
+| Sube el precio sin perder demanda | Aumento de la percepción de valor |
+| Métricas para validar el rediseño | Marco de KPIs |
 
 ---
 
 ## Términos a EVITAR
 
-Lenguaje que NO usamos en entregables ni comunicación:
+Lenguaje que queda fuera de entregables y comunicación:
 
 - ❌ "Transformación digital" (vacío)
 - ❌ "Potenciar tu marca" (genérico)
@@ -158,4 +158,5 @@ Lenguaje que NO usamos en entregables ni comunicación:
 
 ## Changelog del archivo
 
+- **2026-05-09:** v0.3, castellanización de los términos de UX Strategy aplicada (drill-down, progressive disclosure, medium reframing, willingness to pay, etc.) según la guía de estilo Yellow (`./style-guide.md`). Los términos en inglés se mantienen entre paréntesis para facilitar la búsqueda. Los nombres canónicos de framework (Job-to-be-Done, push/pull/anxiety/habit) se preservan.
 - **Mayo 2026:** versión inicial v0.2.

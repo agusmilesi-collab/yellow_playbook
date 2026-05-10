@@ -1,4 +1,4 @@
-# Semana 1 — Foundations
+# Semana 1: Foundations
 
 Objetivo: dominar conceptualmente Service Design y JTBD. Al final de la semana, podés explicar cada framework sin notas.
 
@@ -6,7 +6,7 @@ Objetivo: dominar conceptualmente Service Design y JTBD. Al final de la semana, 
 
 ---
 
-## Día 1 — Service Design: el cambio de sujeto
+## Día 1: Service Design: el cambio de sujeto
 
 **Lectura:** `../02-methodology/service-design.md` desde el inicio hasta P3 (incluido).
 
@@ -25,7 +25,7 @@ Compará las dos descripciones. Tienen que ser distintas. La primera está orien
 
 ---
 
-## Día 2 — Frontstage y Backstage
+## Día 2: Frontstage y Backstage
 
 **Lectura:** `../02-methodology/service-design.md` sección P2 + P3 detallada.
 
@@ -47,7 +47,7 @@ Llená la tabla con al menos 5 momentos del journey de ese servicio.
 
 ---
 
-## Día 3 — Touchpoints y Customer Journey
+## Día 3: Touchpoints y Customer Journey
 
 **Lectura:** `../02-methodology/service-design.md` secciones P4 y P7.
 
@@ -67,7 +67,7 @@ Para cada uno, marcá:
 
 ---
 
-## Día 4 — Jobs to be Done: el milkshake
+## Día 4: Jobs to be Done: el milkshake
 
 **Lectura:** `../02-methodology/jtbd.md` desde el inicio hasta "Los 3 tipos de jobs" (incluido).
 
@@ -87,7 +87,7 @@ Pensá en algo que vos compraste recientemente (un producto, un servicio, una su
 
 ---
 
-## Día 5 — Las 4 Forces of Progress
+## Día 5: Las 4 Forces of Progress
 
 **Lectura:** `../02-methodology/jtbd.md` sección "Las 4 Forces of Progress (Klement)".
 
@@ -108,7 +108,7 @@ Pensá: ¿cuál de las 4 fuerzas es la más fuerte en tu caso?
 
 ---
 
-## Día 6 — Las 5 preguntas JTBD en práctica
+## Día 6: Las 5 preguntas JTBD en práctica
 
 **Lectura:** `../02-methodology/jtbd.md` sección "Las 5 preguntas para descubrir jobs en una entrevista".
 
@@ -134,7 +134,7 @@ Conseguite 1 persona dispuesta a ser "entrevistada" 30 minutos (puede ser una am
 
 ---
 
-## Día 7 — Self-check de la semana
+## Día 7: Self-check de la semana
 
 **Tiempo:** 1 hora.
 

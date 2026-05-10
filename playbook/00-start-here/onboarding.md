@@ -1,4 +1,4 @@
-# Onboarding — Empezá acá
+# Onboarding: Empezá acá
 
 **Tiempo de lectura:** 5 minutos.
 

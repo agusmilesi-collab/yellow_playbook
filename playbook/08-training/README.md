@@ -1,4 +1,4 @@
-# Capacitación — Plan de 4 semanas
+# Capacitación: Plan de 4 semanas
 
 Plan de aprendizaje para dominar la metodología del playbook a nivel operativo.
 

@@ -1,4 +1,4 @@
-# Runbook — Cuando el cliente dijo sí
+# Runbook: Cuando el cliente dijo sí
 
 ## Trigger
 
@@ -12,7 +12,7 @@ Contrato firmado + 50% adelanto cobrado + fecha de kickoff acordada.
 
 ## Pasos
 
-### Paso 1 — Confirmación inicial al cliente
+### Paso 1: Confirmación inicial al cliente
 
 **Acción:** mandar respuesta confirmando recepción y especificando próximos pasos.
 
@@ -31,7 +31,7 @@ Contrato firmado + 50% adelanto cobrado + fecha de kickoff acordada.
 
 ---
 
-### Paso 2 — Generar contrato
+### Paso 2: Generar contrato
 
 **Acción:** copiar el modelo y personalizar.
 
@@ -48,7 +48,7 @@ Contrato firmado + 50% adelanto cobrado + fecha de kickoff acordada.
 
 ---
 
-### Paso 3 — Generar factura del 50% inicial
+### Paso 3: Generar factura del 50% inicial
 
 **Acción:** emitir factura según situación impositiva.
 
@@ -60,7 +60,7 @@ Contrato firmado + 50% adelanto cobrado + fecha de kickoff acordada.
 
 ---
 
-### Paso 4 — Enviar contrato + factura juntos
+### Paso 4: Enviar contrato + factura juntos
 
 **Acción:** un solo email/mensaje con ambos adjuntos.
 
@@ -77,7 +77,7 @@ Contrato firmado + 50% adelanto cobrado + fecha de kickoff acordada.
 
 ---
 
-### Paso 5 — Esperar confirmación
+### Paso 5: Esperar confirmación
 
 **Acción:** esperar a que cliente firme y pague.
 
@@ -96,7 +96,7 @@ Contrato firmado + 50% adelanto cobrado + fecha de kickoff acordada.
 
 ---
 
-### Paso 6 — Confirmar inicio
+### Paso 6: Confirmar inicio
 
 **Acción:** una vez confirmado el pago, mandar mensaje de confirmación final.
 
@@ -108,7 +108,7 @@ Contrato firmado + 50% adelanto cobrado + fecha de kickoff acordada.
 
 ---
 
-### Paso 7 — Configurar carpeta del cliente
+### Paso 7: Configurar carpeta del cliente
 
 **Acción:** crear estructura para gestionar el proyecto.
 
@@ -132,7 +132,7 @@ clientes/
 
 ---
 
-### Paso 8 — Actualizar tracking
+### Paso 8: Actualizar tracking
 
 **Acción:** anotar el cliente en planilla de tracking de pipeline.
 

@@ -1,4 +1,4 @@
-# Jobs to be Done (JTBD) — Framework
+# Jobs to be Done (JTBD): Framework
 
 **SSOT** del framework JTBD. Cualquier mención a JTBD en otros archivos linkea acá.
 
@@ -186,9 +186,9 @@ Para definiciones precisas, ver `../02-methodology/glossary.md`.
 
 ## Lecturas de referencia
 
-- **Competing Against Luck** — Clayton Christensen. La biblia del JTBD.
-- **When Coffee and Kale Compete** — Alan Klement. Gratis online en jtbd.info. Profundiza en Job Stories y Forces of Progress.
-- **The Jobs to Be Done Playbook** — Jim Kalbach. Más práctico, plantillas.
+- **Competing Against Luck**, Clayton Christensen. La biblia del JTBD.
+- **When Coffee and Kale Compete**, Alan Klement. Gratis online en jtbd.info. Profundiza en Job Stories y Forces of Progress.
+- **The Jobs to Be Done Playbook**, Jim Kalbach. Más práctico, plantillas.
 
 ---
 

@@ -1,4 +1,4 @@
-# Runbook — Cuando hay que mandar propuesta
+# Runbook: Cuando hay que mandar propuesta
 
 ## Trigger
 
@@ -12,7 +12,7 @@ Propuesta enviada al prospect con plazo claro de respuesta.
 
 ## Pasos
 
-### Paso 1 — Pasar las notas de la call a limpio
+### Paso 1: Pasar las notas de la call a limpio
 
 **Acción:** dentro de las 2 horas posteriores a la call, estructurar las notas.
 
@@ -24,7 +24,7 @@ Propuesta enviada al prospect con plazo claro de respuesta.
 
 ---
 
-### Paso 2 — Calificación final contra ICP
+### Paso 2: Calificación final contra ICP
 
 **Acción:** ahora con la información completa de la call, recalcular el score contra ICP.
 
@@ -39,7 +39,7 @@ Propuesta enviada al prospect con plazo claro de respuesta.
 
 ---
 
-### Paso 3 — Hipotetizar los 3 jobs y el struggling moment
+### Paso 3: Hipotetizar los 3 jobs y el struggling moment
 
 **Acción:** completar la sección "Hipótesis preliminares" del template de notas.
 
@@ -56,7 +56,7 @@ Marcar todo con 🔵 (hipótesis) hasta validar con el cliente.
 
 ---
 
-### Paso 4 — Decidir modelo de servicio
+### Paso 4: Decidir modelo de servicio
 
 **Acción:** elegir A, B o C según las señales de la call.
 
@@ -74,7 +74,7 @@ Marcar todo con 🔵 (hipótesis) hasta validar con el cliente.
 
 ---
 
-### Paso 5 — Redactar propuesta
+### Paso 5: Redactar propuesta
 
 **Acción:** escribir la propuesta siguiendo la plantilla.
 
@@ -90,7 +90,7 @@ Marcar todo con 🔵 (hipótesis) hasta validar con el cliente.
 
 ---
 
-### Paso 6 — Revisar contra checklist antes de enviar
+### Paso 6: Revisar contra checklist antes de enviar
 
 **Acción:** chequeo de calidad antes de mandar.
 
@@ -110,7 +110,7 @@ Marcar todo con 🔵 (hipótesis) hasta validar con el cliente.
 
 ---
 
-### Paso 7 — Enviar
+### Paso 7: Enviar
 
 **Acción:** enviar la propuesta como PDF o link a doc compartido.
 
@@ -122,7 +122,7 @@ Marcar todo con 🔵 (hipótesis) hasta validar con el cliente.
 
 ---
 
-### Paso 8 — Programar follow-ups
+### Paso 8: Programar follow-ups
 
 **Acción:** anotar en calendario fechas de follow-up.
 

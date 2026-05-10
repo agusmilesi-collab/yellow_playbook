@@ -1,4 +1,4 @@
-# 02 — Propuesta
+# 02: Propuesta
 
 **SSOT** del proceso de envío de propuesta post-discovery.
 
@@ -35,12 +35,12 @@ Para la plantilla técnica completa, ver `../04-templates/proposal-template.md`.
 
 Las secciones obligatorias son:
 
-1. **Lo que escuché** — devolución del problema en sus palabras.
-2. **Lo que creo que está pasando** — diagnóstico breve (causa raíz, no síntomas).
-3. **Lo que te propongo** — servicio recomendado con entregables, fases y exclusiones.
-4. **Inversión y plazos** — precio (de `../06-operations/pricing.md`), forma de pago, fecha de inicio.
-5. **Por qué ahora y por qué yo** — 1 párrafo corto de cierre.
-6. **Próximo paso** — cómo confirmar.
+1. **Lo que escuché**, devolución del problema en sus palabras.
+2. **Lo que creo que está pasando**, diagnóstico breve (causa raíz, no síntomas).
+3. **Lo que te propongo**, servicio recomendado con entregables, fases y exclusiones.
+4. **Inversión y plazos**, precio (de `../06-operations/pricing.md`), forma de pago, fecha de inicio.
+5. **Por qué ahora y por qué yo**, 1 párrafo corto de cierre.
+6. **Próximo paso**, cómo confirmar.
 
 ---
 

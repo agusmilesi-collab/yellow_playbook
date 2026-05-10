@@ -1,4 +1,4 @@
-# Pricing — SSOT
+# Pricing: SSOT
 
 **Esta es la única fuente de verdad sobre precios.** Cualquier propuesta o comunicación de precio se referencia desde acá.
 
@@ -35,7 +35,7 @@
 
 ---
 
-## Modelo B (Diagnóstico + plan) — SERVICIO PRINCIPAL
+## Modelo B (Diagnóstico + plan): SERVICIO PRINCIPAL
 
 **Precio:** USD 2.000.
 
@@ -57,7 +57,7 @@
 
 ---
 
-## Modelo C (Diagnóstico + acompañamiento) — SERVICIO PREMIUM
+## Modelo C (Diagnóstico + acompañamiento): SERVICIO PREMIUM
 
 **Precio:** USD 3.000.
 
@@ -144,4 +144,4 @@ Este archivo se revisa cada 3 meses o cada 5 casos cerrados, lo que ocurra prime
 
 ## Changelog del archivo
 
-- **Mayo 2026:** versión inicial v0.2 — precios definidos: A entrada baja / B USD 2000 / C USD 3000.
+- **Mayo 2026:** versión inicial v0.2, precios definidos: A entrada baja / B USD 2000 / C USD 3000.

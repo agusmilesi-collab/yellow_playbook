@@ -1,4 +1,4 @@
-# Good Services — Los 15 principios
+# Good Services: Los 15 principios
 
 **SSOT** del checklist de evaluación de un buen servicio. Basado en *Good Services* de Lou Downe (2020).
 
@@ -34,7 +34,7 @@ Si la gente no sabe que existís, el servicio no existe para ellos. ¿Cómo te e
 
 El usuario tiene que entender en 10 segundos qué problema resuelve este servicio y si es para él.
 
-**Aplicación:** mirar el primer punto de contacto (web, perfil, propuesta). ¿Una persona ajena al rubro entiende qué hacés? Si dice "interesante, ¿pero qué hacés exactamente?" — falló este principio.
+**Aplicación:** mirar el primer punto de contacto (web, perfil, propuesta). ¿Una persona ajena al rubro entiende qué hacés? Si dice "interesante, ¿pero qué hacés exactamente?", falló este principio.
 
 ### 3. Establece expectativas claras del usuario sobre el servicio
 
@@ -46,7 +46,7 @@ Antes de empezar, el usuario sabe qué va a pasar, en cuánto tiempo, con qué r
 
 El servicio resuelve el job real, no un proxy del job. Conectar con `../02-methodology/jtbd.md`.
 
-**Aplicación:** si el cliente del psicotécnico viene a "tomar una decisión sobre una persona" pero el servicio le entrega "un informe de 16 páginas para leer" — falló este principio.
+**Aplicación:** si el cliente del psicotécnico viene a "tomar una decisión sobre una persona" pero el servicio le entrega "un informe de 16 páginas para leer", falló este principio.
 
 ### 5. Funciona de manera familiar
 
@@ -154,7 +154,7 @@ Para cada principio del 1 al 15:
 
 ## Lectura de referencia
 
-**Good Services** — Lou Downe. BIS Publishers, 2020. Libro corto y muy aplicable. Cada principio tiene un capítulo con ejemplos.
+**Good Services**, Lou Downe. BIS Publishers, 2020. Libro corto y muy aplicable. Cada principio tiene un capítulo con ejemplos.
 
 ---
 

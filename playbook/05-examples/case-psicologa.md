@@ -1,4 +1,4 @@
-# Caso — Psicóloga independiente (Evaluación psicotécnica)
+# Caso: Psicóloga independiente (Evaluación psicotécnica)
 
 **Estado:** En ejecución como caso piloto. Resultados aún no medidos en campo.
 **Modelo aplicado:** B (Diagnóstico + plan).
@@ -88,7 +88,7 @@ PDF estático, formato denso, sin jerarquía visual. Genera resistencia a la lec
 
 Un servicio que se entrega como "documento Word denso" se compara mentalmente con cualquier informe de cualquier profesional. No hay diferenciación visible. Esto comprime el precio hacia abajo.
 
-### 5. Throughput limitado por codificación manual ✅
+### 5. Rendimiento limitado por codificación manual ✅
 
 Cada evaluación requiere horas de codificación manual de tests, lo que limita la cantidad de evaluaciones posibles por mes. Esto ancla el techo de facturación.
 
@@ -104,23 +104,23 @@ Cada evaluación requiere horas de codificación manual de tests, lo que limita 
 
 ## 6. Propuesta de rediseño
 
-### 1. Progressive disclosure
+### 1. Revelación progresiva
 
-**Qué:** rediseñar el entregable principal como un one-pager visual con la conclusión y los 3-4 datos clave. El usuario obtiene la decisión en 30 segundos.
+**Qué:** rediseñar el entregable principal como un informe de una página visual con la conclusión y los 3-4 datos clave. El usuario obtiene la decisión en 30 segundos.
 
 **Por qué:** resuelve el information overload y el mismatch con el job (decidir, no leer).
 
 **Cómo se ve:** primera vista del informe = conclusión + recomendación + scores principales en una pantalla. Lo demás está disponible bajo demanda.
 
-### 2. Drill-down on demand
+### 2. Profundización por capas on demand
 
 **Qué:** las 16 páginas siguen existiendo, pero pasan de ser el producto principal a ser información de respaldo accesible bajo click.
 
 **Por qué:** preserva el rigor profesional sin saturar al usuario. Cada usuario consume hasta donde necesita.
 
-**Cómo se ve:** desde el one-pager, links a "Ver dimensión X en detalle" → capa intermedia → capa técnica completa.
+**Cómo se ve:** desde el informe de una página, links a "Ver dimensión X en detalle" → capa intermedia → capa técnica completa.
 
-### 3. Medium reframing: PDF → HTML
+### 3. Cambio de soporte: PDF → HTML
 
 **Qué:** cambiar el soporte del entregable de PDF estático a HTML interactivo.
 
@@ -152,9 +152,9 @@ Cada evaluación requiere horas de codificación manual de tests, lo que limita 
 | Métrica | Hipótesis | Cómo se mide |
 |---|---|---|
 | **NPS / satisfacción del cliente final** | Sube significativamente | Encuesta post-entrega |
-| **Time-to-decision del cliente** | Baja de horas a minutos | Time-tracking en cliente piloto |
-| **Willingness to pay** | Aumento de precio sin caída de demanda | Test de pricing en próximas evaluaciones |
-| **Throughput de la profesional** | +40-60% de evaluaciones/mes con el mismo esfuerzo | Tracking interno de horas/evaluación |
+| **Tiempo hasta decisión del cliente** | Baja de horas a minutos | Time-tracking en cliente piloto |
+| **Disposición a pagar** | Aumento de precio sin caída de demanda | Test de pricing en próximas evaluaciones |
+| **Rendimiento de la profesional** | +40-60% de evaluaciones/mes con el mismo esfuerzo | Tracking interno de horas/evaluación |
 | **Tasa de recomendación** | Sube por mejor experiencia + diferenciación | Tracking de origen de nuevos clientes |
 
 **Status:** todas las hipótesis. Pendiente medición real post-implementación.
@@ -163,9 +163,9 @@ Cada evaluación requiere horas de codificación manual de tests, lo que limita 
 
 ## 8. Riesgos y consideraciones
 
-- **Riesgo:** el contexto legal puede requerir formato extenso por exigencia normativa. **Mitigación:** mantener la capa 3 con todo el detalle técnico que un perito o juez pueda necesitar. El one-pager es interfaz, no reemplazo.
+- **Riesgo:** el contexto legal puede requerir formato extenso por exigencia normativa. **Mitigación:** mantener la capa 3 con todo el detalle técnico que un perito o juez pueda necesitar. El informe de una página es interfaz, no reemplazo.
 
-- **Riesgo:** clientes acostumbrados al PDF tradicional pueden percibir el HTML como "menos serio". **Mitigación:** comunicar el rediseño como upgrade premium, no como simplificación. Framing importa.
+- **Riesgo:** clientes acostumbrados al PDF tradicional pueden percibir el HTML como "menos serio". **Mitigación:** comunicar el rediseño como upgrade premium, no como simplificación. Encuadre importa.
 
 - **Riesgo:** uso de IA puede generar dudas éticas en contextos sensibles. **Mitigación:** la IA solo asiste en codificación; la interpretación profesional la sigue haciendo la psicóloga, con firma profesional.
 
@@ -174,7 +174,7 @@ Cada evaluación requiere horas de codificación manual de tests, lo que limita 
 ## 9. Próximos pasos sugeridos
 
 1. **Sesión de validación con 2-3 clientes finales** del cliente (RRHH, estudio jurídico, club).
-2. **Prototipo del one-pager con un caso real.**
+2. **Prototipo del informe de una página con un caso real.**
 3. **Test piloto con próximas 5 evaluaciones.**
 4. **Ajustes según feedback + lanzamiento oficial con nuevo pricing.**
 5. **Medición de KPIs a los 90 días.**
@@ -183,7 +183,7 @@ Cada evaluación requiere horas de codificación manual de tests, lo que limita 
 
 ## 10. Pitch profesional aplicado al caso (90 segundos)
 
-> "El servicio era una evaluación psicotécnica entregada como PDF de 16 páginas. Hice un service blueprint y detecté que el formato no estaba alineado con el job-to-be-done del cliente: él contrata 'tomar una decisión sobre una persona', no 'leer un informe técnico'. Rediseñé la entrega usando progressive disclosure: el cliente recibe un one-pager con la conclusión y, si quiere profundizar, accede al detalle por capas. Cambiamos el medio de PDF a HTML interactivo y sumamos asistencia de IA en la codificación. La hipótesis es que el rediseño mejora la percepción de valor y el throughput, y habilita un aumento de precio relevante, manteniendo intacto el core profesional."
+> "El servicio era una evaluación psicotécnica entregada como PDF de 16 páginas. Hice un service blueprint y detecté que el formato no estaba alineado con el job-to-be-done del cliente: él contrata 'tomar una decisión sobre una persona', no 'leer un informe técnico'. Rediseñé la entrega usando revelación progresiva: el cliente recibe un informe de una página con la conclusión y, si quiere profundizar, accede al detalle por capas. Cambiamos el medio de PDF a HTML interactivo y sumamos asistencia de IA en la codificación. La hipótesis es que el rediseño mejora la percepción de valor y el rendimiento, y habilita un aumento de precio relevante, manteniendo intacto el oficio profesional."
 
 ---
 
@@ -194,11 +194,11 @@ Cada evaluación requiere horas de codificación manual de tests, lo que limita 
 | Mapeé el servicio entero | Service blueprint |
 | Identifiqué el verdadero trabajo del cliente | Jobs-to-be-done |
 | Encontré dónde se traba el usuario | Pain point identification |
-| Rediseñé qué muestra primero el informe | Progressive disclosure |
+| Rediseñé qué muestra primero el informe | Revelación progresiva |
 | Capa básica + capas profundas | Layered information architecture |
-| Cambio de PDF a HTML interactivo | Medium reframing |
+| Cambio de PDF a HTML interactivo | Cambio de soporte |
 | El servicio sigue siendo el mismo, cambia el envoltorio | Service redesign |
-| Sube el precio sin perder demanda | Value perception uplift |
+| Sube el precio sin perder demanda | Aumento de la percepción de valor |
 | Métricas para validar el rediseño | KPI framework |
 
 ---
@@ -208,7 +208,7 @@ Cada evaluación requiere horas de codificación manual de tests, lo que limita 
 Cuando se ejecute la implementación, agregar:
 
 - [ ] Resultados reales de research con clientes finales (RRHH, jurídico, deportivo).
-- [ ] Versión final del one-pager (link o screenshot).
+- [ ] Versión final del informe de una página (link o screenshot).
 - [ ] Mediciones reales a 30, 60, 90 días.
 - [ ] Testimonio de la psicóloga.
 - [ ] Lessons learned del proyecto.

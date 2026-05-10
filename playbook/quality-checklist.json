@@ -1,5 +1,5 @@
 {
-  "version": "0.1",
+  "version": "0.2",
   "scope": "Aplicable a cualquier output que la IA entregue desde este repo: diagnóstico, propuesta, plan, comunicación al cliente.",
   "self-evaluation-protocol": "Antes de entregar cualquier output al owner, recorrer cada check. Marcar pass/fail. Si hay fail, reescribir antes de presentar.",
   "checks": [
@@ -78,8 +78,20 @@
     {
       "id": "copy-affirmative",
       "category": "lenguaje",
-      "rule": "Copy en afirmativo. Está prohibido el recurso retórico 'no es X, es Y'.",
-      "source": "memoria persistente del owner — feedback explícito"
+      "rule": "Copy en afirmativo. Queda fuera el recurso retórico 'no es X, es Y'.",
+      "source": "playbook/02-methodology/style-guide.md#F"
+    },
+    {
+      "id": "style-guide",
+      "category": "lenguaje",
+      "rule": "El output cumple la guía de estilo Yellow: apertura con premisa (no promesa), voz neutra (autor invisible), claridad por sobre estilo, vocabulario en español sin anglicismos innecesarios, cero em dashes, tipografía serif y paleta blanco y negro en el cuerpo del entregable.",
+      "source": "playbook/02-methodology/style-guide.md"
+    },
+    {
+      "id": "no-em-dash",
+      "category": "lenguaje",
+      "rule": "El texto no contiene em dashes (—). Las parentéticas largas se resuelven con paréntesis, comas o reescritura.",
+      "source": "playbook/02-methodology/style-guide.md#E"
     }
   ]
 }

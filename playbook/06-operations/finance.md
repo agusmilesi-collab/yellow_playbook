@@ -1,4 +1,4 @@
-# Finance — Manejo financiero del negocio
+# Finance: Manejo financiero del negocio
 
 **SSOT** del manejo financiero del negocio de UX Strategy.
 

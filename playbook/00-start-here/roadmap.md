@@ -1,4 +1,4 @@
-# Roadmap — Acciones del negocio
+# Roadmap: Acciones del negocio
 
 **Última actualización:** Mayo 2026
 **Owner:** Agustin
@@ -36,7 +36,7 @@ Cuando una acción se completa, se mueve a la sección "Done" con fecha. Las acc
 
 ### Done
 
-### Mayo 2026 — v0.3
+### Mayo 2026: v0.3
 - ✅ Integración de Good Services (Lou Downe) como `../02-methodology/good-services.md`.
 - ✅ Carpeta `../07-runbook/` con 7 archivos de procedimiento por escenario.
 - ✅ Carpeta `../08-training/` con plan de capacitación de 4 semanas.
@@ -53,7 +53,7 @@ Cuando una acción se completa, se mueve a la sección "Done" con fecha. Las acc
 - [ ] Sentarse formalmente con la psicóloga como cliente piloto: definir alcance, plazos, expectativas.
 - [ ] Aplicar el método punta a punta (discovery → diagnóstico → rediseño → implementación → medición).
 - [ ] Implementar el rediseño técnico:
-  - [ ] One-pager visual (capa 1).
+  - [ ] Informe de una página visual (capa 1).
   - [ ] Capa intermedia con dimensiones y scores.
   - [ ] Capa técnica con análisis extendido.
   - [ ] Sistema de codificación asistida con IA.
@@ -80,13 +80,13 @@ Cuando una acción se completa, se mueve a la sección "Done" con fecha. Las acc
 
 ---
 
-## Próxima iniciativa estratégica — Repo como sistema de aprendizaje continuo
+## Próxima iniciativa estratégica: Repo como sistema de aprendizaje continuo
 
 **Status:** prompt redactado, pendiente de ejecución. A iniciar apenas se complete la revisión actual del playbook.
 
 **Origen:** este prompt vivía al final del `README.md` como recordatorio. Se movió acá para no perderlo y para que tenga el peso estratégico que merece.
 
-**Tesis del cambio:** hoy el playbook se desactualiza porque las correcciones que doy en sesión (con IA o internas) no quedan capturadas. Necesito un sistema con tres capas separadas — playbook estable, casos por cliente, aprendizajes pendientes — inspirado en el harness de agentes long-running de Anthropic.
+**Tesis del cambio:** hoy el playbook se desactualiza porque las correcciones que doy en sesión (con IA o internas) no quedan capturadas. Necesito un sistema con tres capas separadas, playbook estable, casos por cliente, aprendizajes pendientes, inspirado en el harness de agentes long-running de Anthropic.
 
 ### Prompt completo a ejecutar
 
@@ -105,12 +105,12 @@ Cuando una acción se completa, se mueve a la sección "Done" con fecha. Las acc
 >
 > **QUE QUIERO QUE HAGAS AHORA**
 >
-> **Paso 1 — Diagnóstico**
+> **Paso 1, Diagnóstico**
 > - Listá la estructura actual del repo y leé los archivos principales del playbook.
 > - Identificá qué piezas ya tengo y qué falta para soportar la estructura propuesta.
 > - No modifiques nada todavía. Mostrame el diagnóstico y esperá luz verde.
 >
-> **Paso 2 — Propuesta (después de mi OK)**
+> **Paso 2, Propuesta (después de mi OK)**
 > - Proponé estructura concreta de carpetas: `playbook/`, `cases/`, `learnings/`.
 > - Proponé el formato de:
 >   - `cases/<slug-cliente>/` con: `transcript.md`, `diagnostico.md`, `plan.md`, `case-notes.md`
@@ -124,7 +124,7 @@ Cuando una acción se completa, se mueve a la sección "Done" con fecha. Las acc
 > - Proponé también un prompt de consolidación separado: cuando yo lo dispare, leés `learnings-pending.md` + playbook actual y me proponés un diff concreto al playbook (qué sección tocar, qué agregar, qué reformular). Yo apruebo el commit.
 > - Mostrame todo como propuesta, no apliques cambios.
 >
-> **Paso 3 — Implementación (después de mi OK al paso 2)**
+> **Paso 3, Implementación (después de mi OK al paso 2)**
 > - Aplicá la reestructuración en commits chicos y descriptivos.
 > - Si hay contenido del playbook actual que conviene reorganizar para encajar en la nueva estructura, mostrame el plan de movimiento antes de tocar archivos.
 > - Al final, dejame un README breve que explique cómo usar el repo en el día a día (cómo arrancar un caso nuevo, cómo correr la consolidación).
@@ -180,7 +180,7 @@ Ideas y acciones que no son prioridad ahora pero hay que registrar para no perde
 - ✅ Definición de pricing (A entrada / B 2000 USD / C 3000 USD).
 - ✅ Restructuración del playbook con SSOT y onboarding-ready (v0.2).
 - ✅ Decisión: completar playbook antes de vender, con revisión 1 de junio.
-- ✅ **2026-05-09:** Reescritura de oferta v0.3 — eliminada la promesa de "30-50% más" como número específico (no validado empíricamente). Reordenada la jerarquía: rediseño de la entrega + diferenciación + experiencia alineada con el cliente como promesas primarias; cobrar más pasa a consecuencia. Nivel 1 reemplazado por versión llana con oficios concretos. Cambios propagados a `onboarding.md`, `jtbd.md` y `case-psicologa.md`.
+- ✅ **2026-05-09:** Reescritura de oferta v0.3, eliminada la promesa de "30-50% más" como número específico (no validado empíricamente). Reordenada la jerarquía: rediseño de la entrega + diferenciación + experiencia alineada con el cliente como promesas primarias; cobrar más pasa a consecuencia. Nivel 1 reemplazado por versión llana con oficios concretos. Cambios propagados a `onboarding.md`, `jtbd.md` y `case-psicologa.md`.
 
 ---
 
@@ -190,9 +190,9 @@ Para revisar mensualmente:
 
 | Métrica | Mayo 2026 | Junio 2026 | Julio 2026 |
 |---|---|---|---|
-| Avance playbook v0.2 | 60% | — | — |
-| Caso piloto cerrado | No | — | — |
-| Discovery calls hechas | 0 | — | — |
-| Propuestas enviadas | 0 | — | — |
-| Clientes pagos | 0 | — | — |
-| Facturación del servicio | $0 | — | — |
+| Avance playbook v0.2 | 60% |: |: |
+| Caso piloto cerrado | No |: |: |
+| Discovery calls hechas | 0 |: |: |
+| Propuestas enviadas | 0 |: |: |
+| Clientes pagos | 0 |: |: |
+| Facturación del servicio | $0 |: |: |

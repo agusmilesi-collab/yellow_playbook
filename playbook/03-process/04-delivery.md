@@ -1,4 +1,4 @@
-# 04 — Entrega del proyecto
+# 04: Entrega del proyecto
 
 **SSOT** del proceso de ejecución de un proyecto cerrado.
 
@@ -35,7 +35,7 @@ Ejecutar el proyecto contratado, cumplir entregables, y llegar al cierre con res
 
 ---
 
-## Fase 1 — Kickoff y research (Semana 1)
+## Fase 1: Kickoff y research (Semana 1)
 
 ### Reunión de kickoff (60-90 min)
 
@@ -66,7 +66,7 @@ Documentar todas las entrevistas en notas estructuradas.
 
 ---
 
-## Fase 2 — Diagnóstico (Semana 2)
+## Fase 2: Diagnóstico (Semana 2)
 
 ### Service blueprint actual
 
@@ -113,7 +113,7 @@ Ajustar según feedback. Si hay grandes discrepancias, hacer otra ronda de resea
 
 ---
 
-## Fase 3 — Propuesta de rediseño (Semana 3)
+## Fase 3: Propuesta de rediseño (Semana 3)
 
 ### Diseño de las intervenciones
 
@@ -152,7 +152,7 @@ Antes de presentar, chequear las intervenciones propuestas contra los 15 princip
 
 ---
 
-## Fase 4 — Presentación y cierre (Semana 4)
+## Fase 4: Presentación y cierre (Semana 4)
 
 ### Reunión de presentación (90 min)
 

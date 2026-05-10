@@ -129,7 +129,7 @@ Cuando Agustin te pida generar propuesta:
 
 ## Flujos de trabajo concretos
 
-### Flujo 1 — Post discovery call
+### Flujo 1: Post discovery call
 
 **Input:** notas crudas (texto, audio transcripto, video transcripto).
 
@@ -143,7 +143,7 @@ Cuando Agustin te pida generar propuesta:
 **Tiempo Agustin:** 10-15 minutos de revisión.
 **Tiempo sin IA:** 1-2 horas.
 
-### Flujo 2 — Generación de propuesta
+### Flujo 2: Generación de propuesta
 
 **Input:** notas estructuradas de discovery + decisión de modelo (A/B/C).
 
@@ -158,7 +158,7 @@ Cuando Agustin te pida generar propuesta:
 **Tiempo Agustin:** 30-45 minutos.
 **Tiempo sin IA:** 2-3 horas.
 
-### Flujo 3 — Generación de diagnóstico
+### Flujo 3: Generación de diagnóstico
 
 **Input:** notas de research, blueprint inicial, entrevistas a clientes finales.
 
@@ -172,7 +172,7 @@ Cuando Agustin te pida generar propuesta:
 **Tiempo Agustin:** 4-6 horas de revisión.
 **Tiempo sin IA:** 12-15 horas.
 
-### Flujo 4 — Comunicaciones rutinarias
+### Flujo 4: Comunicaciones rutinarias
 
 **Input:** contexto del cliente + tipo de comunicación necesaria.
 

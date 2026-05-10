@@ -1,4 +1,4 @@
-# Semana 4 — Operación
+# Semana 4: Operación
 
 Objetivo: integrar todo lo aprendido al flujo operativo del negocio. Al final de la semana, podés operar con un cliente real sin trabarte.
 
@@ -6,7 +6,7 @@ Objetivo: integrar todo lo aprendido al flujo operativo del negocio. Al final de
 
 ---
 
-## Día 1 — El flujo completo
+## Día 1: El flujo completo
 
 **Lectura:** todos los archivos de `../07-runbook/` en orden.
 
@@ -24,7 +24,7 @@ Después comparalo con los runbooks. ¿Qué te olvidaste?
 
 ---
 
-## Día 2 — Discovery call simulada
+## Día 2: Discovery call simulada
 
 **Lectura:** `../03-process/01-discovery.md` + `../04-templates/discovery-notes-template.md`.
 
@@ -53,7 +53,7 @@ Vos hacés la discovery call siguiendo el guion del playbook:
 
 ---
 
-## Día 3 — Calificación + decisión
+## Día 3: Calificación + decisión
 
 **Acción:** sobre la "discovery" del Día 2, calificar al prospect siguiendo el sistema de scoring.
 
@@ -73,7 +73,7 @@ Vos hacés la discovery call siguiendo el guion del playbook:
 
 ---
 
-## Día 4 — Escribir propuesta simulada
+## Día 4: Escribir propuesta simulada
 
 **Lectura:** `../03-process/02-proposal.md` + `../04-templates/proposal-template.md`.
 
@@ -101,7 +101,7 @@ Vos hacés la discovery call siguiendo el guion del playbook:
 
 ---
 
-## Día 5 — Manejo de objeciones
+## Día 5: Manejo de objeciones
 
 **Lectura:** `../03-process/03-closing.md`.
 
@@ -131,7 +131,7 @@ Para cada respuesta, escribí cómo manejarías la situación:
 
 ---
 
-## Día 6 — Test de operación end-to-end
+## Día 6: Test de operación end-to-end
 
 **Acción:** poner a prueba el sistema completo.
 
@@ -158,7 +158,7 @@ Imaginate que mañana llega un prospect real (NO simulado). Escribí, paso a pas
 
 ---
 
-## Día 7 — Self-check final
+## Día 7: Self-check final
 
 **Tiempo:** 1 hora.
 

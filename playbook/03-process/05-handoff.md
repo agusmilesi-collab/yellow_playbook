@@ -1,4 +1,4 @@
-# 05 — Handoff y post-venta
+# 05: Handoff y post-venta
 
 **SSOT** del proceso post-entrega del proyecto.
 
@@ -27,7 +27,7 @@ Cerrar el proyecto bien, capturar valor para futuras ventas (testimonio + referi
 
 ## Timeline post-entrega
 
-### Día 0 — Entrega final
+### Día 0: Entrega final
 
 - Documento entregado.
 - Reunión de presentación realizada.
@@ -61,7 +61,7 @@ Cerrar el proyecto bien, capturar valor para futuras ventas (testimonio + referi
 
 ---
 
-## Texto sugerido — Pedido de testimonio
+## Texto sugerido: Pedido de testimonio
 
 > "Hola [nombre], pasaron [tiempo] desde que cerramos el proyecto. ¿Cómo viene la implementación?
 >
@@ -71,7 +71,7 @@ Cerrar el proyecto bien, capturar valor para futuras ventas (testimonio + referi
 
 ---
 
-## Texto sugerido — Pedido de referidos
+## Texto sugerido: Pedido de referidos
 
 > "Una más: ¿conocés a 2-3 profesionales que estén en una situación parecida a la tuya hace [tiempo del proyecto], antes de trabajar conmigo?
 >
@@ -79,7 +79,7 @@ Cerrar el proyecto bien, capturar valor para futuras ventas (testimonio + referi
 
 ---
 
-## Texto sugerido — Check-in 30 días
+## Texto sugerido: Check-in 30 días
 
 > "Hola [nombre], pasaron 30 días desde que cerramos el proyecto. ¿Cómo viene la implementación?
 >
@@ -89,11 +89,11 @@ Cerrar el proyecto bien, capturar valor para futuras ventas (testimonio + referi
 
 ---
 
-## Texto sugerido — Pedido de KPIs (60-90 días)
+## Texto sugerido: Pedido de KPIs (60-90 días)
 
 > "Hola [nombre], cumplimos 90 días desde el cierre. Te pido un favor: ¿podemos medir los KPIs que definimos al inicio?
 >
-> Específicamente: [listar los KPIs concretos del proyecto, ej: time-to-decision, NPS, willingness to pay, throughput].
+> Específicamente: [listar los KPIs concretos del proyecto, ej: tiempo hasta decisión, NPS, disposición a pagar, rendimiento].
 >
 > Si los números son buenos, sirven para que actualicemos el testimonio con datos reales. Y a vos te sirve confirmar el ROI del rediseño."
 

@@ -1,4 +1,4 @@
-# ICP — Ideal Customer Profile
+# ICP: Ideal Customer Profile
 
 **SSOT** del perfil de cliente ideal. Si en otros archivos aparece descripción del cliente, debe linkear a este archivo.
 
@@ -27,19 +27,19 @@ Tienen oficio sólido pero entregan su trabajo de una forma que NO comunica el v
 
 ## Rubros por tier
 
-### Tier 1 — Mejor fit, mayor probabilidad de cierre
+### Tier 1: Mejor fit, mayor probabilidad de cierre
 
 - Profesionales de salud mental y bienestar: psicólogos, psiquiatras, coaches, terapeutas, profesionales de mindfulness, nutricionistas.
 - Servicios profesionales artesanales: abogados independientes, contadores, escribanos, asesores financieros.
 - Hospitalidad chica premium: restaurantes de autor, bares de especialidad, hoteles boutique, cafeterías.
 
-### Tier 2 — Buen fit con condiciones
+### Tier 2: Buen fit con condiciones
 
 - Productoras chicas: eventos, audiovisual, fotografía profesional.
 - Emprendimientos gastronómicos: cervecerías, vinotecas, comida saludable.
 - Profesionales del cuerpo: kinesiólogos, fisioterapeutas, personal trainers, médicos estéticos.
 
-### Tier 3 — Fit posible pero más difícil
+### Tier 3: Fit posible pero más difícil
 
 - Marcas de producto (moda, joyería, diseño): el ciclo de venta es más largo.
 - Emprendimientos B2B grandes: estructura de decisión más compleja.

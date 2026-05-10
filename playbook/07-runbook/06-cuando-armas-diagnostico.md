@@ -1,4 +1,4 @@
-# Runbook — Cuando armás el diagnóstico
+# Runbook: Cuando armás el diagnóstico
 
 ## Trigger
 
@@ -16,7 +16,7 @@ Documento de 15-25 páginas con:
 
 ## Pasos
 
-### Paso 1 — Diseñar las intervenciones
+### Paso 1: Diseñar las intervenciones
 
 **Acción:** para cada pain point principal, diseñar 1-2 intervenciones concretas.
 
@@ -39,7 +39,7 @@ Documento de 15-25 páginas con:
 
 ---
 
-### Paso 2 — Chequear las intervenciones contra Good Services
+### Paso 2: Chequear las intervenciones contra Good Services
 
 **Acción:** validar que el rediseño cumple los 15 principios.
 
@@ -57,7 +57,7 @@ Documento de 15-25 páginas con:
 
 ---
 
-### Paso 3 — Plan de implementación
+### Paso 3: Plan de implementación
 
 **Acción:** para cada intervención, definir cómo se ejecuta.
 
@@ -74,7 +74,7 @@ Documento de 15-25 páginas con:
 
 ---
 
-### Paso 4 — Definir KPIs
+### Paso 4: Definir KPIs
 
 **Acción:** para cada intervención principal, definir cómo se mide el éxito.
 
@@ -91,7 +91,7 @@ Documento de 15-25 páginas con:
 
 ---
 
-### Paso 5 — Escribir el documento final
+### Paso 5: Escribir el documento final
 
 **Acción:** compilar todo siguiendo la plantilla.
 
@@ -121,7 +121,7 @@ Documento de 15-25 páginas con:
 
 ---
 
-### Paso 6 — Revisión contra checklist
+### Paso 6: Revisión contra checklist
 
 **Acción:** chequeo de calidad antes de presentar.
 
@@ -140,7 +140,7 @@ Documento de 15-25 páginas con:
 
 ---
 
-### Paso 7 — Reunión de presentación (90 min)
+### Paso 7: Reunión de presentación (90 min)
 
 **Acción:** presentar el diagnóstico al cliente.
 
@@ -163,7 +163,7 @@ Documento de 15-25 páginas con:
 
 ---
 
-### Paso 8 — Entrega + cobranza del 50% restante
+### Paso 8: Entrega + cobranza del 50% restante
 
 **Acción:** mandar documento + factura final.
 

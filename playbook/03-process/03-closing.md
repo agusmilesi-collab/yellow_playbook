@@ -1,4 +1,4 @@
-# 03 — Cierre
+# 03: Cierre
 
 **SSOT** del proceso de cierre de venta post-propuesta.
 

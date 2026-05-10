@@ -1,4 +1,4 @@
-# Service Design — Framework
+# Service Design: Framework
 
 **SSOT** del framework de Service Design. Cualquier mención a Service Design en otros archivos linkea acá.
 
@@ -140,7 +140,7 @@ Para definiciones precisas, ver `../02-methodology/glossary.md`.
 
 ## Lectura de referencia
 
-**This is Service Design Doing** — Marc Stickdorn, Markus Hormess, Adam Lawrence, Jakob Schneider. O'Reilly, 2018.
+**This is Service Design Doing**, Marc Stickdorn, Markus Hormess, Adam Lawrence, Jakob Schneider. O'Reilly, 2018.
 
 550 páginas con metodología completa, herramientas y más de 50 casos reales.
 

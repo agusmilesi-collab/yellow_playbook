@@ -2,9 +2,9 @@
 
 Claude Code lee este archivo automáticamente al iniciar cualquier sesión sobre el repo. Define qué tiene permitido hacer, qué no, y cómo operar.
 
-## Idioma
+## Idioma y estilo
 
-Español argentino. Sin floritura. Sin buzzwords. Vocabulario técnico siempre del `playbook/02-methodology/glossary.md`.
+Español argentino. Sin floritura. Sin buzzwords. Vocabulario técnico siempre del `playbook/02-methodology/glossary.md`. Outputs formales (diagnóstico, propuesta, audit, plan, comunicación al cliente) siguen la guía de estilo Yellow: `playbook/02-methodology/style-guide.md`.
 
 ## Estructura del repo
 

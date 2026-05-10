@@ -1,4 +1,4 @@
-# Runbook — Cuando termina el proyecto
+# Runbook: Cuando termina el proyecto
 
 ## Trigger
 
@@ -16,7 +16,7 @@ Presentaste el documento final + cobraste el 50% restante.
 
 ## Pasos
 
-### Paso 1 — Email de cierre formal (día 0-1)
+### Paso 1: Email de cierre formal (día 0-1)
 
 **Acción:** mandar email consolidando todos los entregables.
 
@@ -37,7 +37,7 @@ Presentaste el documento final + cobraste el 50% restante.
 
 ---
 
-### Paso 2 — Lessons learned internas (día 1-3)
+### Paso 2: Lessons learned internas (día 1-3)
 
 **Acción:** documentar aprendizajes mientras están frescos.
 
@@ -53,7 +53,7 @@ Presentaste el documento final + cobraste el 50% restante.
 
 ---
 
-### Paso 3 — Crear caso de estudio interno (día 3-7)
+### Paso 3: Crear caso de estudio interno (día 3-7)
 
 **Acción:** crear documento del caso siguiendo estructura de `../05-examples/case-psicologa.md`.
 
@@ -67,7 +67,7 @@ Presentaste el documento final + cobraste el 50% restante.
 
 ---
 
-### Paso 4 — Actualizar el playbook con lessons learned (día 3-7)
+### Paso 4: Actualizar el playbook con lessons learned (día 3-7)
 
 **Acción:** si el proyecto generó nueva información, incorporarla.
 
@@ -83,11 +83,11 @@ Presentaste el documento final + cobraste el 50% restante.
 
 ---
 
-### Paso 5 — Pedir testimonio (día 14-21)
+### Paso 5: Pedir testimonio (día 14-21)
 
 **Acción:** pedir testimonio formal.
 
-**Archivo a abrir:** `../03-process/05-handoff.md` sección "Texto sugerido — Pedido de testimonio".
+**Archivo a abrir:** `../03-process/05-handoff.md` sección "Texto sugerido, Pedido de testimonio".
 
 **Tiempo estimado:** 10 minutos para mandar + esperar respuesta.
 
@@ -101,7 +101,7 @@ Presentaste el documento final + cobraste el 50% restante.
 
 ---
 
-### Paso 6 — Pedir referidos (mismo mensaje del Paso 5)
+### Paso 6: Pedir referidos (mismo mensaje del Paso 5)
 
 **Acción:** en el mismo email/mensaje del testimonio, pedir referidos.
 
@@ -115,7 +115,7 @@ Presentaste el documento final + cobraste el 50% restante.
 
 ---
 
-### Paso 7 — Check-in 30 días
+### Paso 7: Check-in 30 días
 
 **Acción:** mensaje de seguimiento.
 
@@ -131,11 +131,11 @@ Presentaste el documento final + cobraste el 50% restante.
 
 ---
 
-### Paso 8 — Pedir KPIs medidos (día 60-90)
+### Paso 8: Pedir KPIs medidos (día 60-90)
 
 **Acción:** pedir mediciones para incluir en caso de estudio.
 
-**Archivo a abrir:** `../03-process/05-handoff.md` sección "Texto sugerido — Pedido de KPIs".
+**Archivo a abrir:** `../03-process/05-handoff.md` sección "Texto sugerido, Pedido de KPIs".
 
 **Tiempo estimado:** 15 minutos.
 
@@ -149,7 +149,7 @@ Presentaste el documento final + cobraste el 50% restante.
 
 ---
 
-### Paso 9 — Actualizar caso con resultados reales (día 90+)
+### Paso 9: Actualizar caso con resultados reales (día 90+)
 
 **Acción:** una vez que tengas los KPIs reales, actualizar el caso.
 

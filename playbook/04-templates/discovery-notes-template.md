@@ -1,4 +1,4 @@
-# Plantilla — Notas de Discovery Call
+# Plantilla: Notas de Discovery Call
 
 **SSOT** del formato de notas que se generan después de cada discovery call.
 
@@ -9,7 +9,7 @@ Para el proceso de la call, ver `../03-process/01-discovery.md`.
 ## Estructura obligatoria
 
 ```markdown
-# Discovery Call — [Nombre del prospect]
+# Discovery Call: [Nombre del prospect]
 
 **Fecha:** [Fecha]
 **Duración real:** [X minutos]
@@ -28,7 +28,7 @@ Para el proceso de la call, ver `../03-process/01-discovery.md`.
 
 ---
 
-## Pregunta 1 — Contame tu negocio
+## Pregunta 1: Contame tu negocio
 
 [Notas. Frases textuales entre comillas. NO parafrasear todo.]
 
@@ -40,7 +40,7 @@ Para el proceso de la call, ver `../03-process/01-discovery.md`.
 
 ---
 
-## Pregunta 2 — ¿Qué te está costando hoy?
+## Pregunta 2: ¿Qué te está costando hoy?
 
 [Notas. Foco en struggling moments.]
 
@@ -54,7 +54,7 @@ Para el proceso de la call, ver `../03-process/01-discovery.md`.
 
 ---
 
-## Pregunta 3 — ¿Qué pasaría si no se resuelve?
+## Pregunta 3: ¿Qué pasaría si no se resuelve?
 
 [Notas. Foco en push y costo de no actuar.]
 
@@ -66,7 +66,7 @@ Para el proceso de la call, ver `../03-process/01-discovery.md`.
 
 ---
 
-## Pregunta 4 — Si pudieras chasquear los dedos
+## Pregunta 4: Si pudieras chasquear los dedos
 
 [Notas. Foco en transformación y los 3 jobs.]
 
@@ -162,9 +162,9 @@ Ver criterios en `../01-identity/icp.md`.
 
 ## Decisión
 
-- [ ] **Avanzar con propuesta** — fecha de envío: [Fecha]
-- [ ] **Declinar cordialmente** — razón: [Motivo]
-- [ ] **Pedir más información** — qué: [Qué falta]
+- [ ] **Avanzar con propuesta**, fecha de envío: [Fecha]
+- [ ] **Declinar cordialmente**, razón: [Motivo]
+- [ ] **Pedir más información**, qué: [Qué falta]
 
 ---
 
@@ -179,7 +179,7 @@ Ver criterios en `../01-identity/icp.md`.
 
 Cuando recibas notas crudas de una discovery call, generar un documento siguiendo esta plantilla. Reglas:
 
-1. **Estructurar por las 4 preguntas** core.
+1. **Estructurar por las 4 preguntas centrales**.
 2. **Capturar frases textuales** del cliente (entre comillas).
 3. **Calificar contra ICP** siguiendo el sistema de scoring.
 4. **Hipotetizar los 3 jobs** con marcador 🔵.

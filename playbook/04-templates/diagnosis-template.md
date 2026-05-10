@@ -1,4 +1,4 @@
-# Plantilla — Diagnóstico
+# Plantilla: Diagnóstico
 
 **SSOT** de la plantilla de diagnóstico. Toda la entrega de un proyecto sigue esta estructura.
 
@@ -10,7 +10,7 @@ Para un caso completo aplicado, ver `../05-examples/case-psicologa.md`.
 ## Estructura obligatoria
 
 ```markdown
-# Diagnóstico — [Nombre del cliente / proyecto]
+# Diagnóstico: [Nombre del cliente / proyecto]
 
 **Cliente:** [Nombre, profesión, especialidad]
 **Fecha:** [Fecha]
@@ -114,7 +114,7 @@ Para un caso completo aplicado, ver `../05-examples/case-psicologa.md`.
 
 ## 9. Próximos pasos sugeridos
 
-1. [Acción concreta] — [responsable] — [plazo]
+1. [Acción concreta], [responsable], [plazo]
 2. [...]
 
 ---

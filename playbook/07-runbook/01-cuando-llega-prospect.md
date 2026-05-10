@@ -1,4 +1,4 @@
-# Runbook — Cuando llega un prospect
+# Runbook: Cuando llega un prospect
 
 ## Trigger
 
@@ -16,7 +16,7 @@ Una de estas tres cosas:
 
 ## Pasos
 
-### Paso 1 — Investigación rápida del prospect
+### Paso 1: Investigación rápida del prospect
 
 **Acción:** googlearlo, ver su LinkedIn, su Instagram si tiene negocio. Tomar nota de: rubro, antigüedad aparente, tamaño aparente, posicionamiento actual.
 
@@ -31,7 +31,7 @@ Una de estas tres cosas:
 
 ---
 
-### Paso 2 — Calificación preliminar contra ICP
+### Paso 2: Calificación preliminar contra ICP
 
 **Acción:** evaluar al prospect contra los criterios de ICP solo con la información disponible.
 
@@ -43,7 +43,7 @@ Una de estas tres cosas:
 
 ---
 
-### Paso 3 — Decisión: ¿avanzo, califico más, o decline?
+### Paso 3: Decisión: ¿avanzo, califico más, o decline?
 
 **Decisión if/then:**
 
@@ -53,7 +53,7 @@ Una de estas tres cosas:
 
 ---
 
-### Paso 4 — Agendar discovery call
+### Paso 4: Agendar discovery call
 
 **Acción:** mandar mensaje al prospect con dos cosas:
 1. Acuse de recibo + interés genuino.
@@ -69,7 +69,7 @@ Una de estas tres cosas:
 
 ---
 
-### Paso 4-bis — Pre-calificación antes de agendar
+### Paso 4-bis: Pre-calificación antes de agendar
 
 **Acción:** mandar 2-3 preguntas cortas para determinar si vale la pena agendar.
 
@@ -91,19 +91,19 @@ Una de estas tres cosas:
 
 ---
 
-### Paso 5 — Decline cordial
+### Paso 5: Decline cordial
 
 **Acción:** mandar mensaje cordial declinando o derivando.
 
 **Texto sugerido:**
 
-> "Hola [nombre], gracias por escribir. Mirando lo que me contás, creo que no soy la persona ideal para esto en este momento — yo trabajo más con [descripción ICP]. Te recomiendo [alternativa si la tenés] / Si en algún momento la situación cambia, escribime."
+> "Hola [nombre], gracias por escribir. Mirando lo que me contás, creo que no soy la persona ideal para esto en este momento, yo trabajo más con [descripción ICP]. Te recomiendo [alternativa si la tenés] / Si en algún momento la situación cambia, escribime."
 
 **Tiempo estimado:** 5 minutos.
 
 ---
 
-### Paso 6 — Preparar la call
+### Paso 6: Preparar la call
 
 **Si avanzaste con Paso 4 (call agendada):**
 

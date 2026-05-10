@@ -1,4 +1,4 @@
-# Runbook — Cuando estás en research
+# Runbook: Cuando estás en research
 
 ## Trigger
 
@@ -15,7 +15,7 @@ Tenés entrevistas agendadas con clientes finales y/o empleados. Estás en la fa
 
 ## Pasos
 
-### Paso 1 — Antes de cada entrevista (5 min cada una)
+### Paso 1: Antes de cada entrevista (5 min cada una)
 
 **Acción:** prepararte para la entrevista específica.
 
@@ -28,7 +28,7 @@ Tenés entrevistas agendadas con clientes finales y/o empleados. Estás en la fa
 
 ---
 
-### Paso 2 — Conducir la entrevista (45-60 min)
+### Paso 2: Conducir la entrevista (45-60 min)
 
 **Acción:** entrevistar al cliente final o empleado.
 
@@ -49,7 +49,7 @@ Tenés entrevistas agendadas con clientes finales y/o empleados. Estás en la fa
 
 ---
 
-### Paso 3 — Pasar a limpio cada entrevista (30 min cada una)
+### Paso 3: Pasar a limpio cada entrevista (30 min cada una)
 
 **Acción:** dentro de las 4 horas posteriores a la entrevista, estructurar las notas.
 
@@ -65,7 +65,7 @@ Tenés entrevistas agendadas con clientes finales y/o empleados. Estás en la fa
 
 ---
 
-### Paso 4 — Construir service blueprint del servicio actual
+### Paso 4: Construir service blueprint del servicio actual
 
 **Acción:** mapear cómo funciona el servicio hoy.
 
@@ -84,7 +84,7 @@ Tenés entrevistas agendadas con clientes finales y/o empleados. Estás en la fa
 
 ---
 
-### Paso 5 — Identificar pain points
+### Paso 5: Identificar pain points
 
 **Acción:** para cada touchpoint del blueprint, evaluar si hay pain.
 
@@ -107,7 +107,7 @@ Tenés entrevistas agendadas con clientes finales y/o empleados. Estás en la fa
 
 ---
 
-### Paso 6 — Aplicar checklist de Good Services
+### Paso 6: Aplicar checklist de Good Services
 
 **Acción:** chequear el servicio actual contra los 15 principios.
 
@@ -125,7 +125,7 @@ Tenés entrevistas agendadas con clientes finales y/o empleados. Estás en la fa
 
 ---
 
-### Paso 7 — Análisis JTBD consolidado
+### Paso 7: Análisis JTBD consolidado
 
 **Acción:** sintetizar lo aprendido en research sobre los jobs del cliente final.
 
@@ -142,7 +142,7 @@ Tenés entrevistas agendadas con clientes finales y/o empleados. Estás en la fa
 
 ---
 
-### Paso 8 — Reunión de validación con el cliente
+### Paso 8: Reunión de validación con el cliente
 
 **Acción:** reunión de 60 min con el cliente para validar hallazgos.
 
@@ -151,9 +151,9 @@ Tenés entrevistas agendadas con clientes finales y/o empleados. Estás en la fa
 **Agenda:**
 
 1. (5 min) Recap del proceso.
-2. (15 min) Service blueprint actual — ¿refleja la realidad?
-3. (20 min) Pain points identificados — ¿hace sentido?
-4. (15 min) Análisis JTBD — ¿el job dominante captura su realidad?
+2. (15 min) Service blueprint actual, ¿refleja la realidad?
+3. (20 min) Pain points identificados, ¿hace sentido?
+4. (15 min) Análisis JTBD, ¿el job dominante captura su realidad?
 5. (5 min) Próximos pasos.
 
 **Importante:** validar antes de pasar a fase de propuesta de rediseño. Si hay discrepancias grandes, hacer otra ronda de research.

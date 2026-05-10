@@ -1,4 +1,4 @@
-# Runbook — Cuando arranca un proyecto
+# Runbook: Cuando arranca un proyecto
 
 ## Trigger
 
@@ -12,11 +12,11 @@ Reunión de kickoff completada + plan de research definido + entrevistas con cli
 
 ## Pasos
 
-### Paso 1 — Preparación previa al kickoff
+### Paso 1: Preparación previa al kickoff
 
 **Acción:** llegar al kickoff con tarea hecha.
 
-**Archivo a abrir:** `../03-process/04-delivery.md` sección "Fase 1 — Kickoff y research".
+**Archivo a abrir:** `../03-process/04-delivery.md` sección "Fase 1, Kickoff y research".
 
 **Tiempo estimado:** 60-90 minutos.
 
@@ -31,11 +31,11 @@ Reunión de kickoff completada + plan de research definido + entrevistas con cli
 
 ---
 
-### Paso 2 — Reunión de kickoff (60-90 min)
+### Paso 2: Reunión de kickoff (60-90 min)
 
 **Acción:** reunión inicial con el cliente.
 
-**Archivo a abrir:** `../03-process/04-delivery.md` sección "Fase 1 — Kickoff y research".
+**Archivo a abrir:** `../03-process/04-delivery.md` sección "Fase 1, Kickoff y research".
 
 **Agenda sugerida:**
 
@@ -53,7 +53,7 @@ Reunión de kickoff completada + plan de research definido + entrevistas con cli
 
 ---
 
-### Paso 3 — Pasar a limpio las notas del kickoff
+### Paso 3: Pasar a limpio las notas del kickoff
 
 **Acción:** dentro de las 4 horas posteriores, estructurar lo aprendido.
 
@@ -69,7 +69,7 @@ Documento `clientes/[cliente]/01-kickoff-notes.md` con:
 
 ---
 
-### Paso 4 — Coordinar entrevistas con clientes finales
+### Paso 4: Coordinar entrevistas con clientes finales
 
 **Acción:** pedir al cliente los contactos y agendar.
 
@@ -85,7 +85,7 @@ Documento `clientes/[cliente]/01-kickoff-notes.md` con:
 
 ---
 
-### Paso 5 — Preparar guion de entrevistas
+### Paso 5: Preparar guion de entrevistas
 
 **Acción:** adaptar las 5 preguntas JTBD al contexto específico.
 
@@ -105,7 +105,7 @@ Adaptar el lenguaje al servicio específico del cliente.
 
 ---
 
-### Paso 6 — Coordinar entrevistas con empleados (si hay)
+### Paso 6: Coordinar entrevistas con empleados (si hay)
 
 **Acción:** si el cliente tiene equipo, agendar 1-2 sesiones con empleados clave.
 

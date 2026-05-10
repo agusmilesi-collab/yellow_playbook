@@ -1,4 +1,4 @@
-# Runbook — Procedimientos operativos
+# Runbook: Procedimientos operativos
 
 **SSOT** de los pasos concretos a ejecutar en cada situación.
 
@@ -33,7 +33,7 @@ Cuando estás en el momento ("acaba de llegar un prospect, ¿qué hago?"), abrí
 Cada runbook sigue el mismo formato:
 
 ```
-# Runbook — [Situación]
+# Runbook: [Situación]
 
 ## Trigger
 [Qué tiene que pasar para abrir este archivo]
@@ -43,12 +43,12 @@ Cada runbook sigue el mismo formato:
 
 ## Pasos
 
-### Paso 1 — [Nombre]
+### Paso 1: [Nombre]
 **Acción:** [qué hacer]
 **Archivo a abrir:** [link]
 **Tiempo estimado:** [X minutos]
 
-### Paso 2 — [Nombre]
+### Paso 2: [Nombre]
 ...
 
 ## Decisiones (if/then)

@@ -1,4 +1,4 @@
-# Contracts — Modelo de carta acuerdo
+# Contracts: Modelo de carta acuerdo
 
 **SSOT** del modelo de carta acuerdo / contrato simple para los proyectos.
 
@@ -9,7 +9,7 @@ Para proyectos complejos o de alto ticket, evaluar contrato más extenso con ase
 ## Modelo de carta acuerdo (1 página)
 
 ```markdown
-# CARTA ACUERDO — Servicio de UX Strategy
+# CARTA ACUERDO: Servicio de UX Strategy
 
 Entre:
 
@@ -25,7 +25,7 @@ Se acuerda lo siguiente:
 
 ## 1. Objeto
 
-EL CONSULTOR prestará a EL CLIENTE el servicio de **[Modelo A / B / C — descripción según `../01-identity/offer.md`]**, con el objetivo de [breve descripción del proyecto específico].
+EL CONSULTOR prestará a EL CLIENTE el servicio de **[Modelo A / B / C, descripción según `../01-identity/offer.md`]**, con el objetivo de [breve descripción del proyecto específico].
 
 ## 2. Entregables
 
