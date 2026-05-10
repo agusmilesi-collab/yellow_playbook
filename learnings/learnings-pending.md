@@ -33,4 +33,16 @@ Correlativa, sin reuso. Aunque un item se elimine al consolidarse, su número qu
 
 ## Entries vivos
 
-(Vacío. Los entries se van apendiendo al cerrar cada caso.)
+### LRN-001 | 2026-05-10 | caso:meta | tipo:gap
+
+**Descripción:** la metodología llega hasta diagnóstico + propuesta de rediseño + plan de implementación, y se detiene ahí. Falta una capa de autonomía operativa: cómo el cliente replica el entregable en cada nuevo caso (la psicóloga, en su caso #6, sin volver a contratar al consultor). Hoy el cliente queda dependiente del consultor o de la IA del consultor para producir cada nueva instancia.
+
+**Implicancia para el playbook:** introducir el concepto de "Kit de replicación" como entregable adicional al cierre de cada proyecto. Tres piezas mínimas: (a) plantilla del entregable con placeholders, (b) prompt operativo afinado para Claude o ChatGPT que tome notas crudas del cliente y genere la instancia, (c) manual corto de uso con un caso resuelto como ejemplo. Cuarto componente opcional: sesión de transferencia de 1-2 horas. Tres lugares del repo a tocar:
+
+1. `playbook/02-methodology/`: incorporar "autonomía replicable" como principio o subprincipio (la metodología cierra cuando el cliente puede operar solo, no cuando el consultor entrega el plan).
+2. `playbook/04-templates/diagnosis-template.md`: agregar sección "Kit de replicación" después de la propuesta de rediseño.
+3. `playbook/04-templates/proposal-template.md`: incluir el kit en "Lo que te propongo" como entregable explícito desde la propuesta.
+
+Variantes según cliente: cliente solo (plantilla + prompt + manual), cliente con equipo administrativo (plantilla + protocolo paso a paso, IA opcional), cliente que delega a proveedor externo (especificación técnica del entregable en lugar de plantilla terminada).
+
+**Status:** pendiente
