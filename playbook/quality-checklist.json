@@ -1,0 +1,85 @@
+{
+  "version": "0.1",
+  "scope": "Aplicable a cualquier output que la IA entregue desde este repo: diagnóstico, propuesta, plan, comunicación al cliente.",
+  "self-evaluation-protocol": "Antes de entregar cualquier output al owner, recorrer cada check. Marcar pass/fail. Si hay fail, reescribir antes de presentar.",
+  "checks": [
+    {
+      "id": "honesty-icons",
+      "category": "metodologia",
+      "rule": "Cada afirmación material lleva exactamente uno de: ✅ verificado / 🔵 hipótesis / ❓ gap.",
+      "source": "playbook/00-start-here/principles.md#P3"
+    },
+    {
+      "id": "no-fabrication",
+      "category": "metodologia",
+      "rule": "Información ausente del cliente se marca con ❓. Está prohibido inferir como si fuera dato.",
+      "source": "playbook/00-start-here/principles.md#P3"
+    },
+    {
+      "id": "ssot",
+      "category": "estructura",
+      "rule": "Ningún concepto se duplica entre archivos. Si aparece en otro lado, se linkea al SSOT.",
+      "source": "playbook/00-start-here/principles.md#P10 + playbook/INDEX.md"
+    },
+    {
+      "id": "vocabulary-controlled",
+      "category": "lenguaje",
+      "rule": "Términos técnicos provienen del glossary. Términos prohibidos no aparecen.",
+      "source": "playbook/02-methodology/glossary.md"
+    },
+    {
+      "id": "depth-reference",
+      "category": "estructura",
+      "rule": "El caso de la psicóloga es el espejo de profundidad esperada para diagnósticos.",
+      "source": "playbook/05-examples/case-psicologa.md"
+    },
+    {
+      "id": "diagnostic-length",
+      "category": "estructura",
+      "rule": "Diagnóstico no excede 25 páginas equivalentes.",
+      "source": "playbook/00-start-here/principles.md#P4"
+    },
+    {
+      "id": "proposal-length",
+      "category": "estructura",
+      "rule": "Propuesta no excede 2 páginas equivalentes.",
+      "source": "playbook/00-start-here/principles.md#P4"
+    },
+    {
+      "id": "diagnostic-structure",
+      "category": "estructura",
+      "rule": "El diagnóstico cubre las 10 secciones de la plantilla, sin saltarse ninguna.",
+      "source": "playbook/04-templates/diagnosis-template.md"
+    },
+    {
+      "id": "kpis-measurable",
+      "category": "metodologia",
+      "rule": "Hipótesis de impacto incluye al menos 3 KPIs medibles (números, no descripciones cualitativas).",
+      "source": "playbook/00-start-here/principles.md#P6"
+    },
+    {
+      "id": "central-diagnosis-sharp",
+      "category": "metodologia",
+      "rule": "El diagnóstico central es punzante (3-5 líneas). Apunta a causa, no a síntoma.",
+      "source": "playbook/08-training/semana-3-diagnostico.md día 6"
+    },
+    {
+      "id": "intervention-pain-link",
+      "category": "logica",
+      "rule": "Cada intervención propuesta se conecta explícitamente a un pain point identificado.",
+      "source": "playbook/08-training/semana-3-diagnostico.md día 3"
+    },
+    {
+      "id": "p1-no-core-change",
+      "category": "principios",
+      "rule": "Las propuestas no modifican el oficio del profesional. Solo cómo se entrega.",
+      "source": "playbook/00-start-here/principles.md#P1"
+    },
+    {
+      "id": "copy-affirmative",
+      "category": "lenguaje",
+      "rule": "Copy en afirmativo. Está prohibido el recurso retórico 'no es X, es Y'.",
+      "source": "memoria persistente del owner — feedback explícito"
+    }
+  ]
+}
