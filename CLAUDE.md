@@ -43,6 +43,24 @@ Antes de entregar cualquier output al owner (diagnóstico, propuesta, plan, comu
 
 Nunca inventar información del cliente. Falta de info → ❓. Inferencia → 🔵. Confirmado por el cliente → ✅.
 
+### R6 — Recordar consolidación al cerrar sesión
+
+Al detectar señales claras de cierre de sesión del owner (mensajes tipo *"listo"*, *"gracias por esto"*, *"nos vemos"*, *"perfecto, ahí queda"*, *"es todo por hoy"*), si `learnings/learnings-pending.md` tiene entries vivos sin consolidar, preguntar UNA vez:
+
+> "¿Querés que ejecutemos el prompt de consolidación antes de cerrar?"
+
+Si la respuesta es afirmativa, ejecutar `learnings/CONSOLIDATION-PROMPT.md`. Si es negativa, manejar según el tipo de "no":
+
+- **Diferido** (*"no, después"*, *"más tarde"*, *"cuando terminemos"*, *"ahora no, después sí"*) → registrar como snooze. Volver a preguntar al próximo cierre detectado en la misma sesión.
+- **Descartado** (*"no, hoy no"*, *"dejá para otra sesión"*, *"no quiero ahora"*, *"mañana"*) → no volver a preguntar en esta sesión.
+- **Ambiguo** → asumir diferido. Preferir preguntar una vez más a perder un learning.
+
+**Cuándo NO preguntar:**
+
+- Si `learnings-pending.md` está vacío.
+- Si la señal de cierre aparece en medio de un trabajo activo (*"gracias por esto, ahora hagamos lo siguiente"* es continuación, no cierre). Distinguir el contexto.
+- Si la consolidación ya fue descartada en esta sesión.
+
 ## Cómo arrancar un caso nuevo
 
 1. Crear `cases/<slug-cliente>/` con los 4 archivos vacíos. Convención de slug: `<oficio>-<ciudad>` o `<apellido>-<oficio>`, lowercase y kebab-case.
