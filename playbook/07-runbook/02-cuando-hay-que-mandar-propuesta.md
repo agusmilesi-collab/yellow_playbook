@@ -16,7 +16,7 @@ Propuesta enviada al prospect con plazo claro de respuesta.
 
 **Acción:** dentro de las 2 horas posteriores a la call, estructurar las notas.
 
-**Archivo a abrir:** `04-templates/discovery-notes-template.md`.
+**Archivo a abrir:** `../04-templates/discovery-notes-template.md`.
 
 **Tiempo estimado:** 30 minutos.
 
@@ -28,7 +28,7 @@ Propuesta enviada al prospect con plazo claro de respuesta.
 
 **Acción:** ahora con la información completa de la call, recalcular el score contra ICP.
 
-**Archivo a abrir:** `01-identity/icp.md`.
+**Archivo a abrir:** `../01-identity/icp.md`.
 
 **Tiempo estimado:** 10 minutos.
 
@@ -43,7 +43,7 @@ Propuesta enviada al prospect con plazo claro de respuesta.
 
 **Acción:** completar la sección "Hipótesis preliminares" del template de notas.
 
-**Archivo a abrir:** `02-methodology/jtbd.md` para guía conceptual.
+**Archivo a abrir:** `../02-methodology/jtbd.md` para guía conceptual.
 
 **Tiempo estimado:** 20 minutos.
 
@@ -60,7 +60,7 @@ Marcar todo con 🔵 (hipótesis) hasta validar con el cliente.
 
 **Acción:** elegir A, B o C según las señales de la call.
 
-**Archivo a abrir:** `01-identity/offer.md` (descripción) + `06-operations/pricing.md` (precios).
+**Archivo a abrir:** `../01-identity/offer.md` (descripción) + `../06-operations/pricing.md` (precios).
 
 **Tiempo estimado:** 10 minutos.
 
@@ -78,14 +78,14 @@ Marcar todo con 🔵 (hipótesis) hasta validar con el cliente.
 
 **Acción:** escribir la propuesta siguiendo la plantilla.
 
-**Archivo a abrir:** `04-templates/proposal-template.md`.
+**Archivo a abrir:** `../04-templates/proposal-template.md`.
 
 **Tiempo estimado:** 60-90 minutos.
 
 **Importante:**
 - Sección 1 ("Lo que escuché"): usar las frases textuales del prospect.
 - Sección 2 ("Lo que creo que está pasando"): la causa raíz, no los síntomas. Punzante.
-- Sección 4 ("Inversión"): pricing exacto desde `06-operations/pricing.md`.
+- Sección 4 ("Inversión"): pricing exacto desde `../06-operations/pricing.md`.
 - Largo total: 1-2 páginas.
 
 ---
@@ -98,7 +98,7 @@ Marcar todo con 🔵 (hipótesis) hasta validar con el cliente.
 
 - [ ] La sección 1 usa palabras textuales del prospect, no parafraseadas.
 - [ ] La sección 2 es corta (5-7 líneas) y nombra causa raíz.
-- [ ] El pricing es el correcto según `06-operations/pricing.md`.
+- [ ] El pricing es el correcto según `../06-operations/pricing.md`.
 - [ ] Hay UNA opción de modelo, no 3.
 - [ ] El plazo de inicio es realista.
 - [ ] Hay un próximo paso claro al final.
@@ -128,7 +128,7 @@ Marcar todo con 🔵 (hipótesis) hasta validar con el cliente.
 
 **Tiempo estimado:** 5 minutos.
 
-**Esquema (de `03-process/03-closing.md`):**
+**Esquema (de `../03-process/03-closing.md`):**
 
 - Día 5 sin respuesta: follow-up corto.
 - Día 10 sin respuesta: follow-up final.
@@ -167,7 +167,7 @@ Te tienta poner una frase "más ordenada" en lugar de la frase real. No lo hagas
 
 Te entra el miedo y bajás el precio. O lo subís porque "este parece pagar más".
 
-**Salida:** pricing siempre desde `06-operations/pricing.md`. Sin variantes.
+**Salida:** pricing siempre desde `../06-operations/pricing.md`. Sin variantes.
 
 ### Mandar 3 opciones para "que el cliente elija"
 

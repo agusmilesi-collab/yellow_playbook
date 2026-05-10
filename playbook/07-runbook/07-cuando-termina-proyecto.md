@@ -6,7 +6,7 @@ Presentaste el documento final + cobraste el 50% restante.
 
 ## Output esperado
 
-- Caso documentado en `05-examples/`.
+- Caso documentado en `../05-examples/`.
 - Lessons learned capturadas.
 - Testimonio solicitado y recibido (en algunos casos).
 - Referidos pedidos.
@@ -55,13 +55,13 @@ Presentaste el documento final + cobraste el 50% restante.
 
 ### Paso 3 — Crear caso de estudio interno (día 3-7)
 
-**Acción:** crear documento del caso siguiendo estructura de `05-examples/case-psicologa.md`.
+**Acción:** crear documento del caso siguiendo estructura de `../05-examples/case-psicologa.md`.
 
-**Archivo a abrir:** `05-examples/case-psicologa.md` como referencia.
+**Archivo a abrir:** `../05-examples/case-psicologa.md` como referencia.
 
 **Tiempo estimado:** 2-3 horas.
 
-**Crear:** `05-examples/case-[nombrecliente].md`
+**Crear:** `../05-examples/case-[nombrecliente].md`
 
 **Importante:** anonimizar si el cliente no autorizó uso público todavía. Lo escribís igual para uso interno.
 
@@ -75,10 +75,10 @@ Presentaste el documento final + cobraste el 50% restante.
 
 **Decisión if/then:**
 
-- **Generó una herramienta nueva** → agregar a `04-templates/`.
-- **Generó un patrón de pain point recurrente** → documentar en `02-methodology/`.
-- **Generó una nueva forma de pricing** → actualizar `06-operations/pricing.md`.
-- **Generó un nuevo tipo de cliente** → actualizar `01-identity/icp.md`.
+- **Generó una herramienta nueva** → agregar a `../04-templates/`.
+- **Generó un patrón de pain point recurrente** → documentar en `../02-methodology/`.
+- **Generó una nueva forma de pricing** → actualizar `../06-operations/pricing.md`.
+- **Generó un nuevo tipo de cliente** → actualizar `../01-identity/icp.md`.
 - **Generó un nuevo error común** → actualizar el runbook correspondiente.
 
 ---
@@ -87,7 +87,7 @@ Presentaste el documento final + cobraste el 50% restante.
 
 **Acción:** pedir testimonio formal.
 
-**Archivo a abrir:** `03-process/05-handoff.md` sección "Texto sugerido — Pedido de testimonio".
+**Archivo a abrir:** `../03-process/05-handoff.md` sección "Texto sugerido — Pedido de testimonio".
 
 **Tiempo estimado:** 10 minutos para mandar + esperar respuesta.
 
@@ -135,7 +135,7 @@ Presentaste el documento final + cobraste el 50% restante.
 
 **Acción:** pedir mediciones para incluir en caso de estudio.
 
-**Archivo a abrir:** `03-process/05-handoff.md` sección "Texto sugerido — Pedido de KPIs".
+**Archivo a abrir:** `../03-process/05-handoff.md` sección "Texto sugerido — Pedido de KPIs".
 
 **Tiempo estimado:** 15 minutos.
 

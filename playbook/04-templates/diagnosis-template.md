@@ -2,8 +2,8 @@
 
 **SSOT** de la plantilla de diagnóstico. Toda la entrega de un proyecto sigue esta estructura.
 
-Para el proceso de cómo se construye el diagnóstico, ver `03-process/04-delivery.md`.
-Para un caso completo aplicado, ver `05-examples/case-psicologa.md`.
+Para el proceso de cómo se construye el diagnóstico, ver `../03-process/04-delivery.md`.
+Para un caso completo aplicado, ver `../05-examples/case-psicologa.md`.
 
 ---
 
@@ -137,13 +137,13 @@ Para un caso completo aplicado, ver `05-examples/case-psicologa.md`.
 
 ### Lenguaje
 
-- Vocabulario del `02-methodology/glossary.md`.
+- Vocabulario del `../02-methodology/glossary.md`.
 - Evitar buzzwords vacíos.
 - Cada término técnico aporta precisión, no decoración.
 
 ### Honestidad metodológica
 
-Marcar explícitamente cada afirmación según `02-methodology/glossary.md`:
+Marcar explícitamente cada afirmación según `../02-methodology/glossary.md`:
 
 - ✅ **Verificado:** información que el cliente confirmó.
 - 🔵 **Hipótesis:** lo que el consultor infirió pero falta validar.
@@ -163,9 +163,9 @@ Cuando generes un borrador siguiendo esta plantilla:
 
 1. **No inventes datos del cliente.** Si la información no está en las notas, marcalo como gap.
 2. **Diferenciá hipótesis de hechos.** Usá los íconos ✅ 🔵 ❓.
-3. **Aplicá los frameworks** de `02-methodology/`, no opinión.
+3. **Aplicá los frameworks** de `../02-methodology/`, no opinión.
 4. **Usá el vocabulario exacto** del glossary, no sinónimos.
-5. **Mantené la profundidad** de referencia de `05-examples/case-psicologa.md`.
+5. **Mantené la profundidad** de referencia de `../05-examples/case-psicologa.md`.
 6. **No sobreescribas.** Si una sección no aplica al caso, dejala vacía con "No aplica" en lugar de inventar contenido.
 7. **Sugerí preguntas de seguimiento** al final para que Agustin pueda profundizar con el cliente en próxima sesión.
 

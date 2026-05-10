@@ -56,7 +56,7 @@ Los tres jobs simultáneos:
 - **Emotional:** dejar de sentir frustración por estar subvalorado.
 - **Social:** ser percibido como referente, no como uno más del montón.
 
-Mi propuesta debe cumplir los tres jobs simultáneamente. Para entender el framework completo, ver `02-methodology/jtbd.md`.
+Mi propuesta debe cumplir los tres jobs simultáneamente. Para entender el framework completo, ver `../02-methodology/jtbd.md`.
 
 ---
 
@@ -107,7 +107,7 @@ Antes de aceptar una discovery call (o durante ella), puntuar 1-5 en cada dimens
 - **14-19 puntos →** buen fit, avanzar pero sin sobreinvertir.
 - **<14 puntos →** declinar cordialmente o derivar.
 
-Para el procedimiento de calificación durante discovery call, ver `03-process/01-discovery.md`.
+Para el procedimiento de calificación durante discovery call, ver `../03-process/01-discovery.md`.
 
 ---
 

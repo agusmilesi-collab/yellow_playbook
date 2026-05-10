@@ -8,7 +8,7 @@ Objetivo: dominar conceptualmente Service Design y JTBD. Al final de la semana, 
 
 ## Día 1 — Service Design: el cambio de sujeto
 
-**Lectura:** `02-methodology/service-design.md` desde el inicio hasta P3 (incluido).
+**Lectura:** `../02-methodology/service-design.md` desde el inicio hasta P3 (incluido).
 
 **Concepto clave:** un servicio NO es lo que hacés. Es lo que el cliente vive.
 
@@ -27,7 +27,7 @@ Compará las dos descripciones. Tienen que ser distintas. La primera está orien
 
 ## Día 2 — Frontstage y Backstage
 
-**Lectura:** `02-methodology/service-design.md` sección P2 + P3 detallada.
+**Lectura:** `../02-methodology/service-design.md` sección P2 + P3 detallada.
 
 **Concepto clave:** todo servicio tiene dos lados. El cliente solo ve el frontstage. El backstage es lo que pasa atrás. Cambiar uno sin chequear el otro rompe el servicio.
 
@@ -49,7 +49,7 @@ Llená la tabla con al menos 5 momentos del journey de ese servicio.
 
 ## Día 3 — Touchpoints y Customer Journey
 
-**Lectura:** `02-methodology/service-design.md` secciones P4 y P7.
+**Lectura:** `../02-methodology/service-design.md` secciones P4 y P7.
 
 **Concepto clave:** la mayoría de los servicios pierden valor en los touchpoints chicos que nadie mira. El profesional cuida la sesión central pero no cuida el email de confirmación.
 
@@ -69,7 +69,7 @@ Para cada uno, marcá:
 
 ## Día 4 — Jobs to be Done: el milkshake
 
-**Lectura:** `02-methodology/jtbd.md` desde el inicio hasta "Los 3 tipos de jobs" (incluido).
+**Lectura:** `../02-methodology/jtbd.md` desde el inicio hasta "Los 3 tipos de jobs" (incluido).
 
 **Concepto clave:** la gente no compra productos. Contrata productos para hacer un trabajo. Tu competencia no es tu categoría. Es cualquier cosa que cumpla el mismo job.
 
@@ -89,7 +89,7 @@ Pensá en algo que vos compraste recientemente (un producto, un servicio, una su
 
 ## Día 5 — Las 4 Forces of Progress
 
-**Lectura:** `02-methodology/jtbd.md` sección "Las 4 Forces of Progress (Klement)".
+**Lectura:** `../02-methodology/jtbd.md` sección "Las 4 Forces of Progress (Klement)".
 
 **Concepto clave:** para que alguien cambie, push + pull > anxiety + habit. Saber esto cambia cómo se vende.
 
@@ -110,7 +110,7 @@ Pensá: ¿cuál de las 4 fuerzas es la más fuerte en tu caso?
 
 ## Día 6 — Las 5 preguntas JTBD en práctica
 
-**Lectura:** `02-methodology/jtbd.md` sección "Las 5 preguntas para descubrir jobs en una entrevista".
+**Lectura:** `../02-methodology/jtbd.md` sección "Las 5 preguntas para descubrir jobs en una entrevista".
 
 **Concepto clave:** las preguntas correctas son las que te permiten descubrir el job real, no las que te confirman lo que ya pensabas.
 

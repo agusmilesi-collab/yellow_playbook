@@ -2,8 +2,8 @@
 
 **SSOT** de la plantilla de propuesta. Todas las propuestas siguen esta estructura.
 
-Para el proceso, ver `03-process/02-proposal.md`.
-Para pricing exacto, ver `06-operations/pricing.md`.
+Para el proceso, ver `../03-process/02-proposal.md`.
+Para pricing exacto, ver `../06-operations/pricing.md`.
 
 ---
 
@@ -111,7 +111,7 @@ Si no es el momento, también está bien. Avisame y quedamos en contacto para m�
 
 ## Reglas de uso
 
-Para reglas detalladas de aplicación, ver `03-process/02-proposal.md`.
+Para reglas detalladas de aplicación, ver `../03-process/02-proposal.md`.
 
 Resumen de lo crítico:
 
@@ -121,7 +121,7 @@ Resumen de lo crítico:
 - NO ofrecer 3 opciones. Una sola, la que mejor calza.
 - NO bajar precio en primera ronda.
 - Anclar valor antes de precio.
-- Pricing siempre desde `06-operations/pricing.md`.
+- Pricing siempre desde `../06-operations/pricing.md`.
 
 ---
 

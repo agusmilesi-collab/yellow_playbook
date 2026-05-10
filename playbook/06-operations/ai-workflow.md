@@ -21,8 +21,8 @@ La IA es un **asistente**, no un reemplazo. Acelera la entrega y mantiene consis
 A partir de inputs estructurados, generar primer borrador de:
 
 - Notas estructuradas de discovery call (a partir de notas crudas).
-- Diagnóstico siguiendo `04-templates/diagnosis-template.md`.
-- Propuesta siguiendo `04-templates/proposal-template.md`.
+- Diagnóstico siguiendo `../04-templates/diagnosis-template.md`.
+- Propuesta siguiendo `../04-templates/proposal-template.md`.
 - Email de cierre, follow-up, pedido de testimonio, pedido de referidos.
 - Service blueprint inicial a partir de notas de research.
 - Análisis JTBD a partir de entrevistas a clientes finales.
@@ -31,16 +31,16 @@ A partir de inputs estructurados, generar primer borrador de:
 
 Aplicar de manera consistente:
 
-- Los 10 principios de Service Design (`02-methodology/service-design.md`).
-- El framework JTBD (`02-methodology/jtbd.md`).
-- El vocabulario técnico (`02-methodology/glossary.md`).
-- Los principios no-negociables (`00-start-here/principles.md`).
+- Los 10 principios de Service Design (`../02-methodology/service-design.md`).
+- El framework JTBD (`../02-methodology/jtbd.md`).
+- El vocabulario técnico (`../02-methodology/glossary.md`).
+- Los principios no-negociables (`../00-start-here/principles.md`).
 
 ### Mantenimiento de consistencia
 
 - Mismo tono y vocabulario en todos los entregables.
 - Misma estructura en diagnósticos.
-- Misma profundidad esperada (referencia: `05-examples/case-psicologa.md`).
+- Misma profundidad esperada (referencia: `../05-examples/case-psicologa.md`).
 
 ### Identificación de gaps
 
@@ -107,20 +107,20 @@ REGLAS NO-NEGOCIABLES:
 FLUJO TÍPICO:
 
 Cuando Agustin te pase notas crudas de una discovery call:
-- Estructurar siguiendo 04-templates/discovery-notes-template.md.
+- Estructurar siguiendo ../04-templates/discovery-notes-template.md.
 - Calificar prospect contra ICP.
 - Hipotetizar los 3 jobs y struggling moment.
 - Marcar gaps de información.
 
 Cuando Agustin te pida generar diagnóstico:
-- Seguir 04-templates/diagnosis-template.md.
-- Aplicar frameworks de 02-methodology/.
-- Mantener profundidad de 05-examples/case-psicologa.md.
+- Seguir ../04-templates/diagnosis-template.md.
+- Aplicar frameworks de ../02-methodology/.
+- Mantener profundidad de ../05-examples/case-psicologa.md.
 - Marcar todo con íconos de honestidad metodológica.
 
 Cuando Agustin te pida generar propuesta:
-- Seguir 04-templates/proposal-template.md.
-- Pricing exacto desde 06-operations/pricing.md.
+- Seguir ../04-templates/proposal-template.md.
+- Pricing exacto desde ../06-operations/pricing.md.
 - Devolver palabras del cliente sin parafrasear.
 - Una sola opción de modelo, no tres.
 ```

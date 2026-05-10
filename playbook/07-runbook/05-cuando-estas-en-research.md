@@ -32,7 +32,7 @@ Tenés entrevistas agendadas con clientes finales y/o empleados. Estás en la fa
 
 **Acción:** entrevistar al cliente final o empleado.
 
-**Archivo a abrir:** `02-methodology/jtbd.md` sección "5 preguntas para descubrir jobs".
+**Archivo a abrir:** `../02-methodology/jtbd.md` sección "5 preguntas para descubrir jobs".
 
 **Estructura sugerida:**
 
@@ -69,7 +69,7 @@ Tenés entrevistas agendadas con clientes finales y/o empleados. Estás en la fa
 
 **Acción:** mapear cómo funciona el servicio hoy.
 
-**Archivo a abrir:** `02-methodology/service-design.md` sección "P3. El service blueprint es el plano del servicio".
+**Archivo a abrir:** `../02-methodology/service-design.md` sección "P3. El service blueprint es el plano del servicio".
 
 **Tiempo estimado:** 4-6 horas.
 
@@ -88,7 +88,7 @@ Tenés entrevistas agendadas con clientes finales y/o empleados. Estás en la fa
 
 **Acción:** para cada touchpoint del blueprint, evaluar si hay pain.
 
-**Archivo a abrir:** `02-methodology/service-design.md` sección "P10. La calidad se define por la peor parte".
+**Archivo a abrir:** `../02-methodology/service-design.md` sección "P10. La calidad se define por la peor parte".
 
 **Tiempo estimado:** 2-3 horas.
 
@@ -111,7 +111,7 @@ Tenés entrevistas agendadas con clientes finales y/o empleados. Estás en la fa
 
 **Acción:** chequear el servicio actual contra los 15 principios.
 
-**Archivo a abrir:** `02-methodology/good-services.md`.
+**Archivo a abrir:** `../02-methodology/good-services.md`.
 
 **Tiempo estimado:** 1-2 horas.
 
@@ -129,7 +129,7 @@ Tenés entrevistas agendadas con clientes finales y/o empleados. Estás en la fa
 
 **Acción:** sintetizar lo aprendido en research sobre los jobs del cliente final.
 
-**Archivo a abrir:** `02-methodology/jtbd.md`.
+**Archivo a abrir:** `../02-methodology/jtbd.md`.
 
 **Tiempo estimado:** 2-3 horas.
 

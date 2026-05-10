@@ -28,7 +28,7 @@ Lo que pasa atrás para que el frontstage funcione. Invisible al cliente.
 Metodología de rediseño que incluye al cliente final en sesiones de diseño junto al consultor y al dueño del negocio.
 
 ### Service redesign without core change
-Filosofía: rediseñar la experiencia sin tocar el oficio del profesional. Lo que cambia es cómo se entrega, no qué se entrega. Es nuestro principio P1 (`00-start-here/principles.md`).
+Filosofía: rediseñar la experiencia sin tocar el oficio del profesional. Lo que cambia es cómo se entrega, no qué se entrega. Es nuestro principio P1 (`../00-start-here/principles.md`).
 
 ---
 
@@ -116,7 +116,7 @@ Estos íconos se usan en diagnósticos y propuestas para distinguir niveles de c
 | 🔵 | **Hipótesis** | Inferido por el consultor, falta validar |
 | ❓ | **Gap** | Información que aún no se sabe |
 
-**Regla:** ningún diagnóstico se entrega sin estos íconos aplicados. Es principio P3 (`00-start-here/principles.md`).
+**Regla:** ningún diagnóstico se entrega sin estos íconos aplicados. Es principio P3 (`../00-start-here/principles.md`).
 
 ---
 

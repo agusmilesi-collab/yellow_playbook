@@ -83,7 +83,7 @@ Cualquier cosa nueva que aprendamos en un proyecto se incorpora al playbook. El 
 
 ## P10. Acción separada de conocimiento
 
-Este playbook documenta know-how y procedimiento. Las cosas a hacer (campaña de venta, próximo cliente, próxima entrega) viven en `00-start-here/roadmap.md`, no en los archivos del playbook.
+Este playbook documenta know-how y procedimiento. Las cosas a hacer (campaña de venta, próximo cliente, próxima entrega) viven en `../00-start-here/roadmap.md`, no en los archivos del playbook.
 
 **En operación:** si encontrás algo "para hacer" dentro de un archivo del playbook, está mal ubicado. Pertenece al roadmap.
 

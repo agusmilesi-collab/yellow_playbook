@@ -2,7 +2,7 @@
 
 **SSOT** del formato de notas que se generan después de cada discovery call.
 
-Para el proceso de la call, ver `03-process/01-discovery.md`.
+Para el proceso de la call, ver `../03-process/01-discovery.md`.
 
 ---
 
@@ -101,7 +101,7 @@ Para el proceso de la call, ver `03-process/01-discovery.md`.
 
 ## Calificación contra ICP
 
-Ver criterios en `01-identity/icp.md`.
+Ver criterios en `../01-identity/icp.md`.
 
 | Dimensión | Score (1-5) | Notas |
 |---|---|---|
@@ -121,7 +121,7 @@ Ver criterios en `01-identity/icp.md`.
 
 ## Red flags detectadas
 
-[Marcar las que aparecieron, si alguna. Ver `01-identity/icp.md`.]
+[Marcar las que aparecieron, si alguna. Ver `../01-identity/icp.md`.]
 
 - [ ] Preguntó precio antes que problema
 - [ ] Quiere "más clientes" / marketing

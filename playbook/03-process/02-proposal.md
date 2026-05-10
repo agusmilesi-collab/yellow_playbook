@@ -31,14 +31,14 @@ Convertir las notas de la discovery call en una propuesta concreta que cierre ve
 
 ## Estructura de la propuesta
 
-Para la plantilla técnica completa, ver `04-templates/proposal-template.md`.
+Para la plantilla técnica completa, ver `../04-templates/proposal-template.md`.
 
 Las secciones obligatorias son:
 
 1. **Lo que escuché** — devolución del problema en sus palabras.
 2. **Lo que creo que está pasando** — diagnóstico breve (causa raíz, no síntomas).
 3. **Lo que te propongo** — servicio recomendado con entregables, fases y exclusiones.
-4. **Inversión y plazos** — precio (de `06-operations/pricing.md`), forma de pago, fecha de inicio.
+4. **Inversión y plazos** — precio (de `../06-operations/pricing.md`), forma de pago, fecha de inicio.
 5. **Por qué ahora y por qué yo** — 1 párrafo corto de cierre.
 6. **Próximo paso** — cómo confirmar.
 
@@ -49,7 +49,7 @@ Las secciones obligatorias son:
 - 1-2 páginas. Si excede 2, está sobreescrita.
 - PDF o link a doc compartido.
 - Sin decoración visual excesiva.
-- Identidad visual sobria (ver `06-operations/visual-identity.md`).
+- Identidad visual sobria (ver `../06-operations/visual-identity.md`).
 
 ---
 
@@ -67,7 +67,7 @@ Saltar a **Modelo C** (3-4 meses) solo si:
 - El rediseño es complejo (multi-touchpoint, multi-stakeholder).
 - Cliente con capacidad de pago holgada y poco tiempo personal.
 
-Para detalle de modelos ver `01-identity/offer.md`.
+Para detalle de modelos ver `../01-identity/offer.md`.
 
 ---
 
@@ -83,7 +83,7 @@ Para detalle de modelos ver `01-identity/offer.md`.
 
 ## Cómo aplicar las 4 fuerzas (push/pull/anxiety/habit)
 
-Para entender el framework, ver `02-methodology/jtbd.md`.
+Para entender el framework, ver `../02-methodology/jtbd.md`.
 
 Aplicación al messaging de la propuesta:
 
@@ -131,7 +131,7 @@ Cuando generes un borrador de propuesta:
 1. **Devolver las palabras del cliente** en sección 1, no parafraseado.
 2. **El diagnóstico de sección 2 debe ser corto y punzante.** Más de 5-7 líneas está mal.
 3. **No usar palabras del cliente que no aparezcan en las notas.** Inventar lo que dijo es muerte instantánea.
-4. **Pricing exacto** desde `06-operations/pricing.md`. Nunca inventar.
+4. **Pricing exacto** desde `../06-operations/pricing.md`. Nunca inventar.
 5. **Plazos realistas.** No prometer plazos imposibles.
 6. **Lenguaje del glossary,** no buzzwords.
 7. **Tono argentino, directo.** "Dale", "te propongo", "si esto te hace sentido".
@@ -141,7 +141,7 @@ Cuando generes un borrador de propuesta:
 
 ## Siguiente paso del proceso
 
-Ver `03-process/03-closing.md`.
+Ver `../03-process/03-closing.md`.
 
 ---
 

@@ -34,7 +34,7 @@
 | **Claude Projects** | Asistente con playbook cargado | Por configurar (prioridad alta) |
 | **ChatGPT** | Backup / segunda opinión | Activo |
 
-Para detalle de uso de IA, ver `06-operations/ai-workflow.md`.
+Para detalle de uso de IA, ver `../06-operations/ai-workflow.md`.
 
 ---
 

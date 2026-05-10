@@ -48,8 +48,8 @@
 
 ## Modelos de servicio
 
-Para pricing exacto, ver `06-operations/pricing.md`.
-Para proceso de venta y entrega, ver `03-process/`.
+Para pricing exacto, ver `../06-operations/pricing.md`.
+Para proceso de venta y entrega, ver `../03-process/`.
 
 ### Modelo A — Sesión estratégica única
 
@@ -84,7 +84,7 @@ Saltar a A solo si el cliente expresa duda o riesgo. Saltar a C solo si pide aco
 
 ## Tono y vocabulario
 
-Para reglas detalladas de comunicación, ver `02-methodology/glossary.md`.
+Para reglas detalladas de comunicación, ver `../02-methodology/glossary.md`.
 
 **Reglas básicas:**
 
@@ -107,7 +107,7 @@ Para evitar confusión del cliente y para calificar bien:
 - ❌ Coaching personal o consultoría general de negocio.
 - ❌ Eventos (eso es TMP, separado).
 
-Si un prospect pide alguna de estas cosas, derivamos o declinamos. Ver `01-identity/icp.md` para señales de mal fit.
+Si un prospect pide alguna de estas cosas, derivamos o declinamos. Ver `../01-identity/icp.md` para señales de mal fit.
 
 ---
 

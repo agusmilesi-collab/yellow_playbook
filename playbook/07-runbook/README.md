@@ -6,9 +6,9 @@
 
 ## Diferencia con el resto del playbook
 
-- **`02-methodology/`** te dice **qué** son las cosas (Service Design, JTBD, Good Services).
-- **`03-process/`** te dice **cómo** funciona cada fase (qué pasa en discovery, en propuesta, en delivery).
-- **`07-runbook/`** te dice **paso a paso qué hacer cuando pasa algo concreto.**
+- **`../02-methodology/`** te dice **qué** son las cosas (Service Design, JTBD, Good Services).
+- **`../03-process/`** te dice **cómo** funciona cada fase (qué pasa en discovery, en propuesta, en delivery).
+- **`../07-runbook/`** te dice **paso a paso qué hacer cuando pasa algo concreto.**
 
 Cuando estás en el momento ("acaba de llegar un prospect, ¿qué hago?"), abrís el runbook, no el playbook conceptual.
 

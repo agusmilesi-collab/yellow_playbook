@@ -14,9 +14,9 @@ Disciplina que diseña la experiencia completa de un servicio (no solo el moment
 
 ## Por qué lo usamos
 
-Es la herramienta principal para mapear, diagnosticar y rediseñar un servicio profesional artesanal (que es nuestro foco según `01-identity/icp.md`).
+Es la herramienta principal para mapear, diagnosticar y rediseñar un servicio profesional artesanal (que es nuestro foco según `../01-identity/icp.md`).
 
-Service Design da la "radiografía". JTBD (ver `02-methodology/jtbd.md`) da el "por qué" detrás de la radiografía. Los dos juntos son nuestro método.
+Service Design da la "radiografía". JTBD (ver `../02-methodology/jtbd.md`) da el "por qué" detrás de la radiografía. Los dos juntos son nuestro método.
 
 ---
 
@@ -68,7 +68,7 @@ NO rediseñamos pensando "qué le conviene al cliente". Sentamos al cliente fina
 
 Lo que sale es radicalmente distinto a lo que hubiera pensado solo el consultor.
 
-**Aplicación operativa:** en cada proyecto, al menos una sesión con clientes finales reales del cliente. No solo entrevistar al dueño del negocio. Esto es **principio no-negociable** según `00-start-here/principles.md` P5.
+**Aplicación operativa:** en cada proyecto, al menos una sesión con clientes finales reales del cliente. No solo entrevistar al dueño del negocio. Esto es **principio no-negociable** según `../00-start-here/principles.md` P5.
 
 ### P6. Hacer es mejor que pensar (Doing)
 
@@ -134,7 +134,7 @@ Flujo típico de aplicación:
 
 Service blueprint, customer journey, touchpoint, frontstage, backstage, pain point, co-creation, prototyping.
 
-Para definiciones precisas, ver `02-methodology/glossary.md`.
+Para definiciones precisas, ver `../02-methodology/glossary.md`.
 
 ---
 

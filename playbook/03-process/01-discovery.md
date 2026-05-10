@@ -20,7 +20,7 @@ Que el cliente hable, que vos escuches, que salgas con suficiente información p
 ## Outputs
 
 - Notas estructuradas de la call.
-- Calificación del prospect contra ICP (`01-identity/icp.md`).
+- Calificación del prospect contra ICP (`../01-identity/icp.md`).
 - Hipótesis preliminar de los 3 jobs (functional / emotional / social).
 - Hipótesis preliminar de struggling moment.
 - Decisión: ¿avanzo con propuesta o decline?
@@ -77,7 +77,7 @@ Texto sugerido:
 
 **Lo que se busca:**
 
-- El struggling moment principal (ver `02-methodology/jtbd.md`).
+- El struggling moment principal (ver `../02-methodology/jtbd.md`).
 - Diferencia entre síntomas (lo que dice) y causas (lo que se detecta).
 - Si ya intentó resolverlo y cómo.
 - Frustración acumulada.
@@ -125,7 +125,7 @@ Texto sugerido:
 
 ### Las 5 preguntas JTBD (opcional, si hay tiempo)
 
-Si el cliente está enganchado y queda tiempo, profundizar con las 5 preguntas de JTBD descritas en `02-methodology/jtbd.md`.
+Si el cliente está enganchado y queda tiempo, profundizar con las 5 preguntas de JTBD descritas en `../02-methodology/jtbd.md`.
 
 ---
 
@@ -151,7 +151,7 @@ Inmediatamente después, mientras está fresco:
 
 1. **Pasar las notas a limpio.** Estructurar por las 4 preguntas.
 2. **Marcar las frases textuales clave** del cliente (las que se le van a devolver en la propuesta).
-3. **Calificar al prospect** según `01-identity/icp.md` (suma 1-25 puntos).
+3. **Calificar al prospect** según `../01-identity/icp.md` (suma 1-25 puntos).
 4. **Identificar el job dominante** y los tres jobs.
 5. **Hipótesis preliminar de struggling moment.**
 6. **Decisión:** ¿avanzo con propuesta o decline?
@@ -160,7 +160,7 @@ Inmediatamente después, mientras está fresco:
 
 ## Red flags durante la call
 
-Si aparece esto, considerar declinar (ver `01-identity/icp.md` para el listado completo):
+Si aparece esto, considerar declinar (ver `../01-identity/icp.md` para el listado completo):
 
 - Pregunta el precio antes de explicar el problema.
 - Quiere "más clientes" antes de cuestionar el modelo.
@@ -204,7 +204,7 @@ Output esperado: documento estructurado de 1-2 páginas que sirve de base para e
 
 ## Siguiente paso del proceso
 
-Ver `03-process/02-proposal.md`.
+Ver `../03-process/02-proposal.md`.
 
 ---
 

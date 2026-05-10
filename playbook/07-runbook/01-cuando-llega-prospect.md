@@ -35,7 +35,7 @@ Una de estas tres cosas:
 
 **Acción:** evaluar al prospect contra los criterios de ICP solo con la información disponible.
 
-**Archivo a abrir:** `01-identity/icp.md` sección "Sistema de calificación".
+**Archivo a abrir:** `../01-identity/icp.md` sección "Sistema de calificación".
 
 **Tiempo estimado:** 5 minutos.
 
@@ -111,9 +111,9 @@ Una de estas tres cosas:
 - Datos del prospect.
 - Notas de la investigación del Paso 1.
 - Hipótesis preliminares.
-- Las 4 preguntas core de discovery (de `03-process/01-discovery.md`).
+- Las 4 preguntas core de discovery (de `../03-process/01-discovery.md`).
 
-**Archivo a abrir:** `04-templates/discovery-notes-template.md` (copiar para crear nota del prospect).
+**Archivo a abrir:** `../04-templates/discovery-notes-template.md` (copiar para crear nota del prospect).
 
 **Tiempo estimado:** 10 minutos.
 

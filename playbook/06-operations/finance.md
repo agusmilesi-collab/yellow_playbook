@@ -26,7 +26,7 @@ Recomendado:
 
 ## Política de pricing en USD
 
-Todos los precios están en USD (ver `06-operations/pricing.md`) por dos razones:
+Todos los precios están en USD (ver `../06-operations/pricing.md`) por dos razones:
 
 1. Estabilidad frente a inflación argentina.
 2. Simplicidad para clientes regionales.
@@ -46,7 +46,7 @@ Estándar para todos los proyectos:
 - **50% al inicio:** la fecha de pago es la fecha de inicio del proyecto.
 - **50% al cierre:** al entregar el documento final.
 
-**No se hacen excepciones** (principio P8 de `00-start-here/principles.md`). No se empieza a trabajar sin el primer pago.
+**No se hacen excepciones** (principio P8 de `../00-start-here/principles.md`). No se empieza a trabajar sin el primer pago.
 
 ---
 
@@ -91,7 +91,7 @@ Esto garantiza que cuando lleguen los impuestos, el dinero esté disponible.
 
 ## Costos del negocio
 
-Estimación mensual baseline (ver `06-operations/tools.md` para detalle):
+Estimación mensual baseline (ver `../06-operations/tools.md` para detalle):
 
 - Herramientas digitales: USD 25-30/mes.
 - Contador: $XXX (definir).
@@ -117,7 +117,7 @@ Mientras no se llegue a esa reserva, **no se reinvierte ganancias en el negocio*
 
 ### ¿Cuándo subir precios?
 
-Ver `06-operations/pricing.md` sección "Cuándo subir precios".
+Ver `../06-operations/pricing.md` sección "Cuándo subir precios".
 
 ### ¿Cuándo contratar ayuda?
 

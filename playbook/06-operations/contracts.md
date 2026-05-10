@@ -25,7 +25,7 @@ Se acuerda lo siguiente:
 
 ## 1. Objeto
 
-EL CONSULTOR prestará a EL CLIENTE el servicio de **[Modelo A / B / C — descripción según `01-identity/offer.md`]**, con el objetivo de [breve descripción del proyecto específico].
+EL CONSULTOR prestará a EL CLIENTE el servicio de **[Modelo A / B / C — descripción según `../01-identity/offer.md`]**, con el objetivo de [breve descripción del proyecto específico].
 
 ## 2. Entregables
 
@@ -42,7 +42,7 @@ EL CONSULTOR se compromete a entregar:
 
 ## 4. Inversión y forma de pago
 
-Honorarios totales: **USD [precio según `06-operations/pricing.md`]** + IVA si corresponde.
+Honorarios totales: **USD [precio según `../06-operations/pricing.md`]** + IVA si corresponde.
 
 Forma de pago:
 - 50% al iniciar el proyecto (fecha de inicio = fecha del primer pago).

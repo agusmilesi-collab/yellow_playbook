@@ -35,7 +35,7 @@ Contrato firmado + 50% adelanto cobrado + fecha de kickoff acordada.
 
 **Acción:** copiar el modelo y personalizar.
 
-**Archivo a abrir:** `06-operations/contracts.md`.
+**Archivo a abrir:** `../06-operations/contracts.md`.
 
 **Tiempo estimado:** 20 minutos.
 
@@ -44,7 +44,7 @@ Contrato firmado + 50% adelanto cobrado + fecha de kickoff acordada.
 - Sección 1 (Objeto): descripción específica del proyecto.
 - Sección 2 (Entregables): según el modelo elegido.
 - Sección 3 (Plazos): fechas concretas.
-- Sección 4 (Inversión): monto exacto desde `06-operations/pricing.md`.
+- Sección 4 (Inversión): monto exacto desde `../06-operations/pricing.md`.
 
 ---
 
@@ -52,7 +52,7 @@ Contrato firmado + 50% adelanto cobrado + fecha de kickoff acordada.
 
 **Acción:** emitir factura según situación impositiva.
 
-**Archivo a abrir:** `06-operations/finance.md`.
+**Archivo a abrir:** `../06-operations/finance.md`.
 
 **Tiempo estimado:** 10 minutos.
 

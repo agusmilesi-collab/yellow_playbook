@@ -16,7 +16,7 @@ Reunión de kickoff completada + plan de research definido + entrevistas con cli
 
 **Acción:** llegar al kickoff con tarea hecha.
 
-**Archivo a abrir:** `03-process/04-delivery.md` sección "Fase 1 — Kickoff y research".
+**Archivo a abrir:** `../03-process/04-delivery.md` sección "Fase 1 — Kickoff y research".
 
 **Tiempo estimado:** 60-90 minutos.
 
@@ -35,7 +35,7 @@ Reunión de kickoff completada + plan de research definido + entrevistas con cli
 
 **Acción:** reunión inicial con el cliente.
 
-**Archivo a abrir:** `03-process/04-delivery.md` sección "Fase 1 — Kickoff y research".
+**Archivo a abrir:** `../03-process/04-delivery.md` sección "Fase 1 — Kickoff y research".
 
 **Agenda sugerida:**
 
@@ -89,7 +89,7 @@ Documento `clientes/[cliente]/01-kickoff-notes.md` con:
 
 **Acción:** adaptar las 5 preguntas JTBD al contexto específico.
 
-**Archivo a abrir:** `02-methodology/jtbd.md` sección "5 preguntas para descubrir jobs".
+**Archivo a abrir:** `../02-methodology/jtbd.md` sección "5 preguntas para descubrir jobs".
 
 **Tiempo estimado:** 30 minutos.
 
@@ -111,7 +111,7 @@ Adaptar el lenguaje al servicio específico del cliente.
 
 **Tiempo estimado:** 30 minutos para coordinar.
 
-**Importante:** los empleados saben cosas que el dueño no sabe (principio P9 de `00-start-here/principles.md`). Estas entrevistas son obligatorias si hay equipo.
+**Importante:** los empleados saben cosas que el dueño no sabe (principio P9 de `../00-start-here/principles.md`). Estas entrevistas son obligatorias si hay equipo.
 
 **Decisión if/then:**
 

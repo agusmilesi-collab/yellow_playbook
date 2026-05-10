@@ -30,7 +30,7 @@ Convertir un "sí, dale" verbal en un proyecto firmado y pagado.
 **Acción:**
 1. Mandar contrato corto + factura del 50% adelanto.
 2. Acordar fecha de kickoff.
-3. **No empezar a trabajar antes del cobro.** Principio P8 (`00-start-here/principles.md`).
+3. **No empezar a trabajar antes del cobro.** Principio P8 (`../00-start-here/principles.md`).
 
 **Texto sugerido de respuesta:**
 
@@ -116,7 +116,7 @@ El "no" es información. Significa que en este momento, para este cliente, no es
 
 Inmediatamente:
 
-1. Mandar contrato (de `06-operations/contracts.md`).
+1. Mandar contrato (de `../06-operations/contracts.md`).
 2. Mandar factura por 50% del proyecto.
 3. Confirmar canal de comunicación durante el proyecto.
 4. Agendar reunión de kickoff (en cuanto el pago esté confirmado).
@@ -138,7 +138,7 @@ Cuando recibas información de cierre de venta:
 
 ## Siguiente paso del proceso
 
-Ver `03-process/04-delivery.md`.
+Ver `../03-process/04-delivery.md`.
 
 ---
 

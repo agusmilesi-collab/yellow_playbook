@@ -6,7 +6,7 @@
 
 ## Qué es
 
-Service Design (`02-methodology/service-design.md`) te dice **cómo** se rediseña un servicio. JTBD (`02-methodology/jtbd.md`) te dice **por qué** la gente lo contrata. **Good Services te dice contra qué se evalúa si el rediseño quedó bien.**
+Service Design (`../02-methodology/service-design.md`) te dice **cómo** se rediseña un servicio. JTBD (`../02-methodology/jtbd.md`) te dice **por qué** la gente lo contrata. **Good Services te dice contra qué se evalúa si el rediseño quedó bien.**
 
 Es un checklist prescriptivo: 15 principios que cualquier servicio bueno cumple. Si tu rediseño los cumple, el servicio funciona. Si no, hay algo para arreglar.
 
@@ -16,9 +16,9 @@ Es un checklist prescriptivo: 15 principios que cualquier servicio bueno cumple.
 
 Dos momentos:
 
-1. **Durante el diagnóstico** (`03-process/04-delivery.md` fase 2): chequear el servicio actual contra los 15 principios. Cada principio que falla es un pain point candidato.
+1. **Durante el diagnóstico** (`../03-process/04-delivery.md` fase 2): chequear el servicio actual contra los 15 principios. Cada principio que falla es un pain point candidato.
 
-2. **Antes de cerrar el proyecto** (`03-process/04-delivery.md` fase 4): chequear el servicio rediseñado contra los 15 principios. Si alguno sigue fallando, hay refinamiento pendiente.
+2. **Antes de cerrar el proyecto** (`../03-process/04-delivery.md` fase 4): chequear el servicio rediseñado contra los 15 principios. Si alguno sigue fallando, hay refinamiento pendiente.
 
 ---
 
@@ -44,7 +44,7 @@ Antes de empezar, el usuario sabe qué va a pasar, en cuánto tiempo, con qué r
 
 ### 4. Le permite al usuario completar el objetivo que vino a buscar
 
-El servicio resuelve el job real, no un proxy del job. Conectar con `02-methodology/jtbd.md`.
+El servicio resuelve el job real, no un proxy del job. Conectar con `../02-methodology/jtbd.md`.
 
 **Aplicación:** si el cliente del psicotécnico viene a "tomar una decisión sobre una persona" pero el servicio le entrega "un informe de 16 páginas para leer" — falló este principio.
 

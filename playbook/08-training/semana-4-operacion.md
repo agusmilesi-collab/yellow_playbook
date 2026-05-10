@@ -8,7 +8,7 @@ Objetivo: integrar todo lo aprendido al flujo operativo del negocio. Al final de
 
 ## Día 1 — El flujo completo
 
-**Lectura:** todos los archivos de `07-runbook/` en orden.
+**Lectura:** todos los archivos de `../07-runbook/` en orden.
 
 **Tiempo:** 60 minutos.
 
@@ -26,7 +26,7 @@ Después comparalo con los runbooks. ¿Qué te olvidaste?
 
 ## Día 2 — Discovery call simulada
 
-**Lectura:** `03-process/01-discovery.md` + `04-templates/discovery-notes-template.md`.
+**Lectura:** `../03-process/01-discovery.md` + `../04-templates/discovery-notes-template.md`.
 
 **Acción:** simular una discovery call.
 
@@ -57,7 +57,7 @@ Vos hacés la discovery call siguiendo el guion del playbook:
 
 **Acción:** sobre la "discovery" del Día 2, calificar al prospect siguiendo el sistema de scoring.
 
-**Archivo a abrir:** `01-identity/icp.md` sección "Sistema de calificación".
+**Archivo a abrir:** `../01-identity/icp.md` sección "Sistema de calificación".
 
 **Tiempo:** 60 minutos.
 
@@ -75,7 +75,7 @@ Vos hacés la discovery call siguiendo el guion del playbook:
 
 ## Día 4 — Escribir propuesta simulada
 
-**Lectura:** `03-process/02-proposal.md` + `04-templates/proposal-template.md`.
+**Lectura:** `../03-process/02-proposal.md` + `../04-templates/proposal-template.md`.
 
 **Acción:** escribir una propuesta para el "prospect" del Día 2.
 
@@ -94,7 +94,7 @@ Vos hacés la discovery call siguiendo el guion del playbook:
 
 - 1-2 páginas máximo.
 - UNA opción de modelo, no tres.
-- Pricing exacto desde `06-operations/pricing.md`.
+- Pricing exacto desde `../06-operations/pricing.md`.
 - Validez 14 días.
 
 **Self-check:** ¿el documento es claro, punzante y vendible?
@@ -103,7 +103,7 @@ Vos hacés la discovery call siguiendo el guion del playbook:
 
 ## Día 5 — Manejo de objeciones
 
-**Lectura:** `03-process/03-closing.md`.
+**Lectura:** `../03-process/03-closing.md`.
 
 **Acción:** practicar las tres respuestas posibles del cliente.
 
@@ -200,7 +200,7 @@ Si después de 4 semanas no podés operar, el playbook tiene un problema, no vos
 Si pasaste el self-check, estás listo para:
 
 1. Ejecutar el caso de la psicóloga (caso piloto real).
-2. Documentarlo siguiendo `05-examples/case-psicologa.md` como espejo.
+2. Documentarlo siguiendo `../05-examples/case-psicologa.md` como espejo.
 3. Pedir testimonio + KPIs medidos.
 4. Empezar a vender el segundo cliente con el caso real como prueba.
 

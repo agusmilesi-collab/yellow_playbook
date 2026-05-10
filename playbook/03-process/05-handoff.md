@@ -19,7 +19,7 @@ Cerrar el proyecto bien, capturar valor para futuras ventas (testimonio + referi
 
 - Testimonio formal.
 - Referidos calificados (idealmente 2-3).
-- Caso de estudio actualizado en `05-examples/`.
+- Caso de estudio actualizado en `../05-examples/`.
 - Lessons learned incorporadas al playbook.
 - Cliente en lista de "alumni" para futuras colaboraciones.
 
@@ -103,9 +103,9 @@ Cerrar el proyecto bien, capturar valor para futuras ventas (testimonio + referi
 
 Para cada proyecto cerrado, completar:
 
-### 1. Caso de estudio en `05-examples/`
+### 1. Caso de estudio en `../05-examples/`
 
-Crear archivo `case-[clientname].md` siguiendo estructura de `05-examples/case-psicologa.md`. Incluir:
+Crear archivo `case-[clientname].md` siguiendo estructura de `../05-examples/case-psicologa.md`. Incluir:
 
 - Contexto del cliente.
 - Service blueprint.
@@ -127,10 +127,10 @@ Crear archivo `lessons-[clientname].md` con:
 
 Si el proyecto generó:
 
-- Una herramienta nueva → agregar a `04-templates/`.
-- Un patrón de pain point recurrente → documentar en `02-methodology/`.
-- Una nueva forma de pricing → actualizar `06-operations/pricing.md`.
-- Un nuevo tipo de cliente → actualizar `01-identity/icp.md`.
+- Una herramienta nueva → agregar a `../04-templates/`.
+- Un patrón de pain point recurrente → documentar en `../02-methodology/`.
+- Una nueva forma de pricing → actualizar `../06-operations/pricing.md`.
+- Un nuevo tipo de cliente → actualizar `../01-identity/icp.md`.
 
 ---
 
@@ -170,7 +170,7 @@ Cuando un proyecto entra en handoff:
 2. **Generar el pedido de testimonio** personalizado al caso.
 3. **Generar el pedido de referidos** personalizado.
 4. **Programar recordatorios** para Agustin: check-in 30 días, KPIs 90 días.
-5. **Crear el archivo del caso de estudio** en `05-examples/` con la información disponible.
+5. **Crear el archivo del caso de estudio** en `../05-examples/` con la información disponible.
 6. **Generar el archivo de lessons learned** con preguntas guía para que Agustin complete.
 
 ---

@@ -16,7 +16,7 @@ Framework para entender por qué la gente compra y contra qué se compite realme
 
 ## Por qué lo usamos
 
-Service Design (`02-methodology/service-design.md`) da el "cómo": cómo se rediseña la experiencia. JTBD da el "por qué": para qué te contrata el cliente.
+Service Design (`../02-methodology/service-design.md`) da el "cómo": cómo se rediseña la experiencia. JTBD da el "por qué": para qué te contrata el cliente.
 
 Sin JTBD, el rediseño optimiza lo equivocado. Con JTBD, el rediseño optimiza lo que el cliente realmente compra.
 
@@ -58,7 +58,7 @@ Cómo quiere ser percibido por otros.
 
 *"Que me vean como alguien profesional." "Que mis amigos vean que tengo buen gusto." "Que mi jefe vea que soy decisivo."*
 
-**Idea central:** los productos que solo cumplen el functional son commodity. Los productos premium cumplen los tres. **Por eso pueden sostener un precio más alto que un commodity.** Esto se conecta directo con nuestra oferta (`01-identity/offer.md`).
+**Idea central:** los productos que solo cumplen el functional son commodity. Los productos premium cumplen los tres. **Por eso pueden sostener un precio más alto que un commodity.** Esto se conecta directo con nuestra oferta (`../01-identity/offer.md`).
 
 ---
 
@@ -84,7 +84,7 @@ NO preguntás "¿qué te gustaría?". Preguntás:
 
 > "¿Qué momento de tu vida (o de tu negocio) te frustra y todavía no encontraste cómo resolverlo bien?"
 
-**Aplicación operativa:** en discovery call (`03-process/01-discovery.md`), las preguntas están diseñadas para detectar struggling moments del cliente y de los clientes finales del cliente.
+**Aplicación operativa:** en discovery call (`../03-process/01-discovery.md`), las preguntas están diseñadas para detectar struggling moments del cliente y de los clientes finales del cliente.
 
 ---
 
@@ -130,7 +130,7 @@ Nuestro trabajo en cada conversación de venta:
 3. **Bajar la anxiety** (con casos de éxito, garantías, prototipos chicos).
 4. **Romper la habit** (presentar evidencia clara de que el modo actual está roto).
 
-**Aplicación operativa:** ver `03-process/02-proposal.md` para cómo se aplica esto al messaging de propuesta.
+**Aplicación operativa:** ver `../03-process/02-proposal.md` para cómo se aplica esto al messaging de propuesta.
 
 ---
 
@@ -164,7 +164,7 @@ NO preguntar "¿qué te gustaría que tuviera?". Preguntar:
 
 La pregunta 5 es la más reveladora: te muestra contra qué competís realmente. Es la pregunta del milkshake.
 
-**Aplicación operativa:** estas preguntas se incorporan al guion de discovery call. Ver `03-process/01-discovery.md`.
+**Aplicación operativa:** estas preguntas se incorporan al guion de discovery call. Ver `../03-process/01-discovery.md`.
 
 ---
 
@@ -180,7 +180,7 @@ La pregunta 5 es la más reveladora: te muestra contra qué competís realmente.
 
 Job, struggling moment, push, pull, anxiety, habit, demand-side innovation, job story, three jobs (functional/emotional/social).
 
-Para definiciones precisas, ver `02-methodology/glossary.md`.
+Para definiciones precisas, ver `../02-methodology/glossary.md`.
 
 ---
 

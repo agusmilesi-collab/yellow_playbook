@@ -22,7 +22,7 @@ Ejecutar el proyecto contratado, cumplir entregables, y llegar al cierre con res
 ## Outputs
 
 - Service blueprint del cliente.
-- Diagnóstico completo (siguiendo `04-templates/diagnosis-template.md`).
+- Diagnóstico completo (siguiendo `../04-templates/diagnosis-template.md`).
 - Propuesta de rediseño detallada.
 - Plan de implementación.
 - KPIs definidos para medición.
@@ -57,7 +57,7 @@ Ejecutar el proyecto contratado, cumplir entregables, y llegar al cierre con res
 
 ### Research
 
-Aplicar las 5 preguntas JTBD (`02-methodology/jtbd.md`) a:
+Aplicar las 5 preguntas JTBD (`../02-methodology/jtbd.md`) a:
 - 2-3 clientes finales del cliente.
 - 1-2 empleados del cliente si los hay.
 - Si no hay empleados, profundizar con el dueño en distintos momentos.
@@ -85,7 +85,7 @@ Listar 4-7 pain points principales. Cada uno con marcador ✅ 🔵 ❓ según ni
 
 ### Checklist de Good Services
 
-Aplicar los 15 principios de `02-methodology/good-services.md` al servicio actual. Cada principio fallado que se conecta con el job dominante es un pain point complementario.
+Aplicar los 15 principios de `../02-methodology/good-services.md` al servicio actual. Cada principio fallado que se conecta con el job dominante es un pain point complementario.
 
 ### Análisis JTBD
 
@@ -144,11 +144,11 @@ Para cada intervención principal, definir:
 
 ### Documento final
 
-Compilar todo siguiendo `04-templates/diagnosis-template.md`. Documento de 15-25 páginas máximo.
+Compilar todo siguiendo `../04-templates/diagnosis-template.md`. Documento de 15-25 páginas máximo.
 
 ### Validación final del rediseño contra Good Services
 
-Antes de presentar, chequear las intervenciones propuestas contra los 15 principios de `02-methodology/good-services.md`. Cada principio que no quede mejorado por el rediseño se justifica (scope, prioridad, fase 2) o se incorpora al plan.
+Antes de presentar, chequear las intervenciones propuestas contra los 15 principios de `../02-methodology/good-services.md`. Cada principio que no quede mejorado por el rediseño se justifica (scope, prioridad, fase 2) o se incorpora al plan.
 
 ---
 
@@ -244,7 +244,7 @@ Durante la fase de entrega, la IA puede ayudar con:
 
 1. **Generar borradores del service blueprint** a partir de notas de research.
 2. **Estructurar el análisis JTBD** a partir de entrevistas a clientes finales.
-3. **Redactar el documento de diagnóstico** siguiendo `04-templates/diagnosis-template.md`.
+3. **Redactar el documento de diagnóstico** siguiendo `../04-templates/diagnosis-template.md`.
 4. **Generar plan de implementación** a partir de las intervenciones definidas.
 5. **Sugerir KPIs** según el tipo de servicio rediseñado.
 
@@ -259,7 +259,7 @@ La IA NO hace:
 
 ## Siguiente paso del proceso
 
-Ver `03-process/05-handoff.md`.
+Ver `../03-process/05-handoff.md`.
 
 ---
 

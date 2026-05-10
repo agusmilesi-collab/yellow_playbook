@@ -14,7 +14,7 @@ Vas a seguir trabajando con el servicio que elegiste en la Semana 2. Si necesit�
 
 ## Día 1 — Aprender Good Services
 
-**Lectura:** `02-methodology/good-services.md`.
+**Lectura:** `../02-methodology/good-services.md`.
 
 **Concepto clave:** Service Design te dice CÓMO se rediseña. JTBD te dice POR QUÉ contrata el cliente. Good Services te dice CONTRA QUÉ se evalúa si el servicio quedó bien.
 
@@ -61,7 +61,7 @@ Para cada principio:
 
 **Para cada intervención:**
 
-- **Nombre técnico** (vocabulario de `02-methodology/glossary.md`).
+- **Nombre técnico** (vocabulario de `../02-methodology/glossary.md`).
 - **Qué hace** (descripción concreta).
 - **Por qué resuelve** un pain point específico.
 - **Cómo se ve** (cómo lo experimentaría el cliente final post-rediseño).
@@ -96,7 +96,7 @@ Para cada principio:
 
 **Acción:** empezar a escribir el documento siguiendo la plantilla.
 
-**Archivo a abrir:** `04-templates/diagnosis-template.md`.
+**Archivo a abrir:** `../04-templates/diagnosis-template.md`.
 
 **Tiempo:** 60 minutos.
 
@@ -111,7 +111,7 @@ Para cada principio:
 
 - Marcar todo con ✅ / 🔵 / ❓.
 - Vocabulario del glossary.
-- No exceder profundidad de `05-examples/case-psicologa.md`.
+- No exceder profundidad de `../05-examples/case-psicologa.md`.
 
 **Self-check:** ¿las 4 secciones están completas? ¿El blueprint es legible?
 
@@ -150,7 +150,7 @@ Para cada principio:
 
 **Tiempo:** 1 hora.
 
-**Acción 1 (30 min):** comparar tu diagnóstico contra `05-examples/case-psicologa.md`. Mirá:
+**Acción 1 (30 min):** comparar tu diagnóstico contra `../05-examples/case-psicologa.md`. Mirá:
 
 - ¿La estructura es la misma?
 - ¿La profundidad es similar?

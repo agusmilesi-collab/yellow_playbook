@@ -20,7 +20,7 @@ Documento de 15-25 páginas con:
 
 **Acción:** para cada pain point principal, diseñar 1-2 intervenciones concretas.
 
-**Archivo a abrir:** `02-methodology/service-design.md` (frameworks) + `02-methodology/glossary.md` (vocabulario).
+**Archivo a abrir:** `../02-methodology/service-design.md` (frameworks) + `../02-methodology/glossary.md` (vocabulario).
 
 **Tiempo estimado:** 4-6 horas.
 
@@ -43,7 +43,7 @@ Documento de 15-25 páginas con:
 
 **Acción:** validar que el rediseño cumple los 15 principios.
 
-**Archivo a abrir:** `02-methodology/good-services.md`.
+**Archivo a abrir:** `../02-methodology/good-services.md`.
 
 **Tiempo estimado:** 1-2 horas.
 
@@ -87,7 +87,7 @@ Documento de 15-25 páginas con:
 - Hipótesis de impacto a 90 días.
 - Cómo se mide.
 
-**Importante:** sin KPIs, no hay éxito medible (principio P6 de `00-start-here/principles.md`). Aunque los valores sean estimados, hay que ponerlos.
+**Importante:** sin KPIs, no hay éxito medible (principio P6 de `../00-start-here/principles.md`). Aunque los valores sean estimados, hay que ponerlos.
 
 ---
 
@@ -95,7 +95,7 @@ Documento de 15-25 páginas con:
 
 **Acción:** compilar todo siguiendo la plantilla.
 
-**Archivo a abrir:** `04-templates/diagnosis-template.md`.
+**Archivo a abrir:** `../04-templates/diagnosis-template.md`.
 
 **Tiempo estimado:** 4-6 horas.
 
@@ -136,7 +136,7 @@ Documento de 15-25 páginas con:
 - [ ] Los KPIs son medibles y con baseline.
 - [ ] El documento no excede 25 páginas.
 - [ ] El vocabulario es del glossary.
-- [ ] La profundidad es similar a `05-examples/case-psicologa.md`.
+- [ ] La profundidad es similar a `../05-examples/case-psicologa.md`.
 
 ---
 
@@ -210,7 +210,7 @@ Mezclás hipótesis con hechos verificados. El cliente toma decisiones sobre inf
 
 Te entusiasmás y querés "mostrar valor" con extensión. El cliente no lo lee. Pierde valor.
 
-**Salida:** principio P4 de `00-start-here/principles.md`. Punzante > extenso.
+**Salida:** principio P4 de `../00-start-here/principles.md`. Punzante > extenso.
 
 ### Defender el diagnóstico contra evidencia del cliente
 
