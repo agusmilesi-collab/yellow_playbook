@@ -99,6 +99,10 @@ Para reglas detalladas de comunicación, ver `../02-methodology/glossary.md`.
 
 ## Lo que NO vendemos
 
+**Una nota sobre marketing.** El rediseño del servicio comparte vocabulario con la disciplina del marketing (posicionamiento, diferenciación, percepción de valor) y por eso suele confundirse con ella. Es una arista compatible. La diferencia operativa está en el alcance: esta consultoría trabaja sobre la experiencia del cliente que ya llegó al servicio. La captación de prospectos, las campañas pagas, los anuncios, las redes sociales y la conversión inicial quedan fuera. Cuando un prospecto pide eso, se deriva.
+
+*Versión llana:* el marketing se ocupa de traer clientes nuevos. Esta consultoría se ocupa de mejorar cómo viven el servicio los clientes que ya llegaron.
+
 Para evitar confusión del cliente y para calificar bien:
 
 - ❌ Marketing digital, ads, SEO, redes sociales.
@@ -113,5 +117,6 @@ Si un prospect pide alguna de estas cosas, derivamos o declinamos. Ver `../01-id
 
 ## Changelog del archivo
 
+- **2026-05-11:** v0.4, sumada nota introductoria a "Lo que NO vendemos" que clarifica la relación con marketing (arista compatible, diferencia operativa en el alcance) y una versión llana del concepto para audiencia fuera del rubro.
 - **2026-05-09:** v0.3, reescritura de tagline, oferta principal y los tres niveles de pitch. Se elimina el "30-50% más" como número específico (no validado empíricamente). Se reordena la jerarquía: rediseño de la entrega + diferenciación + experiencia alineada con el cliente como promesas primarias; cobrar más pasa a consecuencia. Nivel 1 reemplazado por versión llana con oficios concretos para audiencia fuera del rubro. Copy convertido a afirmativo.
 - **Mayo 2026:** versión inicial v0.2.
