@@ -35,14 +35,18 @@ Correlativa, sin reuso. Aunque un item se elimine al consolidarse, su número qu
 
 ### LRN-001 | 2026-05-10 | caso:meta | tipo:gap
 
-**Descripción:** la metodología llega hasta diagnóstico + propuesta de rediseño + plan de implementación, y se detiene ahí. Falta una capa de autonomía operativa: cómo el cliente replica el entregable en cada nuevo caso (la psicóloga, en su caso #6, sin volver a contratar al consultor). Hoy el cliente queda dependiente del consultor o de la IA del consultor para producir cada nueva instancia.
+**Descripción:** la metodología llega hasta diagnóstico + propuesta + plan, y se detiene ahí. Falta una capa de autonomía operativa: cómo el cliente replica el entregable en cada nuevo caso sin volver a contratar al consultor. El owner formuló el concepto como "Kit replicable" el 2026-05-11: un conjunto de artefactos ejecutables (prompts para IA, plantillas, trainings interactivos en HTML, instrucciones paso a paso) que se entregan junto con el plan y dejan al cliente operando el sistema en autonomía. Cada item con estructura consistente: problema que resuelve, momento de uso, contenido, instrucciones de uso, ejemplo de salida.
 
-**Implicancia para el playbook:** introducir el concepto de "Kit de replicación" como entregable adicional al cierre de cada proyecto. Tres piezas mínimas: (a) plantilla del entregable con placeholders, (b) prompt operativo afinado para Claude o ChatGPT que tome notas crudas del cliente y genere la instancia, (c) manual corto de uso con un caso resuelto como ejemplo. Cuarto componente opcional: sesión de transferencia de 1-2 horas. Tres lugares del repo a tocar:
+**Implicancia para el playbook:** pieza metodológica que se puede consolidar de manera independiente al resto del concepto. Dos cambios sugeridos:
 
 1. `playbook/02-methodology/`: incorporar "autonomía replicable" como principio o subprincipio (la metodología cierra cuando el cliente puede operar solo, no cuando el consultor entrega el plan).
-2. `playbook/04-templates/diagnosis-template.md`: agregar sección "Kit de replicación" después de la propuesta de rediseño.
-3. `playbook/04-templates/proposal-template.md`: incluir el kit en "Lo que te propongo" como entregable explícito desde la propuesta.
+2. `playbook/04-templates/diagnosis-template.md` y `proposal-template.md`: agregar el Kit como entregable explícito.
 
-Variantes según cliente: cliente solo (plantilla + prompt + manual), cliente con equipo administrativo (plantilla + protocolo paso a paso, IA opcional), cliente que delega a proveedor externo (especificación técnica del entregable en lugar de plantilla terminada).
+Variantes según cliente: cliente solo (plantilla + prompt + manual), cliente con equipo administrativo (plantilla + protocolo, IA opcional), cliente que delega a proveedor externo (especificación técnica en lugar de plantilla terminada).
 
-**Status:** pendiente
+**Dependencias técnicas (van al roadmap como módulos a construir):**
+
+- Microsite por cliente (`yellow.com.ar/c/<slug>`) para entregar el kit en HTML navegable. Stack candidato: Next.js + Vercel + Supabase.
+- Biblioteca de kits replicables dentro del playbook para almacenar y categorizar los items reutilizables que se acumulan caso tras caso.
+
+**Status:** diferido. Por decisión del owner (2026-05-11), los módulos técnicos van al roadmap y la pieza metodológica se valida primero contra el caso piloto de la psicóloga antes de consolidar al playbook.

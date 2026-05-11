@@ -146,6 +146,11 @@ Ideas y acciones que no son prioridad ahora pero hay que registrar para no perde
 - [ ] Evaluar si tiene sentido un servicio "lite" para profesionales con menor capacidad de pago.
 - [ ] Pensar versión enterprise para empresas medianas (ticket más alto).
 
+### Módulos a construir (dependen del primer caso real)
+
+- [ ] **Microsite por cliente.** Cada cliente recibe su propio microsite navegable en `yellow.com.ar/c/<slug-cliente>` con cuatro secciones: propuesta, diagnóstico, plan y kit. Todo HTML navegable, acceso por magic link al mail, URL persistente para consulta posterior. La fuente de verdad sigue siendo este repo; el microsite renderiza desde los archivos del caso. Pila técnica candidata: Next.js sobre Vercel para frontend y hosting, Supabase para autenticación y base de datos. Concepto desarrollado por el owner el 2026-05-11; el portfolio público queda explícitamente descartado.
+- [ ] **Biblioteca de kits replicables.** Estructura nueva dentro del playbook para almacenar y categorizar los items reutilizables (prompts para IA, plantillas, trainings interactivos en HTML, instrucciones paso a paso) que se diseñan en cada caso y se vuelven activos para clientes futuros con problemas parecidos. Cada item con estructura consistente: problema que resuelve, momento de uso, contenido, instrucciones de uso, ejemplo de salida.
+
 ### Crecimiento y canales
 
 - [ ] Sistema de referidos estructural post-cierre.
