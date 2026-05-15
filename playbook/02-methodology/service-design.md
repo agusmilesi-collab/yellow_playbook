@@ -114,6 +114,66 @@ Por eso el rediseño no es "mejorar todo un poco", es "encontrar el touchpoint r
 
 ---
 
+## Evaluación de touchpoints
+
+Después del blueprint (P3), todo touchpoint identificado se evalúa contra una matriz de 5 dimensiones. La matriz produce dos outputs: la lista de pain points prioritarios y la regla de orden para el rediseño.
+
+### Dimensiones
+
+a. **Categoría temporal.** Cada touchpoint pertenece a una de tres etapas del journey (P7): antes del servicio, durante el servicio, después del servicio. La distinción importa porque los touchpoints de "antes" y "después" son los que la mayoría de los servicios olvida.
+
+b. **Estado actual.** Tres niveles:
+
+- ✅ Bien diseñado: intencional, alineado con el job, cuidado.
+- ⚠️ Pasable: existe pero sin foco. Funciona pero no diferencia.
+- ❌ Olvidado o roto: no se cuidó, genera fricción, ausencia o ruido.
+
+c. **Impacto en el job dominante.** Qué tanto cierra o abre el touchpoint el job que el cliente vino a hacer (ver `../02-methodology/jtbd.md`):
+
+- Alto: esencial para que el job se cumpla.
+- Medio: contribuye pero no es central.
+- Bajo: tangencial.
+
+d. **Severidad.** Cruce de estado actual × impacto en job. Determina prioridad del fix:
+
+| Estado \ Impacto | Alto | Medio | Bajo |
+|---|---|---|---|
+| ❌ Olvidado/roto | Crítica | Alta | Media |
+| ⚠️ Pasable | Alta | Media | Baja |
+| ✅ Bien diseñado | Mantener | Mantener | Mantener |
+
+e. **Costo de fix.** Estimación operativa de qué se necesita para rediseñar el touchpoint:
+
+- Bajo: cambio menor, lo hace el profesional solo, horas o pocos días.
+- Medio: requiere plantilla, prompt o sistema chico. Días o 1-2 semanas.
+- Alto: requiere sistema completo, proveedor externo, rediseño profundo. Semanas.
+
+### Formato operativo
+
+Matriz por touchpoint:
+
+| Touchpoint | Categoría (antes/durante/después) | Estado (✅/⚠️/❌) | Impacto en job (alto/medio/bajo) | Severidad | Costo de fix | Principio de Good Services que falla |
+|---|---|---|---|---|---|---|
+
+### Regla de orden del rediseño
+
+Una vez completada la matriz:
+
+1. **Críticas con costo bajo:** primero. Quick wins de alto impacto.
+2. **Críticas con costo medio o alto:** obligatorias, entran al plan con plazo.
+3. **Altas con costo bajo:** segunda capa, otro quick win.
+4. **Severidad media o baja:** backlog. Pueden quedar fuera de scope si el rediseño es de modelo B.
+
+### Conexión con P10
+
+P10 establece que la calidad se define por la peor parte (sesgo pico-final). La matriz operacionaliza P10: las severidades críticas son los touchpoints rotos de alto impacto que el cliente recuerda al final del journey. Esos se arreglan primero, aunque sean chicos.
+
+### Conexión con Good Services
+
+Cada touchpoint con severidad alta o crítica suele tener al menos un principio de Good Services (`good-services.md`) que falla. La columna "Principio que falla" cierra el círculo entre la matriz y el checklist de 15 principios. Si la matriz marca crítica pero no aparece ningún principio fallado, sospechar de la evaluación.
+
+---
+
 ## Cómo se conectan los principios en un proyecto
 
 Los 10 principios no son checklist secuencial. Son marco mental.
@@ -160,4 +220,5 @@ Para definiciones precisas, ver `../02-methodology/glossary.md`.
 
 ## Changelog del archivo
 
+- **2026-05-13 (v0.3):** sumada sección "Evaluación de touchpoints" como herramienta formal (matriz de 5 dimensiones + regla de orden del rediseño). Operacionaliza P4 y P10. Cierra gap detectado en auditoría: la evaluación de touchpoints existía implícita pero sin método canónico. Aprobado directo por owner en sesión.
 - **Mayo 2026:** versión inicial v0.2.

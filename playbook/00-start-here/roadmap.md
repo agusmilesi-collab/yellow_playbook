@@ -16,42 +16,44 @@ Cuando una acción se completa, se mueve a la sección "Done" con fecha. Las acc
 
 ---
 
-## Sprint actual: Completar playbook v0.2
+## Sprint actual: Caso piloto con psicóloga + auditoría SSOT
 
-**Objetivo:** dejar el playbook listo para soportar el primer caso real (psicóloga).
-
-### Pendiente
-
-- [ ] Completar todos los archivos de `../03-process/` (5 archivos: discovery, proposal, closing, delivery, handoff).
-- [ ] Completar `../04-templates/` con todas las plantillas.
-- [ ] Completar `../06-operations/contracts.md` con modelo de contrato.
-- [ ] Completar `../06-operations/tools.md` con stack de herramientas.
-- [ ] Completar `../06-operations/finance.md` con cómo facturar y manejo de caja.
-- [ ] Revisar todo el repo aplicando reglas SSOT (no debe haber duplicación entre archivos).
-- [ ] Validar que el repo es onboarding-ready: pedirle a una IA fresca que lo lea y produzca un diagnóstico de prueba.
-
-### En curso
-
-(nada aún)
-
-### Done
-
-### Mayo 2026: v0.3
-- ✅ Integración de Good Services (Lou Downe) como `../02-methodology/good-services.md`.
-- ✅ Carpeta `../07-runbook/` con 7 archivos de procedimiento por escenario.
-- ✅ Carpeta `../08-training/` con plan de capacitación de 4 semanas.
-- ✅ Integración de Good Services al flujo de delivery.
-
----
-
-## Sprint siguiente: Caso piloto con psicóloga
-
-**Objetivo:** ejecutar el primer caso real completo, documentado, con resultados medidos. Convertirlo en caso de venta replicable.
+**Objetivo:** ejecutar el primer caso real completo (psicóloga) y mantener el playbook limpio mientras se ejecuta.
 
 ### Pendiente
 
 - [ ] Sentarse formalmente con la psicóloga como cliente piloto: definir alcance, plazos, expectativas.
 - [ ] Aplicar el método punta a punta (discovery → diagnóstico → rediseño → implementación → medición).
+- [ ] Validar que el repo es onboarding-ready: pedirle a una IA fresca que lo lea y produzca un diagnóstico de prueba.
+
+### En curso
+
+- Auditoría SSOT del repo (iteración 2026-05-13: eliminado `tools.md`, consolidados pricing/forma de pago/moneda/modelos en offer.md, barrido completo de duplicaciones del playbook).
+
+### Done
+
+### Mayo 2026: v0.5 / v0.6
+- ✅ **2026-05-13:** auditoría SSOT iteración 1: eliminado `06-operations/tools.md`; "forma de pago 50/50" y "moneda USD" consolidadas en `pricing.md`; reglas del system prompt de `ai-workflow.md` apuntando a `CLAUDE.md`/`principles.md` en vez de duplicar inline.
+- ✅ **2026-05-13:** SSOT de modelos A/B/C consolidado en `01-identity/offer.md`; `pricing.md` queda solo con precio + datos económicos; `onboarding.md` y `03-process/02-proposal.md` colapsados a punteros.
+- ✅ **2026-05-13:** auditoría SSOT iteración 2 completa: bug "4 vs 5 preguntas" del discovery template arreglado; protocolo Switch Interview triplicado consolidado en `jtbd.md`; README onboarding flow colapsado a puntero; "Lo que hago/cómo se nombra", pitch 90s, red/green flags y reglas de cierre consolidados a sus SSOT.
+- ✅ **2026-05-13:** training de 4 semanas reescrito completo (`08-training/`). Ahora autocontenido (toda la teoría inline, sin lecturas externas) y alineado con metodología actual: 3 escuelas JTBD, meta-patrón, P0 sistemas operativos, Switch Interview completa, 5 preguntas + 35 min de discovery, prototipo manual + spec del sistema. Archivos renombrados: `semana-2-discovery-research.md`, `semana-3-diagnostico-sistema.md`.
+
+### Mayo 2026: v0.3 / v0.4
+- ✅ Reestructuración tripartita (`playbook/` + `cases/` + `learnings/`). Agregados `CLAUDE.md` y `quality-checklist.json`.
+- ✅ Integración de Good Services (Lou Downe) como `../02-methodology/good-services.md`.
+- ✅ Carpeta `../07-runbook/` con 7 archivos de procedimiento por escenario (consolidados el 2026-05-13 dentro de `../03-process/` como sección "Runbook operativo" al final de cada archivo; carpeta eliminada vía LRN-009).
+- ✅ Carpeta `../08-training/` con plan de capacitación de 4 semanas.
+- ✅ Integración de Good Services al flujo de delivery.
+- ✅ Completados todos los archivos de `../03-process/`, `../04-templates/`, `../06-operations/contracts.md` y `../06-operations/finance.md`.
+
+---
+
+## Sprint siguiente: Cierre del piloto + activar venta
+
+**Objetivo del piloto:** documentar el caso real completo con resultados medidos. Convertirlo en caso de venta replicable.
+
+### Pendiente piloto
+
 - [ ] Implementar el rediseño técnico:
   - [ ] Informe de una página visual (capa 1).
   - [ ] Capa intermedia con dimensiones y scores.
@@ -62,13 +64,7 @@ Cuando una acción se completa, se mueve a la sección "Done" con fecha. Las acc
 - [ ] Actualizar `../05-examples/case-psicologa.md` con resultados reales (no hipótesis).
 - [ ] Pedir testimonio formal.
 
----
-
-## Sprint siguiente al piloto: Activar venta
-
-**Objetivo:** vender el primer cliente pago a precio normal usando el caso de la psicóloga como prueba social.
-
-### Pendiente (sin abrir aún)
+### Pendiente venta (post-piloto)
 
 - [ ] Identificar 10-15 prospects que califiquen contra el ICP.
 - [ ] Reescribir messaging con balance push-pull (ver `../03-process/01-discovery.md`).
@@ -77,62 +73,6 @@ Cuando una acción se completa, se mueve a la sección "Done" con fecha. Las acc
 - [ ] Mandar primer round de mensajes a prospects.
 - [ ] Atender discovery calls que surjan.
 - [ ] Cerrar primer cliente a precio normal (Modelo B según `../06-operations/pricing.md`).
-
----
-
-## Próxima iniciativa estratégica: Repo como sistema de aprendizaje continuo
-
-**Status:** prompt redactado, pendiente de ejecución. A iniciar apenas se complete la revisión actual del playbook.
-
-**Origen:** este prompt vivía al final del `README.md` como recordatorio. Se movió acá para no perderlo y para que tenga el peso estratégico que merece.
-
-**Tesis del cambio:** hoy el playbook se desactualiza porque las correcciones que doy en sesión (con IA o internas) no quedan capturadas. Necesito un sistema con tres capas separadas, playbook estable, casos por cliente, aprendizajes pendientes, inspirado en el harness de agentes long-running de Anthropic.
-
-### Prompt completo a ejecutar
-
-> Quiero reestructurar este repo (playbook de Yellow) para que funcione como un sistema de aprendizaje continuo, inspirado en el harness de agentes long-running de Anthropic (initializer + coding agent con progress file).
->
-> **CONTEXTO**
-> - Yellow es mi empresa de service design. Este repo es el SSOT de mi metodología: service design by doing, jobs to be done, etc.
-> - Hoy te clono y te paso entrevistas de cliente para que me devuelvas diagnóstico y plan de implementación basados en el playbook.
-> - Problema: cuando aprendo cosas nuevas o te corrijo en una sesión, ese conocimiento se pierde. El playbook queda desactualizado.
->
-> **OBJETIVO**
-> Armar una estructura de repo + reglas en CLAUDE.md que separen tres capas:
-> 1. Playbook estable (solo se modifica con mi aprobación explícita).
-> 2. Casos (un folder por entrevista de cliente, con inputs y outputs).
-> 3. Aprendizajes pendientes (append-only, capturados automáticamente al final de cada caso, revisados y consolidados al playbook por mí).
->
-> **QUE QUIERO QUE HAGAS AHORA**
->
-> **Paso 1, Diagnóstico**
-> - Listá la estructura actual del repo y leé los archivos principales del playbook.
-> - Identificá qué piezas ya tengo y qué falta para soportar la estructura propuesta.
-> - No modifiques nada todavía. Mostrame el diagnóstico y esperá luz verde.
->
-> **Paso 2, Propuesta (después de mi OK)**
-> - Proponé estructura concreta de carpetas: `playbook/`, `cases/`, `learnings/`.
-> - Proponé el formato de:
->   - `cases/<slug-cliente>/` con: `transcript.md`, `diagnostico.md`, `plan.md`, `case-notes.md`
->   - `learnings/learnings-pending.md` (append-only, formato: [fecha] [caso] [tipo: refinamiento|gap|contraejemplo] [descripción] [implicancia para playbook])
->   - `playbook/quality-checklist.json` (criterios de calidad que todo diagnóstico debe cumplir, en JSON porque los modelos lo respetan más que markdown)
-> - Proponé el contenido de `CLAUDE.md` con reglas duras:
->   - Nunca modificar `playbook/` directamente. Los cambios se proponen como diff en `learnings-pending.md` y requieren mi aprobación.
->   - Antes de diagnosticar un caso: leer `playbook/` Y `learnings/learnings-pending.md` (los pendientes son conocimiento vigente).
->   - Al terminar un caso: escribir obligatoriamente en `learnings-pending.md` cualquier insight, corrección que te di durante la sesión, gap del playbook, o contraejemplo. Si no detectaste nada, dejarlo explícito.
->   - Auto-evaluar el diagnóstico contra `quality-checklist.json` antes de entregármelo.
-> - Proponé también un prompt de consolidación separado: cuando yo lo dispare, leés `learnings-pending.md` + playbook actual y me proponés un diff concreto al playbook (qué sección tocar, qué agregar, qué reformular). Yo apruebo el commit.
-> - Mostrame todo como propuesta, no apliques cambios.
->
-> **Paso 3, Implementación (después de mi OK al paso 2)**
-> - Aplicá la reestructuración en commits chicos y descriptivos.
-> - Si hay contenido del playbook actual que conviene reorganizar para encajar en la nueva estructura, mostrame el plan de movimiento antes de tocar archivos.
-> - Al final, dejame un README breve que explique cómo usar el repo en el día a día (cómo arrancar un caso nuevo, cómo correr la consolidación).
->
-> **REGLAS DURANTE ESA SESIÓN**
-> - Trabajá incremental, paso por paso. No intentes one-shot todo.
-> - Después de cada paso, parás y esperás mi confirmación.
-> - Si encontrás ambigüedad, preguntá antes de asumir.
 
 ---
 
@@ -164,6 +104,15 @@ Ideas y acciones que no son prioridad ahora pero hay que registrar para no perde
 - [ ] Probar a fondo la generación de borradores de diagnóstico con notas crudas.
 - [ ] Definir flujo de trabajo human-in-the-loop: dónde la IA propone y dónde Agustin decide.
 - [ ] Documentar el flujo en `../06-operations/ai-workflow.md`.
+
+### Integraciones a sumar cuando se justifique
+
+Movidas desde `06-operations/tools.md` al consolidarse SSOT (2026-05-13, aprobado directo por owner).
+
+- [ ] Calendly + Google Calendar automático para agendamiento.
+- [ ] CRM simple (HubSpot Free o Notion) cuando el pipeline crezca.
+- [ ] Gestión de contratos digital (DocuSign / Pandadoc) — referenciado en `../06-operations/contracts.md`.
+- [ ] Newsletter (Beehiiv / Substack) si arranca contenido escrito sostenido.
 
 ### Branding y posicionamiento
 

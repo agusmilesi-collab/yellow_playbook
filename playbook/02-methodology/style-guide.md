@@ -26,7 +26,7 @@ Frases completas y argumentativas. Si una idea pide un párrafo, va párrafo. La
 
 ### D. Vocabulario en español
 
-Cero anglicismos innecesarios. Los nombres canónicos de framework se mantienen en su forma original cuando no tienen traducción establecida (Job-to-be-Done, push, pull, anxiety, habit). El resto se castellaniza según la tabla del glossary (`glossary.md`).
+Cero anglicismos innecesarios. Los nombres canónicos de framework se mantienen en su forma original cuando no tienen traducción establecida (Job-to-be-Done, push, pull, anxiety, inertia, Jobs-As-Progress, Jobs-As-Activities). El resto se castellaniza según la tabla del glossary (`glossary.md`).
 
 ### E. Cero em dashes
 

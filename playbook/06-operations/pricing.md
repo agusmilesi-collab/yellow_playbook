@@ -1,6 +1,6 @@
 # Pricing: SSOT
 
-**Esta es la única fuente de verdad sobre precios.** Cualquier propuesta o comunicación de precio se referencia desde acá.
+**Única fuente de verdad sobre precios, forma de pago y política comercial.** Para descripción de qué entrega cada modelo y a quién apunta, ver `../01-identity/offer.md` (SSOT de oferta).
 
 ---
 
@@ -8,7 +8,7 @@
 
 | Modelo | Servicio | Duración | Precio (USD) |
 |---|---|---|---|
-| **A** | Sesión estratégica única | 1 semana | Entrada baja (definir caso por caso, ver más abajo) |
+| **A** | Sesión estratégica única | 1 semana | Entrada baja (ver rango abajo) |
 | **B** | Diagnóstico + plan | 3-4 semanas | **2.000 USD** |
 | **C** | Diagnóstico + acompañamiento | 3-4 meses | **3.000 USD** |
 
@@ -16,69 +16,31 @@
 
 **IVA:** + IVA si corresponde según situación impositiva.
 
-**Forma de pago:** 50% al iniciar, 50% al cerrar.
+**Forma de pago:** 50% al iniciar, 50% al cerrar. Ver política operativa en `../06-operations/finance.md`.
 
 ---
 
-## Modelo A (Sesión estratégica única)
+## Datos económicos por modelo
 
-**Precio:** entrada baja, definir caso por caso.
+Información interna para evaluar margen y decisiones de pricing futuro. Para qué entrega y cuándo usar cada modelo, ver `../01-identity/offer.md`.
 
-**Rango sugerido:** USD 300-600 según complejidad y capacidad de pago del cliente.
+### Modelo A
 
-**Cuándo usarlo:**
-- Cliente con duda, quiere "probar" antes de comprometerse.
-- Cliente con capacidad de pago limitada pero perfil interesante para el futuro.
-- Como producto de entrada para que conozcan la metodología.
+- **Precio:** entrada baja, definir caso por caso.
+- **Rango sugerido:** USD 300-600 según complejidad y capacidad de pago.
+- **Estrategia comercial:** clientes que arrancan con A suelen convertir a B si la sesión les hace sentido.
 
-**Estrategia:** clientes que arrancan con A suelen convertir a B después si la sesión les hace sentido.
+### Modelo B
 
----
+- **Precio:** USD 2.000.
+- **Horas estimadas:** 60-80 horas de Agustin.
+- **Tarifa horaria implícita:** USD 25-33/hora. Competitiva para el mercado argentino, baja para el mercado internacional. **Revisar al alza después de 3-5 casos cerrados.**
 
-## Modelo B (Diagnóstico + plan): SERVICIO PRINCIPAL
+### Modelo C
 
-**Precio:** USD 2.000.
-
-**Cuándo usarlo:** por defecto, cuando no hay razones para usar A o C.
-
-**Qué justifica el precio:**
-
-- Service blueprint completo del servicio.
-- Análisis JTBD con investigación a clientes finales.
-- Diagnóstico documentado de pain points.
-- Propuesta de rediseño detallada.
-- Plan de implementación.
-- KPIs definidos para medición.
-- 3-4 semanas de trabajo profesional intensivo.
-
-**Equivalente de horas estimado:** 60-80 horas de Agustin.
-
-**Tarifa horaria implícita:** USD 25-33/hora. Es competitiva para el mercado argentino y baja para el mercado internacional. **Revisar al alza después de 3-5 casos cerrados.**
-
----
-
-## Modelo C (Diagnóstico + acompañamiento): SERVICIO PREMIUM
-
-**Precio:** USD 3.000.
-
-**Cuándo usarlo:**
-- Cliente pide acompañamiento explícito.
-- Rediseño complejo (multi-touchpoint, multi-stakeholder).
-- Cliente con capacidad de pago holgada y poco tiempo personal.
-- Rediseño que requiere coordinación de proveedores externos.
-
-**Qué incluye sobre B:**
-
-- 8-12 semanas de acompañamiento post-entrega.
-- Reuniones semanales durante el acompañamiento.
-- Coordinación con proveedores externos.
-- Iteración del rediseño según feedback de campo.
-- Medición continua de KPIs.
-- Documento de cierre con resultados medidos y lessons learned.
-
-**Equivalente de horas estimado:** 100-130 horas de Agustin.
-
-**Nota:** Modelo C tiene mayor margen de mejora de pricing. A medida que se acumulen casos, debería subir antes que B.
+- **Precio:** USD 3.000.
+- **Horas estimadas:** 100-130 horas de Agustin.
+- **Nota de pricing:** Modelo C tiene mayor margen de mejora de pricing. A medida que se acumulen casos, debería subir antes que B.
 
 ---
 
@@ -144,4 +106,5 @@ Este archivo se revisa cada 3 meses o cada 5 casos cerrados, lo que ocurra prime
 
 ## Changelog del archivo
 
+- **2026-05-13 (v0.3):** descripción de servicio por modelo (qué entrega, cuándo usar, quién compra) movida a `01-identity/offer.md` como SSOT único. `pricing.md` queda solo con precio + horas + tarifa + estrategia comercial. Aprobado directo por owner en sesión.
 - **Mayo 2026:** versión inicial v0.2, precios definidos: A entrada baja / B USD 2000 / C USD 3000.

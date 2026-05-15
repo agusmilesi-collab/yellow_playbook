@@ -21,16 +21,10 @@ Una consultoría de UX Strategy especializada en rediseñar cómo los profesiona
 
 ## Qué vendemos exactamente
 
-Tres modelos de servicio:
+Tres modelos: **A** (entrada), **B** (principal, recomendado por defecto), **C** (premium).
 
-- **Modelo A:** Sesión estratégica única (1 semana). Producto de entrada.
-- **Modelo B:** Diagnóstico + plan (3-4 semanas). Servicio principal.
-- **Modelo C:** Diagnóstico + acompañamiento (3-4 meses). Servicio premium.
-
-Para descripción completa de cada modelo: `../01-identity/offer.md`.
-Para precios exactos: `../06-operations/pricing.md`.
-
-Modelo recomendado por defecto: **B**. Es el que mejor balance tiene entre profundidad, plazo y precio.
+Descripción completa de qué entrega cada uno, duración y a quién apunta → `../01-identity/offer.md`.
+Precios exactos y política comercial → `../06-operations/pricing.md`.
 
 ---
 
@@ -47,7 +41,7 @@ Tier 1 (mejor fit): psicólogos, coaches, terapeutas, abogados independientes, c
 Dos frameworks complementarios:
 
 - **Service Design** (Stickdorn et al.) → cómo se rediseña una experiencia de servicio. Ver `../02-methodology/service-design.md`.
-- **Jobs to be Done** (Christensen + Klement) → por qué la gente compra y contra qué se compite realmente. Ver `../02-methodology/jtbd.md`.
+- **Jobs to be Done** (modelo Jobs-As-Progress: Christensen + Moesta + Klement) → por qué la gente compra y contra qué se compite realmente. Ver `../02-methodology/jtbd.md`.
 
 Proceso de un proyecto típico:
 
@@ -83,6 +77,12 @@ Después de leer este onboarding:
 4. Leer el caso completo en `../05-examples/case-psicologa.md`.
 5. Consultar `../00-start-here/roadmap.md` para saber en qué fase del negocio estamos hoy y qué se está haciendo.
 
-**Si vas a operar con un cliente:** abrí el runbook de la situación correspondiente en `../07-runbook/`.
+**Si vas a operar con un cliente:** abrí el archivo correspondiente en `../03-process/` y revisá la sección "Runbook operativo" al final.
 
 **Si querés capacitarte en la metodología antes de operar:** seguí el plan de 4 semanas en `../08-training/`.
+
+---
+
+## Changelog del archivo
+
+- **2026-05-13:** sección "Qué vendemos exactamente" colapsada a un nombre por modelo + 2 punteros. SSOT único de la descripción de modelos en `01-identity/offer.md`. Aprobado directo por owner en sesión.

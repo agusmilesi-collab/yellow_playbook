@@ -14,6 +14,8 @@
 
 > Rediseño cómo los profesionales independientes entregan su servicio al cliente: el servicio se diferencia del resto, ofrece una experiencia alineada con lo que el cliente realmente busca y, como consecuencia, habilita cobrar más por lo mismo.
 
+Operativamente, es el trabajo que hace un VP of Customer: la función ejecutiva que convierte conocimiento del cliente en decisiones accionables, instalada como práctica viva en la organización.
+
 ---
 
 ## Tres niveles de pitch (uso conversacional)
@@ -48,14 +50,14 @@
 
 ## Modelos de servicio
 
-Para pricing exacto, ver `../06-operations/pricing.md`.
-Para proceso de venta y entrega, ver `../03-process/`.
+Esta sección es **SSOT** de qué entrega y a quién apunta cada modelo. Para precio exacto, política de descuentos y datos económicos internos: `../06-operations/pricing.md`. Para proceso de venta y entrega: `../03-process/`.
 
 ### Modelo A: Sesión estratégica única
 
 - **Qué entrega:** 3-4 horas de sesión presencial/remota + entregable corto de 5-10 páginas con diagnóstico inicial y recomendaciones macro.
 - **Duración:** 1 semana.
-- **Quién lo compra:** profesional curioso pero no comprometido aún. Quiere validar si Agustin es el indicado antes de invertir más.
+- **Quién lo compra:** profesional curioso pero no comprometido aún. Quiere validar si Agustin es el indicado antes de invertir más. También sirve para clientes con capacidad de pago limitada pero perfil interesante a futuro.
+- **Cuándo elegirlo:** el cliente expresa duda o riesgo, o pide "probar" antes de comprometerse.
 - **Función comercial:** producto de entrada. Bajo riesgo para el cliente. Suele convertir a Modelo B después.
 
 ### Modelo B: Diagnóstico + plan (servicio principal)
@@ -63,20 +65,22 @@ Para proceso de venta y entrega, ver `../03-process/`.
 - **Qué entrega:** documento de 15-25 páginas con service blueprint, análisis JTBD, diagnóstico de pain points, propuesta de rediseño detallada, plan de implementación, KPIs y proveedores recomendados.
 - **Duración:** 3-4 semanas.
 - **Quién lo compra:** profesional que ya validó que tiene el problema y quiere el plan completo para implementar.
+- **Cuándo elegirlo:** por defecto, cuando no hay razones explícitas para usar A o C.
 - **Función comercial:** servicio principal. La mayoría de los clientes deberían contratar este.
 
 ### Modelo C: Diagnóstico + acompañamiento
 
-- **Qué entrega:** todo lo de Modelo B + 8-12 semanas de acompañamiento (reuniones semanales) + dirección de proveedores externos + cierre con resultados medidos.
+- **Qué entrega:** todo lo de Modelo B + 8-12 semanas de acompañamiento (reuniones semanales) + dirección de proveedores externos + iteración del rediseño según feedback de campo + medición continua de KPIs + documento de cierre con resultados medidos.
 - **Duración:** 3-4 meses.
-- **Quién lo compra:** profesional o emprendimiento que quiere garantía de implementación, no solo plan. Cliente más maduro y con presupuesto.
+- **Quién lo compra:** profesional o emprendimiento que quiere garantía de implementación, no solo plan. Cliente más maduro, con presupuesto y poco tiempo personal para coordinar proveedores.
+- **Cuándo elegirlo:** cliente pide acompañamiento explícito, rediseño complejo (multi-touchpoint, multi-stakeholder), o coordinación de proveedores externos requerida.
 - **Función comercial:** servicio premium. Mayor compromiso de tiempo, mejor caso de estudio, más alto ticket.
 
 ---
 
 ## Recomendación por defecto
 
-Cuando no hay información para decidir, recomendar **Modelo B**. Es el que mejor balancea profundidad, plazo y precio. Suficiente para mostrar valor, no tan caro como C.
+Cuando no hay información para decidir, recomendar **Modelo B**. Es el que mejor balancea profundidad, plazo y precio.
 
 Saltar a A solo si el cliente expresa duda o riesgo. Saltar a C solo si pide acompañamiento explícito o si el rediseño es complejo (multi-touchpoint).
 
@@ -117,6 +121,8 @@ Si un prospect pide alguna de estas cosas, derivamos o declinamos. Ver `../01-id
 
 ## Changelog del archivo
 
+- **2026-05-13 (v0.6):** consolidada descripción de modelos como SSOT. Absorbidas las secciones "Cuándo usarlo" de `pricing.md`. `pricing.md` queda solo con precio + datos económicos internos. Aprobado directo por owner en sesión.
+- **2026-05-13:** v0.5, sumada línea operativa que ancla la oferta al rol "VP of Customer" para audiencias que reconocen el puesto (founders, ejecutivos, profesionales con equipo). Aprobado vía LRN-002.
 - **2026-05-11:** v0.4, sumada nota introductoria a "Lo que NO vendemos" que clarifica la relación con marketing (arista compatible, diferencia operativa en el alcance) y una versión llana del concepto para audiencia fuera del rubro.
 - **2026-05-09:** v0.3, reescritura de tagline, oferta principal y los tres niveles de pitch. Se elimina el "30-50% más" como número específico (no validado empíricamente). Se reordena la jerarquía: rediseño de la entrega + diferenciación + experiencia alineada con el cliente como promesas primarias; cobrar más pasa a consecuencia. Nivel 1 reemplazado por versión llana con oficios concretos para audiencia fuera del rubro. Copy convertido a afirmativo.
 - **Mayo 2026:** versión inicial v0.2.

@@ -6,6 +6,16 @@ Si una decisión contradice un principio, la decisión está mal. No el principi
 
 ---
 
+## Tesis. Sistemas vivos
+
+Cuando un profesional contrata Yellow, se lleva un sistema vivo que opera todos los días: plantillas, prompts, microsites, protocolos. Cosas que usa con sus manos para sostener el nuevo servicio, cargadas con la evidencia que descubrimos entrevistando a sus clientes finales. El proyecto cierra con ese sistema funcionando en su operación.
+
+**En operación:** todo proyecto entrega un sistema vivo que el profesional opera sin nosotros. Si al cerrar el cliente solo tiene un archivo para leer, hay que rediseñar la entrega. La evidencia para diseñar el sistema viene siempre de entrevistas a clientes finales (ver P5).
+
+*Los principios P1-P10 son operacionalizaciones de la Tesis en distintos momentos del trabajo.*
+
+---
+
 ## P1. Servicio sin tocar el oficio
 
 Nunca rediseñamos lo que el profesional sabe hacer. Solo rediseñamos cómo lo entrega, cómo se ve y cómo se vive desde el lado del cliente.
@@ -99,3 +109,10 @@ Si Agustin mismo va a tomar una decisión que contradice un principio, debe para
 
 Si es lo primero, se actualiza el principio antes de actuar.
 Si es lo segundo, no se actúa.
+
+---
+
+## Changelog del archivo
+
+- **2026-05-14 (v0.3):** P0 renombrado a "Tesis. Sistemas vivos". El meta-principio pasa a categoría propia (Tesis) separada de los principios operativos (P1-P10). Cuerpo actualizado para reflejar "sistema vivo" como sujeto. Referencias a "P0" barridas en todo el playbook y training (md + HTML). Las menciones a "P0" en changelogs históricos quedan como rastro de la versión anterior. Aprobado directo por owner en sesión.
+- **2026-05-13:** v0.2, agregado P0 "Sistemas, no documentos" como meta-principio del que P1-P10 son operacionalizaciones. P1-P10 sin cambios. Aprobado vía LRN-003.

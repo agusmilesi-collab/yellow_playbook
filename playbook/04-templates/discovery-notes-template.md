@@ -76,6 +76,21 @@ Para el proceso de la call, ver `../03-process/01-discovery.md`.
 
 ---
 
+## Pregunta 5: ¿Qué te dicen tus clientes contentos?
+
+[Notas. Foco en señales del meta-patrón — qué nombra el cliente final como lo más valioso, idealmente algo que el profesional regala sin cobrarlo. Ver `../02-methodology/jtbd.md` sección meta-patrón.]
+
+**Frases clave del prospect sobre lo que dicen sus clientes:**
+
+> "[frase textual]"
+
+**Lectura preliminar del meta-patrón:**
+
+- **Qué regala (lo valioso para el cliente final):** [hipótesis 🔵]
+- **Qué cobra (lo que figura en factura):** [hipótesis 🔵]
+
+---
+
 ## Hipótesis preliminares (🔵)
 
 ### Job dominante
@@ -177,19 +192,11 @@ Ver criterios en `../01-identity/icp.md`.
 
 ## Notas para la IA
 
-Cuando recibas notas crudas de una discovery call, generar un documento siguiendo esta plantilla. Reglas:
-
-1. **Estructurar por las 4 preguntas centrales**.
-2. **Capturar frases textuales** del cliente (entre comillas).
-3. **Calificar contra ICP** siguiendo el sistema de scoring.
-4. **Hipotetizar los 3 jobs** con marcador 🔵.
-5. **Identificar struggling moment** principal.
-6. **Marcar gaps** con marcador ❓.
-7. **Recomendar modelo** según signals.
-8. **NO armar propuesta todavía.** Solo estructurar.
+SSOT de las reglas operativas para procesar notas de discovery → `../03-process/01-discovery.md` sección "Notas para la IA" (5 preguntas + hipótesis de 3 jobs + meta-patrón + calificación ICP + gaps). Este template es la **estructura** sobre la que la IA escribe; la lógica vive en el proceso.
 
 ---
 
 ## Changelog del archivo
 
+- **2026-05-13 (v0.3):** agregada Pregunta 5 (meta-patrón) que faltaba; el proceso ya la incluía desde LRN-007 pero el template seguía con 4 preguntas. "Notas para la IA" colapsadas a puntero único hacia `03-process/01-discovery.md`. Aprobado directo por owner en sesión.
 - **Mayo 2026:** versión inicial v0.2.

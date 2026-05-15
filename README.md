@@ -1,6 +1,6 @@
 # Agustin UX Strategy — Playbook
 
-**Versión:** 0.4
+**Versión:** 0.6
 **Última actualización:** Mayo 2026
 **Owner:** Agustin (Rosario, Argentina)
 
@@ -28,7 +28,7 @@ Cualquiera de los tres debería poder leer este repo y operar el negocio sin ped
 
 | Carpeta / archivo | Qué es | Quién lo modifica |
 |---|---|---|
-| `playbook/` | Conocimiento estable del negocio. Frameworks, plantillas, runbooks, identidad, pricing. | Solo el owner, vía consolidación de learnings. La IA NO toca esta carpeta. |
+| `playbook/` | Conocimiento estable del negocio. Frameworks, plantillas, identidad, pricing, procedimientos operativos. | Solo el owner, vía consolidación de learnings. La IA NO toca esta carpeta. |
 | `cases/<slug>/` | Un caso real por carpeta. 4 archivos: `transcript.md`, `diagnostico.md`, `plan.md`, `case-notes.md`. | Owner + IA durante la sesión del caso. |
 | `learnings/` | `learnings-pending.md` (append-only, vivos) + `CONSOLIDATION-PROMPT.md`. | IA escribe pendientes; owner aprueba consolidación al playbook. |
 | `CLAUDE.md` | Contrato operativo entre la IA y el repo. Reglas no-negociables. | Solo el owner. |
@@ -47,26 +47,19 @@ Cualquiera de los tres debería poder leer este repo y operar el negocio sin ped
 | `04-templates/` | Plantillas reutilizables (calls, propuestas, diagnósticos) | Para generar entregables |
 | `05-examples/` | Casos canónicos de referencia | Como referencia de profundidad esperada |
 | `06-operations/` | Pricing, contratos, herramientas, AI workflow | Para administrar el negocio |
-| `07-runbook/` | Procedimientos paso a paso por escenario | Cuando estás en el momento y necesitás "qué hago ahora" |
 | `08-training/` | Plan de capacitación de 4 semanas | Para aprender la metodología o repasar |
 | `quality-checklist.json` | Criterios de calidad consolidados que aplican a todo output | La IA lo recorre antes de entregar (ver `CLAUDE.md` R4) |
 
 ---
 
-## Onboarding obligatorio (en este orden)
+## Onboarding
 
-Si sos nuevo en el repo (humano o IA), leé estos archivos en este orden:
+Si sos nuevo en el repo:
 
-1. `CLAUDE.md` — contrato operativo (si sos IA, esto manda).
-2. `playbook/00-start-here/onboarding.md` — qué es este negocio en 5 minutos.
-3. `playbook/00-start-here/principles.md` — los 10 principios no-negociables.
-4. `playbook/01-identity/offer.md` — qué vendemos exactamente.
-5. `playbook/01-identity/icp.md` — a quién le vendemos.
-6. `playbook/02-methodology/service-design.md` — el primer pilar metodológico.
-7. `playbook/02-methodology/jtbd.md` — el segundo pilar metodológico.
-8. `playbook/05-examples/case-psicologa.md` — caso canónico de referencia.
+- **IA:** empezá por `CLAUDE.md` (contrato operativo).
+- **Humano:** empezá por `playbook/00-start-here/onboarding.md` — ahí vive el SSOT del orden de lectura.
 
-Después de eso, el resto del repo se consulta por necesidad. Para navegación rápida una vez familiarizado con el repo, ver `INDEX.md`.
+Para navegación rápida una vez familiarizado con el repo, ver `INDEX.md`.
 
 ---
 
@@ -110,6 +103,8 @@ Para ver qué hay que hacer y cuándo, consultar `playbook/00-start-here/roadmap
 
 ## Changelog
 
+- **v0.6 (2026-05-13):** sección "Onboarding obligatorio" colapsada a un puntero único. SSOT del orden de lectura → `playbook/00-start-here/onboarding.md` (era el único archivo cuyo nombre prometía hacer eso). Aprobado directo por owner en sesión.
+- **v0.5 (2026-05-13):** consolidación de `playbook/07-runbook/` dentro de `playbook/03-process/` como sección "Runbook operativo" al final de cada archivo. La carpeta `07-runbook/` se eliminó. Una sola fuente de verdad por fase. Aprobado vía LRN-009.
 - **v0.4 (mayo 2026):** reestructuración tripartita (`playbook/` + `cases/` + `learnings/`) para operar como sistema de aprendizaje continuo. Agregados `CLAUDE.md` (contrato operativo con la IA) y `playbook/quality-checklist.json` (criterios de calidad consolidados). Reescritos los links internos del playbook a rutas relativas.
 - **v0.3 (mayo 2026):** integración de Good Services (Lou Downe). Carpeta nueva `07-runbook/` con procedimientos paso a paso por escenario. Carpeta nueva `08-training/` con plan de capacitación de 4 semanas. Reescritura de oferta a v0.3 (sin promesa de % específico).
 - **v0.2 (mayo 2026):** reestructuración con principios SSOT y onboarding-ready. Pricing definido. Roadmap separado del playbook.

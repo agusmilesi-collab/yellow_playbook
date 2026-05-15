@@ -6,7 +6,7 @@
 
 ## Definición central
 
-Profesionales independientes y emprendimientos chicos cuyo **servicio es mejor que su packaging**.
+Profesionales independientes, emprendimientos chicos y comercios locales con criterio aplicado cuyo **servicio (o atención) es mejor que su packaging**.
 
 Tienen oficio sólido pero entregan su trabajo de una forma que NO comunica el valor real, y por eso compiten contra el promedio en lugar de diferenciarse.
 
@@ -43,6 +43,7 @@ Tienen oficio sólido pero entregan su trabajo de una forma que NO comunica el v
 
 - Marcas de producto (moda, joyería, diseño): el ciclo de venta es más largo.
 - Emprendimientos B2B grandes: estructura de decisión más compleja.
+- Comercios locales con criterio aplicado: ferreterías de barrio, vinotecas, librerías independientes, panaderías artesanales, queserías, almacenes naturales — comercios donde el criterio del operador es el activo real, no el catálogo. Capacidad de pago menor que el profesional independiente, pero el patrón metodológico aplica completo.
 
 ---
 
@@ -134,4 +135,5 @@ Pide rebaja antes de explicar el problema. **Por qué no:** no valora la metodol
 
 ## Changelog del archivo
 
+- **2026-05-13:** v0.3, ampliada la definición central para incluir "comercios locales con criterio aplicado" y agregada línea correspondiente en Tier 3 (ferreterías, vinotecas, librerías independientes, panaderías artesanales, queserías, almacenes naturales). El patrón metodológico aplica completo; la ubicación en Tier 3 reconoce capacidad de pago menor que el profesional independiente. Aprobado vía LRN-004.
 - **Mayo 2026:** versión inicial v0.2.

@@ -28,7 +28,7 @@ Lo que pasa atrás para que el frontstage funcione. Invisible al cliente.
 Metodología de rediseño que incluye al cliente final en sesiones de diseño junto al consultor y al dueño del negocio.
 
 ### Service redesign without core change
-Filosofía: rediseñar la experiencia sin tocar el oficio del profesional. Lo que cambia es cómo se entrega, no qué se entrega. Es nuestro principio P1 (`../00-start-here/principles.md`).
+Rediseñar la experiencia sin tocar el oficio del profesional. Operacionalizado en P1 — ver `../00-start-here/principles.md` para la formulación completa.
 
 ---
 
@@ -53,16 +53,16 @@ Formato de articulación de un job: *"Cuando [situación], quiero [motivación],
 Momento de frustración del cliente que indica un job no resuelto. Punto de partida para diseñar.
 
 ### Push
-Fuerza que empuja al cliente a abandonar la solución actual (Klement).
+Fuerza que empuja al cliente a abandonar la solución actual. Corpus Jobs-As-Progress (Moesta, Spiek y colaboradores).
 
 ### Pull
-Fuerza que atrae al cliente hacia una solución nueva (Klement).
+Fuerza que atrae al cliente hacia una solución nueva. Corpus Jobs-As-Progress.
 
 ### Anxiety
-Miedo del cliente a la solución nueva (Klement).
+Miedo del cliente a la solución nueva. Klement (cap 6) distingue *anxiety-in-choice* (en el momento de decidir) y *anxiety-in-use* (después de usar).
 
-### Habit
-Inercia del hábito que retiene al cliente en su solución actual (Klement).
+### Inertia
+Fuerza que retiene al cliente en su solución actual. Categoría amplia que incluye hábitos puntuales (habits-in-choice y habits-in-use) y otras formas de "tendencia a no cambiar". Corpus Jobs-As-Progress.
 
 ### Demand-side innovation
 Enfoque de innovación que parte de los jobs no satisfechos del cliente, no de las features posibles del producto.
@@ -158,5 +158,6 @@ Lenguaje que queda fuera de entregables y comunicación:
 
 ## Changelog del archivo
 
+- **2026-05-13 (v0.4):** definición de "Service redesign without core change" reducida a 1 línea con puntero a P1 (era reformulación del principio completo). Aprobado directo por owner en sesión.
 - **2026-05-09:** v0.3, castellanización de los términos de UX Strategy aplicada (drill-down, progressive disclosure, medium reframing, willingness to pay, etc.) según la guía de estilo Yellow (`./style-guide.md`). Los términos en inglés se mantienen entre paréntesis para facilitar la búsqueda. Los nombres canónicos de framework (Job-to-be-Done, push/pull/anxiety/habit) se preservan.
 - **Mayo 2026:** versión inicial v0.2.

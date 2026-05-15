@@ -183,23 +183,13 @@ Cada evaluación requiere horas de codificación manual de tests, lo que limita 
 
 ## 10. Pitch profesional aplicado al caso (90 segundos)
 
-> "El servicio era una evaluación psicotécnica entregada como PDF de 16 páginas. Hice un service blueprint y detecté que el formato no estaba alineado con el job-to-be-done del cliente: él contrata 'tomar una decisión sobre una persona', no 'leer un informe técnico'. Rediseñé la entrega usando revelación progresiva: el cliente recibe un informe de una página con la conclusión y, si quiere profundizar, accede al detalle por capas. Cambiamos el medio de PDF a HTML interactivo y sumamos asistencia de IA en la codificación. La hipótesis es que el rediseño mejora la percepción de valor y el rendimiento, y habilita un aumento de precio relevante, manteniendo intacto el oficio profesional."
+SSOT → `../01-identity/offer.md` sección "Pitch profesional (90 segundos para reuniones)". Cuando se midan resultados reales del piloto, el pitch se actualiza ahí (no acá).
 
 ---
 
 ## Glosario aplicado al caso
 
-| Lo que se hizo | Vocabulario UX Strategy |
-|---|---|
-| Mapeé el servicio entero | Service blueprint |
-| Identifiqué el verdadero trabajo del cliente | Jobs-to-be-done |
-| Encontré dónde se traba el usuario | Pain point identification |
-| Rediseñé qué muestra primero el informe | Revelación progresiva |
-| Capa básica + capas profundas | Layered information architecture |
-| Cambio de PDF a HTML interactivo | Cambio de soporte |
-| El servicio sigue siendo el mismo, cambia el envoltorio | Service redesign |
-| Sube el precio sin perder demanda | Aumento de la percepción de valor |
-| Métricas para validar el rediseño | KPI framework |
+Traducción acción → vocabulario UX Strategy → `../02-methodology/glossary.md` sección "Lo que hago → cómo se nombra" (aplica al caso sin cambios).
 
 ---
 
@@ -217,4 +207,5 @@ Cuando se ejecute la implementación, agregar:
 
 ## Changelog del archivo
 
+- **2026-05-13:** secciones "Pitch profesional aplicado al caso" y "Glosario aplicado al caso" colapsadas a punteros hacia sus SSOT (`offer.md` y `glossary.md`). Inconsistencia "Marco de KPIs" vs "KPI framework" resuelta al apuntar al glossary único. Aprobado directo por owner en sesión.
 - **Mayo 2026:** versión inicial como propuesta. Pendiente actualizar post-implementación con datos reales.

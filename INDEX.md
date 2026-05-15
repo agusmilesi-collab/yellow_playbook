@@ -39,7 +39,6 @@ Cada concepto vive en un solo archivo. Si lo necesitás en otro lado, linkealo, 
 | Precios exactos | `playbook/06-operations/pricing.md` |
 | Política de descuentos | `playbook/06-operations/pricing.md` |
 | Modelo de carta acuerdo | `playbook/06-operations/contracts.md` |
-| Stack de herramientas | `playbook/06-operations/tools.md` |
 | Manejo financiero | `playbook/06-operations/finance.md` |
 
 ### Metodología
@@ -47,6 +46,7 @@ Cada concepto vive en un solo archivo. Si lo necesitás en otro lado, linkealo, 
 | Concepto | SSOT en |
 |---|---|
 | Service Design (framework) | `playbook/02-methodology/service-design.md` |
+| Evaluación de touchpoints (matriz) | `playbook/02-methodology/service-design.md` |
 | Jobs to be Done (framework) | `playbook/02-methodology/jtbd.md` |
 | Good Services (15 principios) | `playbook/02-methodology/good-services.md` |
 | 4 Forces of Progress | `playbook/02-methodology/jtbd.md` |
@@ -74,18 +74,13 @@ Cada concepto vive en un solo archivo. Si lo necesitás en otro lado, linkealo, 
 | Principios no-negociables | `playbook/00-start-here/principles.md` |
 | Acciones a ejecutar | `playbook/00-start-here/roadmap.md` |
 
-### Runbook por escenario
+### Capacitación
 
-| Escenario | SSOT en |
+| Concepto | SSOT en |
 |---|---|
-| Cuando llega prospect | `playbook/07-runbook/01-cuando-llega-prospect.md` |
-| Cuando hay que mandar propuesta | `playbook/07-runbook/02-cuando-hay-que-mandar-propuesta.md` |
-| Cuando cliente dijo sí | `playbook/07-runbook/03-cuando-cliente-dijo-si.md` |
-| Cuando arranca proyecto | `playbook/07-runbook/04-cuando-arranca-proyecto.md` |
-| Cuando estás en research | `playbook/07-runbook/05-cuando-estas-en-research.md` |
-| Cuando armás diagnóstico | `playbook/07-runbook/06-cuando-armas-diagnostico.md` |
-| Cuando termina proyecto | `playbook/07-runbook/07-cuando-termina-proyecto.md` |
 | Plan de capacitación | `playbook/08-training/README.md` |
+
+**Nota:** los procedimientos operativos paso a paso por escenario (antes en `07-runbook/`) ahora viven como sección "Runbook operativo" al final de cada archivo de `playbook/03-process/`. Una sola fuente por fase.
 
 ---
 
@@ -132,7 +127,7 @@ Cada concepto vive en un solo archivo. Si lo necesitás en otro lado, linkealo, 
 ### "Voy a arrancar un caso real con un cliente"
 
 1. Crear `cases/<slug-cliente>/` con los 4 archivos (templates en `playbook/04-templates/`).
-2. Seguir el flujo del runbook según etapa.
+2. Seguir el flujo de `playbook/03-process/` según etapa, revisando la sección "Runbook operativo" al final de cada archivo.
 3. Mantener `case-notes.md` durante toda la sesión.
 4. Al cerrar el caso, volcar learnings a `learnings/learnings-pending.md`.
 
@@ -148,15 +143,13 @@ Cada concepto vive en un solo archivo. Si lo necesitás en otro lado, linkealo, 
 
 ### "Estoy operando con un cliente, ¿qué hago ahora?"
 
-Ir directo al runbook de la situación:
+Ir al archivo de proceso correspondiente y revisar la sección "Runbook operativo" al final:
 
-- Llegó un prospect → `playbook/07-runbook/01-cuando-llega-prospect.md`
-- Hice discovery, falta propuesta → `playbook/07-runbook/02-cuando-hay-que-mandar-propuesta.md`
-- Cliente dijo sí → `playbook/07-runbook/03-cuando-cliente-dijo-si.md`
-- Arranca proyecto → `playbook/07-runbook/04-cuando-arranca-proyecto.md`
-- En research → `playbook/07-runbook/05-cuando-estas-en-research.md`
-- Armando diagnóstico → `playbook/07-runbook/06-cuando-armas-diagnostico.md`
-- Termina proyecto → `playbook/07-runbook/07-cuando-termina-proyecto.md`
+- Llegó un prospect → `playbook/03-process/01-discovery.md`
+- Hice discovery, falta propuesta → `playbook/03-process/02-proposal.md`
+- Cliente dijo sí → `playbook/03-process/03-closing.md`
+- Arranca proyecto, research, diagnóstico → `playbook/03-process/04-delivery.md`
+- Termina proyecto → `playbook/03-process/05-handoff.md`
 
 ### "Quiero capacitarme en la metodología"
 
@@ -179,6 +172,8 @@ Para los 10 principios no-negociables completos: `playbook/00-start-here/princip
 
 ## Changelog del archivo
 
+- **2026-05-13 (v0.6):** eliminada fila "Stack de herramientas" tras borrar `06-operations/tools.md` (era inventario, no SSOT metodológico). Costos y "stack mínimo" absorbidos en `finance.md` y `ai-workflow.md`; integraciones futuras movidas a `roadmap.md` backlog. Aprobado directo por owner en sesión (saltó protocolo de learnings).
+- **2026-05-13 (v0.5):** eliminada sección "Runbook por escenario" tras consolidación de `07-runbook/` dentro de `03-process/`. Atajos por escenario apuntan ahora a la sección "Runbook operativo" al final de cada archivo de proceso. Aprobado vía LRN-009.
 - **Mayo 2026 (v0.4):** estructura tripartita reflejada (`playbook/` + `cases/` + `learnings/`). Sumadas referencias a `CLAUDE.md`, `quality-checklist.json` y atajos para arrancar caso real / consolidar learnings.
 - **Mayo 2026 (v0.3):** agregado Good Services, runbook por escenarios y plan de capacitación.
 - **Mayo 2026 (v0.2):** versión inicial.

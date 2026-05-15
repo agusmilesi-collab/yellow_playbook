@@ -24,27 +24,9 @@ Recomendado:
 
 ---
 
-## Política de pricing en USD
+## Moneda y forma de pago
 
-Todos los precios están en USD (ver `../06-operations/pricing.md`) por dos razones:
-
-1. Estabilidad frente a inflación argentina.
-2. Simplicidad para clientes regionales.
-
-**Conversión a pesos:** se hace al momento del primer pago, al tipo de cambio del día (oficial / MEP / blue según se acuerde con el cliente).
-
-**Recomendación:** para clientes argentinos, ofrecer dos opciones:
-- USD vía transferencia internacional o cripto.
-- ARS al MEP del día del pago.
-
----
-
-## Forma de pago
-
-Estándar para todos los proyectos:
-
-- **50% al inicio:** la fecha de pago es la fecha de inicio del proyecto.
-- **50% al cierre:** al entregar el documento final.
+SSOT en `../06-operations/pricing.md`. Resumen: precios en USD, conversión a ARS al MEP del día del primer pago si el cliente lo prefiere, 50% al inicio / 50% al cierre.
 
 **No se hacen excepciones** (principio P8 de `../00-start-here/principles.md`). No se empieza a trabajar sin el primer pago.
 
@@ -91,9 +73,9 @@ Esto garantiza que cuando lleguen los impuestos, el dinero esté disponible.
 
 ## Costos del negocio
 
-Estimación mensual baseline (ver `../06-operations/tools.md` para detalle):
+Estimación mensual baseline:
 
-- Herramientas digitales: USD 25-30/mes.
+- Herramientas digitales: USD 25-30/mes (Google Workspace ~6 + Claude Pro ~20; Figma/Notion/WhatsApp/Calendly en plan free).
 - Contador: $XXX (definir).
 - Marketing / contenido: $0 inicialmente (LinkedIn orgánico).
 
@@ -176,4 +158,5 @@ Considerar:
 
 ## Changelog del archivo
 
+- **2026-05-13 (v0.3):** "Política de pricing en USD" y "Forma de pago" colapsadas a un solo bloque "Moneda y forma de pago" con SSOT en `pricing.md`. Costos absorbidos desde `tools.md` (eliminado). Aprobado directo por owner en sesión.
 - **Mayo 2026:** versión inicial v0.2.

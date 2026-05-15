@@ -109,37 +109,13 @@ Si no es el momento, también está bien. Avisame y quedamos en contacto para m�
 
 ---
 
-## Reglas de uso
+## Reglas de uso y notas para la IA
 
-Para reglas detalladas de aplicación, ver `../03-process/02-proposal.md`.
-
-Resumen de lo crítico:
-
-- 1-2 páginas máximo.
-- Devolver palabras del cliente en sección 1.
-- Diagnóstico de sección 2 corto y punzante.
-- NO ofrecer 3 opciones. Una sola, la que mejor calza.
-- NO bajar precio en primera ronda.
-- Anclar valor antes de precio.
-- Pricing siempre desde `../06-operations/pricing.md`.
-
----
-
-## Notas para la IA
-
-Cuando generes un borrador de propuesta:
-
-1. **Devolver al cliente sus palabras** en la sección 1 (NO parafrasear).
-2. **Diagnóstico de sección 2 corto y punzante.** Más de 5-7 líneas, mal.
-3. **No usar palabras del cliente que no aparezcan en las notas.** Inventar lo que dijo es muerte instantánea.
-4. **Pricing exacto** desde pricing.md, nunca inventar.
-5. **Plazos realistas.**
-6. **Lenguaje del glossary,** no buzzwords.
-7. **Tono argentino, directo.**
-8. **Validez 14 días** al final.
+SSOT de las reglas de propuesta y de las notas operativas para la IA → `../03-process/02-proposal.md` (secciones "Reglas de pricing en la propuesta", "Cómo aplicar las 4 fuerzas" y "Notas para la IA"). Este archivo es **estructura markdown pura**; las reglas se aplican desde el proceso.
 
 ---
 
 ## Changelog del archivo
 
+- **2026-05-13 (v0.3):** "Reglas de uso" y "Notas para la IA" colapsadas a puntero único hacia `03-process/02-proposal.md`. El template queda como estructura pura. Aprobado directo por owner en sesión.
 - **Mayo 2026:** versión inicial v0.2.

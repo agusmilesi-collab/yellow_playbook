@@ -24,95 +24,97 @@ Dos momentos:
 
 ## Los 15 principios
 
-### 1. El servicio tiene que ser fácil de encontrar
+Castellanizados a partir del texto original de Lou Downe (good.services/15-principles-of-good-service-design). El texto verbatim en inglés se conserva en la bibliografía de referencia (`~/Desktop/training/bibliografia/good-services-downe-15-principles.md`).
 
-Si la gente no sabe que existís, el servicio no existe para ellos. ¿Cómo te encuentra alguien que tiene tu problema?
+### 1. Ser fácil de encontrar
 
-**Aplicación:** auditar canales de descubrimiento. ¿Aparece tu cliente en una búsqueda de Google? ¿Hay alguien que lo recomiende? ¿Cómo llegó a vos el último cliente?
+El servicio puede ser encontrado por un usuario sin conocimiento previo de la tarea que se propuso hacer. Por ejemplo, alguien que quiere "aprender a manejar" tiene que poder llegar a "sacar el registro" como parte de ese servicio, sin ayuda.
 
-### 2. Tiene que explicar claramente para qué sirve
+**Aplicación:** auditar canales de descubrimiento. ¿Aparece tu cliente en una búsqueda? ¿Hay alguien que lo recomiende? ¿Cómo llegó el último cliente?
 
-El usuario tiene que entender en 10 segundos qué problema resuelve este servicio y si es para él.
+### 2. Explicar con claridad para qué sirve
 
-**Aplicación:** mirar el primer punto de contacto (web, perfil, propuesta). ¿Una persona ajena al rubro entiende qué hacés? Si dice "interesante, ¿pero qué hacés exactamente?", falló este principio.
+El propósito del servicio queda claro para los usuarios desde el inicio. Un usuario sin conocimiento previo entiende qué va a hacer el servicio por él y cómo va a funcionar.
 
-### 3. Establece expectativas claras del usuario sobre el servicio
+**Aplicación:** mirar el primer punto de contacto (web, perfil, propuesta). Si una persona ajena al rubro pregunta "interesante, ¿pero qué hacés exactamente?", falló este principio.
 
-Antes de empezar, el usuario sabe qué va a pasar, en cuánto tiempo, con qué resultado.
+### 3. Establecer las expectativas del usuario sobre el servicio
+
+El servicio explica con claridad qué se necesita del usuario para completarlo y qué puede esperar del proveedor a cambio. Incluye cuánto va a tardar, cuánto va a costar, y si hay restricciones sobre quiénes pueden usarlo.
 
 **Aplicación:** mirar el momento de "decisión de compra". ¿El cliente sabe qué va a recibir, cuándo, cómo? Las sorpresas en servicios profesionales son ansiedad.
 
-### 4. Le permite al usuario completar el objetivo que vino a buscar
+### 4. Permitir al usuario completar el resultado que vino a buscar
 
-El servicio resuelve el job real, no un proxy del job. Conectar con `../02-methodology/jtbd.md`.
+El servicio ayuda al usuario a alcanzar un objetivo (arrancar un negocio, sacar el registro, mudarse) como un flujo de eventos lo más continuo posible. Empieza desde el momento en que el usuario considera hacer algo y termina cuando alcanza la meta, incluyendo los pasos de soporte posteriores.
 
-**Aplicación:** si el cliente del psicotécnico viene a "tomar una decisión sobre una persona" pero el servicio le entrega "un informe de 16 páginas para leer", falló este principio.
+**Aplicación:** si el cliente del psicotécnico viene a "tomar una decisión sobre una persona" pero el servicio le entrega "un informe de 16 páginas para leer", falló este principio. Conectar con `../02-methodology/jtbd.md`.
 
-### 5. Funciona de manera familiar
+### 5. Funcionar de manera familiar
 
-El servicio se parece a otros servicios que el usuario ya conoce. No le obliga a aprender lógicas nuevas para algo simple.
+La gente entiende el mundo a partir de experiencias previas. Si hay una costumbre establecida para tu servicio que beneficia al usuario, el servicio se ajusta a esa costumbre. Atención: algunas costumbres benefician a la organización y no al usuario; esas se evitan, especialmente si son ineficientes o están obsoletas.
 
 **Aplicación:** ¿el cliente puede usar el servicio sin entrenamiento? Si requiere "te explico cómo funciona" largo, está mal diseñado.
 
-### 6. No requiere conocimiento previo del usuario
+### 6. No requerir conocimiento previo del usuario
 
-El servicio funciona aunque el usuario no sepa nada del rubro. La jerga interna queda atrás del frontstage.
+El servicio funciona sin asumir ningún conocimiento previo del usuario.
 
 **Aplicación:** auditar comunicaciones. ¿Usás términos que solo entiende un colega tuyo? ¿El cliente tiene que googlear palabras tuyas?
 
-### 7. Es agnóstico de la estructura organizacional
+### 7. Ser agnóstico de la estructura organizacional
 
-Al usuario no le importa cómo te organizás vos por dentro. No le pidas que entienda qué área hace qué.
+El servicio funciona de una manera que no expone innecesariamente al usuario a las estructuras internas de la organización que provee el servicio.
 
-**Aplicación:** si tu cliente tiene que decir "hola, quería saber si esto se lo mando a vos o a tu colega", falló este principio. La estructura interna es invisible.
+**Aplicación:** si tu cliente tiene que preguntar "¿esto se lo mando a vos o a tu colega?", falló este principio. La estructura interna es invisible.
 
-### 8. Solo requiere los pasos esenciales para completarse
+### 8. Requerir los pasos mínimos para completarse
 
-Cada paso que le pedís al usuario suma fricción. Eliminar todos los que no son indispensables.
+Un buen servicio requiere la interacción mínima posible del usuario para completar el resultado que busca. A veces esto significa anticiparse a las necesidades del usuario sin que él inicie la interacción. Otras veces significa frenar el avance del servicio para que el usuario absorba información o tome una decisión importante.
 
 **Aplicación:** contar pasos del journey. ¿Cuántos clicks, mensajes, decisiones, esperas? ¿Cuáles son indispensables?
 
-### 9. Es consistente a lo largo del tiempo
+### 9. Ser consistente a lo largo del servicio
 
-Un usuario que vuelve recibe la misma experiencia. No tiene que reaprender.
+El servicio se siente como un solo servicio en todos los canales por los que se entrega. El lenguaje es consistente, igual que los estilos visuales y los patrones de interacción.
 
-**Aplicación:** si el primer cliente de un servicio tuvo una experiencia y el quinto otra distinta, el servicio no escala.
+**Aplicación:** si el primer cliente tuvo una experiencia y el quinto otra distinta, el servicio no escala.
 
-### 10. No tiene puntos muertos / dead ends
+### 10. No tener puntos muertos
 
-En cada momento del journey, el usuario sabe qué hacer próximamente. No se queda sin opción.
+El servicio dirige a todos los usuarios hacia un resultado claro, sin importar si el usuario es elegible o adecuado para usar el servicio. Ningún usuario queda abandonado dentro del servicio sin saber cómo continuar.
 
-**Aplicación:** los silencios son dead ends. Si después de un email tuyo el cliente espera 3 días sin saber si pasó algo, ahí hay un dead end.
+**Aplicación:** los silencios son puntos muertos. Si después de un email tuyo el cliente espera 3 días sin saber si pasó algo, ahí hay un punto muerto.
 
-### 11. Es accesible para todos los que lo necesitan
+### 11. Ser usable por todos por igual
 
-Discapacidades, idiomas, niveles educativos, dispositivos. Si el servicio excluye a parte del público objetivo por accesibilidad, hay un problema.
+El servicio puede ser usado por cualquiera que lo necesite, sin importar sus circunstancias o capacidades. Todos los usuarios pueden usarlo en condiciones equivalentes.
 
 **Aplicación:** ¿el servicio funciona para alguien que solo lee desde el celular? ¿Para alguien con visión limitada? ¿Para alguien que no es nativo del idioma?
 
-### 12. Empodera al usuario para pedir ayuda
+### 12. Promover los comportamientos correctos en usuarios y en quien provee el servicio
 
-Cuando algo no funciona, el usuario sabe a quién acudir y cómo. Sin esfuerzo.
+El servicio promueve comportamientos seguros y productivos en usuarios y staff, mutuamente beneficiosos. Para los usuarios: el servicio no sienta precedentes que puedan poner al usuario en riesgo en otras circunstancias (por ejemplo, entregar datos sin saber para qué se usan). Para el staff: no se incentivan comportamientos que dañan al usuario (por ejemplo, premiar al call center por llamadas cortas).
 
-**Aplicación:** ¿hay un canal claro de "tengo una duda"? ¿La respuesta llega en tiempo razonable? ¿O el usuario tiene que perseguirte?
+**Aplicación:** revisar incentivos. ¿Hay alguna métrica interna que empuja al equipo a dar mal servicio para "cumplir" algo? ¿El usuario aprende a comportarse de un modo que después lo daña en otro contexto?
 
-### 13. Es honesto y transparente
+### 13. Responder al cambio con rapidez
 
-No oculta información que el usuario debería saber. No promete lo que no puede cumplir.
+El servicio responde con rapidez y se adapta cuando cambian las circunstancias del usuario, y aplica ese cambio de forma consistente en todo el servicio. Por ejemplo: si un usuario cambia su número de teléfono en línea, el nuevo número se reconoce también en la atención presencial.
 
-**Aplicación:** revisar comunicaciones de venta. ¿Hay algo que te conviene callar pero el cliente debería saber? Eso es deshonestidad por omisión.
+**Aplicación:** ¿qué pasa si en medio del proyecto el cliente cambia de scope? ¿Si aparece un imprevisto? ¿El cambio se propaga a todos los canales del servicio?
 
-### 14. Está protegido contra el abuso y el error
+### 14. Explicar con claridad por qué se toma una decisión
 
-Si alguien comete un error (incluso intencional), el servicio no se rompe.
+Cuando se toma una decisión dentro del servicio, queda claro para el usuario por qué se tomó esa decisión, comunicada en el momento en que se toma. Además, el usuario tiene una vía para impugnar la decisión si lo necesita.
 
-**Aplicación:** ¿qué pasa si el cliente no manda algo que tenía que mandar? ¿Si paga tarde? ¿Si malinterpreta una instrucción? El servicio bien diseñado tiene mecanismos para esto.
+**Aplicación:** revisar los puntos donde el servicio toma decisiones por el usuario (calificación, rechazo, derivación). ¿Se explican? ¿Se puede apelar? Si las decisiones son cajas negras, falló este principio.
 
-### 15. Responde rápido al cambio
+### 15. Hacer fácil el acceso a asistencia humana
 
-El servicio se adapta cuando cambian las condiciones del usuario o del contexto.
+El servicio siempre ofrece una vía sencilla para que el usuario hable con una persona si lo necesita.
 
-**Aplicación:** ¿qué pasa si en medio del proyecto el cliente cambia de scope? ¿Si aparece un imprevisto? ¿El servicio tiene flexibilidad o se rompe?
+**Aplicación:** ¿hay un canal claro de "tengo una duda" que llegue a una persona real, no a un FAQ o bot? ¿La respuesta llega en tiempo razonable?
 
 ---
 
@@ -160,4 +162,5 @@ Para cada principio del 1 al 15:
 
 ## Changelog del archivo
 
+- **2026-05-14 (v0.4):** los 15 principios fueron alineados con el texto original de Lou Downe (fuente: good.services/15-principles-of-good-service-design, extraído 2026-05-14, archivado en `~/Desktop/training/bibliografia/good-services-downe-15-principles.md`). Versión previa del playbook tenía divergencias en los principios 12-15: faltaban "Promover comportamientos correctos" (Downe 12) y "Explicar por qué se toma una decisión" (Downe 14), y había principios sin sustento en la fuente original ("Honesto y transparente", "Protegido contra abuso y error"). Castellanización siguiendo regla F (sin negación-afirmación) y regla D (sin anglicismos). Aprobado directo por owner en sesión.
 - **Mayo 2026:** versión inicial v0.3.
