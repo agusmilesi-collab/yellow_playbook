@@ -6,15 +6,15 @@
 
 ## Tagline (oficial)
 
-> Ayudo a profesionales independientes a rediseñar cómo entregan su servicio: una experiencia distinta al resto, alineada con lo que el cliente realmente busca.
+> Ayudo a profesionales independientes a que sus clientes tengan una mejor experiencia, vuelvan y los recomienden, rediseñando cómo entregan su servicio.
 
 ---
 
 ## Oferta principal (oficial)
 
-> Rediseño cómo los profesionales independientes entregan su servicio al cliente: el servicio se diferencia del resto, ofrece una experiencia alineada con lo que el cliente realmente busca y, como consecuencia, habilita cobrar más por lo mismo.
+> Ayudo a profesionales a que sus clientes tengan una buena experiencia, adopten bien el servicio, renueven, recompren y se conviertan en promotores de la marca. En concreto, rediseño cómo el profesional entrega su servicio para que se diferencie del resto y habilite a cobrar más por lo mismo.
 
-Operativamente, es el trabajo que hace un VP of Customer: la función ejecutiva que convierte conocimiento del cliente en decisiones accionables, instalada como práctica viva en la organización.
+Operativamente, es el trabajo que hace un Gerente de Experiencia del Cliente pero en formato fractional: una persona senior que, contratada por proyecto, toma responsabilidad y ayuda a ordenar y mejorar cómo la empresa se relaciona con sus clientes.
 
 ---
 
@@ -52,37 +52,25 @@ Operativamente, es el trabajo que hace un VP of Customer: la función ejecutiva 
 
 Esta sección es **SSOT** de qué entrega y a quién apunta cada modelo. Para precio exacto, política de descuentos y datos económicos internos: `../06-operations/pricing.md`. Para proceso de venta y entrega: `../03-process/`.
 
-### Modelo A: Sesión estratégica única
+La duración por modelo es SSOT de `../03-process/04-delivery.md`. Acá vive la función comercial y qué entrega cada uno.
 
-- **Qué entrega:** 3-4 horas de sesión presencial/remota + entregable corto de 5-10 páginas con diagnóstico inicial y recomendaciones macro.
-- **Duración:** 1 semana.
-- **Quién lo compra:** profesional curioso pero no comprometido aún. Quiere validar si Agustin es el indicado antes de invertir más. También sirve para clientes con capacidad de pago limitada pero perfil interesante a futuro.
-- **Cuándo elegirlo:** el cliente expresa duda o riesgo, o pide "probar" antes de comprometerse.
-- **Función comercial:** producto de entrada. Bajo riesgo para el cliente. Suele convertir a Modelo B después.
+- **Modelo A, Lectura experta.** Consulta de 40-60 minutos más devolución escrita de 1 página: lectura del caso apalancada en expertise, sin validación con clientes finales (P5 fuera de alcance, declarado). Producto de entrada y filtro: es lo único que se vende en frío. La devolución cierra con la oferta del Modelo B.
+- **Modelo B, Diagnóstico + plan.** Núcleo estandarizado del método: 2-3 Switch Interviews a clientes finales, cascada de 4 pilares, diagnóstico, plan con cadena causal a WTP, prototipo manual validado con 1 cliente final real y spec del sistema operativo. Recomendado por defecto cuando no hay razón explícita para A o C.
+- **Modelo C, Sistema vivo instalado.** B más build del sistema, instalación y acompañamiento hasta que el profesional lo opera solo. Es el modelo que cumple la Tesis completa. La ejecución se cotiza por alcance contra el plan (ver `../06-operations/pricing.md`).
 
-### Modelo B: Diagnóstico + plan (servicio principal)
+**Regla de venta:** en frío se ofrece A. B y C se venden desde A o desde un referido calificado.
 
-- **Qué entrega:** documento de 15-25 páginas con service blueprint, análisis JTBD, diagnóstico de pain points, propuesta de rediseño detallada, plan de implementación, KPIs y proveedores recomendados.
-- **Duración:** 3-4 semanas.
-- **Quién lo compra:** profesional que ya validó que tiene el problema y quiere el plan completo para implementar.
-- **Cuándo elegirlo:** por defecto, cuando no hay razones explícitas para usar A o C.
-- **Función comercial:** servicio principal. La mayoría de los clientes deberían contratar este.
+### Recomendación de modelo por perfil
 
-### Modelo C: Diagnóstico + acompañamiento
+El modelo recomendado depende del perfil que más paga (ver `icp.md`):
 
-- **Qué entrega:** todo lo de Modelo B + 8-12 semanas de acompañamiento (reuniones semanales) + dirección de proveedores externos + iteración del rediseño según feedback de campo + medición continua de KPIs + documento de cierre con resultados medidos.
-- **Duración:** 3-4 meses.
-- **Quién lo compra:** profesional o emprendimiento que quiere garantía de implementación, no solo plan. Cliente más maduro, con presupuesto y poco tiempo personal para coordinar proveedores.
-- **Cuándo elegirlo:** cliente pide acompañamiento explícito, rediseño complejo (multi-touchpoint, multi-stakeholder), o coordinación de proveedores externos requerida.
-- **Función comercial:** servicio premium. Mayor compromiso de tiempo, mejor caso de estudio, más alto ticket.
+- **Dueño de PyME rentable con producto indiferenciado (Tier 2)** y **profesional cuya clientela son empresas:** son quienes tienen mayor disposición a pagar (reconocen el problema sin educación previa, facturan B2B, anclan el precio contra ingresos grandes). Para ellos el destino es el **Modelo C** (el sistema instalado, que cumple la Tesis). El Modelo B funciona como camino de menor riesgo hacia C.
+- **Profesional de bienestar B2C (Tier 1):** sirve para fábrica de casos y futuro kit vertical, no como destino de esfuerzo comercial activo. Modelo B por defecto.
+- Cuando no hay señal explícita de perfil, el **Modelo B** es el recomendado por defecto.
 
----
+### La compra como demostración
 
-## Recomendación por defecto
-
-Cuando no hay información para decidir, recomendar **Modelo B**. Es el que mejor balancea profundidad, plazo y precio.
-
-Saltar a A solo si el cliente expresa duda o riesgo. Saltar a C solo si pide acompañamiento explícito o si el rediseño es complejo (multi-touchpoint).
+Yellow vende rediseño de la entrega, así que la experiencia de comprar es el argumento de venta más fuerte. Cada entregable comercial (la propuesta de 2 páginas, el diagnóstico de una página por capas, el microsite navegable) hace que el prospecto viva, comprando, exactamente lo que se le propone hacer con sus propios clientes. La forma del entregable es parte de la oferta.
 
 ---
 
@@ -121,6 +109,10 @@ Si un prospect pide alguna de estas cosas, derivamos o declinamos. Ver `../01-id
 
 ## Changelog del archivo
 
+- **2026-06-11 (v0.10):** volcadas las conclusiones del informe de máquina de ventas (2026-06-10) que faltaban en la oferta. Sumadas dos subsecciones: "Recomendación de modelo por perfil" (el perfil que más paga es el dueño de PyME / profesional con clientela B2B, para quienes el destino es C; Tier 1 B2C queda como fábrica de casos) y "La compra como demostración" (la forma del entregable comercial es parte de la oferta). Aprobado directo por el owner en sesión.
+- **2026-06-10 (v0.9):** consolidación de LRN-014 (resuelve LRN-008/009/010). Sección "Modelos de servicio" reescrita: A = Lectura experta (consulta sin validación, único producto vendible en frío), B = Diagnóstico + plan (núcleo estandarizado que cierra en prototipo + spec), C = Sistema vivo instalado (ejecución por alcance, cumple la Tesis). Duración solo por puntero a `03-process/04-delivery.md` (SSOT). Sumada regla de venta (en frío solo A). Aprobado por el owner para consolidación en bloque (sesión 2026-06-10).
+- **2026-05-18 (v0.8):** removido el detalle desactualizado de "Modelos de servicio" (qué entrega / duración / cuándo elegir de A, B, C) y la sub-sección "Recomendación por defecto". Reemplazado por un bloque "en revisión" + estructura comercial mínima vigente + punteros a LRN-008/009/010 y `03-process/`. Motivo: cifras de duración duplicadas y en conflicto entre `offer.md`, `pricing.md` y `04-delivery.md` v0.7; la duración es SSOT de `03-process` y se reescribe en su auditoría. Decisión directa del owner.
+- **2026-05-18 (v0.7):** consolidación de LRN-011 (auditoría del repo, H01.T03). Tagline y oferta principal reescritas; la oferta se reancla al rol "Gerente de Experiencia del Cliente" en formato fractional, reemplazando el ancla "VP of Customer" (v0.5). Redacción provista textual por el owner; correcciones mínimas de tipeo y gramática. LRN-002 quedó rechazado, así que esta redacción manda sola. La sección "Modelos de servicio" NO se tocó: su recalibración (LRN-008/009/010) queda diferida a la auditoría de `03-process` por SSOT de duración.
 - **2026-05-13 (v0.6):** consolidada descripción de modelos como SSOT. Absorbidas las secciones "Cuándo usarlo" de `pricing.md`. `pricing.md` queda solo con precio + datos económicos internos. Aprobado directo por owner en sesión.
 - **2026-05-13:** v0.5, sumada línea operativa que ancla la oferta al rol "VP of Customer" para audiencias que reconocen el puesto (founders, ejecutivos, profesionales con equipo). Aprobado vía LRN-002.
 - **2026-05-11:** v0.4, sumada nota introductoria a "Lo que NO vendemos" que clarifica la relación con marketing (arista compatible, diferencia operativa en el alcance) y una versión llana del concepto para audiencia fuera del rubro.

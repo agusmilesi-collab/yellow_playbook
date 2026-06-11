@@ -2,20 +2,22 @@
 
 **Tiempo de lectura:** 5 minutos.
 
+> Este archivo es un índice de entrada, no un documento autocontenido. Da el mapa y deriva a los SSOT (oferta, ICP, principios, método). La falta de detalle es deliberada: cada tema se profundiza en su archivo, no acá.
+
 ---
 
 ## Qué es este negocio en una frase
 
-Una consultoría de UX Strategy especializada en rediseñar cómo los profesionales artesanales entregan su servicio al cliente, para que se diferencien y la experiencia se alinee con lo que el cliente realmente busca, sin cambiar el oficio del profesional.
+Una consultoría de UX Strategy especializada en rediseñar cómo los profesionales entregan su servicio al cliente, para que se diferencien y la experiencia se alinee con lo que el cliente realmente busca, sin cambiar el oficio del profesional.
 
 ---
 
 ## Quién es Agustin
 
-- Profesional con perfil estratégico, formación en publicidad, experiencia en gastronomía, eventos premium y emprendimientos propios.
-- Patrón de carrera: tomar servicios artesanales y elevarlos como experiencias premium.
+- Lic. en Publicidad y Máster en Business and Technology (equivalente a un MBA orientado a negocios de base digital).
+- Patrón de carrera: lo contratan para marketing y termina rediseñando el servicio. Cuando el caso lo amerita y el cliente lo ofrece, se asocia (Chinchibira, Sentir Mindfulness, TMP). La asociación es caso a caso y opcional, nunca parte de la oferta.
+- Núcleo del patrón: construir sistemas replicables que operan sin su presencia física y generan ingreso pasivo. Es la Tesis del negocio aplicada a su propia carrera.
 - Localización: Rosario, Argentina.
-- También socio/operador de TMP Eventos (negocio paralelo, no parte de este repo).
 
 ---
 
@@ -32,23 +34,25 @@ Precios exactos y política comercial → `../06-operations/pricing.md`.
 
 Profesionales independientes y emprendimientos chicos cuyo **servicio es mejor que su packaging**. Detalle completo en `../01-identity/icp.md`.
 
-Tier 1 (mejor fit): psicólogos, coaches, terapeutas, abogados independientes, contadores, hoteles boutique, restaurantes de autor, bares de especialidad.
+Los tiers se ordenan por complejidad del caso, no por rubro. Tier 1 (low hanging fruit): casos de baja complejidad con solución acotada y replicable. Tiers completos y job por tier en `../01-identity/icp.md`.
 
 ---
 
 ## Cómo trabajamos
 
-Dos frameworks complementarios:
+La cascada de 4 pilares, cada uno con su SSOT en `../02-methodology/`:
 
-- **Service Design** (Stickdorn et al.) → cómo se rediseña una experiencia de servicio. Ver `../02-methodology/service-design.md`.
-- **Jobs to be Done** (modelo Jobs-As-Progress: Christensen + Moesta + Klement) → por qué la gente compra y contra qué se compite realmente. Ver `../02-methodology/jtbd.md`.
+1. **JTBD** (Jobs-As-Progress) descubre qué progreso busca el cliente final y contra qué compite. Ver `jtbd.md`.
+2. **Value-Based Strategy** prioriza los drivers vía Value Map y define dónde se captura el valor. Ver `value-based-strategy.md`.
+3. **Service Design** audita y rediseña la entrega. Ver `service-design.md`.
+4. **Good Services** valida la calidad del rediseño contra 15 principios. Ver `good-services.md`.
 
 Proceso de un proyecto típico:
 
-1. **Discovery call** (30 min, ver `../03-process/01-discovery.md`).
+1. **Discovery call** (35 min, ver `../03-process/01-discovery.md`).
 2. **Propuesta** (envío 2-5 días después, ver `../03-process/02-proposal.md`).
 3. **Cierre** (firma + 50% adelanto, ver `../03-process/03-closing.md`).
-4. **Ejecución** (3-4 semanas para Modelo B, ver `../03-process/04-delivery.md`).
+4. **Ejecución** (duración por modelo en `../03-process/04-delivery.md`).
 5. **Cierre y referidos** (ver `../03-process/05-handoff.md`).
 
 ---
@@ -75,7 +79,7 @@ Después de leer este onboarding:
 2. Leer `../01-identity/offer.md` y `../01-identity/icp.md`.
 3. Leer los frameworks en `../02-methodology/` (incluido `good-services.md`).
 4. Leer el caso completo en `../05-examples/case-psicologa.md`.
-5. Consultar `../00-start-here/roadmap.md` para saber en qué fase del negocio estamos hoy y qué se está haciendo.
+5. Las acciones y el estado del negocio (qué se está haciendo, próximos pasos) viven en la base de Notion "Projects & Tasks" del owner, fuera del repo. El estado de cada caso activo vive en su `cases/<slug>/case-notes.md`.
 
 **Si vas a operar con un cliente:** abrí el archivo correspondiente en `../03-process/` y revisá la sección "Runbook operativo" al final.
 
@@ -85,4 +89,7 @@ Después de leer este onboarding:
 
 ## Changelog del archivo
 
+- **2026-06-11 (v0.6):** paso 5 re-apuntado a Notion "Projects & Tasks" + case-notes, tras la eliminación de `roadmap.md` del repo (decisión del owner). Aprobado directo por el owner en sesión.
+- **2026-06-10 (v0.5):** consolidación de LRN-019 (d). "Cómo trabajamos" actualizado a la cascada de 4 pilares (incorpora Value-Based Strategy y Good Services). Discovery corregida a 35 min. Duración de ejecución por puntero a `03-process/04-delivery.md` (SSOT). Aprobado por el owner para consolidación en bloque (sesión 2026-06-10).
+- **2026-05-18 (v0.4):** consolidación de LRN-006 y LRN-007 (auditoría del repo, H01.T03, aprobación directa del owner). "Quién es Agustin" reescrito al modelo real (Lic. Publicidad + Máster Business and Technology; patrón "contratado para marketing, termina rediseñando, se asocia caso a caso"; sistemas replicables / ingreso pasivo como núcleo). Sumada nota al inicio que declara el archivo como índice de entrada, no documento autocontenido (cierra la duda de auditoría sobre SSOT vs onboarding esqueleto). Línea de "A quién le vendemos" actualizada: tiers por complejidad (no por rubro), arrastre de la consolidación de LRN-012 en `01-identity/icp.md`.
 - **2026-05-13:** sección "Qué vendemos exactamente" colapsada a un nombre por modelo + 2 punteros. SSOT único de la descripción de modelos en `01-identity/offer.md`. Aprobado directo por owner en sesión.

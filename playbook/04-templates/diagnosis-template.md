@@ -54,15 +54,36 @@ Para un caso completo aplicado, ver `../05-examples/case-psicologa.md`.
 
 ### Contra qué compite realmente
 
-[Cualquier alternativa que cumpla el mismo job. Listar 3-5.]
+[Cualquier alternativa que cumpla el mismo job. Listar 3-5. Estas alternativas son el input del eje de brecha del Value Map (sección 4).]
 
 ---
 
-## 4. Pain points identificados
+## 4. Value Map
+
+Único mecanismo de priorización del diagnóstico. Ver `../02-methodology/value-based-strategy.md`.
+
+### Value drivers priorizados
+
+| # | Driver (lo que le importa al cliente final) | Importancia | Brecha vs alternativa que consideró | Tema |
+|---|---|---|---|---|
+| 1 | [driver] | [alta/media/baja] | [grande/media/chica] | [grupo] |
+| 2 | [...] | [...] | [...] | [...] |
+
+[Ordenar de mayor a menor prioridad. Segmentar si hay más de un segmento de cliente final.]
+
+### Lectura del stick
+
+[Dónde se está creando valor (WTP) y dónde se está fugando la captura: qué se regala, qué se cobra. Conecta con el meta-patrón.]
+
+---
+
+## 5. Pain points identificados
+
+[Derivados del Value Map + estado de ejecución de los touchpoints. Ordenados por la prioridad del driver al que sirven, no por criterio propio.]
 
 ### 1. [Nombre del pain point en lenguaje técnico] [✅ / 🔵 / ❓]
 
-[Descripción del problema. Qué pasa, dónde se traba, qué pierde el cliente final por esto.]
+[Descripción del problema. Qué pasa, dónde se traba, qué pierde el cliente final por esto. A qué driver priorizado del Value Map afecta.]
 
 ### 2. [Nombre del pain point] [✅ / 🔵 / ❓]
 
@@ -72,20 +93,20 @@ Para un caso completo aplicado, ver `../05-examples/case-psicologa.md`.
 
 ---
 
-## 5. Diagnóstico central
+## 6. Diagnóstico central
 
-[Un párrafo punzante que sintetiza la causa raíz, no los síntomas.]
+[Un párrafo punzante que sintetiza la causa raíz por encima de los síntomas. Molde en afirmativo, regla F de `../02-methodology/style-guide.md`.]
 
-> *"El problema no es que [síntoma]. El problema es que [causa raíz]. Por eso [consecuencia visible]. Y por eso [consecuencia invisible que afecta el negocio]."*
+> *"[Síntoma] es la parte visible. La causa está en [causa raíz]. Por eso [consecuencia visible]. Y por eso [consecuencia invisible que afecta el negocio]."*
 
 ---
 
-## 6. Propuesta de rediseño
+## 7. Propuesta de rediseño
 
 ### 1. [Nombre técnico de la intervención]
 
 **Qué:** [descripción concreta del cambio]
-**Por qué:** [a qué pain point responde]
+**Cadena causal a WTP:** [a qué pain point responde → a qué driver del Value Map → cómo eso mueve la WTP → cómo habilita captura de valor. Cadena escrita, no implícita.]
 **Cómo se ve:** [cómo lo experimentaría el cliente final post-rediseño]
 
 ### 2. [Nombre técnico]
@@ -96,7 +117,7 @@ Para un caso completo aplicado, ver `../05-examples/case-psicologa.md`.
 
 ---
 
-## 7. Hipótesis de impacto
+## 8. Hipótesis de impacto
 
 | Métrica | Hipótesis | Cómo se mide |
 |---|---|---|
@@ -105,21 +126,21 @@ Para un caso completo aplicado, ver `../05-examples/case-psicologa.md`.
 
 ---
 
-## 8. Riesgos y consideraciones
+## 9. Riesgos y consideraciones
 
 - **Riesgo 1:** [descripción] → **Mitigación:** [cómo se aborda]
 - **Riesgo 2:** [...]
 
 ---
 
-## 9. Próximos pasos sugeridos
+## 10. Próximos pasos sugeridos
 
 1. [Acción concreta], [responsable], [plazo]
 2. [...]
 
 ---
 
-## 10. Gaps de información
+## 11. Gaps de información
 
 - [Información faltante 1]
 - [Información faltante 2]
@@ -151,9 +172,9 @@ Marcar explícitamente cada afirmación según `../02-methodology/glossary.md`:
 
 ### Estructura modular
 
-Si el cliente quiere solo el diagnóstico (sin propuesta), entregar las secciones 1-5.
+Si el cliente quiere solo el diagnóstico (sin propuesta), entregar las secciones 1-6.
 Si quiere el plan completo, entregar todo.
-Si quiere solo la sesión exploratoria (Modelo A), entregar 1-3 + brief de 5.
+Si quiere solo la sesión exploratoria (Modelo A), entregar 1-4 + brief de 6.
 
 ---
 
@@ -173,4 +194,6 @@ Cuando generes un borrador siguiendo esta plantilla:
 
 ## Changelog del archivo
 
+- **2026-06-10 (v0.4):** consolidación de LRN-015. Molde del diagnóstico central (sección 6) reescrito en afirmativo: la plantilla prescribía la fórmula de negación-afirmación que la regla F prohíbe (el origen del error estaba en el playbook, confirmado en el caso Lisandro). Aprobado por el owner para consolidación en bloque (sesión 2026-06-10).
+- **2026-05-18 (v0.3):** consolidación de LRN-004 (sesión de refinamiento de KB, E1). Sección nueva **4. Value Map** entre JTBD y pain points. Renumeración: la plantilla pasa de 10 a **11 secciones**. Pain points (ahora 5) se derivan del Value Map + estado de ejecución, sin criterio de priorización propio. Intervenciones (ahora 7) reemplazan "Por qué" por **"Cadena causal a WTP"**. "Estructura modular" reajustada a la nueva numeración. Acoplado a `value-based-strategy.md` y al check `diagnostic-structure` de `quality-checklist.json` (10 → 11). Aprobado por el owner para consolidación en bloque (sesión 2026-05-18).
 - **Mayo 2026:** versión inicial v0.2.

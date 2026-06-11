@@ -2,7 +2,7 @@
 
 **SSOT** del proceso de ejecución de un proyecto cerrado.
 
-Este archivo describe el flujo para Modelo B (Diagnóstico + plan), que es el servicio principal. Para Modelo A y C, ver al final del archivo.
+Este archivo describe el flujo completo de entrega y es **SSOT de la duración por modelo**. El Modelo B (servicio principal) ejecuta las Fases 1 a 3 y entrega diagnóstico + plan + prototipo manual validado + spec del sistema. El Modelo C suma las Fases 4 y 5 (build, instalación) más acompañamiento, con la ejecución cotizada por alcance. Para el Modelo A, ver las adaptaciones al final.
 
 ---
 
@@ -21,19 +21,26 @@ Ejecutar el proyecto contratado, cumplir entregables, y llegar al cierre con res
 
 ## Outputs
 
+**Modelo B (Fases 1-3):**
+
 - Service blueprint del cliente.
 - Diagnóstico completo (siguiendo `../04-templates/diagnosis-template.md`).
-- Propuesta de rediseño detallada.
-- Plan de implementación.
+- Plan de implementación con cadena causal a WTP (siguiendo `../04-templates/plan-template.md`).
 - KPIs definidos para medición.
 - **Prototipo manual** validado con 1 cliente final real.
-- **Sistema operativo funcionando** — el profesional opera con su input técnico crudo, sale el entregable rediseñado. Ver la Tesis en `../00-start-here/principles.md`.
+- **Spec del sistema operativo** (siguiendo `../04-templates/system-spec-template.md`), lista para cotizar el build.
+
+**Modelo C (suma Fases 4-5 + acompañamiento):**
+
+- **Sistema operativo funcionando**: el profesional opera con su input técnico crudo, sale el entregable rediseñado. Ver la Tesis en `../00-start-here/principles.md`.
 
 ---
 
 ## Duración total
 
-6-8 semanas. Dividido en 5 fases. La duración previa (3-4 semanas) era para entrega = documento. Con prototipo manual validado + build del sistema operativo (Tesis), el alcance real lleva más tiempo.
+- **Modelo B:** 2-3 semanas (Fases 1-3). El cuello de botella es coordinar las Switch Interviews con los clientes del cliente.
+- **Modelo C:** 2-3 meses (Fases 1-5 + acompañamiento). La duración exacta la define el alcance del plan.
+- **Techo duro: ningún proyecto supera los 3 meses.** Si el plan excede el techo, se recorta el plan; el proyecto jamás se estira.
 
 ---
 
@@ -75,21 +82,13 @@ Documentar todas las entrevistas en notas estructuradas. Las frases textuales de
 
 ## Fase 2: Diagnóstico (Semana 2)
 
+**Orden interno de Fase 2 (cascada del método):** blueprint → Análisis JTBD → Value Map → Evaluación de touchpoints → Checklist de Good Services → Diagnóstico central. JTBD descubre, el Value Map prioriza, recién entonces se audita la entrega. No invertir este orden.
+
 ### Service blueprint actual
 
 Construir el blueprint del servicio actual. Cuatro filas (acciones del cliente, frontstage, backstage, soporte). Cronológico desde "primer contacto" hasta "post-entrega".
 
 Herramientas: Miro, Figma, o Notion. Lo que sea, pero compartible con el cliente.
-
-### Evaluación de touchpoints e identificación de pain points
-
-Aplicar la **matriz de evaluación de touchpoints** (ver `../02-methodology/service-design.md` sección "Evaluación de touchpoints") a cada touchpoint del blueprint. Output: tabla completa con las 5 dimensiones (categoría temporal, estado actual, impacto en job, severidad, costo de fix) + principio de Good Services que falla en cada caso.
-
-Los pain points prioritarios son los touchpoints con severidad **crítica** o **alta**. Listar 4-7 pain points principales con marcador ✅/🔵/❓ según nivel de certeza, y respetar la regla de orden del rediseño documentada en la matriz (primero críticas con costo bajo, después críticas con costo alto, después altas).
-
-### Checklist de Good Services
-
-Aplicar los 15 principios de `../02-methodology/good-services.md` al servicio actual. Cada principio fallado que se conecta con el job dominante es un pain point complementario.
 
 ### Análisis JTBD
 
@@ -97,15 +96,31 @@ Para el cliente final del cliente, definir:
 
 - Job dominante en formato Job Story.
 - Los tres jobs (functional / emotional / social).
-- Contra qué compite realmente (no solo otros del mismo rubro).
+- Contra qué compite realmente (no solo otros del mismo rubro). Incluir las alternativas que el cliente final consideró (pregunta 5 de la Switch Interview): son el input del Value Map.
 - Struggling moments principales.
 - **Meta-patrón identificado:** qué regala el profesional (lo que sus clientes nombran como lo más valioso, idealmente con frase textual del corpus de Switch Interviews), qué cobra (lo que figura en factura). Ver `../02-methodology/jtbd.md` sección meta-patrón.
 
+### Value Map
+
+Construir el **Value Map** (ver `../02-methodology/value-based-strategy.md`) a partir del análisis JTBD: extraer los value drivers del cliente final, ordenarlos por importancia, medir la brecha de cada uno contra las alternativas que el cliente consideró, agrupar en temas, segmentar si hay más de un segmento.
+
+Output: **lista priorizada de drivers donde el rediseño debe ganar**. Esta lista es la que ordena todo lo que sigue. Es el único mecanismo de priorización del proyecto.
+
+### Evaluación de touchpoints e identificación de pain points
+
+Aplicar la **matriz de evaluación de touchpoints** (ver `../02-methodology/service-design.md` sección "Evaluación de touchpoints") a cada touchpoint del blueprint. Output: tabla con las 4 dimensiones (categoría temporal, driver del Value Map que sirve, estado de ejecución ✅/⚠️/❌, costo de fix) + principio de Good Services que falla.
+
+La matriz **no calcula severidad propia**: la prioridad de cada touchpoint se hereda del driver del Value Map al que sirve. Los pain points prioritarios son los touchpoints en estado ❌ o ⚠️ que sirven a los drivers de mayor prioridad del Value Map. Listar 4-7 pain points principales con marcador ✅/🔵/❓, y respetar la regla de orden del rediseño documentada en la matriz (ordenada por prioridad del Value Map, no por scoring interno). Los touchpoints que no sirven a ningún driver priorizado se sueltan de forma deliberada (trade-off declarado).
+
+### Checklist de Good Services
+
+Aplicar los 15 principios de `../02-methodology/good-services.md` al servicio actual. Cada principio fallado que se conecta con un driver priorizado es un pain point complementario.
+
 ### Diagnóstico central
 
-Un párrafo punzante que sintetiza la causa raíz, no los síntomas. Ejemplo template:
+Un párrafo punzante que sintetiza la causa raíz por encima de los síntomas. Molde en afirmativo (regla F de `../02-methodology/style-guide.md`):
 
-> *"El problema no es que [síntoma percibido]. El problema es que [causa raíz que el cliente no veía]. Por eso [consecuencia visible]. Y por eso [consecuencia invisible que afecta el negocio]."*
+> *"[Síntoma percibido] es la parte visible. La causa está en [causa raíz que el cliente no veía]. Por eso [consecuencia visible]. Y por eso [consecuencia invisible que afecta el negocio]."*
 
 ### Reunión de validación de diagnóstico
 
@@ -118,7 +133,7 @@ Ajustar según feedback. Si hay grandes discrepancias, hacer otra ronda de resea
 
 ---
 
-## Fase 3: Propuesta de rediseño (Semana 3)
+## Fase 3: Plan, prototipo manual y spec (Semanas 2-3, cierra el Modelo B)
 
 ### Diseño de las intervenciones
 
@@ -126,7 +141,7 @@ Para cada pain point principal, diseñar 1-2 intervenciones concretas. Cada inte
 
 - **Nombre técnico** (vocabulario del glossary).
 - **Qué hace** (descripción concreta).
-- **Por qué resuelve un pain point específico.**
+- **Cadena causal a WTP.** Por qué resuelve un pain point específico Y cómo ese cambio mueve la WTP (o, excepcionalmente, la WTS). Cadena escrita, no implícita: intervención → driver del Value Map → movimiento de WTP → habilita captura de valor. Una intervención sin esta cadena se reescribe o se descarta (ver `../02-methodology/value-based-strategy.md` y el check `causal-chain-wtp` en `../quality-checklist.json`).
 - **Cómo se ve** (cómo lo experimenta el cliente final post-rediseño).
 
 Mínimo 3, máximo 7 intervenciones. Si son más de 7, hay que priorizar.
@@ -165,9 +180,13 @@ Antes de invertir en construir el sistema operativo, hacer **1 instancia del ent
 
 Si el prototipo no genera la reacción esperada en el cliente final, iterar la spec antes de seguir. Construir el sistema sobre un rediseño no validado es desperdicio garantizado.
 
+### Cierre del Modelo B
+
+Con el prototipo validado y la spec escrita, el Modelo B cierra acá: reunión de presentación (diagnóstico + plan + prototipo + spec), cobranza del 50% restante y **oferta concreta de la ejecución** (Fases 4-5 + acompañamiento) cotizada por alcance contra el plan. El cliente queda en condiciones de contratar el build con cualquier proveedor, idealmente Yellow (ver la Tesis en `../00-start-here/principles.md`).
+
 ---
 
-## Fase 4: Build del sistema operativo (Semanas 5-6)
+## Fase 4: Build del sistema operativo (Modelo C / ejecución contratada)
 
 Con la spec validada por el prototipo manual, construir el motor generador. La Tesis establece que el cliente se va con un sistema que opera todos los días.
 
@@ -186,7 +205,7 @@ Con la spec validada por el prototipo manual, construir el motor generador. La T
 
 ---
 
-## Fase 5: Presentación, instalación y cierre (Semanas 7-8)
+## Fase 5: Presentación, instalación y cierre (Modelo C / ejecución contratada)
 
 ### Reunión de presentación + handoff técnico (120 min)
 
@@ -232,20 +251,18 @@ Junto con el testimonio:
 
 ## Adaptaciones para Modelo A
 
-Modelo A es 1 semana, no 3-4. Adaptaciones:
+El Modelo A es una **consulta de lectura experta**: sesión de 40-60 minutos donde Agustín escucha y diagnostica apalancado en expertise, más una devolución escrita de 1 página (lectura del caso, hipótesis del meta-patrón, recomendación de siguiente paso). Dura 1 semana de punta a punta.
 
-- Fase 1 y 2 se comprimen en 3 días.
-- Fase 3 se hace en 1-2 días.
-- Fase 4 (presentación) es la sesión de 4 horas con el cliente.
-- Entregable es 5-10 páginas, no 15-25.
-- **Al menos 1 entrevista** a cliente final del profesional (alcance reducido, pero el principio P5 sigue siendo no-negociable). Si no se puede concretar, declinar el proyecto. El resto se nombra como "recomendado para fase siguiente".
-- No incluye build de sistema operativo. El entregable es spec de rediseño + prototipo manual de 1 instancia. El sistema se contrata aparte si el cliente quiere avanzar.
+- **Sin Switch Interviews:** P5 queda explícitamente fuera de alcance para A (ver `../00-start-here/principles.md`). La devolución marca todo 🔵 hipótesis y lo declara: el rediseño con evidencia es trabajo de B/C.
+- El entregable se presenta como criterio experto con límites declarados, jamás como rediseño.
+- Función comercial: puerta de entrada y filtro. La devolución cierra con la oferta concreta del Modelo B.
+- Es el único producto que se vende en frío.
 
 ---
 
 ## Adaptaciones para Modelo C
 
-Modelo C es 3-4 meses, no 3-4 semanas. Diferencia principal: post-entrega del sistema operativo, hay 8-12 semanas de acompañamiento y evolución.
+Modelo C dura 2-3 meses, con techo duro de 3 meses. Ejecuta las Fases 4 y 5 sobre el núcleo de B y suma acompañamiento post-instalación. La ejecución se cotiza por alcance contra el plan (ver `../06-operations/pricing.md`).
 
 Estructura del acompañamiento:
 
@@ -316,13 +333,13 @@ Ver `../03-process/05-handoff.md`.
 
 ### Tiempos estimados por fase
 
-| Fase | Duración | Foco |
-|---|---|---|
-| Fase 1 — Kickoff + Switch Interviews | 1-2 semanas | Kickoff + 2-3 entrevistas + research |
-| Fase 2 — Diagnóstico | 1-2 semanas | Blueprint + pain points + análisis JTBD + meta-patrón |
-| Fase 3 — Spec del rediseño + prototipo manual | 1 semana | Intervenciones + 1 prototipo validado con cliente final |
-| Fase 4 — Build del sistema operativo | 2-3 semanas | Templates + prompts + integraciones |
-| Fase 5 — Presentación, instalación y cierre | 1 semana | Demo en vivo + instalación + cobranza |
+| Fase | Duración | Modelo | Foco |
+|---|---|---|---|
+| Fase 1, Kickoff + Switch Interviews | Semana 1 | B y C | Kickoff + 2-3 entrevistas + research |
+| Fase 2, Diagnóstico | Semana 2 | B y C | Blueprint + JTBD + Value Map + pain points (en ese orden) |
+| Fase 3, Plan + prototipo manual + spec | Semanas 2-3 | B y C (cierra B) | Intervenciones + 1 prototipo validado + spec del sistema |
+| Fase 4, Build del sistema operativo | 2-6 semanas según alcance | C | Templates + prompts + integraciones |
+| Fase 5, Presentación, instalación y cierre | 1 semana | C | Demo en vivo + instalación + cobranza |
 
 ### Preparación previa al kickoff (60-90 min)
 
@@ -380,7 +397,9 @@ Checklist obligatorio antes de la reunión:
 
 **Empezar a "diseñar" antes de research.** Te entusiasmás con una idea. Eso es opinión, no método. **Salida:** research completo primero, diseño después.
 
-**Diseñar intervenciones que no atacan pain points específicos.** Documento bonito que no resuelve nada. **Salida:** cada intervención debe linkear a uno o más pain points.
+**Diseñar intervenciones que no atacan pain points específicos.** Documento bonito que no resuelve nada. **Salida:** cada intervención debe linkear a uno o más pain points Y tener cadena causal escrita hasta WTP (ver Fase 3).
+
+**Priorizar pain points con criterio propio en vez del Value Map.** Vuelve a meter un mecanismo de priorización paralelo. **Salida:** el orden lo da el Value Map, siempre. La matriz de touchpoints audita, no prioriza.
 
 **Construir el sistema operativo sin prototipo manual validado.** Inversión a ciegas. **Salida:** prototipo manual + reacción del cliente final, obligatorios antes de Fase 4.
 
@@ -394,6 +413,8 @@ Checklist obligatorio antes de la reunión:
 
 ## Changelog del archivo
 
+- **2026-06-10 (v0.8):** consolidación de LRN-014 (resuelve LRN-008/009/010, con la evidencia comercial de LRN-013: la primera venta compró build + instalación). El archivo pasa a SSOT de duración por modelo. Modelo B = Fases 1-3, 2-3 semanas, cierra en prototipo manual + spec del sistema (sección nueva "Cierre del Modelo B"); Fases 4-5 pasan a Modelo C / ejecución contratada, cotizada por alcance; techo duro de 3 meses. Modelo A redefinido como consulta de lectura experta sin Switch Interviews (P5 fuera de alcance, LRN-009). Molde del diagnóstico central reescrito en afirmativo (LRN-015). Outputs divididos por modelo, con punteros a plantillas nuevas (LRN-017). Tabla de tiempos del runbook ajustada. Aprobado por el owner para consolidación en bloque (sesión 2026-06-10).
+- **2026-05-18 (v0.7):** consolidación de LRN-004 (sesión de refinamiento de KB, E1). Fase 2 reordenada a la cascada del método (blueprint → JTBD → Value Map → touchpoints → Good Services → diagnóstico central) con paso nuevo **Value Map** y nota de orden interno. "Evaluación de touchpoints" reescrita: 4 dimensiones, sin severidad propia, prioridad heredada del Value Map. Fase 3: cada intervención exige **cadena causal escrita a WTP** (link a `value-based-strategy.md` y al check `causal-chain-wtp`). Runbook: ajustada la tabla de tiempos de Fase 2 y sumados dos errores comunes (intervención sin cadena causal, priorización paralela al Value Map). Aprobado por el owner para consolidación en bloque (sesión 2026-05-18).
 - **2026-05-13 (v0.6):** sección "Identificación de pain points" reemplazada por aplicación explícita de la matriz de evaluación de touchpoints (SSOT en `02-methodology/service-design.md`). Antes había 3 preguntas sueltas; ahora hay método canónico. Aprobado directo por owner en sesión.
 - **2026-05-13 (v0.5):** protocolo detallado de Switch Interview (4 ítems) en Fase 1 colapsado a puntero hacia `02-methodology/jtbd.md` (SSOT). Queda inline solo el foco específico de fase (meta-patrón). Aprobado directo por owner en sesión.
 - **2026-05-13:** v0.4, sumada sección "Runbook operativo" con tiempos por fase, checklist de preparación al kickoff, coordinación de Switch Interviews, decisiones if/then completas, errores comunes con salida. Consolidación desde `07-runbook/04-cuando-arranca-proyecto.md`, `05-cuando-estas-en-research.md` y `06-cuando-armas-diagnostico.md` (carpeta eliminada). Aprobado vía LRN-009.

@@ -2,7 +2,7 @@
 
 **SSOT** del framework JTBD como lo opera Yellow. Cualquier mención a JTBD en otros archivos linkea acá.
 
-Esta es la versión de JTBD que opera Yellow. Cruza dos interpretaciones (Jobs-As-Progress y Jobs-As-Activities) con criterios propios de selección. JTBD es el método de descubrimiento que alimenta el rediseño de servicio. Otros frameworks (Service Design, Good Services) trabajan el cómo entregar; JTBD trabaja el qué entregar y para quién.
+Esta es la versión de JTBD que opera Yellow. Yellow opera **un solo modelo** (Jobs-As-Progress) y conoce un segundo (Jobs-As-Activities, Ulwick) que deliberadamente no opera, ver más abajo. JTBD es el método de **descubrimiento puro**: descubre qué progreso busca el cliente y contra qué compite. No prioriza: la priorización vive en el cuarto pilar (`./value-based-strategy.md`, Value Map). Service Design y Good Services trabajan el cómo entregar; JTBD trabaja el qué descubrir y para quién.
 
 **Origen real del campo:** Customer Jobs Theory fue desarrollado en los años 80s por **Rick Pedi, John Palmer, Bob Moesta, Pam Murtaugh y Julia Wesson** en el contexto del movimiento de calidad. Christensen popularizó la frase y la metáfora en 2003 (*The Innovator's Solution*). Ulwick desarrolló una versión paralela (Outcome-Driven Innovation) en los 90s. Klement formalizó "Jobs-As-Progress" junto al equipo de Christensen entre 2014-2016.
 
@@ -83,23 +83,24 @@ Fuente principal: *Jobs to Be Done: Theory to Practice* (Ulwick, 2016).
 
 Klement sostiene que los dos modelos no se complementan: tratan de cosas distintas (Be vs Do) y producen artefactos distintos (narrativa de progreso vs matriz de outcomes). Mezclarlos puede esterilizar el output.
 
-En la práctica Yellow se toma una decisión consciente: el corpus de descubrimiento se construye con Switch Interviews (Jobs-As-Progress) y la síntesis narrativa también vive ahí. Si un cliente enterprise requiere priorización formal de outcomes, se suma Ulwick como capa separada, sin pretender continuidad teórica entre los dos modelos. Es **pragmatismo declarado**, no integración filosófica.
+### Qué opera Yellow y qué no
+
+Yellow opera **solo Jobs-As-Progress**. Jobs-As-Activities (Ulwick, opportunity scoring) se conoce y se documenta acá como contexto, para blindar la decisión metodológica, pero **no se opera**. La sección anterior (tabla Be/Do, descripción de cada modelo) existe para entender por qué se descarta, no como menú de herramientas disponibles.
+
+El motivo de fondo: la priorización (el "qué atacar primero") es trabajo del cuarto pilar vía Value Map (`./value-based-strategy.md`), no de JTBD. El opportunity scoring de Ulwick fue, hasta la consolidación del cuarto pilar, una capa "enterprise light" dentro de JTBD. Esa función se unificó en el Value Map para no tener el mismo mecanismo "importancia × brecha" triplicado en el playbook. JTBD queda como descubrimiento puro.
 
 ### Protocolo Yellow estándar
 
-Para un cliente típico (no enterprise), opera solo Jobs-As-Progress:
+JTBD opera siempre así, sin variante enterprise:
 
-1. **Switch Interviews** (semanas 1-3): 5-8 clientes finales del profesional. Reconstrucción de timeline + mapeo de las 4 fuerzas + detección del meta-patrón.
-2. **Síntesis narrativa** (semanas 3-5): 2-4 jobs por segmento expresados como progreso (Be goals). Identificar la competencia real (transcategorial).
-3. **Spec del rediseño** (semanas 5-8): traducir los jobs al sistema operativo que el cliente entrega.
+1. **Switch Interviews** (Fase 1 del delivery): 2-3 clientes finales del profesional como mínimo viable (P5). Se escala a 5-8 cuando el alcance del caso lo justifica (Tier 2/3, más de un segmento de cliente final). Reconstrucción de timeline + mapeo de las 4 fuerzas + detección del meta-patrón.
+2. **Síntesis narrativa** (Fase 2 del delivery): 2-4 jobs por segmento expresados como progreso (Be goals). Identificar la competencia real (transcategorial).
+3. **Hand-off al Value Map:** los jobs sintetizados y las alternativas que el cliente consideró (pregunta 5 de la Switch Interview) son el input del Value Map (`./value-based-strategy.md`), que prioriza. JTBD no prioriza.
 
-Si el cliente pide priorización formal de oportunidades (enterprise), se agrega una capa Ulwick light: extraer 20-40 desired outcomes del corpus existente, priorización cualitativa (importancia × insatisfacción), sin encuesta cuantitativa salvo presupuesto que la justifique.
-
-### Trampas al operar cada modelo
+### Trampa al operar JTBD
 
 - **Jobs-As-Progress mal operado:** entrevistas que producen historias sin patrón sintetizable. Convertir Switch Interview en entrevista declarativa común ("¿qué te gustaría?"). Sesgo de supervivencia al entrevistar solo a compradores satisfechos.
-- **Jobs-As-Activities mal operado:** output de 200 outcomes que nadie lee. Encuesta cuantitativa sobre outcomes mal formulados. Perder la dimensión emocional y social en servicios premium donde es el 60% de la decisión.
-- **Mezcla mal hecha:** hacer Switch Interviews y sintetizar con sintaxis Ulwick rígida (el output queda esterilizado). Hacer ODI cuantitativo sin entrevistas cualitativas previas (los outcomes son hipótesis del analista, no del cliente).
+- **Reintroducir Ulwick por la ventana:** sintetizar con sintaxis Ulwick rígida (verbo + objeto + clarificador) o armar matrices de desired outcomes. Si aparece la necesidad de priorizar, eso es Value Map, no JTBD.
 
 ---
 
@@ -161,6 +162,8 @@ Casi todo operador con expertise tácito enfrenta el mismo desbalance: entrega g
 
 **Implicancia del rediseño:** lo primero que rediseñamos es qué se cobra. Capturamos la ventaja real en un sistema que la convierte en activo cobrable. La pelea por la commodity la dejamos caer.
 
+**Modelo económico del meta-patrón:** este patrón es un caso de captura de valor mal hecha. El profesional crea valor (su criterio sube la WTP del cliente final) pero no lo captura (lo regala, cobra la commodity). El marco que lo formaliza es el cuarto pilar: ver `./value-based-strategy.md` (Value Stick y captura de valor).
+
 **Señal en entrevistas al cliente final:** el cliente describe el momento clave (un consejo, una pregunta, un reflejo) como "eso fue lo mejor" — sin nombrarlo como parte del servicio. Para el profesional ese momento fue gratis. Para el cliente fue todo el valor.
 
 ---
@@ -187,6 +190,25 @@ Innovar mirando la demanda, no la oferta:
 | Innovación JTBD (demanda) | "¿Qué progreso quiere lograr mi cliente y aún nadie lo está cumpliendo bien?" | Categoría nueva. Alto margen. |
 
 **Ejemplo:** Netflix no nació como "mejor TV". Nació mirando el job *"quiero entretenerme cuando yo decida sin tener que ir a Blockbuster ni planificar"*. Mató la categoría entera.
+
+---
+
+## El sistema de progreso
+
+Klement (cap 11 de la 2.ª edición de *When Coffee and Kale Compete*) sostiene que un JTBD no es un evento aislado: vive dentro de un **sistema de tres partes interdependientes**.
+
+| Parte del sistema | En el caso Yellow |
+|---|---|
+| El cliente que busca progreso | El cliente final del profesional |
+| La solución que contrata | El servicio del profesional (y sus alternativas) |
+| El productor que la crea | El profesional, cliente de Yellow |
+
+Idea central: mover una parte mueve las otras. El sistema **es continuo**, no se releva una sola vez. Por eso la Switch Interview no es un censo inicial: se reentrevista, porque las alternativas que el cliente considera cambian con el tiempo.
+
+Dos implicancias operativas para Yellow:
+
+1. **Refina la competencia transcategorial.** No es solo "una lista de alternativas que resuelven el mismo job". Es un mapa de interdependencias: cuando el profesional rediseña su entrega, cambia qué alternativas le resultan relevantes al cliente. Esa lista de alternativas es exactamente lo que alimenta el eje de brecha del Value Map (`./value-based-strategy.md`).
+2. **Da fundamento al meta-patrón.** "Regala la ventaja real, cobra la commodity" se rediseña a nivel sistema, no a nivel touchpoint suelto: por eso lo primero que se rediseña es qué se cobra, no un punto de contacto aislado.
 
 ---
 
@@ -293,7 +315,9 @@ Para discovery profunda con clientes finales del profesional, la Switch Intervie
 
 ## Vocabulario clave
 
-Job, struggling moment, push, pull, anxiety, inertia, demand-side innovation, job story, switch interview, forces of progress, desired outcome, opportunity scoring, three jobs (functional/emotional/social), Be goal, Do goal, Jobs-As-Progress, Jobs-As-Activities.
+Job, struggling moment, push, pull, anxiety, inertia, demand-side innovation, sistema de progreso, job story, switch interview, forces of progress, three jobs (functional/emotional/social), Be goal, Do goal, Jobs-As-Progress, Jobs-As-Activities.
+
+Nota: "desired outcome" y "opportunity scoring" ya no son vocabulario operativo de Yellow. Pertenecen a Jobs-As-Activities (Ulwick), que se documenta como contexto pero no se opera. La priorización es vocabulario del cuarto pilar (`./value-based-strategy.md`).
 
 Para definiciones precisas, ver `../02-methodology/glossary.md`.
 
@@ -311,20 +335,22 @@ Para definiciones precisas, ver `../02-methodology/glossary.md`.
 - *Demand-Side Sales 101*, Bob Moesta con Greg Engle (2020). Manual operativo de Switch Interview y Forces of Progress.
 - Videos públicos de Re-Wired Group en jobstobedone.org. Demos en vivo de Switch Interview.
 
-**Ulwick (capa de priorización):**
+**Ulwick (contexto, no se opera):**
 
-- *Jobs to Be Done: Theory to Practice*, Tony Ulwick (2016). Manual completo de Outcome-Driven Innovation.
-- *What Customers Want*, Tony Ulwick (2005). Más accesible. Buena entrada al job map y al opportunity score.
+- *Jobs to Be Done: Theory to Practice*, Tony Ulwick (2016). Manual completo de Outcome-Driven Innovation. Lectura de contexto para entender el modelo Jobs-As-Activities que Yellow conoce y deliberadamente no opera. La priorización en Yellow es Value Map (`./value-based-strategy.md`).
+- *What Customers Want*, Tony Ulwick (2005). Más accesible. Misma función de contexto.
 
 **Puentes operativos:**
 
-- *When Coffee and Kale Compete*, Alan Klement (2016). Job Stories y job-as-progress.
+- *When Coffee and Kale Compete*, Alan Klement, 2.ª edición. Job Stories, job-as-progress y el sistema de progreso (cap 11, aporte propio de la 2.ª ed. incorporado al playbook).
 - *The Jobs to Be Done Playbook*, Jim Kalbach (2020). Manual de implementación para consultor UX.
 
 ---
 
 ## Changelog del archivo
 
+- **2026-06-10 (v0.8):** consolidación de LRN-019 (a). El Protocolo Yellow estándar alinea su n y su plazo con el proceso: 2-3 Switch Interviews como mínimo viable (P5), escalable a 5-8 según alcance; los plazos se expresan por fase del delivery en lugar de semanas absolutas (la duración por modelo es SSOT de `03-process/04-delivery.md`). Aprobado por el owner para consolidación en bloque (sesión 2026-06-10).
+- **2026-05-18 (v0.7):** consolidación de LRN-003 + LRN-004 (sesión de refinamiento de KB, E1). (1) **System of Progress** incorporado como sección nueva (cap 11 de la 2.ª ed. de WCAKC, aporte neto de esa edición), con refinamiento de la competencia transcategorial y fundamento del meta-patrón a nivel sistema. (2) **Ulwick / Jobs-As-Activities bajado de capa operativa a nota de contexto:** se conserva la distinción Be/Do y la tabla comparativa como blindaje de la decisión metodológica, pero el opportunity scoring deja de ser operable; la priorización se unifica en el Value Map del cuarto pilar (`./value-based-strategy.md`) para no triplicar el mecanismo "importancia × brecha". (3) JTBD redefinido como descubrimiento puro; "Protocolo Yellow estándar" sin variante enterprise, con hand-off explícito al Value Map; vocabulario y lecturas ajustados. Acoplado a la creación de `value-based-strategy.md` y a la matriz sin severidad en `service-design.md`. Aprobado por el owner para consolidación en bloque (sesión 2026-05-18).
 - **2026-05-14 (v0.6):** verificación cruzada contra *When Coffee and Kale Compete* (Klement, 2016). Cambios mayores: (1) "Tres escuelas" reformuladas como "Dos interpretaciones incompatibles" (Jobs-As-Progress vs Jobs-As-Activities) según Klement cap 15; (2) origen real del campo corregido (Pedi + Palmer + Moesta + Murtaugh + Wesson en los 80s, no solo Ulwick 1999 + Christensen 2003); (3) "Habit" reemplazado por "Inertia" como cuarta fuerza, con sub-tipos (anxiety-in-choice / anxiety-in-use / habits-in-choice / habits-in-use); (4) "Las 3 distinciones de Klement" reatribuidas a William Powers (1973) y Charles Carver (2001), con tabla Be/Do/Motor control; (5) Job Story format reatribuido a Paul Adams + Intercom team, no a Klement; (6) atribución de las 4 forces matizada: corpus compartido Jobs-As-Progress, con desarrollo operativo de Moesta + Spiek. Aprobado directo por owner en sesión.
 - **2026-05-13:** v0.5, quitada la jerga inglesa "hire" / "hiring" del archivo. Reemplazada por "contratar" / "metáfora de contratar productos" en línea con feedback de comunicación en español argentino sin anglicismos innecesarios.
 - **2026-05-13:** v0.4, integración completa del detalle de las 3 escuelas dentro de `jtbd.md` (tabla comparativa, contradicciones explícitas, trampas al usar cada escuela aislada, protocolo completo de Switch Interview). Eliminado `learnings/jtbd-3-escuelas.md` que existía como archivo separado de referencia. El playbook ahora tiene un único SSOT de JTBD. Aprobado vía LRN-006.

@@ -63,12 +63,13 @@ Si la respuesta es afirmativa, ejecutar `learnings/CONSOLIDATION-PROMPT.md`. Si 
 
 ## Cómo arrancar un caso nuevo
 
-1. Crear `cases/<slug-cliente>/` con los 4 archivos vacíos. Convención de slug: `<oficio>-<ciudad>` o `<apellido>-<oficio>`, lowercase y kebab-case.
-2. Pegar notas/transcripción en `transcript.md`.
-3. Generar `diagnostico.md` siguiendo `playbook/04-templates/diagnosis-template.md` y la profundidad de `playbook/05-examples/case-psicologa.md`.
-4. Generar `plan.md` derivado del diagnóstico.
-5. Mantener `case-notes.md` actualizado durante toda la sesión (no esperar al final): decisiones tomadas, correcciones del owner, desvíos del playbook, ideas surgidas.
-6. Antes de cerrar la sesión: revisar `case-notes.md` y volcar entries a `learnings/learnings-pending.md` (R3).
+1. Crear `cases/<slug-cliente>/` con los 4 archivos. Convención de slug: `<oficio>-<ciudad>` o `<apellido>-<oficio>`, lowercase y kebab-case. `case-notes.md` sigue `playbook/04-templates/case-notes-template.md` (incluye el bloque YAML de estado del caso).
+2. Ubicar la etapa del caso en `playbook/03-process/00-pipeline.md` y operar según sus contratos (inputs, outputs, checks, DoD). La IA nunca avanza la etapa: el estado lo cambia quien cierra el DoD.
+3. Pegar notas/transcripción en `transcript.md`.
+4. Generar `diagnostico.md` siguiendo `playbook/04-templates/diagnosis-template.md` y la profundidad de `playbook/05-examples/case-psicologa.md` (ante conflicto con el espejo, mandan plantilla + checklist).
+5. Generar `plan.md` siguiendo `playbook/04-templates/plan-template.md`.
+6. Mantener `case-notes.md` actualizado durante toda la sesión (no esperar al final): estado, decisiones tomadas, correcciones del owner, desvíos del playbook, ideas surgidas.
+7. Antes de cerrar la sesión: revisar `case-notes.md` y volcar entries a `learnings/learnings-pending.md` (R3).
 
 ## Consolidación
 

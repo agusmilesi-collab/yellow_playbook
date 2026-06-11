@@ -37,9 +37,9 @@ Las secciones obligatorias son:
 
 1. **Lo que escuché**, devolución del problema en sus palabras. Si en discovery apareció una frase del cliente que da señal del meta-patrón (Pregunta 5 / ver `../02-methodology/jtbd.md`), citarla acá como ancla narrativa.
 2. **Lo que creo que está pasando**, diagnóstico breve (causa raíz, no síntomas).
-3. **Lo que te propongo**, servicio recomendado con entregables, fases y exclusiones. La descripción de fases debe incluir explícitamente la Fase B (Switch Interviews a 2-3 clientes finales) como primer paso del trabajo, y el sistema operativo como entregable final junto con el documento de diagnóstico. Ver la Tesis en `../00-start-here/principles.md`.
+3. **Lo que te propongo**, servicio recomendado con entregables, fases y exclusiones. La descripción de fases debe incluir explícitamente las Switch Interviews a 2-3 clientes finales como primer paso del trabajo, y el entregable final según el modelo: B cierra en plan + prototipo manual + spec del sistema; C suma build, instalación y acompañamiento. Ver la Tesis en `../00-start-here/principles.md` y las fases en `../03-process/04-delivery.md`.
 4. **Inversión y plazos**, precio (de `../06-operations/pricing.md`), forma de pago, fecha de inicio.
-5. **Por qué ahora y por qué yo**, 1 párrafo corto de cierre. Si el prospect reconoce el rol "VP of Customer" (founder, ejecutivo), se puede explicitar la equivalencia. Ver `../01-identity/offer.md`.
+5. **Por qué ahora y por qué yo**, 1 párrafo corto de cierre. Si el prospect reconoce roles gerenciales (founder, ejecutivo, dueño de PyME), se puede explicitar la equivalencia con el "Gerente de Experiencia del Cliente" en formato fractional. Ver `../01-identity/offer.md`.
 6. **Próximo paso**, cómo confirmar.
 
 ---
@@ -120,7 +120,7 @@ Cuando generes un borrador de propuesta:
 2. **Si hay frase del meta-patrón** (de Pregunta 5 del discovery), usarla en sección 1 como ancla narrativa.
 3. **El diagnóstico de sección 2 debe ser corto y punzante.** Más de 5-7 líneas está mal.
 4. **No usar palabras del cliente que no aparezcan en las notas.** Inventar lo que dijo es muerte instantánea.
-5. **En sección 3 (Lo que te propongo)**, listar explícitamente las dos fases del trabajo: Fase A (Switch Interviews a 2-3 clientes finales del profesional) y Fase B (rediseño + sistema operativo). El entregable final incluye el sistema, no solo el documento.
+5. **En sección 3 (Lo que te propongo)**, listar explícitamente las fases según el modelo: B incluye Switch Interviews a 2-3 clientes finales, diagnóstico, plan, prototipo manual y spec del sistema; C suma build, instalación y acompañamiento.
 6. **Pricing exacto** desde `../06-operations/pricing.md`. Nunca inventar.
 7. **Plazos realistas.** No prometer plazos imposibles.
 8. **Lenguaje del glossary,** no buzzwords.
@@ -150,17 +150,7 @@ Ver `../03-process/03-closing.md`.
 
 ### Checklist antes de enviar
 
-- [ ] La sección 1 usa palabras textuales del prospect, no parafraseadas.
-- [ ] Si hay frase del meta-patrón, está citada como ancla.
-- [ ] La sección 2 es corta (5-7 líneas) y nombra causa raíz.
-- [ ] La sección 3 lista explícitamente Fase A (Switch Interviews) y Fase B (rediseño + sistema operativo).
-- [ ] El pricing es el correcto según `../06-operations/pricing.md`.
-- [ ] Una sola opción de modelo (no 3).
-- [ ] El plazo de inicio es realista.
-- [ ] Hay un próximo paso claro al final.
-- [ ] Validez de 14 días incluida.
-- [ ] Tono directo, sin buzzwords.
-- [ ] Largo 1-2 páginas.
+SSOT del gate → `../quality-checklist.json`, checks con `applies-to: propuesta` más los transversales (`applies-to: todos`). Recorrerlos todos antes de enviar; ante un fail, reescribir.
 
 ### Decisiones if/then
 
@@ -187,6 +177,7 @@ Ver `../03-process/03-closing.md`.
 
 ## Changelog del archivo
 
+- **2026-06-10 (v0.6):** consolidación de LRN-016 + residual LRN-011. Checklist pre-envío colapsado a puntero hacia `quality-checklist.json` (checks `applies-to: propuesta`), un solo gate. Swap "VP of Customer" → "Gerente de Experiencia del Cliente (fractional)" en sección 5. Aprobado por el owner para consolidación en bloque (sesión 2026-06-10).
 - **2026-05-13 (v0.5):** sección "Recomendación de modelo" colapsada a puntero hacia `01-identity/offer.md`. Los criterios "saltar a A/C si X" ahora viven sólo en offer.md. Aprobado directo por owner en sesión.
 - **2026-05-13:** v0.4, sumada sección "Runbook operativo" con flujo paso a paso, checklist antes de enviar, decisiones if/then, errores comunes. Consolidación desde `07-runbook/02-cuando-hay-que-mandar-propuesta.md` (carpeta eliminada). Aprobado vía LRN-009.
 - **2026-05-13:** v0.3, refinamiento contra nueva metodología. En "Lo que escuché" se ancla con frase del meta-patrón si hay. En "Lo que te propongo" se explicita la Fase B (Switch Interviews) como primer paso del trabajo + sistema operativo como entregable final. Mención opcional de VP of Customer cuando aplica. Notas para la IA actualizadas. Aprobado vía LRN-008.

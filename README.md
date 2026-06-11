@@ -1,7 +1,7 @@
 # Agustin UX Strategy — Playbook
 
-**Versión:** 0.6
-**Última actualización:** Mayo 2026
+**Versión:** 0.8
+**Última actualización:** 2026-06-11
 **Owner:** Agustin (Rosario, Argentina)
 
 ---
@@ -40,15 +40,16 @@ Cualquiera de los tres debería poder leer este repo y operar el negocio sin ped
 
 | Carpeta dentro de `playbook/` | Contiene | Cuándo se consulta |
 |---|---|---|
-| `00-start-here/` | Onboarding + principios + roadmap de acción | Al empezar / cuando hay que decidir qué hacer |
+| `00-start-here/` | Onboarding + principios | Al empezar / para revisar las reglas |
 | `01-identity/` | Quién somos, qué vendemos, a quién | Para escribir copy, para calificar prospects |
-| `02-methodology/` | Frameworks técnicos (Service Design, JTBD, Good Services) | Durante diagnóstico y diseño |
-| `03-process/` | Cómo se ejecuta cada fase del trabajo | Durante venta y entrega |
-| `04-templates/` | Plantillas reutilizables (calls, propuestas, diagnósticos) | Para generar entregables |
+| `02-methodology/` | Frameworks técnicos: 4 pilares (JTBD, Value-Based Strategy, Service Design, Good Services) en cascada | Durante diagnóstico y diseño |
+| `03-process/` | El pipeline del caso (`00-pipeline.md`) + cómo se ejecuta cada fase | Durante venta y entrega |
+| `04-templates/` | Plantillas reutilizables (discovery, entrevistas, diagnóstico, plan, spec, propuesta, lessons, case-notes) | Para generar entregables |
 | `05-examples/` | Casos canónicos de referencia | Como referencia de profundidad esperada |
-| `06-operations/` | Pricing, contratos, herramientas, AI workflow | Para administrar el negocio |
+| `06-operations/` | Pricing, contratos, finanzas, AI workflow | Para administrar el negocio |
 | `08-training/` | Plan de capacitación de 4 semanas | Para aprender la metodología o repasar |
-| `quality-checklist.json` | Criterios de calidad consolidados que aplican a todo output | La IA lo recorre antes de entregar (ver `CLAUDE.md` R4) |
+| `09-library/` | Módulos reusables entre clientes (semilla del kit replicable) | Antes de construir un sistema desde cero |
+| `quality-checklist.json` | Criterios de calidad con `applies-to` por tipo de output | La IA lo recorre antes de entregar (ver `CLAUDE.md` R4) |
 
 ---
 
@@ -80,14 +81,14 @@ Pegar el prompt de `learnings/CONSOLIDATION-PROMPT.md`. La IA propone diffs conc
 
 ## Estado actual del negocio
 
-**Servicio:** definido y documentado (oferta v0.3).
+**Servicio:** definido y documentado (oferta v0.10: modelos A/B/C, núcleo estandarizado + ejecución por alcance).
 **Pricing:** definido (ver `playbook/06-operations/pricing.md`).
-**Caso de referencia (canónico):** 1 (psicóloga, en `playbook/05-examples/case-psicologa.md`).
-**Caso piloto real abierto:** `cases/psicologa-rosario/` (en discovery).
-**Clientes pagos:** 0.
-**Próximo hito:** ejecutar caso piloto real → empezar venta con primer cliente nuevo.
+**Caso de referencia (canónico):** 1 (psicóloga, en `playbook/05-examples/case-psicologa.md`), pendiente de rehacer con corpus real (proyecto Caso Campos HR).
+**Clientes pagos:** 1 (Lisandro, primera venta real, en `cases/Lisandro/`).
+**Caso piloto abierto:** `cases/psicologa-rosario/` (en discovery).
+**Próximo hito:** cerrar el piloto con resultados medidos y activar venta sistemática (Modelo A en frío).
 
-Para ver qué hay que hacer y cuándo, consultar `playbook/00-start-here/roadmap.md`.
+Para ver qué hay que hacer y cuándo, consultar la base de Notion "Projects & Tasks" del owner (la acción de negocio vive fuera del repo) y los `case-notes.md` de cada caso activo.
 
 ---
 
@@ -95,7 +96,7 @@ Para ver qué hay que hacer y cuándo, consultar `playbook/00-start-here/roadmap
 
 1. **SSOT estricto.** Cada concepto vive en un solo archivo. Otros archivos lo referencian con link, no lo duplican.
 2. **Onboarding-ready.** Cualquier archivo nuevo debe ser comprensible por alguien que lee el repo por primera vez.
-3. **Acción separada de conocimiento.** El conocimiento vive en `playbook/`. Las acciones a tomar viven en `playbook/00-start-here/roadmap.md`. Los aprendizajes en tránsito viven en `learnings/`. No mezclar.
+3. **Acción separada de conocimiento.** El conocimiento vive en `playbook/`. Las acciones de negocio viven en Notion "Projects & Tasks" (fuera del repo); el estado de cada caso, en su `case-notes.md`. Los aprendizajes en tránsito viven en `learnings/`. No mezclar.
 4. **Playbook intocable sin aprobación.** La IA no modifica `playbook/` directamente. Cambios pasan siempre por el flujo de consolidación.
 5. **Versionar.** Cuando un archivo cambia significativamente, actualizar el changelog al final del archivo y la versión en este README.
 
@@ -103,6 +104,8 @@ Para ver qué hay que hacer y cuándo, consultar `playbook/00-start-here/roadmap
 
 ## Changelog
 
+- **v0.8 (2026-06-11):** actualización al estado real tras la auditoría T04, la consolidación de LRN-013 a 020 y la limpieza del repo. Primera venta registrada (Lisandro); oferta a v0.10 (modelos con núcleo + ejecución por alcance). Mapa interno actualizado: sumada `09-library/`, `00-pipeline.md` en proceso, `quality-checklist.json` con `applies-to`; "herramientas" quitado de 06-operations (tools.md ya no existe). `roadmap.md` eliminado del repo: la acción de negocio vive en Notion "Projects & Tasks". Aprobado directo por el owner en sesión.
+- **v0.7 (2026-05-18):** consolidación del cuarto pilar metodológico (sesión de refinamiento de KB, E1). Nuevo `playbook/02-methodology/value-based-strategy.md` (Value Stick / Value Map, deriva de Oberholzer-Gee 2021). La metodología pasa de 3 a 4 pilares en cascada (JTBD descubre → Value Map prioriza → Service Design audita la entrega → Good Services valida). Cambios acoplados: `jtbd.md` (Ulwick a nota, System of Progress sumado), `service-design.md` (matriz sin severidad), `04-delivery.md`, `diagnosis-template.md` (de 10 a 11 secciones), `quality-checklist.json`, `glossary.md`, `INDEX.md`. Consolidó LRN-003 y LRN-004. Aprobado por el owner para consolidación en bloque.
 - **v0.6 (2026-05-13):** sección "Onboarding obligatorio" colapsada a un puntero único. SSOT del orden de lectura → `playbook/00-start-here/onboarding.md` (era el único archivo cuyo nombre prometía hacer eso). Aprobado directo por owner en sesión.
 - **v0.5 (2026-05-13):** consolidación de `playbook/07-runbook/` dentro de `playbook/03-process/` como sección "Runbook operativo" al final de cada archivo. La carpeta `07-runbook/` se eliminó. Una sola fuente de verdad por fase. Aprobado vía LRN-009.
 - **v0.4 (mayo 2026):** reestructuración tripartita (`playbook/` + `cases/` + `learnings/`) para operar como sistema de aprendizaje continuo. Agregados `CLAUDE.md` (contrato operativo con la IA) y `playbook/quality-checklist.json` (criterios de calidad consolidados). Reescritos los links internos del playbook a rutas relativas.

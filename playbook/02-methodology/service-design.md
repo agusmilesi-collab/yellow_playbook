@@ -16,7 +16,7 @@ Disciplina que diseña la experiencia completa de un servicio (no solo el moment
 
 Es la herramienta principal para mapear, diagnosticar y rediseñar un servicio profesional artesanal (que es nuestro foco según `../01-identity/icp.md`).
 
-Service Design da la "radiografía". JTBD (ver `../02-methodology/jtbd.md`) da el "por qué" detrás de la radiografía. Los dos juntos son nuestro método.
+Service Design da la "radiografía" de la entrega. JTBD (`../02-methodology/jtbd.md`) da el "por qué". Value-Based Strategy (`../02-methodology/value-based-strategy.md`) prioriza qué atacar. Good Services (`../02-methodology/good-services.md`) valida la calidad. La cascada del método: JTBD descubre → Value Map prioriza → Service Design audita y rediseña la entrega → Good Services valida.
 
 ---
 
@@ -116,33 +116,23 @@ Por eso el rediseño no es "mejorar todo un poco", es "encontrar el touchpoint r
 
 ## Evaluación de touchpoints
 
-Después del blueprint (P3), todo touchpoint identificado se evalúa contra una matriz de 5 dimensiones. La matriz produce dos outputs: la lista de pain points prioritarios y la regla de orden para el rediseño.
+> **Alcance de esta herramienta.** La matriz de touchpoints **audita la entrega, no prioriza**. La priorización (qué se ataca primero) es trabajo del Value Map del cuarto pilar (`../02-methodology/value-based-strategy.md`), el único mecanismo de priorización del playbook. La matriz toma como dado el ranking de drivers que produce el Value Map y, contra él, audita el estado de ejecución de cada touchpoint y su costo de fix.
+
+Después del blueprint (P3) y del Value Map, todo touchpoint identificado se evalúa contra una matriz de 4 dimensiones.
 
 ### Dimensiones
 
 a. **Categoría temporal.** Cada touchpoint pertenece a una de tres etapas del journey (P7): antes del servicio, durante el servicio, después del servicio. La distinción importa porque los touchpoints de "antes" y "después" son los que la mayoría de los servicios olvida.
 
-b. **Estado actual.** Tres niveles:
+b. **Driver del Value Map que sirve.** A qué value driver priorizado (o a cuáles) contribuye este touchpoint. Si un touchpoint no sirve a ningún driver priorizado, es candidato a soltar (trade-off deliberado, ver `../02-methodology/value-based-strategy.md`). La prioridad del touchpoint **se hereda del driver**, no se calcula acá.
 
-- ✅ Bien diseñado: intencional, alineado con el job, cuidado.
+c. **Estado de ejecución.** Tres niveles:
+
+- ✅ Bien ejecutado: intencional, alineado con el driver, cuidado.
 - ⚠️ Pasable: existe pero sin foco. Funciona pero no diferencia.
 - ❌ Olvidado o roto: no se cuidó, genera fricción, ausencia o ruido.
 
-c. **Impacto en el job dominante.** Qué tanto cierra o abre el touchpoint el job que el cliente vino a hacer (ver `../02-methodology/jtbd.md`):
-
-- Alto: esencial para que el job se cumpla.
-- Medio: contribuye pero no es central.
-- Bajo: tangencial.
-
-d. **Severidad.** Cruce de estado actual × impacto en job. Determina prioridad del fix:
-
-| Estado \ Impacto | Alto | Medio | Bajo |
-|---|---|---|---|
-| ❌ Olvidado/roto | Crítica | Alta | Media |
-| ⚠️ Pasable | Alta | Media | Baja |
-| ✅ Bien diseñado | Mantener | Mantener | Mantener |
-
-e. **Costo de fix.** Estimación operativa de qué se necesita para rediseñar el touchpoint:
+d. **Costo de fix.** Estimación operativa de qué se necesita para rediseñar el touchpoint:
 
 - Bajo: cambio menor, lo hace el profesional solo, horas o pocos días.
 - Medio: requiere plantilla, prompt o sistema chico. Días o 1-2 semanas.
@@ -152,25 +142,25 @@ e. **Costo de fix.** Estimación operativa de qué se necesita para rediseñar e
 
 Matriz por touchpoint:
 
-| Touchpoint | Categoría (antes/durante/después) | Estado (✅/⚠️/❌) | Impacto en job (alto/medio/bajo) | Severidad | Costo de fix | Principio de Good Services que falla |
+| Touchpoint | Categoría (antes/durante/después) | Driver(s) del Value Map | Prioridad heredada del driver | Estado (✅/⚠️/❌) | Costo de fix | Principio de Good Services que falla |
 |---|---|---|---|---|---|---|
 
 ### Regla de orden del rediseño
 
-Una vez completada la matriz:
+El orden lo da el Value Map, no la matriz. Una vez completada:
 
-1. **Críticas con costo bajo:** primero. Quick wins de alto impacto.
-2. **Críticas con costo medio o alto:** obligatorias, entran al plan con plazo.
-3. **Altas con costo bajo:** segunda capa, otro quick win.
-4. **Severidad media o baja:** backlog. Pueden quedar fuera de scope si el rediseño es de modelo B.
+1. **Touchpoints ❌ o ⚠️ que sirven al driver de mayor prioridad, con costo bajo:** primero. Quick wins sobre lo que más mueve la WTP.
+2. **Touchpoints ❌ o ⚠️ del driver de mayor prioridad, con costo medio o alto:** obligatorios, entran al plan con plazo.
+3. **Touchpoints ❌ o ⚠️ de drivers de prioridad menor:** segunda capa, según prioridad del Value Map.
+4. **Touchpoints que no sirven a ningún driver priorizado:** no se rediseñan. Se sueltan de forma deliberada (trade-off declarado).
 
 ### Conexión con P10
 
-P10 establece que la calidad se define por la peor parte (sesgo pico-final). La matriz operacionaliza P10: las severidades críticas son los touchpoints rotos de alto impacto que el cliente recuerda al final del journey. Esos se arreglan primero, aunque sean chicos.
+P10 establece que la calidad se define por la peor parte (sesgo pico-final). Operacionalización: el touchpoint ❌ que sirve al driver de mayor prioridad del Value Map es la peor parte que el cliente recuerda. Ese se arregla primero, aunque sea chico. La matriz no calcula severidad propia: la "gravedad" de un touchpoint es la prioridad de su driver en el Value Map cruzada con su estado de ejecución.
 
 ### Conexión con Good Services
 
-Cada touchpoint con severidad alta o crítica suele tener al menos un principio de Good Services (`good-services.md`) que falla. La columna "Principio que falla" cierra el círculo entre la matriz y el checklist de 15 principios. Si la matriz marca crítica pero no aparece ningún principio fallado, sospechar de la evaluación.
+Cada touchpoint en estado ❌ o ⚠️ que sirve a un driver priorizado suele tener al menos un principio de Good Services (`good-services.md`) que falla. La columna "Principio que falla" cierra el círculo entre la matriz y el checklist de 15 principios. Si un touchpoint sirve a un driver de alta prioridad y está roto pero no aparece ningún principio fallado, sospechar de la evaluación.
 
 ---
 
@@ -220,5 +210,6 @@ Para definiciones precisas, ver `../02-methodology/glossary.md`.
 
 ## Changelog del archivo
 
+- **2026-05-18 (v0.4):** consolidación de LRN-004 (sesión de refinamiento de KB, E1). La matriz de touchpoints **deja de calcular severidad propia** (cruce estado × impacto en job): pasa de 5 a 4 dimensiones, audita estado de ejecución + costo, y hereda la prioridad del Value Map (`value-based-strategy.md`), único mecanismo de priorización del playbook. Reescritas "Regla de orden del rediseño" y "Conexión con P10" para anclar en la prioridad del Value Map. "Por qué lo usamos" actualizado a la cascada de 4 pilares. Elimina la triplicación del mecanismo "importancia × brecha". Aprobado por el owner para consolidación en bloque (sesión 2026-05-18).
 - **2026-05-13 (v0.3):** sumada sección "Evaluación de touchpoints" como herramienta formal (matriz de 5 dimensiones + regla de orden del rediseño). Operacionaliza P4 y P10. Cierra gap detectado en auditoría: la evaluación de touchpoints existía implícita pero sin método canónico. Aprobado directo por owner en sesión.
 - **Mayo 2026:** versión inicial v0.2.

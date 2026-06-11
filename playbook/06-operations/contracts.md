@@ -56,7 +56,7 @@ Para que el proyecto tenga éxito, EL CLIENTE se compromete a:
 
 - Disponibilidad para [X reuniones de Y minutos cada una].
 - Acceso a información del negocio relevante para el diagnóstico.
-- Posibilitar acceso a 2-3 clientes finales para entrevistas (parte del método).
+- Posibilitar acceso a 2-3 clientes finales para entrevistas (parte del método en Modelos B y C; esta línea se quita en contratos de Modelo A).
 - Validación de hallazgos en plazos acordados.
 
 ## 6. Confidencialidad
@@ -89,7 +89,23 @@ Las hipótesis de impacto del diagnóstico son estimaciones basadas en metodolog
 
 EL CLIENTE es responsable de la implementación de las recomendaciones y de los resultados que se obtengan de ellas.
 
-## 10. Jurisdicción
+## 10. Datos del cliente
+
+Toda la información que EL CLIENTE cargue o comparta es de su propiedad. EL CONSULTOR la usa solo para prestar el servicio, sin compartirla con terceros ni retenerla más allá de lo necesario. Al cierre, los sistemas y sus datos quedan en las cuentas de EL CLIENTE.
+
+## 11. Custodia e infraestructura
+
+[Incluir cuando el entregable contiene sistemas sobre plataformas de terceros.] Las cuentas de las plataformas (Notion, Claude u otras) las contrata EL CLIENTE. EL CONSULTOR diseña y configura; la custodia de los datos y la seguridad de esas plataformas corresponden a EL CLIENTE y a sus proveedores.
+
+## 12. Uso de IA y alcance del resultado
+
+[Incluir cuando el sistema entrega asistentes de IA.] Los asistentes de IA son herramientas de apoyo. EL CLIENTE mantiene el control y el criterio sobre sus decisiones. EL CONSULTOR no garantiza resultados específicos derivados del uso de la IA.
+
+## 13. Costos de terceros
+
+Las suscripciones a plataformas de terceros las contrata y abona EL CLIENTE directamente y quedan fuera de los honorarios.
+
+## 14. Jurisdicción
 
 Cualquier diferencia se resolverá por mediación amistosa. En caso de no resolverse, las partes se someten a la jurisdicción de los tribunales ordinarios de Rosario, Santa Fe.
 
@@ -140,4 +156,5 @@ El resto de las cláusulas se mantienen iguales en todos los contratos salvo cas
 
 ## Changelog del archivo
 
+- **2026-06-10 (v0.3):** consolidación de LRN-019 (f). Absorbidas del contrato real del caso Lisandro las cláusulas de datos del cliente, custodia e infraestructura, uso de IA y costos de terceros (10-13); jurisdicción renumerada a 14. Cláusula de acceso a clientes finales condicionada por modelo (se quita en Modelo A). Aprobado por el owner para consolidación en bloque (sesión 2026-06-10).
 - **Mayo 2026:** versión inicial v0.2.

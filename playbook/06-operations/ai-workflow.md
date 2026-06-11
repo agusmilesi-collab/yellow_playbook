@@ -14,38 +14,42 @@ La IA es un **asistente**, no un reemplazo. Acelera la entrega y mantiene consis
 
 ---
 
+## Plataforma de operación
+
+**La operación real es Claude Code sobre este repo.** El repo entero es el contexto: `CLAUDE.md` es el contrato duro (R1-R6), `playbook/` es el conocimiento, `cases/<slug>/` son los expedientes de trabajo y `learnings/` es el canal de mejora. No hace falta cargar nada a mano: la IA lee y escribe archivos del caso directamente, bajo las reglas del contrato.
+
+**El mapa que ordena la operación es `../03-process/00-pipeline.md`:** por etapa define qué archivos entran, qué archivos salen contra qué plantilla, qué checks aplican y quién cierra cada Definition of Done. La IA ubica el caso por el bloque YAML de su `case-notes.md` y opera la etapa correspondiente.
+
+**Alternativa de bolsillo** (para trabajar desde el teléfono o fuera del repo): Claude Projects con el playbook cargado como contexto. Sirve para borradores rápidos; el resultado se vuelca después a los archivos del caso. El repo es siempre la fuente de verdad.
+
+---
+
 ## Qué hace la IA
 
 ### Generación de borradores
 
-A partir de inputs estructurados, generar primer borrador de:
+A partir de los archivos del caso, generar primer borrador de:
 
-- Notas estructuradas de discovery call (a partir de notas crudas).
-- Diagnóstico siguiendo `../04-templates/diagnosis-template.md`.
-- Propuesta siguiendo `../04-templates/proposal-template.md`.
-- Email de cierre, follow-up, pedido de testimonio, pedido de referidos.
-- Service blueprint inicial a partir de notas de research.
-- Análisis JTBD a partir de entrevistas a clientes finales.
+- Notas estructuradas de discovery (`../04-templates/discovery-notes-template.md`).
+- Notas de Switch Interview (`../04-templates/switch-interview-notes-template.md`).
+- Diagnóstico (`../04-templates/diagnosis-template.md`).
+- Plan (`../04-templates/plan-template.md`).
+- Spec del sistema (`../04-templates/system-spec-template.md`).
+- Propuesta (`../04-templates/proposal-template.md`).
+- Contrato y factura (desde `contracts.md` y `finance.md`).
+- Emails de cierre, follow-up, testimonio, referidos; lessons learned (`../04-templates/lessons-learned-template.md`).
 
 ### Aplicación de frameworks
 
-Aplicar de manera consistente:
+Aplicar de manera consistente la cascada de 4 pilares (`../02-methodology/`), el vocabulario del glossary y los principios no-negociables (`../00-start-here/principles.md`).
 
-- Los 10 principios de Service Design (`../02-methodology/service-design.md`).
-- El framework JTBD (`../02-methodology/jtbd.md`).
-- El vocabulario técnico (`../02-methodology/glossary.md`).
-- Los principios no-negociables (`../00-start-here/principles.md`).
+### Gate de calidad
 
-### Mantenimiento de consistencia
-
-- Mismo tono y vocabulario en todos los entregables.
-- Misma estructura en diagnósticos.
-- Misma profundidad esperada (referencia: `../05-examples/case-psicologa.md`).
+Antes de presentar cualquier output al owner, recorrer `../quality-checklist.json` filtrado por `applies-to` según el tipo de output (R4). Ante un fail, reescribir.
 
 ### Identificación de gaps
 
-- Marcar información faltante con ❓.
-- Distinguir hipótesis (🔵) de hechos verificados (✅).
+- Marcar información faltante con ❓, hipótesis con 🔵, verificado con ✅.
 - Sugerir preguntas de seguimiento al cliente.
 
 ---
@@ -54,75 +58,21 @@ Aplicar de manera consistente:
 
 ### Interacción con clientes
 
-- NO hace discovery calls.
-- NO presenta propuestas.
-- NO presenta diagnósticos.
+- NO hace discovery calls ni Switch Interviews.
+- NO presenta propuestas ni diagnósticos.
 - NO maneja objeciones en vivo.
-- NO cobra.
-- NO firma contratos.
+- NO cobra ni firma contratos.
 
 ### Decisiones estratégicas
 
-- NO decide qué pain point priorizar.
 - NO decide qué cliente tomar y cuál declinar.
 - NO decide pricing fuera del rango establecido.
-- NO decide cuándo subir precios.
+- NO avanza la etapa de un caso: el estado lo cambia quien cierra el DoD, siempre una acción humana (regla 2 del pipeline).
 
 ### Co-creación
 
-- NO sustituye sesiones con clientes finales (principio P5).
-- NO sustituye reuniones con empleados del cliente (principio P9).
+- NO sustituye sesiones con clientes finales (P5) ni con empleados del cliente (P9).
 - NO interpreta señales no-verbales del cliente.
-
----
-
-## Setup recomendado
-
-### Plataforma
-
-**Recomendado:** Claude Projects.
-
-**Por qué:** permite cargar el playbook completo como contexto persistente. La IA tiene acceso a toda la metodología y plantillas en cada conversación.
-
-**Alternativa:** Custom GPT en ChatGPT con todo el playbook subido como knowledge base.
-
-### Configuración
-
-System prompt sugerido:
-
-```
-Sos asistente de Agustin, UX Strategist. Tu base de conocimiento es el playbook completo cargado en este proyecto.
-
-REGLAS:
-
-Operás bajo el contrato de `CLAUDE.md` (R1-R6) y los no-negociables de `playbook/00-start-here/principles.md`. Esos dos archivos son la fuente — leelos antes de cualquier output. Resumen mínimo operativo:
-
-- SSOT estricto: nunca dupliques. Linkeá.
-- Honestidad metodológica: ✅ verificado / 🔵 hipótesis / ❓ gap.
-- Vocabulario siempre desde `playbook/02-methodology/glossary.md`.
-- Profundidad de referencia: `playbook/05-examples/case-psicologa.md`.
-- NO inventes data del cliente. NO tomes decisiones estratégicas. Tono argentino, sin buzzwords.
-
-FLUJO TÍPICO:
-
-Cuando Agustin te pase notas crudas de una discovery call:
-- Estructurar siguiendo ../04-templates/discovery-notes-template.md.
-- Calificar prospect contra ICP.
-- Hipotetizar los 3 jobs y struggling moment.
-- Marcar gaps de información.
-
-Cuando Agustin te pida generar diagnóstico:
-- Seguir ../04-templates/diagnosis-template.md.
-- Aplicar frameworks de ../02-methodology/.
-- Mantener profundidad de ../05-examples/case-psicologa.md.
-- Marcar todo con íconos de honestidad metodológica.
-
-Cuando Agustin te pida generar propuesta:
-- Seguir ../04-templates/proposal-template.md.
-- Pricing exacto desde ../06-operations/pricing.md.
-- Devolver palabras del cliente sin parafrasear.
-- Una sola opción de modelo, no tres.
-```
 
 ---
 
@@ -130,59 +80,40 @@ Cuando Agustin te pida generar propuesta:
 
 ### Flujo 1: Post discovery call
 
-**Input:** notas crudas (texto, audio transcripto, video transcripto).
+**Input:** notas crudas o transcripción en `cases/<slug>/transcript.md`.
 
-**Pasos:**
-
-1. Pegar las notas en Claude.
-2. Pedir: "Generá las notas estructuradas siguiendo el template, calificá el prospect, hipotetizá los 3 jobs."
-3. Revisar y curar.
-4. Decidir si avanzar con propuesta.
+1. Pedir a la IA: "Estructurá la discovery del caso <slug>".
+2. La IA produce notas estructuradas + score ICP + hipótesis (3 jobs, meta-patrón) + gaps, y actualiza la bitácora del caso.
+3. Revisar y curar. Decidir si avanzar.
 
 **Tiempo Agustin:** 10-15 minutos de revisión.
-**Tiempo sin IA:** 1-2 horas.
 
 ### Flujo 2: Generación de propuesta
 
-**Input:** notas estructuradas de discovery + decisión de modelo (A/B/C).
+**Input:** notas estructuradas del caso + decisión de modelo.
 
-**Pasos:**
-
-1. Pegar las notas en Claude.
-2. Pedir: "Generá borrador de propuesta para Modelo [X] siguiendo el template."
-3. Revisar y refinar (especialmente sección "Lo que creo que está pasando").
-4. Validar pricing.
-5. Enviar al cliente.
+1. Pedir: "Generá la propuesta del caso <slug>, Modelo [X]".
+2. La IA produce el borrador con palabras textuales del cliente, pricing exacto y el gate de propuesta pasado.
+3. Refinar "Lo que creo que está pasando", validar pricing, enviar.
 
 **Tiempo Agustin:** 30-45 minutos.
-**Tiempo sin IA:** 2-3 horas.
 
-### Flujo 3: Generación de diagnóstico
+### Flujo 3: Diagnóstico y plan
 
-**Input:** notas de research, blueprint inicial, entrevistas a clientes finales.
+**Input:** transcript + notas de Switch Interviews del caso.
 
-**Pasos:**
+1. Pedir: "Generá el diagnóstico del caso <slug>" (la IA corre la cascada en orden: blueprint → JTBD → Value Map → touchpoints → Good Services → diagnóstico central).
+2. Revisar a fondo (es el documento más importante). Validar con el cliente.
+3. Pedir: "Derivá el plan y la spec del sistema" (plantillas de plan y system-spec).
 
-1. Compartir todo el material con Claude.
-2. Pedir: "Generá borrador de diagnóstico siguiendo el template y la profundidad del caso de la psicóloga."
-3. Revisar y refinar (es el documento más importante, dedicar tiempo).
-4. Validar con el cliente antes de finalizar.
+**Tiempo Agustin:** 4-6 horas de revisión entre ambos.
 
-**Tiempo Agustin:** 4-6 horas de revisión.
-**Tiempo sin IA:** 12-15 horas.
+### Flujo 4: Comunicaciones y cierre de caso
 
-### Flujo 4: Comunicaciones rutinarias
+1. Pedir el texto que toque (cierre, follow-up, testimonio, referidos) con el caso como contexto.
+2. Al cerrar: la IA genera lessons learned, propone módulos para `../09-library/` y vuelca learnings a `learnings/learnings-pending.md` (R3).
 
-**Input:** contexto del cliente + tipo de comunicación necesaria.
-
-**Pasos:**
-
-1. Pedir a Claude: "Generá [email de cierre / follow-up / pedido de testimonio] para [cliente X]."
-2. Revisar tono.
-3. Personalizar últimos detalles.
-4. Enviar.
-
-**Tiempo Agustin:** 5-10 minutos.
+**Tiempo Agustin:** 5-10 minutos por comunicación.
 
 ---
 
@@ -190,12 +121,10 @@ Cuando Agustin te pida generar propuesta:
 
 Cada 5 outputs generados, revisar:
 
-- ¿La IA está manteniendo el vocabulario del glossary?
-- ¿Está marcando bien los íconos de certeza?
+- ¿Se mantiene el vocabulario del glossary y los íconos de certeza?
 - ¿La profundidad es la esperada?
-- ¿Aparecen patrones de error que requieren ajustar el system prompt?
-
-Si aparecen problemas recurrentes, actualizar este archivo y el system prompt.
+- ¿El gate de calidad está filtrando lo que debería?
+- ¿Aparecen patrones de error? → entry en `learnings/learnings-pending.md`.
 
 ---
 
@@ -208,7 +137,7 @@ Por más que la IA mejore, estos pasos son irreductiblemente humanos:
 3. **Cobrar.** Aunque la factura la genere un sistema, la decisión de cobrar es humana.
 4. **Decidir cuándo declinar un cliente.** Requiere criterio acumulado.
 5. **Co-crear con clientes finales.** Requiere presencia, empatía, improvisación.
-6. **Presentar el diagnóstico.** Requiere defender hallazgos en vivo.
+6. **Presentar el diagnóstico y conducir el onboarding.** Requiere defender hallazgos e instalar el sistema en vivo.
 
 Estas tareas son el 80% del valor cobrado. La IA libera tiempo de las tareas mecánicas para que Agustin se concentre en estas.
 
@@ -216,5 +145,6 @@ Estas tareas son el 80% del valor cobrado. La IA libera tiempo de las tareas mec
 
 ## Changelog del archivo
 
+- **2026-06-10 (v0.4):** consolidación de LRN-018. Reescritura a la plataforma real de operación: Claude Code sobre el repo con `CLAUDE.md` como contrato y `00-pipeline.md` como mapa; Claude Projects pasa a alternativa de bolsillo. Flujos reformulados como flujos sobre archivos del caso, con el gate de `quality-checklist.json` filtrado por `applies-to`. Lista de borradores ampliada a las plantillas nuevas (LRN-017). Aprobado por el owner para consolidación en bloque (sesión 2026-06-10).
 - **2026-05-13 (v0.3):** reglas del system prompt sugerido apuntan a `CLAUDE.md` + `principles.md` en lugar de duplicar 8 ítems inline. Evita drift entre el contrato del repo y el system prompt del Claude Project. Aprobado directo por owner en sesión.
 - **Mayo 2026:** versión inicial v0.2.

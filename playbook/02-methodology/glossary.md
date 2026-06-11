@@ -67,8 +67,41 @@ Fuerza que retiene al cliente en su solución actual. Categoría amplia que incl
 ### Demand-side innovation
 Enfoque de innovación que parte de los jobs no satisfechos del cliente, no de las features posibles del producto.
 
+### Sistema de progreso
+El JTBD entendido como sistema de tres partes interdependientes (cliente que busca progreso, solución que contrata, productor que la crea). Es continuo: las alternativas que el cliente considera cambian con el tiempo, por eso se reentrevista. Klement, *When Coffee and Kale Compete* 2.ª ed., cap 11.
+
+---
+
+## Términos de Value-Based Strategy
+
+SSOT del vocabulario del cuarto pilar. Marco completo en `./value-based-strategy.md`. Origen: *Better, Simpler Strategy* (Oberholzer-Gee, 2021).
+
 ### Disposición a pagar (willingness to pay, WTP)
-Cuánto está dispuesto a pagar el cliente por un servicio. Indicador clave: una disposición alta señala que el servicio cumple los tres jobs.
+Lo máximo que un cliente pagaría por un servicio. Un centavo más y se va. Subir la WTP es una de las dos únicas formas de crear valor.
+
+### Disposición a aceptar (willingness to sell, WTS)
+Lo mínimo por lo que el profesional aceptaría hacer un trabajo. Un centavo menos y no lo hace. En el ICP de Yellow (profesional solo) se reencuadra como el piso de pricing del propio profesional, no como compensación de talento o proveedores.
+
+### Value stick
+El eje WTP (arriba) → precio → costo → WTS (abajo). Visualiza dónde se crea y dónde se reparte el valor.
+
+### Valor creado
+WTP − WTS. Todo lo demás es ruido.
+
+### Captura de valor
+Cómo se reparte el valor creado. La brecha entre WTP y precio es valor para el cliente; la brecha entre precio y WTS es la ganancia del profesional. "Regala la ventaja real, cobra la commodity" es captura de valor mal hecha.
+
+### Value driver
+Lo que al cliente final realmente le importa. Unidad que el Value Map ordena por importancia.
+
+### Value Map
+Único mecanismo de priorización del playbook. Ordena los value drivers por importancia y mide la brecha de cada uno contra las alternativas que el cliente consideró. Reemplaza y unifica los scorings de priorización que antes vivían dispersos (severidad de la matriz de touchpoints, opportunity scoring de Ulwick).
+
+### Dual advantage
+Movimiento que sube la WTP y baja la WTS a la vez.
+
+### Disciplina causal
+Regla de que toda recomendación tenga una cadena escrita hasta WTP (o WTS). Sin esa cadena, se reescribe o se descarta.
 
 ---
 
@@ -158,6 +191,7 @@ Lenguaje que queda fuera de entregables y comunicación:
 
 ## Changelog del archivo
 
+- **2026-05-18 (v0.5):** consolidación de LRN-003 + LRN-004 (sesión de refinamiento de KB, E1). Sección nueva "Términos de Value-Based Strategy" (WTP, WTS, value stick, valor creado, captura de valor, value driver, value map, dual advantage, disciplina causal). WTP movido de "Términos de JTBD" a la sección nueva, con definición actualizada (deja de definirse como señal de los tres jobs). Sumado "Sistema de progreso" a Términos de JTBD. Aprobado por el owner para consolidación en bloque (sesión 2026-05-18).
 - **2026-05-13 (v0.4):** definición de "Service redesign without core change" reducida a 1 línea con puntero a P1 (era reformulación del principio completo). Aprobado directo por owner en sesión.
 - **2026-05-09:** v0.3, castellanización de los términos de UX Strategy aplicada (drill-down, progressive disclosure, medium reframing, willingness to pay, etc.) según la guía de estilo Yellow (`./style-guide.md`). Los términos en inglés se mantienen entre paréntesis para facilitar la búsqueda. Los nombres canónicos de framework (Job-to-be-Done, push/pull/anxiety/habit) se preservan.
 - **Mayo 2026:** versión inicial v0.2.

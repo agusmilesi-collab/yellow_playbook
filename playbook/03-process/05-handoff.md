@@ -18,7 +18,7 @@ Cerrar el proyecto bien, capturar valor para futuras ventas (testimonio + referi
 ## Outputs
 
 - **Profesional operando su sistema con autonomía** (Tesis).
-- **Módulos reusables capturados** en la biblioteca Yellow para próximos clientes del mismo vertical.
+- **Módulos reusables capturados** en la biblioteca Yellow (`../09-library/`) para próximos clientes del mismo vertical.
 - Testimonio formal.
 - Referidos calificados (idealmente 2-3).
 - Caso de estudio actualizado en `../05-examples/`.
@@ -123,7 +123,7 @@ Crear archivo `case-[clientname].md` siguiendo estructura de `../05-examples/cas
 
 ### 2. Lessons learned
 
-Crear archivo `lessons-[clientname].md` con:
+Crear archivo `lessons-[clientname].md` (siguiendo `../04-templates/lessons-learned-template.md`) con:
 
 - ¿Qué funcionó bien del proceso?
 - ¿Qué se trabó?
@@ -140,7 +140,7 @@ Si el proyecto generó:
 - Un patrón de pain point recurrente → documentar en `../02-methodology/`.
 - Una nueva forma de pricing → actualizar `../06-operations/pricing.md`.
 - Un nuevo tipo de cliente → actualizar `../01-identity/icp.md`.
-- **Un módulo de sistema operativo reusable** (template de microsite, prompt generador, protocolo por momento crítico, microsite component) → agregar a la biblioteca de módulos Yellow para próximos clientes del mismo vertical.
+- **Un módulo de sistema operativo reusable** (template de microsite, prompt generador, protocolo por momento crítico, microsite component) → agregar a la biblioteca Yellow (`../09-library/`) para próximos clientes del mismo vertical.
 
 ---
 
@@ -232,6 +232,7 @@ Después del Paso 9, el cliente queda en lista de "alumni". Reactivar cada 6 mes
 
 ## Changelog del archivo
 
+- **2026-06-10 (v0.5):** consolidación de LRN-019 (e) + LRN-017. La "biblioteca Yellow" deja de ser referencia sin destino: existe en `playbook/09-library/`, sembrada con los módulos del caso Lisandro. Lessons learned con puntero a plantilla nueva. Aprobado por el owner para consolidación en bloque (sesión 2026-06-10).
 - **2026-05-13:** v0.4, sumada sección "Runbook operativo" con flujo post-entrega paso a paso, decisiones if/then, errores comunes con salida, cierre del proceso. Consolidación desde `07-runbook/07-cuando-termina-proyecto.md` (carpeta eliminada). Aprobado vía LRN-009.
 - **2026-05-13:** v0.3, refinamiento contra nueva metodología. Outputs incluyen autonomía operativa (P0) + módulos reusables. Día 0 redefine entrega como sistema funcionando. Semana 1 valida autonomía operativa con sesión de training adicional si no se cumple. Caso de estudio captura meta-patrón identificado y spec del sistema construido. Lessons learned suma preguntas sobre patrones reusables cross-cliente y módulos de sistema reusables. "Actualización del playbook" incluye destino para módulos de sistema reusables. Aprobado vía LRN-008.
 - **Mayo 2026:** versión inicial v0.2.

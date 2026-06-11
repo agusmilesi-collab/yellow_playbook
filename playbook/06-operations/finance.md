@@ -52,8 +52,8 @@ Llevar planilla simple con:
 
 | Mes | Facturado | Cobrado | Pendiente | Notas |
 |---|---|---|---|---|
-| Mayo 2026 | 0 | 0 | 0 | Aún sin clientes pagos |
-| Junio 2026 | | | | |
+| Mayo 2026 | 0 | 0 | 0 | Sin clientes pagos |
+| Junio 2026 | ARS 500.000 (caso Lisandro) | ARS 250.000 🔵 (primer pago, confirmar) | ARS 250.000 (post-onboarding) ❓ | Primera venta real. Registrar equivalente USD del día de cada pago |
 | Julio 2026 | | | | |
 
 Revisar al cierre de cada mes.
@@ -158,5 +158,6 @@ Considerar:
 
 ## Changelog del archivo
 
+- **2026-06-10 (v0.4):** consolidación de LRN-019 (g). Tracking de caja actualizado con la primera venta real (caso Lisandro, ARS 500.000), con estados de cobro a confirmar por el owner. Aprobado por el owner para consolidación en bloque (sesión 2026-06-10).
 - **2026-05-13 (v0.3):** "Política de pricing en USD" y "Forma de pago" colapsadas a un solo bloque "Moneda y forma de pago" con SSOT en `pricing.md`. Costos absorbidos desde `tools.md` (eliminado). Aprobado directo por owner en sesión.
 - **Mayo 2026:** versión inicial v0.2.

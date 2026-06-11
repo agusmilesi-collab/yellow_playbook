@@ -6,13 +6,15 @@
 
 ## Tabla oficial de precios
 
-| Modelo | Servicio | Duración | Precio (USD) |
-|---|---|---|---|
-| **A** | Sesión estratégica única | 1 semana | Entrada baja (ver rango abajo) |
-| **B** | Diagnóstico + plan | 3-4 semanas | **2.000 USD** |
-| **C** | Diagnóstico + acompañamiento | 3-4 meses | **3.000 USD** |
+| Modelo | Servicio | Precio (USD) |
+|---|---|---|
+| **A** | Lectura experta (consulta + devolución escrita) | 300-600 según caso |
+| **B** | Diagnóstico + plan (núcleo estandarizado) | **2.000 USD** |
+| **C** | Sistema vivo instalado (B + ejecución + acompañamiento) | **Desde 3.000 USD**; la ejecución se cotiza por alcance contra el plan |
 
-**Moneda:** USD. Se factura en pesos al tipo de cambio del día del primer pago, o en USD según preferencia del cliente.
+Duración por modelo: SSOT en `../03-process/04-delivery.md`.
+
+**Moneda:** los precios se definen y comunican en USD. Se factura en pesos al tipo de cambio MEP del día de cada pago, o en USD según preferencia del cliente. Cuando un trato se negocia directamente en ARS (caso Lisandro), se registra su equivalente en USD del día para mantener comparables los datos económicos del negocio.
 
 **IVA:** + IVA si corresponde según situación impositiva.
 
@@ -38,9 +40,9 @@ Información interna para evaluar margen y decisiones de pricing futuro. Para qu
 
 ### Modelo C
 
-- **Precio:** USD 3.000.
-- **Horas estimadas:** 100-130 horas de Agustin.
-- **Nota de pricing:** Modelo C tiene mayor margen de mejora de pricing. A medida que se acumulen casos, debería subir antes que B.
+- **Precio:** desde USD 3.000. El núcleo (B) va a precio fijo; la ejecución (build + instalación + acompañamiento) se cotiza por alcance contra el plan, porque varía de forma extrema según la solución (un PDF con logo lleva 10 minutos; una migración completa, meses).
+- **Horas estimadas:** 100-130 horas de Agustin en un alcance típico.
+- **Nota de pricing:** Modelo C tiene el mayor margen de mejora. A medida que se acumulen casos, debería subir antes que B. El alcance chico vendido en el caso Lisandro (ARS 500.000, ~USD 400-500) fue precio de caso fundacional fuera de la escalera; jamás se usa como referencia para C.
 
 ---
 
@@ -106,5 +108,6 @@ Este archivo se revisa cada 3 meses o cada 5 casos cerrados, lo que ocurra prime
 
 ## Changelog del archivo
 
+- **2026-06-10 (v0.4):** consolidación de LRN-014 + LRN-013. Tabla sin columna de duración (SSOT en `03-process/04-delivery.md`). A renombrado "Lectura experta" con rango 300-600 en tabla. C pasa a "desde USD 3.000" con ejecución cotizada por alcance contra el plan (estructura núcleo + ejecución de LRN-008). Política de moneda ampliada: trato negociado en ARS se registra con equivalente USD. Nota sobre el precio fundacional del caso Lisandro (fuera de escalera, sin valor de referencia). Aprobado por el owner para consolidación en bloque (sesión 2026-06-10).
 - **2026-05-13 (v0.3):** descripción de servicio por modelo (qué entrega, cuándo usar, quién compra) movida a `01-identity/offer.md` como SSOT único. `pricing.md` queda solo con precio + horas + tarifa + estrategia comercial. Aprobado directo por owner en sesión.
 - **Mayo 2026:** versión inicial v0.2, precios definidos: A entrada baja / B USD 2000 / C USD 3000.

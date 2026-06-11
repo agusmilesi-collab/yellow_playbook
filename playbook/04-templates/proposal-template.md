@@ -32,7 +32,7 @@ Para pricing exacto, ver `../06-operations/pricing.md`.
 
 [Diagnóstico breve. La causa raíz, no los síntomas. Punzante, claro, profesional.]
 
-Mi lectura es que el problema no es [síntoma percibido]. Es [causa raíz que el cliente no veía].
+Mi lectura: [síntoma percibido] es lo que se ve. La causa está en [causa raíz que el cliente no veía].
 
 [Explicación de 3-5 líneas con la hipótesis. Acá se demuestra criterio profesional.]
 
@@ -117,5 +117,6 @@ SSOT de las reglas de propuesta y de las notas operativas para la IA → `../03-
 
 ## Changelog del archivo
 
+- **2026-06-10 (v0.4):** consolidación de LRN-015. Molde de la sección 2 reescrito en afirmativo (la plantilla prescribía la fórmula que la regla F prohíbe). Aprobado por el owner para consolidación en bloque (sesión 2026-06-10).
 - **2026-05-13 (v0.3):** "Reglas de uso" y "Notas para la IA" colapsadas a puntero único hacia `03-process/02-proposal.md`. El template queda como estructura pura. Aprobado directo por owner en sesión.
 - **Mayo 2026:** versión inicial v0.2.

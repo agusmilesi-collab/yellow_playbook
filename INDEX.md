@@ -46,10 +46,13 @@ Cada concepto vive en un solo archivo. Si lo necesitás en otro lado, linkealo, 
 | Concepto | SSOT en |
 |---|---|
 | Service Design (framework) | `playbook/02-methodology/service-design.md` |
-| Evaluación de touchpoints (matriz) | `playbook/02-methodology/service-design.md` |
-| Jobs to be Done (framework) | `playbook/02-methodology/jtbd.md` |
+| Evaluación de touchpoints (matriz, audita, no prioriza) | `playbook/02-methodology/service-design.md` |
+| Jobs to be Done (framework, descubrimiento puro) | `playbook/02-methodology/jtbd.md` |
 | Good Services (15 principios) | `playbook/02-methodology/good-services.md` |
+| Value-Based Strategy (Value Stick, 4to pilar) | `playbook/02-methodology/value-based-strategy.md` |
+| Value Map (único mecanismo de priorización) | `playbook/02-methodology/value-based-strategy.md` |
 | 4 Forces of Progress | `playbook/02-methodology/jtbd.md` |
+| Sistema de progreso | `playbook/02-methodology/jtbd.md` |
 | Vocabulario técnico | `playbook/02-methodology/glossary.md` |
 | Términos a evitar | `playbook/02-methodology/glossary.md` |
 
@@ -57,14 +60,21 @@ Cada concepto vive en un solo archivo. Si lo necesitás en otro lado, linkealo, 
 
 | Concepto | SSOT en |
 |---|---|
+| Pipeline del caso (mapa operable por agentes, estados y DoD) | `playbook/03-process/00-pipeline.md` |
 | Proceso de discovery call | `playbook/03-process/01-discovery.md` |
 | Proceso de propuesta | `playbook/03-process/02-proposal.md` |
 | Proceso de cierre | `playbook/03-process/03-closing.md` |
-| Proceso de entrega | `playbook/03-process/04-delivery.md` |
+| Proceso de entrega (incluye duración por modelo) | `playbook/03-process/04-delivery.md` |
 | Proceso de handoff y post-venta | `playbook/03-process/05-handoff.md` |
 | Plantilla de diagnóstico | `playbook/04-templates/diagnosis-template.md` |
 | Plantilla de propuesta | `playbook/04-templates/proposal-template.md` |
 | Plantilla de notas de discovery | `playbook/04-templates/discovery-notes-template.md` |
+| Plantilla de notas de Switch Interview | `playbook/04-templates/switch-interview-notes-template.md` |
+| Plantilla de plan | `playbook/04-templates/plan-template.md` |
+| Plantilla de spec del sistema | `playbook/04-templates/system-spec-template.md` |
+| Plantilla de lessons learned | `playbook/04-templates/lessons-learned-template.md` |
+| Plantilla de case notes (bitácora + estado del caso) | `playbook/04-templates/case-notes-template.md` |
+| Biblioteca de módulos reusables | `playbook/09-library/README.md` |
 
 ### Referencia, principios y acción
 
@@ -72,7 +82,8 @@ Cada concepto vive en un solo archivo. Si lo necesitás en otro lado, linkealo, 
 |---|---|
 | Caso canónico de referencia | `playbook/05-examples/case-psicologa.md` |
 | Principios no-negociables | `playbook/00-start-here/principles.md` |
-| Acciones a ejecutar | `playbook/00-start-here/roadmap.md` |
+| Acciones a ejecutar (negocio) | Notion "Projects & Tasks" (fuera del repo) |
+| Estado de un caso activo | `cases/<slug>/case-notes.md` (bloque YAML) |
 
 ### Capacitación
 
@@ -103,7 +114,7 @@ Cada concepto vive en un solo archivo. Si lo necesitás en otro lado, linkealo, 
 
 1. `playbook/03-process/04-delivery.md` (proceso completo de entrega)
 2. `playbook/04-templates/diagnosis-template.md` (plantilla)
-3. `playbook/02-methodology/service-design.md` + `playbook/02-methodology/jtbd.md` (frameworks)
+3. `playbook/02-methodology/jtbd.md` → `playbook/02-methodology/value-based-strategy.md` → `playbook/02-methodology/service-design.md` (la cascada del método: descubrir → priorizar → auditar la entrega)
 4. `playbook/05-examples/case-psicologa.md` (referencia de profundidad)
 5. `playbook/quality-checklist.json` (criterios para auto-evaluar antes de entregar)
 
@@ -121,14 +132,14 @@ Cada concepto vive en un solo archivo. Si lo necesitás en otro lado, linkealo, 
 ### "Quiero generar algo con IA"
 
 1. `CLAUDE.md` (contrato duro: qué puede y qué no puede hacer la IA)
-2. `playbook/06-operations/ai-workflow.md` (flujos por escenario)
-3. Cargar todo el repo como contexto en Claude Project / Custom GPT
+2. `playbook/03-process/00-pipeline.md` (mapa de etapas: inputs, outputs, checks, DoD)
+3. `playbook/06-operations/ai-workflow.md` (flujos por escenario)
 
 ### "Voy a arrancar un caso real con un cliente"
 
-1. Crear `cases/<slug-cliente>/` con los 4 archivos (templates en `playbook/04-templates/`).
-2. Seguir el flujo de `playbook/03-process/` según etapa, revisando la sección "Runbook operativo" al final de cada archivo.
-3. Mantener `case-notes.md` durante toda la sesión.
+1. Crear `cases/<slug-cliente>/` con los 4 archivos (`case-notes.md` desde `playbook/04-templates/case-notes-template.md`, con su bloque YAML de estado).
+2. Seguir `playbook/03-process/00-pipeline.md` según etapa, con el detalle del "Runbook operativo" al final de cada archivo de proceso.
+3. Mantener `case-notes.md` (bitácora + estado) durante toda la sesión.
 4. Al cerrar el caso, volcar learnings a `learnings/learnings-pending.md`.
 
 ### "Quiero consolidar aprendizajes al playbook"
@@ -139,7 +150,8 @@ Cada concepto vive en un solo archivo. Si lo necesitás en otro lado, linkealo, 
 
 ### "No sé qué hacer hoy"
 
-1. `playbook/00-start-here/roadmap.md` (sprint actual)
+1. Notion "Projects & Tasks" del owner (sprint y backlog del negocio, fuera del repo).
+2. `cases/<slug>/case-notes.md` de cada caso activo (próxima acción por proyecto).
 
 ### "Estoy operando con un cliente, ¿qué hago ahora?"
 
@@ -160,7 +172,7 @@ Ir al archivo de proceso correspondiente y revisar la sección "Runbook operativ
 ## Reglas de oro del repo (resumen)
 
 1. **SSOT estricto.** Cada concepto en un solo archivo.
-2. **Acción separada de conocimiento.** Las acciones van a `playbook/00-start-here/roadmap.md`. Los aprendizajes en tránsito a `learnings/`.
+2. **Acción separada de conocimiento.** Las acciones de negocio van a Notion "Projects & Tasks" (fuera del repo); el estado por caso, a su `case-notes.md`. Los aprendizajes en tránsito, a `learnings/`.
 3. **Honestidad metodológica.** ✅ verificado / 🔵 hipótesis / ❓ gap.
 4. **Vocabulario del glossary.** Términos técnicos siempre desde `playbook/02-methodology/glossary.md`.
 5. **Profundidad de referencia.** El caso de la psicóloga es el espejo.
@@ -172,6 +184,9 @@ Para los 10 principios no-negociables completos: `playbook/00-start-here/princip
 
 ## Changelog del archivo
 
+- **2026-06-11 (v0.9):** eliminado `roadmap.md` del repo (decisión del owner: la acción de negocio vive en Notion "Projects & Tasks"). Filas y atajos de "acciones" re-apuntados a Notion + `case-notes.md`. Aprobado directo por el owner en sesión.
+- **2026-06-10 (v0.8):** consolidación de LRN-016/017/018/019 (sesión T04). Sumadas filas: pipeline del caso (`00-pipeline.md`), 5 plantillas nuevas, biblioteca de módulos (`09-library/`). Atajos "Quiero generar algo con IA" y "Voy a arrancar un caso real" actualizados al modelo Claude Code + pipeline. Aprobado por el owner para consolidación en bloque (sesión 2026-06-10).
+- **2026-05-18 (v0.7):** consolidación del cuarto pilar (LRN-003 + LRN-004, sesión de refinamiento de KB, E1). Sumadas filas Value-Based Strategy, Value Map y Sistema de progreso en el mapa de SSOT de Metodología. Matriz de touchpoints reetiquetada como "audita, no prioriza"; JTBD como "descubrimiento puro". Atajo "Tengo que hacer un diagnóstico" reordenado a la cascada del método. La metodología pasa de 3 a 4 pilares.
 - **2026-05-13 (v0.6):** eliminada fila "Stack de herramientas" tras borrar `06-operations/tools.md` (era inventario, no SSOT metodológico). Costos y "stack mínimo" absorbidos en `finance.md` y `ai-workflow.md`; integraciones futuras movidas a `roadmap.md` backlog. Aprobado directo por owner en sesión (saltó protocolo de learnings).
 - **2026-05-13 (v0.5):** eliminada sección "Runbook por escenario" tras consolidación de `07-runbook/` dentro de `03-process/`. Atajos por escenario apuntan ahora a la sección "Runbook operativo" al final de cada archivo de proceso. Aprobado vía LRN-009.
 - **Mayo 2026 (v0.4):** estructura tripartita reflejada (`playbook/` + `cases/` + `learnings/`). Sumadas referencias a `CLAUDE.md`, `quality-checklist.json` y atajos para arrancar caso real / consolidar learnings.

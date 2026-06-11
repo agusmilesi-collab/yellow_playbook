@@ -113,7 +113,7 @@ Texto sugerido:
 
 #### Pregunta 4: Si pudieras chasquear los dedos
 
-> "Última. Si pudieras chasquear los dedos y resolver esto mañana, ¿cómo se vería? ¿Qué cambiaría en tu día a día, en tu negocio, en cómo te sentís?"
+> "Si pudieras chasquear los dedos y resolver esto mañana, ¿cómo se vería? ¿Qué cambiaría en tu día a día, en tu negocio, en cómo te sentís?"
 
 **Lo que se busca:**
 
@@ -162,7 +162,7 @@ Antes de cerrar, mencionar el siguiente paso si avanzamos:
 
 Esto ancla en la cabeza del prospect que la metodología incluye entrevistas a sus clientes. Cuando firme, ya está pre-acordado.
 
-**Si el prospect viene de mundo founder o ejecutivo** (reconoce el rol "VP of Customer"), se puede explicitar la equivalencia en el cierre: *"Operativamente, esto es el trabajo de un VP of Customer fraccional."* Ver `../01-identity/offer.md`.
+**Si el prospect viene de mundo founder, ejecutivo o dueño de PyME** (reconoce roles gerenciales), se puede explicitar la equivalencia en el cierre: *"Operativamente, esto es el trabajo de un Gerente de Experiencia del Cliente, en formato fractional."* Ver `../01-identity/offer.md`.
 
 **Reglas no-negociables:**
 
@@ -262,6 +262,7 @@ Ver `../03-process/02-proposal.md`.
 
 ## Changelog del archivo
 
+- **2026-06-10 (v0.6):** consolidación del residual LRN-011 + LRN-019 (c). Swap "VP of Customer" → "Gerente de Experiencia del Cliente (fractional)" en el cierre de la call. Quitado el "Última." duplicado de la Pregunta 4 (chocaba con la apertura de la Pregunta 5). Aprobado por el owner para consolidación en bloque (sesión 2026-06-10).
 - **2026-05-13 (v0.5):** secciones "Red flags durante la call" y "Green flags durante la call" colapsadas a un solo bloque "Red/Green flags durante la call" con puntero único a `01-identity/icp.md` (SSOT). Inline queda solo la operativa específica de "qué hacer en vivo si aparece un flag". Aprobado directo por owner en sesión.
 - **2026-05-13:** v0.4, sumada sección "Runbook operativo" con el flujo pre-discovery (cuando llega un prospect), decisión if/then de calificación, plantillas de texto, errores comunes. Consolidación desde `07-runbook/01-cuando-llega-prospect.md` (carpeta eliminada). Aprobado vía LRN-009.
 - **2026-05-13:** v0.3, refinamiento contra nueva metodología. Sumada Pregunta 5 sobre el meta-patrón ("¿qué te dicen tus clientes contentos?"). Anclada la expectativa de la Fase B del delivery (2 o 3 Switch Interviews a clientes finales post-firma) en el cierre de la call. Sumada hipótesis preliminar de meta-patrón a outputs y al post-call. Aclarada compatibilidad del guion con comercios locales (Tier 3 ICP). Renombrada "Las 5 preguntas JTBD opcional" a "Profundización JTBD opcional" para evitar choque con la nueva Pregunta 5; se aclara que la Switch Interview completa se aplica en delivery. Mención opcional de VP of Customer en el cierre. Duración total pasa de 30 a 35 minutos. Aprobado vía LRN-007.

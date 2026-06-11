@@ -1,97 +1,173 @@
 {
-  "version": "0.2",
+  "version": "0.4",
   "scope": "Aplicable a cualquier output que la IA entregue desde este repo: diagnóstico, propuesta, plan, comunicación al cliente.",
-  "self-evaluation-protocol": "Antes de entregar cualquier output al owner, recorrer cada check. Marcar pass/fail. Si hay fail, reescribir antes de presentar.",
+  "self-evaluation-protocol": "Antes de entregar cualquier output al owner, filtrar los checks por applies-to según el tipo de output y recorrer cada uno. Marcar pass/fail. Si hay fail, reescribir antes de presentar.",
+  "applies-to-values": ["diagnostico", "propuesta", "plan", "comunicacion", "todos"],
   "checks": [
     {
       "id": "honesty-icons",
       "category": "metodologia",
+      "applies-to": ["diagnostico", "plan"],
       "rule": "Cada afirmación material lleva exactamente uno de: ✅ verificado / 🔵 hipótesis / ❓ gap.",
       "source": "playbook/00-start-here/principles.md#P3"
     },
     {
       "id": "no-fabrication",
       "category": "metodologia",
+      "applies-to": ["todos"],
       "rule": "Información ausente del cliente se marca con ❓. Está prohibido inferir como si fuera dato.",
       "source": "playbook/00-start-here/principles.md#P3"
     },
     {
       "id": "ssot",
       "category": "estructura",
+      "applies-to": ["todos"],
       "rule": "Ningún concepto se duplica entre archivos. Si aparece en otro lado, se linkea al SSOT.",
-      "source": "playbook/00-start-here/principles.md#P10 + playbook/INDEX.md"
+      "source": "playbook/00-start-here/principles.md#P10 + INDEX.md"
     },
     {
       "id": "vocabulary-controlled",
       "category": "lenguaje",
+      "applies-to": ["todos"],
       "rule": "Términos técnicos provienen del glossary. Términos prohibidos no aparecen.",
       "source": "playbook/02-methodology/glossary.md"
     },
     {
       "id": "depth-reference",
       "category": "estructura",
+      "applies-to": ["diagnostico"],
       "rule": "El caso de la psicóloga es el espejo de profundidad esperada para diagnósticos.",
       "source": "playbook/05-examples/case-psicologa.md"
     },
     {
+      "id": "template-precedence",
+      "category": "estructura",
+      "applies-to": ["todos"],
+      "rule": "Ante conflicto entre el espejo (case-psicologa.md, anterior al cuarto pilar) y plantilla + checklist, mandan plantilla y checklist. Vigente hasta que el caso canónico se rehaga (LRN-005).",
+      "source": "playbook/04-templates/diagnosis-template.md + learnings/learnings-pending.md (LRN-005)"
+    },
+    {
       "id": "diagnostic-length",
       "category": "estructura",
+      "applies-to": ["diagnostico"],
       "rule": "Diagnóstico no excede 25 páginas equivalentes.",
       "source": "playbook/00-start-here/principles.md#P4"
     },
     {
       "id": "proposal-length",
       "category": "estructura",
+      "applies-to": ["propuesta"],
       "rule": "Propuesta no excede 2 páginas equivalentes.",
       "source": "playbook/00-start-here/principles.md#P4"
     },
     {
       "id": "diagnostic-structure",
       "category": "estructura",
-      "rule": "El diagnóstico cubre las 10 secciones de la plantilla, sin saltarse ninguna.",
+      "applies-to": ["diagnostico"],
+      "rule": "El diagnóstico cubre las 11 secciones de la plantilla, sin saltarse ninguna (incluye la sección 4 Value Map).",
       "source": "playbook/04-templates/diagnosis-template.md"
     },
     {
       "id": "kpis-measurable",
       "category": "metodologia",
+      "applies-to": ["diagnostico", "plan"],
       "rule": "Hipótesis de impacto incluye al menos 3 KPIs medibles (números, no descripciones cualitativas).",
       "source": "playbook/00-start-here/principles.md#P6"
     },
     {
       "id": "central-diagnosis-sharp",
       "category": "metodologia",
-      "rule": "El diagnóstico central es punzante (3-5 líneas). Apunta a causa, no a síntoma.",
-      "source": "playbook/08-training/semana-3-diagnostico.md día 6"
+      "applies-to": ["diagnostico"],
+      "rule": "El diagnóstico central es punzante (3-5 líneas). Apunta a causa, no a síntoma. Molde afirmativo de la plantilla (regla F).",
+      "source": "playbook/04-templates/diagnosis-template.md#6 + playbook/08-training/semana-3-diagnostico-sistema.md"
     },
     {
       "id": "intervention-pain-link",
       "category": "logica",
+      "applies-to": ["diagnostico", "plan"],
       "rule": "Cada intervención propuesta se conecta explícitamente a un pain point identificado.",
-      "source": "playbook/08-training/semana-3-diagnostico.md día 3"
+      "source": "playbook/08-training/semana-3-diagnostico-sistema.md"
+    },
+    {
+      "id": "causal-chain-wtp",
+      "category": "logica",
+      "applies-to": ["diagnostico", "plan"],
+      "rule": "Cada intervención tiene una cadena causal escrita hasta WTP (o, excepcionalmente, WTS): intervención → driver del Value Map → movimiento de WTP → captura de valor. Recomendaciones sin esa cadena se reescriben o se descartan.",
+      "source": "playbook/02-methodology/value-based-strategy.md"
+    },
+    {
+      "id": "single-prioritization",
+      "category": "logica",
+      "applies-to": ["diagnostico", "plan"],
+      "rule": "La priorización del diagnóstico viene solo del Value Map. No aparece ningún scoring de priorización paralelo (severidad de matriz, opportunity scoring u otro).",
+      "source": "playbook/02-methodology/value-based-strategy.md"
+    },
+    {
+      "id": "meta-pattern-present",
+      "category": "metodologia",
+      "applies-to": ["diagnostico"],
+      "rule": "Todo diagnóstico identifica el meta-patrón del caso: qué regala el profesional y qué cobra, idealmente con frase textual del corpus de entrevistas.",
+      "source": "playbook/02-methodology/jtbd.md#meta-patron"
+    },
+    {
+      "id": "value-map-evidence",
+      "category": "metodologia",
+      "applies-to": ["diagnostico"],
+      "rule": "El Value Map se construye sobre evidencia de Switch Interviews reales del caso. Drivers sin respaldo en el corpus se marcan 🔵 y se nombran como hipótesis.",
+      "source": "playbook/02-methodology/value-based-strategy.md"
     },
     {
       "id": "p1-no-core-change",
       "category": "principios",
+      "applies-to": ["todos"],
       "rule": "Las propuestas no modifican el oficio del profesional. Solo cómo se entrega.",
       "source": "playbook/00-start-here/principles.md#P1"
     },
     {
+      "id": "proposal-verbatim-words",
+      "category": "metodologia",
+      "applies-to": ["propuesta"],
+      "rule": "La sección 1 usa palabras textuales del prospect entre comillas, sin parafrasear. Si hay frase del meta-patrón (Pregunta 5 de discovery), está citada como ancla narrativa.",
+      "source": "playbook/03-process/02-proposal.md"
+    },
+    {
+      "id": "proposal-phases-explicit",
+      "category": "estructura",
+      "applies-to": ["propuesta"],
+      "rule": "La sección 3 lista explícitamente las fases según el modelo: B incluye Switch Interviews + diagnóstico + plan + prototipo manual + spec del sistema; C suma build, instalación y acompañamiento.",
+      "source": "playbook/03-process/04-delivery.md"
+    },
+    {
+      "id": "proposal-single-option",
+      "category": "estructura",
+      "applies-to": ["propuesta"],
+      "rule": "Una sola opción de modelo (jamás tres). Pricing exacto desde pricing.md. Plazo de inicio realista. Próximo paso claro y validez de 14 días al final.",
+      "source": "playbook/03-process/02-proposal.md + playbook/06-operations/pricing.md"
+    },
+    {
       "id": "copy-affirmative",
       "category": "lenguaje",
+      "applies-to": ["todos"],
       "rule": "Copy en afirmativo. Queda fuera el recurso retórico 'no es X, es Y'.",
       "source": "playbook/02-methodology/style-guide.md#F"
     },
     {
       "id": "style-guide",
       "category": "lenguaje",
+      "applies-to": ["todos"],
       "rule": "El output cumple la guía de estilo Yellow: apertura con premisa (no promesa), voz neutra (autor invisible), claridad por sobre estilo, vocabulario en español sin anglicismos innecesarios, cero em dashes, tipografía serif y paleta blanco y negro en el cuerpo del entregable.",
       "source": "playbook/02-methodology/style-guide.md"
     },
     {
       "id": "no-em-dash",
       "category": "lenguaje",
+      "applies-to": ["todos"],
       "rule": "El texto no contiene em dashes (—). Las parentéticas largas se resuelven con paréntesis, comas o reescritura.",
       "source": "playbook/02-methodology/style-guide.md#E"
     }
+  ],
+  "changelog": [
+    "2026-06-10 (v0.4): consolidación de LRN-016. Campo applies-to por check (un agente filtra qué corre para cada tipo de output). Fuentes rotas arregladas (semana-3-diagnostico.md renombrado a semana-3-diagnostico-sistema.md). Absorbido el checklist pre-envío de propuesta de 02-proposal.md (proposal-verbatim-words, proposal-phases-explicit, proposal-single-option). Checks nuevos: meta-pattern-present, value-map-evidence, template-precedence. Aprobado por el owner para consolidación en bloque (sesión 2026-06-10).",
+    "2026-05-18 (v0.3): diagnostic-structure pasa a 11 secciones; sumados causal-chain-wtp y single-prioritization (cuarto pilar)."
   ]
 }

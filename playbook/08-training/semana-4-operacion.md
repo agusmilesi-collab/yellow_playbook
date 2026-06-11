@@ -421,7 +421,7 @@ El conocimiento del negocio no vive en la cabeza. Vive en el repo.
 
 #### P10. Acción separada de conocimiento
 
-Las cosas "para hacer" van al roadmap, no a los archivos del playbook.
+Las cosas "para hacer" van a Notion "Projects & Tasks" (acción de negocio) o al `case-notes.md` del caso (acción de un proyecto), no a los archivos del playbook.
 
 ---
 
