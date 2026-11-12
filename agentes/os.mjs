@@ -8,7 +8,11 @@
 //   node scripts/os.mjs decision "<texto>"            anota una decisión del board en agentes/decisiones.md
 //   node scripts/os.mjs ver [puesto]                  muestra la empresa, o un puesto con sus tareas
 //   node scripts/os.mjs tarea <puesto> "<nombre>" [claude|agustin]
-//   node scripts/os.mjs entregar <tareaId> "<resultado>" [archivo]   la deja en "Para revisar"
+//   node scripts/os.mjs entregar <tareaId> "<resultado>" [archivo] [--board]   la deja en "Para revisar":
+//                                                     la revisa el jefe del puesto; con --board, es una decisión del board
+//   node scripts/os.mjs aprobar <tareaId>             el jefe aprueba la entrega de un puesto a cargo (queda hecha)
+//   node scripts/os.mjs devolver <tareaId> "<qué cambiar>"   el jefe la devuelve al puesto
+//   node scripts/os.mjs escalar <tareaId>             el jefe la pasa al board (necesita una decisión)
 //   node scripts/os.mjs estado <tareaId> pendiente|curso|devuelta|hecha
 //   node scripts/os.mjs borrar <tareaId>
 //   node scripts/os.mjs puesto crear <archivo.json>   da de alta un puesto aprobado por el board (ficha del CHRO)
@@ -288,6 +292,8 @@ if (cmd === "sync") {
       krs: d.krs.filter((k) => objetivos.some((o) => o.id === k.objetivo)).map((k) => ({ ...k, estado: estadoKR(d, k) })),
       iniciativas: d.iniciativas.filter((i) => objetivos.some((o) => o.id === i.objetivo)),
       tareas: d.tareas.filter((t) => t.puesto === pid && t.estado !== "hecha"),
+      // Entregas de los puestos a cargo que revisa este puesto (aprobar, devolver o escalar al board).
+      paraRevisar: d.tareas.filter((t) => t.estado === "revisar" && !t.decide && d.puestos.find((x) => x.id === t.puesto)?.reportaA === pid),
       traspasos: d.traspasos.filter((x) => x.de === pid || x.a === pid),
       repo: REPO,
       ficha: join(REPO, "agentes", pid, "SKILL.md"),
@@ -305,20 +311,36 @@ if (cmd === "sync") {
   const ini = iniciativa ? d.iniciativas.find((i) => i.id === iniciativa) : null;
   if (iniciativa && !ini) throw new Error(`No hay iniciativa "${iniciativa}".`);
   const objetivo = ini?.objetivo ?? d.objetivos.find((o) => o.puesto === puesto && o.estado === "activo")?.id ?? null;
-  const t = { id: nuevoId(), puesto, objetivo, iniciativa: ini?.id ?? null, nombre, ejecuta: ejecuta === "agustin" ? "agustin" : "claude", estado: "pendiente", fecha: null, resultado: "", archivo: "", devolucion: "" };
+  const t = { id: nuevoId(), puesto, objetivo, iniciativa: ini?.id ?? null, nombre, ejecuta: ejecuta === "agustin" ? "agustin" : "claude", estado: "pendiente", fecha: null, resultado: "", archivo: "", devolucion: "", decide: false };
   d.tareas.push(t);
   await guardarOS(d);
   console.log(`Tarea ${t.id} creada en ${puesto}.`);
 } else if (cmd === "entregar" || cmd === "estado") {
+  const iBoard = args.indexOf("--board");
+  const alBoard = iBoard >= 0;
+  if (alBoard) args.splice(iBoard, 1);
   const [tid, valor, archivo = ""] = args;
   const d = await leerOS();
   const t = d.tareas.find((x) => x.id === tid);
   if (!t) throw new Error(`No hay tarea "${tid}".`);
-  if (cmd === "entregar") Object.assign(t, { estado: "revisar", resultado: valor ?? "", archivo, devolucion: "" });
+  if (cmd === "entregar") Object.assign(t, { estado: "revisar", resultado: valor ?? "", archivo, devolucion: "", decide: alBoard });
   else if (["pendiente", "curso", "devuelta", "hecha"].includes(valor)) t.estado = valor;
   else throw new Error("Estado: pendiente, curso, devuelta o hecha (para revisar se usa entregar).");
   await guardarOS(d);
   console.log(`Tarea ${tid}: ${t.estado}.`);
+} else if (cmd === "aprobar" || cmd === "devolver" || cmd === "escalar") {
+  const [tid, motivo] = args;
+  const d = await leerOS();
+  const t = d.tareas.find((x) => x.id === tid);
+  if (!t) throw new Error(`No hay tarea "${tid}".`);
+  if (t.estado !== "revisar") throw new Error(`La tarea ${tid} no está para revisar (está ${t.estado}).`);
+  if (cmd === "aprobar") Object.assign(t, { estado: "hecha", devolucion: "" });
+  else if (cmd === "devolver") {
+    if (!motivo) throw new Error('Uso: devolver <tareaId> "<qué cambiar>"');
+    Object.assign(t, { estado: "devuelta", devolucion: motivo });
+  } else t.decide = true;
+  await guardarOS(d);
+  console.log(cmd === "aprobar" ? `Tarea ${tid}: aprobada.` : cmd === "devolver" ? `Tarea ${tid}: devuelta al puesto.` : `Tarea ${tid}: pasa a la bandeja del board.`);
 } else if (cmd === "borrar") {
   const d = await leerOS();
   const antes = d.tareas.length;
