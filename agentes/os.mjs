@@ -20,6 +20,8 @@
 //   node scripts/os.mjs latido <puesto> "<resumen>"   registra el latido y apaga el "trabajando"
 //   node scripts/os.mjs terminar <puesto>             apaga el "trabajando" sin registrar latido
 //   node scripts/os.mjs objetivo "<título>" [--dod "<texto>"] [--puesto <id>] [--padre <id>] [--primero]
+//   node scripts/os.mjs presupuesto <puesto> <latidos por mes>
+//   node scripts/os.mjs costo <puesto>               equivalente API de lo que lleva el latido en curso
 //   node scripts/os.mjs objetivo-editar <id> "<título>" [--dod "<texto>"]
 //   node scripts/os.mjs kr-borrar <puesto> "<nombre del KR>"
 //   node scripts/os.mjs kr <puesto> "<nombre>" <meta> [--base N] [--unidad "<u>"] [--objetivo <id>]   crea o actualiza un KR
@@ -106,6 +108,53 @@ const ahora = () => {
   const p = Object.fromEntries(new Intl.DateTimeFormat("en-CA", { timeZone: "America/Argentina/Buenos_Aires", year: "numeric", month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit", hour12: false }).formatToParts(new Date()).map((x) => [x.type, x.value]));
   return `${p.year}-${p.month}-${p.day}T${p.hour === "24" ? "00" : p.hour}:${p.minute}`;
 };
+
+// Precios de la API por millón de tokens (entrada, salida, lectura de caché, escritura de caché 5 min y 1 hora).
+const PRECIOS = {
+  "claude-opus-5-5": [4, 20, 0.2, 5, 8],
+  "claude-sonnet-5-5": [2, 10, 0.1, 2.5, 4],
+  "claude-fable-5-2": [8, 40, 0.2, 10, 16],
+  "claude-haiku-5-5": [0.1, 0.5, 0.01, 0.125, 0.2],
+};
+/**
+ * Lo que costaría por API el trabajo de esta sesión desde una hora dada: lee el registro de Claude Code
+ * (el .jsonl más reciente en ~/.claude/projects), suma el uso de cada respuesta (una vez por mensaje) y lo valúa.
+ * Si no encuentra el registro, devuelve null y el latido queda sin medir.
+ */
+function costoDesde(desdeIso) {
+  try {
+    const raizP = join(homedir(), ".claude", "projects");
+    const archivos = [];
+    for (const dir of readdirSync(raizP)) {
+      const full = join(raizP, dir);
+      if (!statSync(full).isDirectory()) continue;
+      for (const a of readdirSync(full)) if (a.endsWith(".jsonl")) archivos.push(join(full, a));
+    }
+    if (!archivos.length) return null;
+    const ultimo = archivos.sort((a, b) => statSync(b).mtimeMs - statSync(a).mtimeMs)[0];
+    const desde = Date.parse(desdeIso);
+    const porMensaje = new Map();
+    for (const linea of readFileSync(ultimo, "utf8").split("\n")) {
+      if (!linea.includes('"usage"')) continue;
+      let j; try { j = JSON.parse(linea); } catch { continue; }
+      const m = j.message;
+      if (!m?.usage || !j.timestamp || Date.parse(j.timestamp) < desde) continue;
+      porMensaje.set(m.id ?? j.uuid, { modelo: m.model, u: m.usage });
+    }
+    let usd = 0, tokens = 0;
+    for (const { modelo, u } of porMensaje.values()) {
+      const [pi, po, pr, p5, p1] = PRECIOS[modelo] ?? PRECIOS["claude-opus-5-5"];
+      const w1 = u.cache_creation?.ephemeral_1h_input_tokens ?? 0;
+      const w5 = u.cache_creation?.ephemeral_5m_input_tokens ?? Math.max(0, (u.cache_creation_input_tokens ?? 0) - w1);
+      const ent = u.input_tokens ?? 0, sal = u.output_tokens ?? 0, lec = u.cache_read_input_tokens ?? 0;
+      usd += (ent * pi + sal * po + lec * pr + w5 * p5 + w1 * p1) / 1e6;
+      tokens += ent + sal + lec + w5 + w1;
+    }
+    return porMensaje.size ? { usd: Math.round(usd * 100) / 100, tokens } : null;
+  } catch {
+    return null;
+  }
+}
 
 function estadoKR(d, k) {
   if (k.meta === null) return "sin meta";
@@ -385,14 +434,33 @@ if (cmd === "sync") {
   }
   await guardarOS(d);
   console.log(cmd === "empezar" ? `${p.sigla} trabajando.` : `${p.sigla} terminó.`);
+} else if (cmd === "presupuesto") {
+  // presupuesto <puesto> <latidos por mes>
+  const [puesto, n] = args;
+  const d = await leerOS();
+  const p = d.puestos.find((x) => x.id === puesto);
+  if (!p || !Number.isFinite(Number(n))) throw new Error("Uso: presupuesto <puesto> <latidos por mes>");
+  p.presupuesto.latidosMes = Number(n);
+  await guardarOS(d);
+  console.log(`${p.sigla}: ${n} latidos por mes.`);
+} else if (cmd === "costo") {
+  // costo <puesto>: equivalente API de lo que lleva el latido en curso (sin registrarlo)
+  const d = await leerOS();
+  const p = d.puestos.find((x) => x.id === args[0]);
+  if (!p?.trabajando) throw new Error("Uso: costo <puesto> (el puesto tiene que estar trabajando)");
+  const c = costoDesde(p.trabajando);
+  console.log(c ? `${p.sigla}: USD ${c.usd.toFixed(2)} (${Math.round(c.tokens / 1000)}k tokens) desde ${p.trabajando}` : "Sin registro de la sesión.");
 } else if (cmd === "latido") {
   const [puesto, resumen] = args;
   const d = await leerOS();
-  if (!d.puestos.some((p) => p.id === puesto) || !resumen) throw new Error("Uso: latido <puesto> \"<resumen>\"");
-  d.puestos.find((p) => p.id === puesto).trabajando = null;
-  d.latidos = [...d.latidos, { id: nuevoId(), fecha: ahora(), puesto, resumen }].slice(-400);
+  const p = d.puestos.find((x) => x.id === puesto);
+  if (!p || !resumen) throw new Error("Uso: latido <puesto> \"<resumen>\"");
+  // Equivalente API: tokens de la sesión desde que el puesto empezó (empezar) hasta ahora.
+  const costo = p.trabajando ? costoDesde(p.trabajando) : null;
+  p.trabajando = null;
+  d.latidos = [...d.latidos, { id: nuevoId(), fecha: ahora(), puesto, resumen, tokens: costo?.tokens ?? null, usd: costo?.usd ?? null }].slice(-400);
   await guardarOS(d);
-  console.log(`Latido de ${puesto} registrado.`);
+  console.log(`Latido de ${puesto} registrado.${costo ? ` Equivalente API: USD ${costo.usd.toFixed(2)} (${Math.round(costo.tokens / 1000)}k tokens).` : ""}`);
 } else if (cmd === "objetivo-editar") {
   // objetivo-editar <id> "<título nuevo>" [--dod "<texto>"]
   const iD = args.indexOf("--dod");
