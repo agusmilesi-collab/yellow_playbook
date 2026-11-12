@@ -173,6 +173,7 @@ function fichaSkill(d, p) {
   l.push(`**Reporta a:** ${sigla(p.reportaA)} · **Agente:** ${AGENTES[p.agente ?? "claude-code"] ?? p.agente} · **Ocupa:** ${p.ocupa} · **Estado:** ${p.estado}`);
   l.push("");
   l.push("## Misión", "", p.mision, "");
+  if (p.criterio) l.push("## Criterio: cómo piensa y decide", "", "Aplicar estos principios en cada decisión del latido, y decir en el cierre cuál se aplicó cuando cambió una decisión.", "", p.criterio, "");
   l.push("## Objetivo actual", "");
   if (!objetivos.length) l.push("Sin objetivo activo. Antes de trabajar, preguntarle al board qué resultado se espera de este puesto.", "");
   for (const o of objetivos) {
