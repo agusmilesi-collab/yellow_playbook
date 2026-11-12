@@ -15,13 +15,23 @@ Bajar las metas del board a un plan semanal, repartir las tareas entre los puest
 
 ## Objetivo actual
 
-**Que Yellow facture cumpliendo su misión: primer cliente pago antes del 31/12/2026**
+**Yellow tiene clientes que pagan por su método**
 
-- Definition of Done: Contrato firmado y primer pago acreditado de un cliente nuevo de Yellow, con fecha anterior al 31/12/2026. Si no se cumple, el board revisa en enero el plan, la oferta y la estrategia del CEO.
+- Definition of Done: Primer cliente pago antes del 31/12/2026: contrato firmado y primer pago acreditado de un cliente nuevo. Si no se cumple, el board revisa en enero el plan, la oferta y la estrategia del CEO.
+
+**La empresa avanza sin depender del board**
+
+- Viene del objetivo del board: Yellow tiene clientes que pagan por su método
 
 ## Key Results (Cierre 2026, hasta 2026-12-31)
 
+- Clientes pagos: 0 → 1 clientes (actual 0; en línea)
+- Facturado: 0 → 2000 USD (actual 0; en línea)
 - % de tareas abiertas que esperan al board: 64 → 40 % (actual 36; logrado)
+
+## Iniciativas activas
+
+- Regla del embudo: el board solo hace lo que exige una persona (mueve: % de tareas abiertas que esperan al board)
 
 ## Presupuesto
 

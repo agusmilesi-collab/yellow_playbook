@@ -15,13 +15,17 @@ Traer evidencia para que el CPO decida a quién venderle y qué: benchmark de co
 
 ## Objetivo actual
 
-**Investigación de mercado: aporte al objetivo principal (lo define el CEO)**
+**Yellow sabe exactamente a quién venderle**
 
-- Viene del objetivo del board: Que Yellow facture cumpliendo su misión: primer cliente pago antes del 31/12/2026
+- Viene del objetivo del board: Yellow tiene clientes que pagan por su método
 
 ## Key Results (Cierre 2026, hasta 2026-12-31)
 
-- Segmentos evaluados con evidencia: 0 → 3 por mes (actual 3; logrado)
+- Prospectos calificados en el segmento elegido: 0 → 20 prospectos (actual 0; en línea)
+
+## Iniciativas activas
+
+- Benchmark de alternativas y evaluación de segmentos (mueve: Prospectos calificados en el segmento elegido)
 
 ## Presupuesto
 

@@ -15,15 +15,18 @@ Que lleguen personas que quieren hablar con Agustín sobre cómo entregan su ser
 
 ## Objetivo actual
 
-**Sitio agustinmilesi.com que convierte visitas en conversaciones**
+**Las personas correctas llegan a Yellow solas**
 
-- Definition of Done: El sitio público cuenta la oferta elegida en una frase, muestra un caso y tiene una acción clara para pedir una llamada; medido: visitas y pedidos de llamada por mes.
-- Viene del objetivo del board: Que Yellow facture cumpliendo su misión: primer cliente pago antes del 31/12/2026
+- Viene del objetivo del board: Yellow tiene clientes que pagan por su método
 
 ## Key Results (Cierre 2026, hasta 2026-12-31)
 
-- Contenidos publicados: 0 → sin meta por mes (actual sin medir; sin meta)
-- Leads: 0 → sin meta por mes (actual sin medir; sin meta)
+- Pedidos de llamada desde el sitio: 0 → 4 pedidos (actual 0; en línea)
+- Contenidos publicados: 0 → 8 contenidos (actual 0; en línea)
+
+## Iniciativas activas
+
+- Sitio agustinmilesi.com: oferta en una frase, un caso y una acción para pedir llamada (mueve: Pedidos de llamada desde el sitio)
 
 ## Presupuesto
 

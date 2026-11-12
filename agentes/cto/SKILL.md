@@ -15,10 +15,18 @@ Guardar cada input de cliente (transcripciones de Meet, notas, mensajes) en su c
 
 ## Objetivo actual
 
-**Ingesta de reuniones**
+**Ningún dato de un cliente se pierde ni se copia a mano**
 
 - Definition of Done: Una transcripción de Meet llega a cases/<cliente>/transcript.md con su fecha y tipo de reunión, y case-notes.md queda actualizado, sin que Agustín copie nada a mano.
-- Viene del objetivo del board: Que Yellow facture cumpliendo su misión: primer cliente pago antes del 31/12/2026
+- Viene del objetivo del board: Yellow tiene clientes que pagan por su método
+
+## Key Results (Cierre 2026, hasta 2026-12-31)
+
+- Reuniones guardadas en su caso: 0 → 100 % (actual 0; en línea)
+
+## Iniciativas activas
+
+- Ingesta de reuniones (transcripción → cases/<cliente>/) (mueve: Reuniones guardadas en su caso)
 
 ## Presupuesto
 

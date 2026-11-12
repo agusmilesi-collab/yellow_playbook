@@ -15,14 +15,18 @@ Auditar y mejorar la seguridad de todo lo que se construye y se opera: el OS, lo
 
 ## Objetivo actual
 
-**Línea de base de seguridad**
+**Un cliente confidencial puede confiar en el sistema**
 
 - Definition of Done: Checklist de agentes/ciso/seguridad.md recorrida sobre el OS y el knowledge base de Yellow, con cada hallazgo como tarea con dueño, y los críticos resueltos antes del primer cliente.
-- Viene del objetivo del board: Que Yellow facture cumpliendo su misión: primer cliente pago antes del 31/12/2026
+- Viene del objetivo del board: Yellow tiene clientes que pagan por su método
 
 ## Key Results (Cierre 2026, hasta 2026-12-31)
 
-- Hallazgos abiertos: 0 → sin meta por mes (actual sin medir; sin meta)
+- Hallazgos críticos abiertos: 0 → 0 hallazgos (actual sin medir; sin medir)
+
+## Iniciativas activas
+
+- Auditoría inicial de seguridad con la checklist (mueve: Hallazgos críticos abiertos)
 
 ## Presupuesto
 

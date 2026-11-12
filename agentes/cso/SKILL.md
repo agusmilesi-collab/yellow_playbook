@@ -15,14 +15,18 @@ Convertir conversaciones en clientes: preparar cada llamada, estructurar lo que 
 
 ## Objetivo actual
 
-**Conseguir conversaciones con posibles clientes que terminen en propuesta**
+**Cada conversación con un prospecto avanza hacia una propuesta**
 
-- Viene del objetivo del board: Que Yellow facture cumpliendo su misión: primer cliente pago antes del 31/12/2026
+- Viene del objetivo del board: Yellow tiene clientes que pagan por su método
 
 ## Key Results (Cierre 2026, hasta 2026-12-31)
 
-- Llamadas: 0 → sin meta por mes (actual sin medir; sin meta)
-- Clientes nuevos: 0 → sin meta por mes (actual sin medir; sin meta)
+- Llamadas de discovery: 0 → 8 llamadas (actual 0; en línea)
+- Propuestas enviadas: 0 → 3 propuestas (actual 0; en línea)
+
+## Iniciativas activas
+
+- Guion de llamada con el método de Sandler (mueve: Llamadas de discovery)
 
 ## Presupuesto
 
