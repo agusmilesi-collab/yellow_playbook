@@ -9,7 +9,7 @@
 //   node scripts/os.mjs ver [puesto]                  muestra la empresa, o un puesto con sus tareas
 //   node scripts/os.mjs tarea <puesto> "<nombre>" [claude|agustin]
 //   node scripts/os.mjs entregar <tareaId> "<resultado>" [archivo]   la deja en "Para revisar"
-//   node scripts/os.mjs estado <tareaId> pendiente|hecha
+//   node scripts/os.mjs estado <tareaId> pendiente|curso|devuelta|hecha
 //   node scripts/os.mjs borrar <tareaId>
 //   node scripts/os.mjs puesto crear <archivo.json>   da de alta un puesto aprobado por el board (ficha del CHRO)
 //   node scripts/os.mjs empezar <puesto>              marca que el puesto está trabajando (su circulito late en el OS)
@@ -270,8 +270,9 @@ if (cmd === "sync") {
     console.log("\nPuestos:");
     for (const p of d.puestos) {
       const ts = d.tareas.filter((t) => t.puesto === p.id);
-      const c = (e, q) => ts.filter((t) => t.estado === e && (!q || t.ejecuta === q)).length;
-      console.log(`${p.id.padEnd(4)} ${p.sigla} ${p.titulo} (reporta a ${p.reportaA}, ${p.estado}) · Claude ${c("pendiente", "claude")}, Agustín ${c("pendiente", "agustin")}, para revisar ${c("revisar")} · latidos ${lat(p.id)}/${p.presupuesto.latidosMes ?? "∞"}`);
+      const abierta = (t) => t.estado === "pendiente" || t.estado === "curso" || t.estado === "devuelta";
+      const c = (e, q) => ts.filter((t) => (e === "abierta" ? abierta(t) : t.estado === e) && (!q || t.ejecuta === q)).length;
+      console.log(`${p.id.padEnd(4)} ${p.sigla} ${p.titulo} (reporta a ${p.reportaA}, ${p.estado}) · Claude ${c("abierta", "claude")}, Agustín ${c("abierta", "agustin")}, para revisar ${c("revisar")} · latidos ${lat(p.id)}/${p.presupuesto.latidosMes ?? "∞"}`);
     }
     console.log("\nTraspasos:");
     for (const x of d.traspasos) console.log(`${x.id}: ${x.de} → ${x.a} (${x.que}; listo cuando: ${x.criterio || "-"}) en tránsito: ${x.enTransito.length ? x.enTransito.join("; ") : "-"}`);
@@ -314,8 +315,8 @@ if (cmd === "sync") {
   const t = d.tareas.find((x) => x.id === tid);
   if (!t) throw new Error(`No hay tarea "${tid}".`);
   if (cmd === "entregar") Object.assign(t, { estado: "revisar", resultado: valor ?? "", archivo, devolucion: "" });
-  else if (valor === "pendiente" || valor === "hecha") t.estado = valor;
-  else throw new Error("Estado: pendiente o hecha (para revisar se usa entregar).");
+  else if (["pendiente", "curso", "devuelta", "hecha"].includes(valor)) t.estado = valor;
+  else throw new Error("Estado: pendiente, curso, devuelta o hecha (para revisar se usa entregar).");
   await guardarOS(d);
   console.log(`Tarea ${tid}: ${t.estado}.`);
 } else if (cmd === "borrar") {
