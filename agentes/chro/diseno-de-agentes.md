@@ -24,6 +24,7 @@ Toda contratación se propone con esta ficha completa, en la bandeja del board:
 | Reporta a | Quien necesita su resultado y lo puede exigir |
 | Agente | Claude Code, clave de API, OpenClaw, Hermes o persona |
 | Misión | Para qué existe el puesto, en una frase |
+| Accountability | El único resultado por el que responde, según su nivel; se carga con `accountability <puesto> "<texto>"` cuando el board lo aprueba |
 | Criterio | Cómo piensa y decide (competencias); principios concretos, no "actuá como X" |
 | Capacidades | Qué archivos del repo lee (skills) |
 | Objetivo y KRs | Su aporte al objetivo de la empresa, con 2 a 4 resultados medibles |

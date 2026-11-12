@@ -22,6 +22,7 @@
 //   node scripts/os.mjs objetivo "<título>" [--dod "<texto>"] [--puesto <id>] [--padre <id>] [--primero]
 //   node scripts/os.mjs latidos [puesto]             lista los latidos con su id y sus entregas
 //   node scripts/os.mjs latido-entregas <latidoId> <tareaId,tareaId>   vincula entregas con un latido viejo
+//   node scripts/os.mjs accountability <puesto> "<texto>"   el resultado por el que responde (aprobado por el board)
 //   node scripts/os.mjs presupuesto <puesto> <latidos por mes>
 //   node scripts/os.mjs costo <puesto>               equivalente API de lo que lleva el latido en curso
 //   node scripts/os.mjs objetivo-editar <id> "<título>" [--dod "<texto>"]
@@ -233,6 +234,7 @@ function fichaSkill(d, p) {
   l.push(`**Reporta a:** ${sigla(p.reportaA)} · **Agente:** ${AGENTES[p.agente ?? "claude-code"] ?? p.agente} · **Ocupa:** ${p.ocupa} · **Estado:** ${p.estado}`);
   l.push("");
   l.push("## Misión", "", p.mision, "");
+  if (p.accountability) l.push("## Accountability: el resultado por el que responde", "", p.accountability, "");
   if (p.criterio) l.push("## Criterio: cómo piensa y decide", "", "Aplicar estos principios en cada decisión del latido, y decir en el cierre cuál se aplicó cuando cambió una decisión.", "", p.criterio, "");
   l.push("## Objetivo actual", "");
   if (!objetivos.length) l.push("Sin objetivo activo. Antes de trabajar, preguntarle al board qué resultado se espera de este puesto.", "");
@@ -415,7 +417,7 @@ if (cmd === "sync") {
   const p = {
     id: f.id, sigla: String(f.sigla ?? f.id.toUpperCase()).slice(0, 8), titulo: String(f.titulo ?? "").slice(0, 80),
     icono: String(f.icono ?? "persona"), reportaA: f.reportaA, agente: agentes.includes(f.agente) ? f.agente : "claude-code",
-    ocupa: String(f.ocupa ?? "Claude"), estado: "activo", mision: String(f.mision ?? ""), criterio: String(f.criterio ?? ""),
+    ocupa: String(f.ocupa ?? "Claude"), estado: "activo", mision: String(f.mision ?? ""), criterio: String(f.criterio ?? ""), accountability: String(f.accountability ?? ""),
     kpis: [], skills: Array.isArray(f.skills) ? f.skills.filter((k) => k && k.ruta).map((k) => ({ nombre: String(k.nombre ?? k.ruta), ruta: String(k.ruta) })) : [],
     presupuesto: { latidosMes: Number(f.presupuesto?.latidosMes) || 4, usdMes: null }, limites: String(f.limites ?? ""), trabajando: null,
   };
@@ -449,6 +451,15 @@ if (cmd === "sync") {
   l.entregas = lista.split(",").filter((id) => d.tareas.some((t) => t.id === id));
   await guardarOS(d);
   console.log(`Latido ${lid}: ${l.entregas.length} entregas.`);
+} else if (cmd === "accountability") {
+  // accountability <puesto> "<resultado por el que responde>" (lo carga el CHRO cuando el board aprueba)
+  const [puesto, texto] = args;
+  const d = await leerOS();
+  const p = d.puestos.find((x) => x.id === puesto);
+  if (!p || !texto) throw new Error('Uso: accountability <puesto> "<texto>"');
+  p.accountability = texto;
+  await guardarOS(d);
+  console.log(`${p.sigla}: accountability cargado.`);
 } else if (cmd === "presupuesto") {
   // presupuesto <puesto> <latidos por mes>
   const [puesto, n] = args;
