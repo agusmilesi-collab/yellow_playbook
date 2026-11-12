@@ -11,6 +11,7 @@
 //   node scripts/os.mjs entregar <tareaId> "<resultado>" [archivo]   la deja en "Para revisar"
 //   node scripts/os.mjs estado <tareaId> pendiente|hecha
 //   node scripts/os.mjs borrar <tareaId>
+//   node scripts/os.mjs puesto crear <archivo.json>   da de alta un puesto aprobado por el board (ficha del CHRO)
 //   node scripts/os.mjs empezar <puesto>              marca que el puesto está trabajando (su circulito late en el OS)
 //   node scripts/os.mjs latido <puesto> "<resumen>"   registra el latido y apaga el "trabajando"
 //   node scripts/os.mjs terminar <puesto>             apaga el "trabajando" sin registrar latido
@@ -324,6 +325,26 @@ if (cmd === "sync") {
   if (d.tareas.length === antes) throw new Error(`No hay tarea "${args[0]}".`);
   await guardarOS(d);
   console.log(`Tarea ${args[0]} borrada.`);
+} else if (cmd === "puesto") {
+  const [accion, archivo] = args;
+  if (accion !== "crear" || !archivo) throw new Error("Uso: puesto crear <archivo.json>");
+  const f = JSON.parse(readFileSync(archivo, "utf8"));
+  const d = await leerOS();
+  if (!/^[a-z0-9-]{2,20}$/.test(f.id ?? "")) throw new Error("El id del puesto tiene que ser corto, en minúsculas (ej. chro).");
+  if (d.puestos.some((p) => p.id === f.id)) throw new Error(`Ya existe un puesto "${f.id}".`);
+  if (f.reportaA !== "board" && !d.puestos.some((p) => p.id === f.reportaA)) throw new Error(`No existe el jefe "${f.reportaA}".`);
+  const agentes = ["claude-code", "api", "openclaw", "hermes", "persona"];
+  const p = {
+    id: f.id, sigla: String(f.sigla ?? f.id.toUpperCase()).slice(0, 8), titulo: String(f.titulo ?? "").slice(0, 80),
+    icono: String(f.icono ?? "persona"), reportaA: f.reportaA, agente: agentes.includes(f.agente) ? f.agente : "claude-code",
+    ocupa: String(f.ocupa ?? "Claude"), estado: "activo", mision: String(f.mision ?? ""), criterio: String(f.criterio ?? ""),
+    kpis: [], skills: Array.isArray(f.skills) ? f.skills.filter((k) => k && k.ruta).map((k) => ({ nombre: String(k.nombre ?? k.ruta), ruta: String(k.ruta) })) : [],
+    presupuesto: { latidosMes: Number(f.presupuesto?.latidosMes) || 4, usdMes: null }, limites: String(f.limites ?? ""), trabajando: null,
+  };
+  d.puestos.push(p);
+  await guardarOS(d);
+  exportar(d);
+  console.log(`Puesto ${p.sigla} creado (reporta a ${p.reportaA}). Falta cargarle objetivo, KRs y traspasos.`);
 } else if (cmd === "empezar" || cmd === "terminar") {
   const [puesto] = args;
   const d = await leerOS();
@@ -404,5 +425,5 @@ if (cmd === "sync") {
   await guardarOS(d);
   console.log(`Traspaso ${xid}: ${x.enTransito.length} en tránsito.`);
 } else {
-  console.log(readFileSync(fileURLToPath(import.meta.url), "utf8").split("\n").slice(1, 25).join("\n"));
+  console.log(readFileSync(fileURLToPath(import.meta.url), "utf8").split("\n").slice(1, 26).join("\n"));
 }
