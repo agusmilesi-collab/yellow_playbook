@@ -131,11 +131,13 @@ function sync() {
       const status =
         notas.match(/\*\*Status:\*\*\s*(.+)/i)?.[1] ??
         notas.match(/^etapa:\s*(.+)$/im)?.[1] ??
-        notas.split("\n").find((l) => l.trim() && !l.startsWith("#") && !l.startsWith(">")) ??
         "";
+      const campo = (n) => (notas.match(new RegExp(`\\*\\*${n}:\\*\\*\\s*(.+)`, "i"))?.[1] ?? "").trim().slice(0, 160);
       return {
         slug,
         status: status.trim().slice(0, 400),
+        modelo: campo("Modelo"),
+        inicio: campo("Inicio"),
         archivos,
         modificado: new Date(modificado).toISOString().slice(0, 10),
       };
