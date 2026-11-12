@@ -15,7 +15,10 @@ Que lleguen personas que quieren hablar con Agustín sobre cómo entregan su ser
 
 ## Objetivo actual
 
-Sin objetivo activo. Antes de trabajar, preguntarle al board qué resultado se espera de este puesto.
+**Sitio agustinmilesi.com que convierte visitas en conversaciones**
+
+- Definition of Done: El sitio público cuenta la oferta elegida en una frase, muestra un caso y tiene una acción clara para pedir una llamada; medido: visitas y pedidos de llamada por mes.
+- Viene del objetivo del board: Que Yellow facture cumpliendo su misión: primer cliente pago antes del 31/12/2026
 
 ## KPIs (meta por mes)
 
