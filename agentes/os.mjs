@@ -23,6 +23,15 @@ import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import { homedir } from "node:os";
 
+// En la nube la salida a internet pasa por un proxy (HTTPS_PROXY). El fetch de
+// Node lo ignora salvo con NODE_USE_ENV_PROXY=1: si hay proxy y falta esa
+// variable, el script se vuelve a lanzar a sí mismo con ella.
+if ((process.env.HTTPS_PROXY || process.env.https_proxy) && process.env.NODE_USE_ENV_PROXY !== "1") {
+  const { spawnSync } = await import("node:child_process");
+  const r = spawnSync(process.execPath, process.argv.slice(1), { stdio: "inherit", env: { ...process.env, NODE_USE_ENV_PROXY: "1" } });
+  process.exit(r.status ?? 1);
+}
+
 const raiz = join(dirname(fileURLToPath(import.meta.url)), "..");
 const argv = process.argv.slice(2);
 const iEmp = argv.indexOf("--empresa");
