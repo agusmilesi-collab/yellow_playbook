@@ -42,6 +42,22 @@ Formato para el alta: un archivo JSON en `agentes/chro/altas/<sigla>.json` con l
 4. **El puesto no se diseña alrededor del agente disponible.**
 5. **Cada puesto con criterio escrito:** sin criterio, el agente decide cada vez distinto.
 
+## Accountability por nivel
+
+El resultado de un puesto depende de su nivel, no solo de su función. Base: Elliott Jaques, *Requisite Organization* (estratos y horizonte temporal de la tarea).
+
+| Nivel | Responde por | Horizonte | Ejemplo en Yellow |
+|---|---|---|---|
+| Chief (C-level) | Un resultado de negocio de su área | 1 a 2 años | CFO: margen por cliente y gastos de Yellow |
+| Responsable o analista | Que un proceso salga bien y a tiempo | 3 a 12 meses | Administración: cobrar a tiempo y registrar cada cobro |
+| Operativo | Tareas concretas con criterio de listo | días a semanas | Cargar facturas, mandar recordatorios de pago |
+
+Reglas:
+
+1. **Un Chief nunca responde por un proceso.** Si el KR de un Chief se puede cumplir siguiendo un procedimiento, el KR está un nivel abajo.
+2. **En una empresa chica, el Chief absorbe los niveles de abajo como iniciativas**, no como su resultado: el CFO hace el circuito de cobro, pero rinde cuentas por el margen.
+3. **La estructura crece con disparadores escritos:** cada puesto de nivel inferior que todavía no existe se anota con el disparador que lo justifica (por ejemplo, "analista de administración bajo el CFO cuando haya 5 clientes activos o más de 10 cobros por mes"). El CHRO revisa los disparadores en cada latido y, cuando uno se cumple, propone el alta con ficha completa.
+
 ## Desempeño
 
 El CHRO lee la escalera de accountability del CEO (ruido, señal, problema). Ante un problema sostenido propone, en este orden: ajustar el criterio o las skills del puesto, cambiar de modelo o de agente, rediseñar el puesto (misión, límites, a quién reporta). Nunca borra un puesto: lo propone y decide el board.

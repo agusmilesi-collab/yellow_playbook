@@ -20,6 +20,8 @@
 //   node scripts/os.mjs latido <puesto> "<resumen>"   registra el latido y apaga el "trabajando"
 //   node scripts/os.mjs terminar <puesto>             apaga el "trabajando" sin registrar latido
 //   node scripts/os.mjs objetivo "<título>" [--dod "<texto>"] [--puesto <id>] [--padre <id>] [--primero]
+//   node scripts/os.mjs objetivo-editar <id> "<título>" [--dod "<texto>"]
+//   node scripts/os.mjs kr-borrar <puesto> "<nombre del KR>"
 //   node scripts/os.mjs kr <puesto> "<nombre>" <meta> [--base N] [--unidad "<u>"] [--objetivo <id>]   crea o actualiza un KR
 //   node scripts/os.mjs real <puesto> "<nombre del KR>" <número>   carga el valor actual de un KR
 //   node scripts/os.mjs iniciativa <puesto> "<nombre>" [--kr "<nombre del KR>"] [--objetivo <id>]
@@ -391,6 +393,29 @@ if (cmd === "sync") {
   d.latidos = [...d.latidos, { id: nuevoId(), fecha: ahora(), puesto, resumen }].slice(-400);
   await guardarOS(d);
   console.log(`Latido de ${puesto} registrado.`);
+} else if (cmd === "objetivo-editar") {
+  // objetivo-editar <id> "<título nuevo>" [--dod "<texto>"]
+  const iD = args.indexOf("--dod");
+  const dod = iD >= 0 ? args.splice(iD, 2)[1] : null;
+  const [oid, titulo] = args;
+  const d = await leerOS();
+  const o = d.objetivos.find((x) => x.id === oid);
+  if (!o || !titulo) throw new Error('Uso: objetivo-editar <id> "<título>" [--dod "<texto>"]');
+  o.titulo = titulo;
+  if (dod !== null) o.dod = dod;
+  await guardarOS(d);
+  console.log(`Objetivo ${oid} actualizado.`);
+} else if (cmd === "kr-borrar") {
+  // kr-borrar <puesto> "<nombre del KR>": las iniciativas que lo movían quedan sin KR
+  const [puesto, nombre] = args;
+  const d = await leerOS();
+  const objs = d.objetivos.filter((o) => o.puesto === puesto);
+  const k = d.krs.find((x) => objs.some((o) => o.id === x.objetivo) && x.nombre.toLowerCase() === String(nombre ?? "").toLowerCase());
+  if (!k) throw new Error(`Uso: kr-borrar <puesto> "<nombre del KR>"`);
+  d.krs = d.krs.filter((x) => x.id !== k.id);
+  for (const i of d.iniciativas) if (i.kr === k.id) i.kr = null;
+  await guardarOS(d);
+  console.log(`KR "${k.nombre}" borrado de ${puesto}.`);
 } else if (cmd === "objetivo") {
   const flag = (n) => { const i = args.indexOf(`--${n}`); return i >= 0 ? args.splice(i, n === "primero" ? 1 : 2)[1] ?? true : null; };
   const dod = flag("dod"), puesto = flag("puesto"), padre = flag("padre"), primero = flag("primero");

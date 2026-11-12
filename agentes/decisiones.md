@@ -13,3 +13,5 @@ Cada decisión con fecha, qué se decidió y qué cambia. La leen todos los pues
 - **2026-11-12:** Contratación del CHRO (12/11/2026): el diseño y la contratación de puestos (agentes o personas) pasa del CEO al CHRO, con el método de Campos HR. Toda alta, cambio o baja de un puesto se propone con ficha completa en la bandeja y la aprueba el board.
 
 - **2026-11-12:** SOPs (12/11/2026): los procesos que cruzan puestos los escribe y mantiene el COO (quién hace el trabajo es del CHRO; cómo se hace, del COO). Los del servicio viven en playbook/03-process y se cambian vía learnings; los internos del OS en agentes/coo/procesos/ y valen cuando el board los aprueba.
+
+- **2026-11-12:** Accountability por nivel (12/11/2026): un Chief responde por un resultado de negocio, no por un proceso. El CFO vela por el margen y los gastos de Yellow; cobrar a tiempo y registrar es trabajo de un puesto operativo de administración, que hoy absorbe el CFO como iniciativa hasta que el volumen justifique el puesto. El CHRO define el accountability de cada puesto por nivel y propone cuándo crece la estructura.
