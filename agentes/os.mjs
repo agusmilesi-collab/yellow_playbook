@@ -39,16 +39,18 @@ if (existsSync(join(raiz, ".env.local")))
     const m = linea.match(/^([A-Z_]+)=(.*)$/);
     if (m && !process.env[m[1]]) process.env[m[1]] = m[2].replace(/^["']|["']$/g, "");
   }
-if (!process.env.SUPABASE_URL || !process.env.SUPABASE_SERVICE_KEY) {
-  console.error("Faltan SUPABASE_URL y SUPABASE_SERVICE_KEY en el entorno.");
+// En la nube la clave va como "secreto de red": el proxy de Anthropic agrega el
+// header apikey a los pedidos a Supabase y el agente nunca la ve. En ese caso
+// el entorno trae OS_CLAVE_POR_PROXY=1 y el script no manda la clave.
+const PROXY = process.env.OS_CLAVE_POR_PROXY === "1";
+if (!process.env.SUPABASE_URL || (!PROXY && !process.env.SUPABASE_SERVICE_KEY)) {
+  console.error("Faltan SUPABASE_URL y SUPABASE_SERVICE_KEY (o OS_CLAVE_POR_PROXY=1 con el secreto de red cargado) en el entorno.");
   process.exit(1);
 }
 const URL_BASE = `${process.env.SUPABASE_URL}/rest/v1/tools_config`;
-const H = {
-  apikey: process.env.SUPABASE_SERVICE_KEY,
-  Authorization: `Bearer ${process.env.SUPABASE_SERVICE_KEY}`,
-  "Content-Type": "application/json",
-};
+const H = PROXY
+  ? { "Content-Type": "application/json" }
+  : { apikey: process.env.SUPABASE_SERVICE_KEY, Authorization: `Bearer ${process.env.SUPABASE_SERVICE_KEY}`, "Content-Type": "application/json" };
 
 async function leer(clave) {
   const r = await fetch(`${URL_BASE}?clave=eq.${clave}&usuario=eq.agustin&select=valor`, { headers: H });

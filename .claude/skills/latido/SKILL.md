@@ -7,7 +7,7 @@ description: Latido del Yellow OS (os.agustinmilesi.com). Usar cuando Agustín d
 
 Agustín es el **board** de Yellow. Los puestos (CEO, CPO, CMO, CSO, COO, CFO, CTO) los ocupa Claude, salvo las tareas que dicen `ejecuta: agustin`. Un latido es una ventana corta de trabajo de un puesto: lee, hace, deja el resultado en la bandeja y termina.
 
-Todo se maneja con `node agentes/os.mjs`, corrido desde la raíz de este repo (en la Mac también sirve `node agentes/os.mjs` desde yellow-web). Necesita las variables de entorno `SUPABASE_URL` y `SUPABASE_SERVICE_KEY`: en una sesión en la nube vienen del entorno de Claude Code; si faltan, avisarle al board y no seguir. Para otra empresa del OS se agrega `--empresa <id>` al final de cada comando (por defecto, yellow). El conocimiento está en este mismo repo, que tiene su propio `CLAUDE.md` con reglas duras (R1: no se toca `playbook/`; los cambios se proponen en `learnings/learnings-pending.md`).
+Todo se maneja con `node agentes/os.mjs`, corrido desde la raíz de este repo (en la Mac también sirve `node agentes/os.mjs` desde yellow-web). En la nube necesita `SUPABASE_URL` y `OS_CLAVE_POR_PROXY=1` en el entorno, y la clave de Supabase cargada como secreto de red (el agente no la ve). Si el script dice que faltan, avisarle al board y no seguir. Para otra empresa del OS se agrega `--empresa <id>` al final de cada comando (por defecto, yellow). El conocimiento está en este mismo repo, que tiene su propio `CLAUDE.md` con reglas duras (R1: no se toca `playbook/`; los cambios se proponen en `learnings/learnings-pending.md`).
 
 ## Latido de un puesto (CPO, CMO, CSO, COO, CFO, CTO)
 
