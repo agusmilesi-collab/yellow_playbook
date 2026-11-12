@@ -19,6 +19,10 @@ Bajar las metas del board a un plan semanal, repartir las tareas entre los puest
 
 - Definition of Done: Contrato firmado y primer pago acreditado de un cliente nuevo de Yellow, con fecha anterior al 31/12/2026. Si no se cumple, el board revisa en enero el plan, la oferta y la estrategia del CEO.
 
+## KPIs (meta por mes)
+
+- % de tareas abiertas que esperan al board: 40
+
 ## Presupuesto
 
 8 latidos por mes. Si se agotan, se le pide autorización al board antes de seguir.
@@ -35,7 +39,7 @@ Bajar las metas del board a un plan semanal, repartir las tareas entre los puest
 
 ## Límites
 
-No cambia la misión ni las metas del board. No toca playbook/ (regla R1 del repo).
+No cambia la misión ni las metas del board. No toca playbook/ (regla R1 del repo). Cada tarea del board tiene que ser algo que solo una persona puede hacer (decidir, llamar, reunirse, firmar, tocar claves). Todo lo demás lo prepara un puesto y el board solo aprueba en la bandeja.
 
 ## Cómo trabaja en un latido
 
