@@ -101,7 +101,7 @@ El Value Map produce **la lista priorizada de drivers donde el rediseño debe ga
 
 Un movimiento real toca los cuatro elementos del stick: WTP, precio, costo, WTS. No alcanza con mover la WTP y suponer que el resto queda igual.
 
-- **Dual advantage:** subir WTP y bajar WTS a la vez. Para el profesional solo, el equivalente es un rediseño que sube la WTP del cliente y a la vez vuelve el trabajo más liviano o más alineado con lo que el profesional quiere hacer.
+- **Dual advantage:** subir WTP y bajar WTS a la vez. Para el profesional solo, el equivalente es un rediseño que sube la WTP del cliente y a la vez vuelve el trabajo más liviano o más alineado con lo que el profesional quiere hacer. El **método** para bajar la WTS y el costo de entrega (restricción, flujo, estandarización, productización) vive en `./service-operations.md`, la capa de operaciones; este pilar nombra la jugada, esa capa la ejecuta.
 - **Caución de pricing:** antes de cerrar un rediseño, revisar el stick completo. Subir la WTP sin mover el precio regala el valor al cliente (el síntoma exacto del meta-patrón). Subir la WTP pero disparar el costo de entrega puede dejar la ganancia igual o peor. Ver `../06-operations/pricing.md`.
 
 ---
@@ -133,4 +133,5 @@ Para definiciones precisas, ver `../02-methodology/glossary.md`.
 
 ## Changelog del archivo
 
+- **2026-06-11 (v0.3):** consolidación de LRN-021. La sección "Conectar todo el stick" apunta a `service-operations.md` como el método de la jugada de oferta (bajar WTS y costo de entrega); este pilar nombra el dual advantage, esa capa lo ejecuta. Aprobado directo por el owner en sesión.
 - **2026-05-18 (v0.2):** versión inicial. Consolidación de LRN-004 (sesión de refinamiento de KB, E1). Cuarto pilar metodológico. Deriva de la verificación de *Better, Simpler Strategy* (Oberholzer-Gee, 2021). Acoplado a la baja de Ulwick a nota en `jtbd.md` y a la matriz sin severidad en `service-design.md`. Aprobado por el owner para consolidación en bloque (sesión 2026-05-18).

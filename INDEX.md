@@ -50,6 +50,7 @@ Cada concepto vive en un solo archivo. Si lo necesitás en otro lado, linkealo, 
 | Jobs to be Done (framework, descubrimiento puro) | `playbook/02-methodology/jtbd.md` |
 | Good Services (15 principios) | `playbook/02-methodology/good-services.md` |
 | Value-Based Strategy (Value Stick, 4to pilar) | `playbook/02-methodology/value-based-strategy.md` |
+| Ingeniería de operaciones del servicio (capa de rendimiento, supply-side) | `playbook/02-methodology/service-operations.md` |
 | Value Map (único mecanismo de priorización) | `playbook/02-methodology/value-based-strategy.md` |
 | 4 Forces of Progress | `playbook/02-methodology/jtbd.md` |
 | Sistema de progreso | `playbook/02-methodology/jtbd.md` |
@@ -184,6 +185,7 @@ Para los 10 principios no-negociables completos: `playbook/00-start-here/princip
 
 ## Changelog del archivo
 
+- **2026-06-11 (v0.10):** consolidación de LRN-021. Sumada fila "Ingeniería de operaciones del servicio" en el mapa de SSOT de Metodología (capa de oferta, fuera de la cascada de 4 pilares). Aprobado directo por el owner en sesión.
 - **2026-06-11 (v0.9):** eliminado `roadmap.md` del repo (decisión del owner: la acción de negocio vive en Notion "Projects & Tasks"). Filas y atajos de "acciones" re-apuntados a Notion + `case-notes.md`. Aprobado directo por el owner en sesión.
 - **2026-06-10 (v0.8):** consolidación de LRN-016/017/018/019 (sesión T04). Sumadas filas: pipeline del caso (`00-pipeline.md`), 5 plantillas nuevas, biblioteca de módulos (`09-library/`). Atajos "Quiero generar algo con IA" y "Voy a arrancar un caso real" actualizados al modelo Claude Code + pipeline. Aprobado por el owner para consolidación en bloque (sesión 2026-06-10).
 - **2026-05-18 (v0.7):** consolidación del cuarto pilar (LRN-003 + LRN-004, sesión de refinamiento de KB, E1). Sumadas filas Value-Based Strategy, Value Map y Sistema de progreso en el mapa de SSOT de Metodología. Matriz de touchpoints reetiquetada como "audita, no prioriza"; JTBD como "descubrimiento puro". Atajo "Tengo que hacer un diagnóstico" reordenado a la cascada del método. La metodología pasa de 3 a 4 pilares.

@@ -190,6 +190,8 @@ Con el prototipo validado y la spec escrita, el Modelo B cierra acá: reunión d
 
 Con la spec validada por el prototipo manual, construir el motor generador. La Tesis establece que el cliente se va con un sistema que opera todos los días.
 
+Antes de construir, identificar la **restricción**: qué paso del proceso del profesional limita su rendimiento o su percepción de valor. El sistema se diseña para elevar esa restricción, no para mejorar todo un poco. Ver `../02-methodology/service-operations.md` (capa de operaciones) y revisar `../09-library/` por módulos reusables antes de construir desde cero.
+
 **Componentes típicos del sistema (varían según caso):**
 
 - Plantillas activas (one-pager, microsite, consigna diaria, protocolo por momento crítico, curación por uso, otros).
@@ -413,6 +415,7 @@ Checklist obligatorio antes de la reunión:
 
 ## Changelog del archivo
 
+- **2026-06-11 (v0.9):** consolidación de LRN-021. Fase 4 (build) arranca identificando la restricción del proceso del profesional antes de construir, con puntero a `../02-methodology/service-operations.md` y a la biblioteca `../09-library/`. Aprobado directo por el owner en sesión.
 - **2026-06-10 (v0.8):** consolidación de LRN-014 (resuelve LRN-008/009/010, con la evidencia comercial de LRN-013: la primera venta compró build + instalación). El archivo pasa a SSOT de duración por modelo. Modelo B = Fases 1-3, 2-3 semanas, cierra en prototipo manual + spec del sistema (sección nueva "Cierre del Modelo B"); Fases 4-5 pasan a Modelo C / ejecución contratada, cotizada por alcance; techo duro de 3 meses. Modelo A redefinido como consulta de lectura experta sin Switch Interviews (P5 fuera de alcance, LRN-009). Molde del diagnóstico central reescrito en afirmativo (LRN-015). Outputs divididos por modelo, con punteros a plantillas nuevas (LRN-017). Tabla de tiempos del runbook ajustada. Aprobado por el owner para consolidación en bloque (sesión 2026-06-10).
 - **2026-05-18 (v0.7):** consolidación de LRN-004 (sesión de refinamiento de KB, E1). Fase 2 reordenada a la cascada del método (blueprint → JTBD → Value Map → touchpoints → Good Services → diagnóstico central) con paso nuevo **Value Map** y nota de orden interno. "Evaluación de touchpoints" reescrita: 4 dimensiones, sin severidad propia, prioridad heredada del Value Map. Fase 3: cada intervención exige **cadena causal escrita a WTP** (link a `value-based-strategy.md` y al check `causal-chain-wtp`). Runbook: ajustada la tabla de tiempos de Fase 2 y sumados dos errores comunes (intervención sin cadena causal, priorización paralela al Value Map). Aprobado por el owner para consolidación en bloque (sesión 2026-05-18).
 - **2026-05-13 (v0.6):** sección "Identificación de pain points" reemplazada por aplicación explícita de la matriz de evaluación de touchpoints (SSOT en `02-methodology/service-design.md`). Antes había 3 preguntas sueltas; ahora hay método canónico. Aprobado directo por owner en sesión.

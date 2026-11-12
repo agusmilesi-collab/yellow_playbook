@@ -42,7 +42,7 @@ Cualquiera de los tres debería poder leer este repo y operar el negocio sin ped
 |---|---|---|
 | `00-start-here/` | Onboarding + principios | Al empezar / para revisar las reglas |
 | `01-identity/` | Quién somos, qué vendemos, a quién | Para escribir copy, para calificar prospects |
-| `02-methodology/` | Frameworks técnicos: 4 pilares (JTBD, Value-Based Strategy, Service Design, Good Services) en cascada | Durante diagnóstico y diseño |
+| `02-methodology/` | 4 pilares en cascada (JTBD, Value-Based Strategy, Service Design, Good Services) + capa de operaciones (rendimiento) | Durante diagnóstico, diseño y build |
 | `03-process/` | El pipeline del caso (`00-pipeline.md`) + cómo se ejecuta cada fase | Durante venta y entrega |
 | `04-templates/` | Plantillas reutilizables (discovery, entrevistas, diagnóstico, plan, spec, propuesta, lessons, case-notes) | Para generar entregables |
 | `05-examples/` | Casos canónicos de referencia | Como referencia de profundidad esperada |

@@ -47,6 +47,8 @@ La cascada de 4 pilares, cada uno con su SSOT en `../02-methodology/`:
 3. **Service Design** audita y rediseña la entrega. Ver `service-design.md`.
 4. **Good Services** valida la calidad del rediseño contra 15 principios. Ver `good-services.md`.
 
+Más una capa de oferta, fuera de la cascada de diagnóstico: **Ingeniería de operaciones del servicio** (restricción, flujo, productización) para construir el sistema vivo y escalar. Ver `../02-methodology/service-operations.md`.
+
 Proceso de un proyecto típico:
 
 1. **Discovery call** (35 min, ver `../03-process/01-discovery.md`).

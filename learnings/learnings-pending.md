@@ -126,6 +126,16 @@ Hallazgos de la auditoría T04, aplicados en la sesión de consolidación del 20
 
 ---
 
+### LRN-021 — CONSOLIDADO el 2026-06-11
+
+**Descripción:** la metodología tenía un hueco del lado de la oferta: los 4 pilares trabajan la demanda (qué valora el cliente, cómo percibe la entrega) y ninguno daba herramientas para rendimiento, cuello de botella, capacidad o estandarización, que es justo lo que necesitan la Fase 4 (build del sistema vivo) y la escala. El cuarto pilar incluso nombra "bajar la WTS" como media jugada del dual advantage sin dar el método. Evidencia en casos: psicóloga (codificación manual = restricción que ancla la facturación), Lisandro (es el cuello de botella de su equipo).
+
+**Resolución:** sumada la capa "Ingeniería de operaciones del servicio" como SSOT nuevo (`playbook/02-methodology/service-operations.md`), explícitamente fuera de la cascada de 4 pilares de diagnóstico. Núcleo: Teoría de Restricciones (Goldratt, "La Meta"), flujo Lean (Womack/Jones), estandarización contra personalización (Levitt, "Production-Line Approach to Service", 1972), productización. Atribución del service blueprint corregida a su origen (Shostack, 1984). Salvedad de scope declarada: fuera el aparato industrial pesado (Six Sigma, control estadístico, teoría de colas), escala equivocada para el ICP.
+
+**Consolidado el 2026-06-11** (aprobación directa del owner en sesión). Archivos: `service-operations.md` v0.1 (nuevo), `value-based-strategy.md` v0.3 (conexión del stick), `04-delivery.md` v0.9 (restricción antes del build), `glossary.md` v0.6 (términos nuevos), `INDEX.md` v0.10, `onboarding.md` y `README.md` (capa de oferta sumada al mapa). Rastro en los changelogs de cada archivo.
+
+---
+
 ### LRN-020 | 2026-06-10 | caso:meta | tipo:gap
 
 **Descripción:** idea del owner: las Switch Interviews tocan clientes de los clientes que muchas veces calzan en el ICP. La entrevista misma podría precalentarlos como leads y revelar de antemano si tienen un gap propio. **Guardarraíl ético antes de operar:** la entrevista se hace en nombre del cliente y para su rediseño. Vender durante la entrevista sesga la evidencia (degrada el corpus de P5) y traiciona la confianza del cliente que presentó el contacto. La forma segura: jamás pitchear en la entrevista; registrar al entrevistado en un radar comercial interno; reactivar recién después del cierre del proyecto, idealmente con el propio cliente como puente, o cuando el entrevistado pregunta espontáneamente.
@@ -133,3 +143,15 @@ Hallazgos de la auditoría T04, aplicados en la sesión de consolidación del 20
 **Implicancia para el playbook:** (1) `05-handoff.md`: paso nuevo post-cierre "revisar radar de entrevistados" (contacto con permiso del cliente). (2) `switch-interview-notes-template.md`: campo interno opcional "señal de gap propio del entrevistado" (anotación, sin actuar en vivo). (3) `01-discovery.md` runbook pre-discovery: "radar de entrevistas" como origen de prospect. Definir redacción exacta con el owner antes de consolidar.
 
 **Status:** pendiente
+
+---
+
+### LRN-022 | 2026-07-30 | caso:meta | tipo:gap
+
+**Descripción:** el owner elevó una regla de copy al mismo rango que la prohibición de *"no es X, es Y"*: **prohibidas las metáforas**. Se dice literalmente el mecanismo (quién hace qué y qué consecuencia observable produce). Ejemplo que la disparó, corregido en un documento de cliente: *"la forma más común de que un cambio se caiga es que el dueño siga atendiendo por la ventanilla vieja"* pasó a *"el dueño delega la conducción y sigue respondiendo consultas que ahora le corresponden a otro, con lo cual el equipo aprende que la vía rápida sigue siendo él y deja de usar la nueva"*. Razón: la metáfora obliga al lector a traducir y admite varias lecturas, mientras que el mecanismo dicho literalmente se puede discutir y verificar. Prueba operativa: si la frase no se puede verificar mirando la empresa, todavía es figurada. Excepciones: los términos técnicos ya instalados (cuello de botella, restricción) y el ejemplo didáctico declarado como tal.
+
+**Implicancia para el playbook:** `playbook/02-methodology/style-guide.md`, sección nueva al mismo nivel que la F ("Sin recurso de negación-afirmación"). Sugerido: **"H. Sin metáforas"**, con la prueba de verificación y las dos excepciones. Revisar además si `quality-checklist.json` tiene un ítem de reglas de copy donde sumarla, para que la auto-evaluación de R4 la controle.
+
+**Status:** pendiente
+
+**Nota:** ya está aplicada en el repo de Campos HR (contrato `CLAUDE.md`, los 7 prompts de `engine/`, `engine/validacion-humana.md` y `templates/outputs/propuesta.md`). Acá queda pendiente porque R1 reserva los cambios de `playbook/` a una sesión de consolidación.

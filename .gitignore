@@ -14,3 +14,7 @@
 Thumbs.db
 ehthumbs.db
 Desktop.ini
+
+# Claves: nunca al repo
+.env
+.env.*

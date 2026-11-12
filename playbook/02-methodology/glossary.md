@@ -139,6 +139,27 @@ Proceso de validar empíricamente las hipótesis del rediseño con clientes real
 
 ---
 
+## Términos de operaciones del servicio
+
+SSOT del vocabulario de la capa de operaciones. Marco completo en `./service-operations.md`.
+
+### Restricción / cuello de botella
+El paso de un proceso que limita el rendimiento del conjunto. Mejorar cualquier otra parte no mueve el resultado; solo mover la restricción lo hace. Teoría de Restricciones (Goldratt).
+
+### Flujo
+Recorrido del trabajo de principio a fin con la mínima fricción. Cada paso que no agrega valor al cliente final es candidato a eliminar o automatizar (Lean).
+
+### Estandarización contra personalización
+Separar lo repetible (la commodity, que conviene estandarizar) de lo artesanal (el criterio, la ventaja real, que conviene mantener a mano). Industrializar el servicio sin despersonalizarlo (Levitt, 1972).
+
+### Productización
+Convertir un sistema que funcionó en varios casos del mismo vertical en un activo replicable (kit). Inventario en `../09-library/`.
+
+### Rendimiento (throughput)
+Ver definición en "Términos de UX Strategy aplicada". Métrica central de esta capa cuando el rediseño busca escalar sin perder calidad.
+
+---
+
 ## Iconografía de honestidad metodológica
 
 Estos íconos se usan en diagnósticos y propuestas para distinguir niveles de certeza:
@@ -191,6 +212,7 @@ Lenguaje que queda fuera de entregables y comunicación:
 
 ## Changelog del archivo
 
+- **2026-06-11 (v0.6):** consolidación de LRN-021. Sección nueva "Términos de operaciones del servicio" (restricción/cuello de botella, flujo, estandarización contra personalización, productización, cross-ref a rendimiento/throughput). Aprobado directo por el owner en sesión.
 - **2026-05-18 (v0.5):** consolidación de LRN-003 + LRN-004 (sesión de refinamiento de KB, E1). Sección nueva "Términos de Value-Based Strategy" (WTP, WTS, value stick, valor creado, captura de valor, value driver, value map, dual advantage, disciplina causal). WTP movido de "Términos de JTBD" a la sección nueva, con definición actualizada (deja de definirse como señal de los tres jobs). Sumado "Sistema de progreso" a Términos de JTBD. Aprobado por el owner para consolidación en bloque (sesión 2026-05-18).
 - **2026-05-13 (v0.4):** definición de "Service redesign without core change" reducida a 1 línea con puntero a P1 (era reformulación del principio completo). Aprobado directo por owner en sesión.
 - **2026-05-09:** v0.3, castellanización de los términos de UX Strategy aplicada (drill-down, progressive disclosure, medium reframing, willingness to pay, etc.) según la guía de estilo Yellow (`./style-guide.md`). Los términos en inglés se mantienen entre paréntesis para facilitar la búsqueda. Los nombres canónicos de framework (Job-to-be-Done, push/pull/anxiety/habit) se preservan.
