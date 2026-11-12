@@ -38,6 +38,7 @@ Definir qué se vende, a quién y a qué precio, y entregarle a Marketing y a Ve
 ## Traspasos
 
 - **Recibe de COO:** Lo aprendido en cada caso (learnings). Listo cuando: Learning escrito con caso, tipo e implicancia. Canal: learnings/learnings-pending.md.
+- **Recibe de INV:** Evidencia de mercado para decidir a quién y qué. Listo cuando: Informe con fuentes y una recomendación marcada como tal. Canal: learnings/oferta/.
 - **Entrega a CMO:** Oferta lista para contar (frase, pitch, a quién). Listo cuando: Frase, pitch de 90 s y cliente ideal aprobados por el board. Plazo: Al aprobarse la oferta. Canal: offer.md e icp.md del repo.
 
 ## Límites
