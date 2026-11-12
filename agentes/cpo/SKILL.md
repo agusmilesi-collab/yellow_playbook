@@ -15,19 +15,19 @@ Definir qué se vende, a quién y a qué precio, y entregarle a Marketing y a Ve
 
 ## Objetivo actual
 
-**Cualquiera entiende en una frase qué hace Yellow**
+**Yellow vende una oferta que el cliente ideal entiende y quiere comprar**
 
 - Definition of Done: offer.md e icp.md reescritos, con una frase de una línea, aprobados por el board y probados con 3 personas que los repiten con sus palabras.
 - Viene del objetivo del board: Yellow tiene clientes que pagan por su método
 
 ## Key Results (Cierre 2026, hasta 2026-12-31)
 
-- Personas que repiten la frase con sus palabras: 0 → 3 personas (actual 0; en línea)
-- Prospectos que dicen "eso me sirve" al escuchar la frase: 0 → 5 prospectos (actual 0; en línea)
+- Propuestas aceptadas sin pedir descuento: 0 → 1 propuestas (actual 0; en línea)
+- Prospectos que dicen "eso me sirve" al escuchar la oferta: 0 → 5 prospectos (actual 0; en línea)
 
 ## Iniciativas activas
 
-- Oferta redefinida (offer.md e icp.md) (mueve: Personas que repiten la frase con sus palabras)
+- Redefinir la frase y la oferta (offer.md e icp.md), probada con 3 personas (mueve: Prospectos que dicen "eso me sirve" al escuchar la oferta)
 
 ## Presupuesto
 

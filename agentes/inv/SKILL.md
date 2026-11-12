@@ -15,7 +15,7 @@ Traer evidencia para que el CPO decida a quién venderle y qué: benchmark de co
 
 ## Objetivo actual
 
-**Yellow sabe exactamente a quién venderle**
+**Las decisiones de oferta y de venta se toman con evidencia del mercado**
 
 - Viene del objetivo del board: Yellow tiene clientes que pagan por su método
 
