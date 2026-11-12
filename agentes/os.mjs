@@ -24,7 +24,7 @@
 //   node scripts/os.mjs real <puesto> "<nombre del KR>" <número>   carga el valor actual de un KR
 //   node scripts/os.mjs iniciativa <puesto> "<nombre>" [--kr "<nombre del KR>"] [--objetivo <id>]
 //   node scripts/os.mjs tarea <puesto> "<nombre>" [claude|agustin] [--iniciativa <id>]
-//   node scripts/os.mjs reporte "<texto>"             reporte del CEO al board
+//   node scripts/os.mjs reporte --archivo <json>      reporte del CEO al board: { resumen, areas: [{ puesto, anda, trabado }], decisiones: [{ que, recomienda, tarea }] }
 //   node scripts/os.mjs transito <traspasoId> agregar|sacar "<texto>"
 //
 // Las transcripciones completas quedan en el repo local: a la web sube solo
@@ -435,7 +435,12 @@ if (cmd === "sync") {
   }
 } else if (cmd === "reporte") {
   const d = await leerOS();
-  d.reporte = { fecha: hoy(), texto: args[0] ?? "" };
+  // reporte --archivo <json> con { resumen, areas: [{ puesto, anda, trabado }], decisiones: [{ que, recomienda, tarea }] }
+  const iA = args.indexOf("--archivo");
+  if (iA >= 0) {
+    const j = JSON.parse(readFileSync(args[iA + 1], "utf8"));
+    d.reporte = { fecha: hoy(), texto: "", resumen: String(j.resumen ?? ""), areas: Array.isArray(j.areas) ? j.areas : [], decisiones: Array.isArray(j.decisiones) ? j.decisiones : [] };
+  } else d.reporte = { fecha: hoy(), texto: args[0] ?? "", resumen: "", areas: [], decisiones: [] };
   await guardarOS(d);
   console.log("Reporte del CEO guardado.");
 } else if (cmd === "transito") {
