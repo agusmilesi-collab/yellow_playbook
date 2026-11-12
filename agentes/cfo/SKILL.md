@@ -15,7 +15,18 @@ Contratos, facturas y cobros de cada caso, y los números del mes para el board.
 
 ## Objetivo actual
 
-Sin objetivo activo. Antes de trabajar, preguntarle al board qué resultado se espera de este puesto.
+**Yellow gana plata con cada cliente que atiende**
+
+- Definition of Done: El board ve cada mes el margen de cada cliente y los gastos de Yellow, con números que salen de registros
+- Viene del objetivo del board: Yellow tiene clientes que pagan por su método
+
+## Key Results (Cierre 2026, hasta 2026-12-31)
+
+- Margen por cliente: 0 → 60 % (actual sin medir; sin medir)
+
+## Iniciativas activas
+
+- Circuito de cobro listo antes del primer cliente: contrato, factura y medio de pago
 
 ## Presupuesto
 

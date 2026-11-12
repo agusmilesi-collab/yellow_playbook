@@ -38,11 +38,12 @@ Aplicar estos principios en cada decisión del latido, y decir en el cierre cuá
 
 - Clientes pagos: 0 → 1 clientes (actual 0; en línea)
 - Facturado: 0 → 2000 USD (actual 0; en línea)
-- % de tareas abiertas que esperan al board: 64 → 40 % (actual 36; logrado)
+- % de tareas abiertas que esperan al board: 64 → 40 % (actual 31; logrado)
 
 ## Iniciativas activas
 
 - Regla del embudo: el board solo hace lo que exige una persona (mueve: % de tareas abiertas que esperan al board)
+- Revisión semanal: cascada de OKRs, accountability y plan de la semana (mueve: Clientes pagos)
 
 ## Presupuesto
 

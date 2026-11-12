@@ -27,6 +27,7 @@ Convertir conversaciones en clientes: preparar cada llamada, estructurar lo que 
 ## Iniciativas activas
 
 - Guion de llamada con el método de Sandler (mueve: Llamadas de discovery)
+- Primeras llamadas con la red del board (mueve: Llamadas de discovery)
 
 ## Presupuesto
 
