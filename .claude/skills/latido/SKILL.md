@@ -9,8 +9,9 @@ Agustín es el **board** de Yellow. Los puestos (CEO, CPO, CMO, CSO, COO, CFO, C
 
 Todo se maneja con `node agentes/os.mjs`, corrido desde la raíz de este repo (en la Mac también sirve `node agentes/os.mjs` desde yellow-web). En la nube necesita `SUPABASE_URL` y `OS_CLAVE_POR_PROXY=1` en el entorno, y la clave de Supabase cargada como secreto de red (el agente no la ve). Si el script dice que faltan, avisarle al board y no seguir. Para otra empresa del OS se agrega `--empresa <id>` al final de cada comando (por defecto, yellow). El conocimiento está en este mismo repo, que tiene su propio `CLAUDE.md` con reglas duras (R1: no se toca `playbook/`; los cambios se proponen en `learnings/learnings-pending.md`).
 
-## Latido de un puesto (CPO, CMO, CSO, COO, CFO, CTO)
+## Latido de un puesto (CPO, CMO, CSO, COO, CFO, CTO, CISO, INV)
 
+0. `node agentes/os.mjs empezar <puesto>`: el circulito del puesto late en el OS mientras trabaja. Si el latido se corta antes de terminar, `node agentes/os.mjs terminar <puesto>`.
 1. `node agentes/os.mjs ver <puesto>`: misión, objetivos (con su Definition of Done y el objetivo del board del que vienen), KPIs, presupuesto y latidos usados, skills, límites, tareas abiertas y traspasos. Si avisa que el puesto agotó sus latidos del mes, pedirle autorización al board antes de seguir.
 2. Leer, en el repo de la empresa: `CLAUDE.md`, la ficha del puesto `agentes/<puesto>/SKILL.md`, su memoria `agentes/<puesto>/MEMORIA.md`, las decisiones del board `agentes/decisiones.md`, y los archivos de `skills` del puesto. Si el puesto tiene `agente` distinto de `claude-code`, no lo trabaja Claude: avisarle al board.
 3. Hacer **solo las tareas pendientes con `ejecuta: claude`**. Si una tarea tiene `devolucion`, corregir según lo que pidió el board.
@@ -25,7 +26,7 @@ Todo se maneja con `node agentes/os.mjs`, corrido desde la raíz de este repo (e
 
 El CEO gerencia la empresa hacia el objetivo principal del board (hoy: primer cliente pago de Yellow antes del 31/12/2026). Responde por ese resultado.
 
-1. `node agentes/os.mjs sync` y `node agentes/os.mjs ver`. Leer `agentes/decisiones.md`, `agentes/ceo/MEMORIA.md` y el último reporte.
+1. `node agentes/os.mjs empezar ceo`, `node agentes/os.mjs sync` y `node agentes/os.mjs ver`. Leer `agentes/decisiones.md`, `agentes/ceo/MEMORIA.md` y el último reporte.
 2. **Cadena hacia el objetivo:** escribir (o revisar, si ya existe) la cadena que lleva al objetivo principal, del resultado hacia atrás: clientes ← propuestas ← llamadas ← leads ← contenidos, y oferta lista como condición previa. Cada eslabón tiene un puesto responsable.
 3. **KPIs de todos los puestos:** cada puesto tiene al menos un KPI con meta mensual que mueve un eslabón de esa cadena (`node agentes/os.mjs kpi <puesto> "<nombre>" <meta>`). Las metas salen de la cadena y de la fecha del objetivo; anotar el cálculo en `agentes/ceo/MEMORIA.md`. Cargar los reales que se conozcan (`node agentes/os.mjs real <puesto> "<nombre>" <número>`).
 4. **Plan de la semana:** comparar cada KPI con su meta y crear las tareas que muevan el eslabón más flojo (`tarea <puesto> "<nombre>" claude|agustin`). Cada tarea es física y verificable, y un puesto tiene como máximo 5 pendientes. Las llamadas, reuniones y cierres son tareas de Agustín: el CEO las prepara, las agenda como tareas y las persigue.

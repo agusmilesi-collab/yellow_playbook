@@ -11,7 +11,9 @@
 //   node scripts/os.mjs entregar <tareaId> "<resultado>" [archivo]   la deja en "Para revisar"
 //   node scripts/os.mjs estado <tareaId> pendiente|hecha
 //   node scripts/os.mjs borrar <tareaId>
-//   node scripts/os.mjs latido <puesto> "<resumen>"   registra el latido (cuenta contra el presupuesto)
+//   node scripts/os.mjs empezar <puesto>              marca que el puesto está trabajando (su circulito late en el OS)
+//   node scripts/os.mjs latido <puesto> "<resumen>"   registra el latido y apaga el "trabajando"
+//   node scripts/os.mjs terminar <puesto>             apaga el "trabajando" sin registrar latido
 //   node scripts/os.mjs objetivo "<título>" [--dod "<texto>"] [--puesto <id>] [--padre <id>] [--primero]
 //   node scripts/os.mjs kpi <puesto> "<nombre>" <meta>      crea o actualiza un KPI (meta por mes)
 //   node scripts/os.mjs real <puesto> "<nombre>" <número>   carga el real del mes de un KPI
@@ -293,10 +295,19 @@ if (cmd === "sync") {
   if (d.tareas.length === antes) throw new Error(`No hay tarea "${args[0]}".`);
   await guardarOS(d);
   console.log(`Tarea ${args[0]} borrada.`);
+} else if (cmd === "empezar" || cmd === "terminar") {
+  const [puesto] = args;
+  const d = await leerOS();
+  const p = d.puestos.find((x) => x.id === puesto);
+  if (!p) throw new Error(`Uso: ${cmd} <puesto>`);
+  p.trabajando = cmd === "empezar" ? new Date().toISOString() : null;
+  await guardarOS(d);
+  console.log(cmd === "empezar" ? `${p.sigla} trabajando.` : `${p.sigla} terminó.`);
 } else if (cmd === "latido") {
   const [puesto, resumen] = args;
   const d = await leerOS();
   if (!d.puestos.some((p) => p.id === puesto) || !resumen) throw new Error("Uso: latido <puesto> \"<resumen>\"");
+  d.puestos.find((p) => p.id === puesto).trabajando = null;
   d.latidos = [...d.latidos, { id: nuevoId(), fecha: ahora(), puesto, resumen }].slice(-400);
   await guardarOS(d);
   console.log(`Latido de ${puesto} registrado.`);
@@ -340,5 +351,5 @@ if (cmd === "sync") {
   await guardarOS(d);
   console.log(`Traspaso ${xid}: ${x.enTransito.length} en tránsito.`);
 } else {
-  console.log(readFileSync(fileURLToPath(import.meta.url), "utf8").split("\n").slice(1, 21).join("\n"));
+  console.log(readFileSync(fileURLToPath(import.meta.url), "utf8").split("\n").slice(1, 23).join("\n"));
 }
