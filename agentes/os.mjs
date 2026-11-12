@@ -16,7 +16,7 @@
 //   node scripts/os.mjs estado <tareaId> pendiente|curso|devuelta|hecha
 //   node scripts/os.mjs borrar <tareaId>
 //   node scripts/os.mjs puesto crear <archivo.json>   da de alta un puesto aprobado por el board (ficha del CHRO)
-//   node scripts/os.mjs empezar <puesto>              marca que el puesto está trabajando (su circulito late en el OS)
+//   node scripts/os.mjs empezar <puesto> [tareaId]    marca que el puesto está trabajando (su circulito late) y, si se pasa, la tarea En curso
 //   node scripts/os.mjs latido <puesto> "<resumen>"   registra el latido y apaga el "trabajando"
 //   node scripts/os.mjs terminar <puesto>             apaga el "trabajando" sin registrar latido
 //   node scripts/os.mjs objetivo "<título>" [--dod "<texto>"] [--puesto <id>] [--padre <id>] [--primero]
@@ -369,11 +369,16 @@ if (cmd === "sync") {
   exportar(d);
   console.log(`Puesto ${p.sigla} creado (reporta a ${p.reportaA}). Falta cargarle objetivo, KRs y traspasos.`);
 } else if (cmd === "empezar" || cmd === "terminar") {
-  const [puesto] = args;
+  const [puesto, tid] = args;
   const d = await leerOS();
   const p = d.puestos.find((x) => x.id === puesto);
-  if (!p) throw new Error(`Uso: ${cmd} <puesto>`);
+  if (!p) throw new Error(`Uso: ${cmd} <puesto> [tareaId]`);
   p.trabajando = cmd === "empezar" ? new Date().toISOString() : null;
+  if (cmd === "empezar" && tid) {
+    const t = d.tareas.find((x) => x.id === tid && x.puesto === puesto);
+    if (!t) throw new Error(`${p.sigla} no tiene la tarea "${tid}".`);
+    t.estado = "curso";
+  }
   await guardarOS(d);
   console.log(cmd === "empezar" ? `${p.sigla} trabajando.` : `${p.sigla} terminó.`);
 } else if (cmd === "latido") {
