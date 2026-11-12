@@ -20,6 +20,8 @@
 //   node scripts/os.mjs latido <puesto> "<resumen>"   registra el latido y apaga el "trabajando"
 //   node scripts/os.mjs terminar <puesto>             apaga el "trabajando" sin registrar latido
 //   node scripts/os.mjs objetivo "<título>" [--dod "<texto>"] [--puesto <id>] [--padre <id>] [--primero]
+//   node scripts/os.mjs latidos [puesto]             lista los latidos con su id y sus entregas
+//   node scripts/os.mjs latido-entregas <latidoId> <tareaId,tareaId>   vincula entregas con un latido viejo
 //   node scripts/os.mjs presupuesto <puesto> <latidos por mes>
 //   node scripts/os.mjs costo <puesto>               equivalente API de lo que lleva el latido en curso
 //   node scripts/os.mjs objetivo-editar <id> "<título>" [--dod "<texto>"]
@@ -364,7 +366,7 @@ if (cmd === "sync") {
   const ini = iniciativa ? d.iniciativas.find((i) => i.id === iniciativa) : null;
   if (iniciativa && !ini) throw new Error(`No hay iniciativa "${iniciativa}".`);
   const objetivo = ini?.objetivo ?? d.objetivos.find((o) => o.puesto === puesto && o.estado === "activo")?.id ?? null;
-  const t = { id: nuevoId(), puesto, objetivo, iniciativa: ini?.id ?? null, nombre, ejecuta: ejecuta === "agustin" ? "agustin" : "claude", estado: "pendiente", fecha: null, resultado: "", archivo: "", devolucion: "", decide: false };
+  const t = { id: nuevoId(), puesto, objetivo, iniciativa: ini?.id ?? null, nombre, ejecuta: ejecuta === "agustin" ? "agustin" : "claude", estado: "pendiente", fecha: null, resultado: "", archivo: "", devolucion: "", decide: false, entregada: null };
   d.tareas.push(t);
   await guardarOS(d);
   console.log(`Tarea ${t.id} creada en ${puesto}.`);
@@ -376,7 +378,7 @@ if (cmd === "sync") {
   const d = await leerOS();
   const t = d.tareas.find((x) => x.id === tid);
   if (!t) throw new Error(`No hay tarea "${tid}".`);
-  if (cmd === "entregar") Object.assign(t, { estado: "revisar", resultado: valor ?? "", archivo, devolucion: "", decide: alBoard });
+  if (cmd === "entregar") Object.assign(t, { estado: "revisar", resultado: valor ?? "", archivo, devolucion: "", decide: alBoard, entregada: new Date().toISOString() });
   else if (["pendiente", "curso", "devuelta", "hecha"].includes(valor)) t.estado = valor;
   else throw new Error("Estado: pendiente, curso, devuelta o hecha (para revisar se usa entregar).");
   await guardarOS(d);
@@ -434,6 +436,19 @@ if (cmd === "sync") {
   }
   await guardarOS(d);
   console.log(cmd === "empezar" ? `${p.sigla} trabajando.` : `${p.sigla} terminó.`);
+} else if (cmd === "latidos") {
+  // latidos [puesto]: lista los latidos con su id, fecha y entregas vinculadas
+  const d = await leerOS();
+  for (const l of d.latidos.filter((x) => !args[0] || x.puesto === args[0])) console.log(`${l.id} ${l.fecha} ${l.puesto.padEnd(4)} entregas:${(l.entregas ?? []).length} ${l.usd != null ? `USD ${l.usd}` : ""} · ${l.resumen.slice(0, 70)}`);
+} else if (cmd === "latido-entregas") {
+  // latido-entregas <latidoId> <tareaId,tareaId>: vincula a mano entregas con un latido (para latidos viejos)
+  const [lid, lista] = args;
+  const d = await leerOS();
+  const l = d.latidos.find((x) => x.id === lid);
+  if (!l || !lista) throw new Error("Uso: latido-entregas <latidoId> <tareaId,tareaId>");
+  l.entregas = lista.split(",").filter((id) => d.tareas.some((t) => t.id === id));
+  await guardarOS(d);
+  console.log(`Latido ${lid}: ${l.entregas.length} entregas.`);
 } else if (cmd === "presupuesto") {
   // presupuesto <puesto> <latidos por mes>
   const [puesto, n] = args;
@@ -457,8 +472,13 @@ if (cmd === "sync") {
   if (!p || !resumen) throw new Error("Uso: latido <puesto> \"<resumen>\"");
   // Equivalente API: tokens de la sesión desde que el puesto empezó (empezar) hasta ahora.
   const costo = p.trabajando ? costoDesde(p.trabajando) : null;
+  // Entregas de este latido: las que el puesto entregó desde que empezó (o desde su latido anterior).
+  const previo = [...d.latidos].reverse().find((l) => l.puesto === puesto);
+  // La fecha del latido está en hora de Argentina sin zona: se le agrega -03:00 para compararla bien en la nube.
+  const desde = p.trabajando ? Date.parse(p.trabajando) : previo ? Date.parse(`${previo.fecha}:00-03:00`) : 0;
+  const entregas = d.tareas.filter((t) => t.puesto === puesto && t.entregada && Date.parse(t.entregada) >= desde).map((t) => t.id);
   p.trabajando = null;
-  d.latidos = [...d.latidos, { id: nuevoId(), fecha: ahora(), puesto, resumen, tokens: costo?.tokens ?? null, usd: costo?.usd ?? null }].slice(-400);
+  d.latidos = [...d.latidos, { id: nuevoId(), fecha: ahora(), puesto, resumen, tokens: costo?.tokens ?? null, usd: costo?.usd ?? null, entregas }].slice(-400);
   await guardarOS(d);
   console.log(`Latido de ${puesto} registrado.${costo ? ` Equivalente API: USD ${costo.usd.toFixed(2)} (${Math.round(costo.tokens / 1000)}k tokens).` : ""}`);
 } else if (cmd === "objetivo-editar") {
