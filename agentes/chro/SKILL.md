@@ -32,8 +32,8 @@ Aplicar estos principios en cada decisión del latido, y decir en el cierre cuá
 
 ## Key Results (Cierre 2026, hasta 2026-12-31)
 
-- Puestos con criterio escrito: 1 → 10 puestos (actual 2; en línea)
-- Puestos sin objetivo o funciones huérfanas: 2 → 0 puestos (actual 2; en línea)
+- Puestos con criterio escrito: 1 → 10 puestos (actual 3; en línea)
+- Puestos sin objetivo o funciones huérfanas: 2 → 0 puestos (actual 1; en línea)
 
 ## Iniciativas activas
 

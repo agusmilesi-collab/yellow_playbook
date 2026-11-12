@@ -11,3 +11,5 @@ Cada decisión con fecha, qué se decidió y qué cambia. La leen todos los pues
 - **2026-11-12:** Criterio del CEO (12/11/2026): decide con los principios de Elon Musk adaptados a Yellow (primeros principios, cuestionar requisitos, borrar antes de optimizar, simplificar, acelerar, automatizar al final, urgencia con honestidad). Cada puesto puede tener su propio criterio en el OS.
 
 - **2026-11-12:** Contratación del CHRO (12/11/2026): el diseño y la contratación de puestos (agentes o personas) pasa del CEO al CHRO, con el método de Campos HR. Toda alta, cambio o baja de un puesto se propone con ficha completa en la bandeja y la aprueba el board.
+
+- **2026-11-12:** SOPs (12/11/2026): los procesos que cruzan puestos los escribe y mantiene el COO (quién hace el trabajo es del CHRO; cómo se hace, del COO). Los del servicio viven en playbook/03-process y se cambian vía learnings; los internos del OS en agentes/coo/procesos/ y valen cuando el board los aprueba.
