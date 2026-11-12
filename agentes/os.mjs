@@ -113,7 +113,7 @@ function estadoKR(d, k) {
   if (a >= 1) return "logrado";
   const ini = Date.parse(d.ciclo.inicio), fin = Date.parse(d.ciclo.fin);
   const t = fin > ini ? Math.max(0, Math.min(1, (Date.now() - ini) / (fin - ini))) : 1;
-  return a >= t - 0.15 ? "en línea" : "atrasado";
+  return a >= t - 0.05 ? "en línea" : a >= t - 0.15 ? "en riesgo" : "atrasado";
 }
 const hoy = () => new Intl.DateTimeFormat("en-CA", { timeZone: "America/Argentina/Buenos_Aires" }).format(new Date());
 const nuevoId = () => Math.random().toString(36).slice(2, 10);
