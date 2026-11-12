@@ -15,11 +15,13 @@ Traer evidencia para que el CPO decida a quién venderle y qué: benchmark de co
 
 ## Objetivo actual
 
-Sin objetivo activo. Antes de trabajar, preguntarle al board qué resultado se espera de este puesto.
+**Investigación de mercado: aporte al objetivo principal (lo define el CEO)**
 
-## KPIs (meta por mes)
+- Viene del objetivo del board: Que Yellow facture cumpliendo su misión: primer cliente pago antes del 31/12/2026
 
-- Segmentos evaluados con evidencia: 3
+## Key Results (Cierre 2026, hasta 2026-12-31)
+
+- Segmentos evaluados con evidencia: 0 → 3 por mes (actual 3; logrado)
 
 ## Presupuesto
 

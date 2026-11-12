@@ -19,9 +19,9 @@ Bajar las metas del board a un plan semanal, repartir las tareas entre los puest
 
 - Definition of Done: Contrato firmado y primer pago acreditado de un cliente nuevo de Yellow, con fecha anterior al 31/12/2026. Si no se cumple, el board revisa en enero el plan, la oferta y la estrategia del CEO.
 
-## KPIs (meta por mes)
+## Key Results (Cierre 2026, hasta 2026-12-31)
 
-- % de tareas abiertas que esperan al board: 40
+- % de tareas abiertas que esperan al board: 64 → 40 % (actual 36; logrado)
 
 ## Presupuesto
 

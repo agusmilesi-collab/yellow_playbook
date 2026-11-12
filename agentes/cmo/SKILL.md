@@ -20,10 +20,10 @@ Que lleguen personas que quieren hablar con Agustín sobre cómo entregan su ser
 - Definition of Done: El sitio público cuenta la oferta elegida en una frase, muestra un caso y tiene una acción clara para pedir una llamada; medido: visitas y pedidos de llamada por mes.
 - Viene del objetivo del board: Que Yellow facture cumpliendo su misión: primer cliente pago antes del 31/12/2026
 
-## KPIs (meta por mes)
+## Key Results (Cierre 2026, hasta 2026-12-31)
 
-- Contenidos publicados: sin meta todavía
-- Leads: sin meta todavía
+- Contenidos publicados: 0 → sin meta por mes (actual sin medir; sin meta)
+- Leads: 0 → sin meta por mes (actual sin medir; sin meta)
 
 ## Presupuesto
 

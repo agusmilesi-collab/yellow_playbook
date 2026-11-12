@@ -15,10 +15,10 @@ Definir qué se vende, a quién y a qué precio, y entregarle a Marketing y a Ve
 
 ## Objetivo actual
 
-**Oferta redefinida**
+**Que cualquier persona entienda en una frase qué hace Yellow**
 
 - Definition of Done: offer.md e icp.md reescritos, con una frase de una línea, aprobados por el board y probados con 3 personas que los repiten con sus palabras.
-- Viene del objetivo del board: Redefinir la oferta: que cualquier persona entienda en una frase qué hace Yellow.
+- Viene del objetivo del board: Que Yellow facture cumpliendo su misión: primer cliente pago antes del 31/12/2026
 
 ## Presupuesto
 

@@ -15,8 +15,10 @@
 //   node scripts/os.mjs latido <puesto> "<resumen>"   registra el latido y apaga el "trabajando"
 //   node scripts/os.mjs terminar <puesto>             apaga el "trabajando" sin registrar latido
 //   node scripts/os.mjs objetivo "<título>" [--dod "<texto>"] [--puesto <id>] [--padre <id>] [--primero]
-//   node scripts/os.mjs kpi <puesto> "<nombre>" <meta>      crea o actualiza un KPI (meta por mes)
-//   node scripts/os.mjs real <puesto> "<nombre>" <número>   carga el real del mes de un KPI
+//   node scripts/os.mjs kr <puesto> "<nombre>" <meta> [--base N] [--unidad "<u>"] [--objetivo <id>]   crea o actualiza un KR
+//   node scripts/os.mjs real <puesto> "<nombre del KR>" <número>   carga el valor actual de un KR
+//   node scripts/os.mjs iniciativa <puesto> "<nombre>" [--kr "<nombre del KR>"] [--objetivo <id>]
+//   node scripts/os.mjs tarea <puesto> "<nombre>" [claude|agustin] [--iniciativa <id>]
 //   node scripts/os.mjs reporte "<texto>"             reporte del CEO al board
 //   node scripts/os.mjs transito <traspasoId> agregar|sacar "<texto>"
 //
@@ -88,7 +90,7 @@ async function escribir(clave, valor) {
 
 async function leerOS() {
   const d = await leer(CLAVE);
-  if (!d || d.version !== 2) throw new Error(`El documento ${CLAVE} no existe o está en la versión vieja: abrí os.agustinmilesi.com una vez y se actualiza solo.`);
+  if (!d || d.version !== 3) throw new Error(`El documento ${CLAVE} no existe o está en la versión vieja: abrí os.agustinmilesi.com una vez y se actualiza solo.`);
   return d;
 }
 // Cada escritura sube la rev: si la pantalla estaba abierta, avisa en vez de pisar.
@@ -98,6 +100,16 @@ const ahora = () => {
   return `${p.year}-${p.month}-${p.day}T${p.hour === "24" ? "00" : p.hour}:${p.minute}`;
 };
 
+function estadoKR(d, k) {
+  if (k.meta === null) return "sin meta";
+  if (k.actual === null) return "sin medir";
+  const base = k.base ?? 0;
+  const a = k.meta === base ? (k.actual >= k.meta ? 1 : 0) : (k.actual - base) / (k.meta - base);
+  if (a >= 1) return "logrado";
+  const ini = Date.parse(d.ciclo.inicio), fin = Date.parse(d.ciclo.fin);
+  const t = fin > ini ? Math.max(0, Math.min(1, (Date.now() - ini) / (fin - ini))) : 1;
+  return a >= t - 0.15 ? "en línea" : "atrasado";
+}
 const hoy = () => new Intl.DateTimeFormat("en-CA", { timeZone: "America/Argentina/Buenos_Aires" }).format(new Date());
 const nuevoId = () => Math.random().toString(36).slice(2, 10);
 
@@ -170,9 +182,16 @@ function fichaSkill(d, p) {
     if (padre) l.push(`- Viene del objetivo del board: ${padre.titulo}`);
     l.push("");
   }
-  if (p.kpis.length) {
-    l.push("## KPIs (meta por mes)", "");
-    for (const k of p.kpis) l.push(`- ${k.nombre}: ${k.meta ?? "sin meta todavía"}`);
+  const krs = d.krs.filter((k) => objetivos.some((o) => o.id === k.objetivo));
+  if (krs.length) {
+    l.push(`## Key Results (${d.ciclo.nombre}, hasta ${d.ciclo.fin})`, "");
+    for (const k of krs) l.push(`- ${k.nombre}: ${k.base ?? 0} → ${k.meta ?? "sin meta"} ${k.unidad} (actual ${k.actual ?? "sin medir"}; ${estadoKR(d, k)})`);
+    l.push("");
+  }
+  const inis = d.iniciativas.filter((i) => objetivos.some((o) => o.id === i.objetivo) && i.estado === "activa");
+  if (inis.length) {
+    l.push("## Iniciativas activas", "");
+    for (const i of inis) l.push(`- ${i.nombre}${i.kr ? ` (mueve: ${d.krs.find((k) => k.id === i.kr)?.nombre ?? "-"})` : ""}`);
     l.push("");
   }
   l.push("## Presupuesto", "", `${p.presupuesto.latidosMes ?? "Sin tope de"} latidos por mes${p.presupuesto.usdMes ? ` y USD ${p.presupuesto.usdMes} por mes` : ""}. Si se agotan, se le pide autorización al board antes de seguir.`, "");
@@ -238,10 +257,13 @@ if (cmd === "sync") {
   const mes = ahora().slice(0, 7);
   const lat = (p) => d.latidos.filter((l) => l.puesto === p && l.fecha.startsWith(mes)).length;
   if (!pid) {
-    console.log(`Empresa: ${EMPRESA}\nMisión: ${d.mision}\nObjetivos del board:`);
+    console.log(`Empresa: ${EMPRESA}\nMisión: ${d.mision}\nCiclo: ${d.ciclo.nombre} (${d.ciclo.inicio} a ${d.ciclo.fin})\nObjetivos del board y de los Chiefs:`);
     for (const o of d.objetivos.filter((x) => !x.padre)) {
       console.log(`- [${o.estado}] ${o.titulo}`);
-      for (const h of d.objetivos.filter((x) => x.padre === o.id)) console.log(`    · ${h.puesto ?? "sin puesto"}: [${h.estado}] ${h.titulo}`);
+      for (const h of d.objetivos.filter((x) => x.padre === o.id)) {
+        console.log(`    · ${h.puesto ?? "sin puesto"}: [${h.estado}] ${h.titulo}`);
+        for (const k of d.krs.filter((x) => x.objetivo === h.id)) console.log(`        KR ${k.nombre}: ${k.actual ?? "-"} / ${k.meta ?? "-"} ${k.unidad} (${estadoKR(d, k)})`);
+      }
     }
     console.log("\nPuestos:");
     for (const p of d.puestos) {
@@ -260,6 +282,8 @@ if (cmd === "sync") {
       ...p,
       latidosEsteMes: lat(pid),
       objetivos,
+      krs: d.krs.filter((k) => objetivos.some((o) => o.id === k.objetivo)).map((k) => ({ ...k, estado: estadoKR(d, k) })),
+      iniciativas: d.iniciativas.filter((i) => objetivos.some((o) => o.id === i.objetivo)),
       tareas: d.tareas.filter((t) => t.puesto === pid && t.estado !== "hecha"),
       traspasos: d.traspasos.filter((x) => x.de === pid || x.a === pid),
       repo: REPO,
@@ -270,11 +294,15 @@ if (cmd === "sync") {
     if (p.presupuesto.latidosMes && lat(pid) >= p.presupuesto.latidosMes) console.log(`\nAVISO: ${p.sigla} ya usó sus ${p.presupuesto.latidosMes} latidos del mes. Pedirle al board que lo autorice antes de trabajar.`);
   }
 } else if (cmd === "tarea") {
+  const iIni = args.indexOf("--iniciativa");
+  const iniciativa = iIni >= 0 ? args.splice(iIni, 2)[1] : null;
   const [puesto, nombre, ejecuta = "claude"] = args;
   const d = await leerOS();
   if (!d.puestos.some((p) => p.id === puesto) || !nombre) throw new Error("Uso: tarea <puesto> \"<nombre>\" [claude|agustin]");
-  const objetivo = d.objetivos.find((o) => o.puesto === puesto && o.estado === "activo")?.id ?? null;
-  const t = { id: nuevoId(), puesto, objetivo, nombre, ejecuta: ejecuta === "agustin" ? "agustin" : "claude", estado: "pendiente", fecha: null, resultado: "", archivo: "", devolucion: "" };
+  const ini = iniciativa ? d.iniciativas.find((i) => i.id === iniciativa) : null;
+  if (iniciativa && !ini) throw new Error(`No hay iniciativa "${iniciativa}".`);
+  const objetivo = ini?.objetivo ?? d.objetivos.find((o) => o.puesto === puesto && o.estado === "activo")?.id ?? null;
+  const t = { id: nuevoId(), puesto, objetivo, iniciativa: ini?.id ?? null, nombre, ejecuta: ejecuta === "agustin" ? "agustin" : "claude", estado: "pendiente", fecha: null, resultado: "", archivo: "", devolucion: "" };
   d.tareas.push(t);
   await guardarOS(d);
   console.log(`Tarea ${t.id} creada en ${puesto}.`);
@@ -323,19 +351,43 @@ if (cmd === "sync") {
   d.objetivos = primero ? [o, ...d.objetivos] : [...d.objetivos, o];
   await guardarOS(d);
   console.log(`Objetivo ${o.id} creado.`);
-} else if (cmd === "kpi" || cmd === "real") {
+} else if (cmd === "kr" || cmd === "kpi" || cmd === "real" || cmd === "iniciativa") {
+  const flag = (n) => { const i = args.indexOf(`--${n}`); return i >= 0 ? args.splice(i, 2)[1] : null; };
+  const base = flag("base"), unidad = flag("unidad"), objetivoId = flag("objetivo"), krNombre = flag("kr");
   const [puesto, nombre, valor] = args;
-  const n = Number(valor);
   const d = await leerOS();
   const p = d.puestos.find((x) => x.id === puesto);
-  if (!p || !nombre || !Number.isFinite(n) || n < 0) throw new Error(`Uso: ${cmd} <puesto> "<nombre>" <número>`);
-  let k = p.kpis.find((x) => x.nombre.toLowerCase() === nombre.toLowerCase());
-  if (!k && cmd === "real") throw new Error(`${p.sigla} no tiene el KPI "${nombre}". KPIs: ${p.kpis.map((x) => x.nombre).join(", ") || "ninguno"}`);
-  if (!k) p.kpis.push((k = { id: nuevoId(), nombre, meta: null, reales: {} }));
-  if (cmd === "kpi") k.meta = n > 0 ? n : null;
-  else k.reales[ahora().slice(0, 7)] = n;
-  await guardarOS(d);
-  console.log(`${p.sigla} · ${k.nombre}: ${cmd === "kpi" ? `meta ${k.meta ?? "sin meta"}` : `real ${n} este mes`}.`);
+  if (!p || !nombre) throw new Error(`Uso: ${cmd} <puesto> "<nombre>" ${cmd === "iniciativa" ? '[--kr "<KR>"]' : "<número>"}`);
+  const objs = d.objetivos.filter((o) => o.puesto === p.id && o.estado === "activo");
+  const obj = objetivoId ? d.objetivos.find((o) => o.id === objetivoId) : objs[0];
+  const krsPuesto = d.krs.filter((k) => objs.some((o) => o.id === k.objetivo) || k.responsable === p.id);
+  const buscarKr = (n) => krsPuesto.find((k) => k.nombre.toLowerCase() === n.toLowerCase());
+  if (cmd === "iniciativa") {
+    if (!obj) throw new Error(`${p.sigla} no tiene objetivo activo: crearlo primero con objetivo ... --puesto ${p.id}`);
+    const kr = krNombre ? buscarKr(krNombre) : null;
+    if (krNombre && !kr) throw new Error(`${p.sigla} no tiene el KR "${krNombre}".`);
+    const i = { id: nuevoId(), objetivo: obj.id, kr: kr?.id ?? null, nombre, responsable: p.id, estado: "activa" };
+    d.iniciativas.push(i);
+    await guardarOS(d);
+    console.log(`Iniciativa ${i.id} creada en ${p.sigla}.`);
+  } else {
+    const n = Number(valor);
+    if (!Number.isFinite(n)) throw new Error(`Uso: ${cmd} <puesto> "<nombre>" <número>`);
+    let k = buscarKr(nombre);
+    if (cmd === "real") {
+      if (!k) throw new Error(`${p.sigla} no tiene el KR "${nombre}". KRs: ${krsPuesto.map((x) => x.nombre).join(", ") || "ninguno"}`);
+      k.actual = n;
+      k.historial = [...k.historial, { fecha: ahora().slice(0, 10), valor: n }].slice(-60);
+    } else {
+      if (!obj) throw new Error(`${p.sigla} no tiene objetivo activo: crearlo primero con objetivo ... --puesto ${p.id}`);
+      if (!k) d.krs.push((k = { id: nuevoId(), objetivo: obj.id, nombre, unidad: "", base: null, meta: null, actual: null, responsable: p.id, historial: [] }));
+      k.meta = n;
+      if (base !== null) k.base = Number(base);
+      if (unidad !== null) k.unidad = unidad;
+    }
+    await guardarOS(d);
+    console.log(`${p.sigla} · ${k.nombre}: ${k.base ?? 0} → ${k.meta ?? "-"} ${k.unidad} (actual ${k.actual ?? "sin medir"}; ${estadoKR(d, k)}).`);
+  }
 } else if (cmd === "reporte") {
   const d = await leerOS();
   d.reporte = { fecha: hoy(), texto: args[0] ?? "" };
@@ -351,5 +403,5 @@ if (cmd === "sync") {
   await guardarOS(d);
   console.log(`Traspaso ${xid}: ${x.enTransito.length} en tránsito.`);
 } else {
-  console.log(readFileSync(fileURLToPath(import.meta.url), "utf8").split("\n").slice(1, 23).join("\n"));
+  console.log(readFileSync(fileURLToPath(import.meta.url), "utf8").split("\n").slice(1, 25).join("\n"));
 }

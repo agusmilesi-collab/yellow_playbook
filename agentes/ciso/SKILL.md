@@ -18,10 +18,11 @@ Auditar y mejorar la seguridad de todo lo que se construye y se opera: el OS, lo
 **Línea de base de seguridad**
 
 - Definition of Done: Checklist de agentes/ciso/seguridad.md recorrida sobre el OS y el knowledge base de Yellow, con cada hallazgo como tarea con dueño, y los críticos resueltos antes del primer cliente.
+- Viene del objetivo del board: Que Yellow facture cumpliendo su misión: primer cliente pago antes del 31/12/2026
 
-## KPIs (meta por mes)
+## Key Results (Cierre 2026, hasta 2026-12-31)
 
-- Hallazgos abiertos: sin meta todavía
+- Hallazgos abiertos: 0 → sin meta por mes (actual sin medir; sin meta)
 
 ## Presupuesto
 

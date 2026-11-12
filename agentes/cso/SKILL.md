@@ -15,12 +15,14 @@ Convertir conversaciones en clientes: preparar cada llamada, estructurar lo que 
 
 ## Objetivo actual
 
-Sin objetivo activo. Antes de trabajar, preguntarle al board qué resultado se espera de este puesto.
+**Conseguir conversaciones con posibles clientes que terminen en propuesta**
 
-## KPIs (meta por mes)
+- Viene del objetivo del board: Que Yellow facture cumpliendo su misión: primer cliente pago antes del 31/12/2026
 
-- Llamadas: sin meta todavía
-- Clientes nuevos: sin meta todavía
+## Key Results (Cierre 2026, hasta 2026-12-31)
+
+- Llamadas: 0 → sin meta por mes (actual sin medir; sin meta)
+- Clientes nuevos: 0 → sin meta por mes (actual sin medir; sin meta)
 
 ## Presupuesto
 
