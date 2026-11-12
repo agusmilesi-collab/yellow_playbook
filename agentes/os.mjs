@@ -23,13 +23,19 @@ import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import { homedir } from "node:os";
 
-// En la nube la salida a internet pasa por un proxy (HTTPS_PROXY). El fetch de
-// Node lo ignora salvo con NODE_USE_ENV_PROXY=1: si hay proxy y falta esa
-// variable, el script se vuelve a lanzar a sí mismo con ella.
-if ((process.env.HTTPS_PROXY || process.env.https_proxy) && process.env.NODE_USE_ENV_PROXY !== "1") {
-  const { spawnSync } = await import("node:child_process");
-  const r = spawnSync(process.execPath, process.argv.slice(1), { stdio: "inherit", env: { ...process.env, NODE_USE_ENV_PROXY: "1" } });
-  process.exit(r.status ?? 1);
+// En la nube la salida a internet pasa por un proxy (HTTPS_PROXY) con su propio
+// certificado. El fetch de Node ignora el proxy salvo con NODE_USE_ENV_PROXY=1, y
+// rechaza el certificado salvo con NODE_EXTRA_CA_CERTS. Si falta alguna de las
+// dos, el script se vuelve a lanzar a sí mismo con ellas.
+if (process.env.HTTPS_PROXY || process.env.https_proxy) {
+  const { existsSync: existe } = await import("node:fs");
+  const ca = [process.env.NODE_EXTRA_CA_CERTS, process.env.SSL_CERT_FILE, "/root/.ccr/ca-bundle.crt"].find((f) => f && existe(f));
+  if (process.env.NODE_USE_ENV_PROXY !== "1" || (ca && process.env.NODE_EXTRA_CA_CERTS !== ca)) {
+    const { spawnSync } = await import("node:child_process");
+    const env = { ...process.env, NODE_USE_ENV_PROXY: "1", ...(ca ? { NODE_EXTRA_CA_CERTS: ca } : {}) };
+    const r = spawnSync(process.execPath, process.argv.slice(1), { stdio: "inherit", env });
+    process.exit(r.status ?? 1);
+  }
 }
 
 const raiz = join(dirname(fileURLToPath(import.meta.url)), "..");
