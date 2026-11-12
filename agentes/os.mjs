@@ -12,6 +12,9 @@
 //   node scripts/os.mjs estado <tareaId> pendiente|hecha
 //   node scripts/os.mjs borrar <tareaId>
 //   node scripts/os.mjs latido <puesto> "<resumen>"   registra el latido (cuenta contra el presupuesto)
+//   node scripts/os.mjs objetivo "<título>" [--dod "<texto>"] [--puesto <id>] [--padre <id>] [--primero]
+//   node scripts/os.mjs kpi <puesto> "<nombre>" <meta>      crea o actualiza un KPI (meta por mes)
+//   node scripts/os.mjs real <puesto> "<nombre>" <número>   carga el real del mes de un KPI
 //   node scripts/os.mjs reporte "<texto>"             reporte del CEO al board
 //   node scripts/os.mjs transito <traspasoId> agregar|sacar "<texto>"
 //
@@ -297,6 +300,31 @@ if (cmd === "sync") {
   d.latidos = [...d.latidos, { id: nuevoId(), fecha: ahora(), puesto, resumen }].slice(-400);
   await guardarOS(d);
   console.log(`Latido de ${puesto} registrado.`);
+} else if (cmd === "objetivo") {
+  const flag = (n) => { const i = args.indexOf(`--${n}`); return i >= 0 ? args.splice(i, n === "primero" ? 1 : 2)[1] ?? true : null; };
+  const dod = flag("dod"), puesto = flag("puesto"), padre = flag("padre"), primero = flag("primero");
+  const [titulo] = args;
+  if (!titulo) throw new Error('Uso: objetivo "<título>" [--dod "<texto>"] [--puesto <id>] [--padre <id>] [--primero]');
+  const d = await leerOS();
+  if (puesto && !d.puestos.some((p) => p.id === puesto)) throw new Error(`No hay puesto "${puesto}".`);
+  if (padre && !d.objetivos.some((o) => o.id === padre)) throw new Error(`No hay objetivo "${padre}".`);
+  const o = { id: nuevoId(), titulo, dod: typeof dod === "string" ? dod : "", padre: padre ?? null, puesto: puesto ?? null, estado: "activo" };
+  d.objetivos = primero ? [o, ...d.objetivos] : [...d.objetivos, o];
+  await guardarOS(d);
+  console.log(`Objetivo ${o.id} creado.`);
+} else if (cmd === "kpi" || cmd === "real") {
+  const [puesto, nombre, valor] = args;
+  const n = Number(valor);
+  const d = await leerOS();
+  const p = d.puestos.find((x) => x.id === puesto);
+  if (!p || !nombre || !Number.isFinite(n) || n < 0) throw new Error(`Uso: ${cmd} <puesto> "<nombre>" <número>`);
+  let k = p.kpis.find((x) => x.nombre.toLowerCase() === nombre.toLowerCase());
+  if (!k && cmd === "real") throw new Error(`${p.sigla} no tiene el KPI "${nombre}". KPIs: ${p.kpis.map((x) => x.nombre).join(", ") || "ninguno"}`);
+  if (!k) p.kpis.push((k = { id: nuevoId(), nombre, meta: null, reales: {} }));
+  if (cmd === "kpi") k.meta = n > 0 ? n : null;
+  else k.reales[ahora().slice(0, 7)] = n;
+  await guardarOS(d);
+  console.log(`${p.sigla} · ${k.nombre}: ${cmd === "kpi" ? `meta ${k.meta ?? "sin meta"}` : `real ${n} este mes`}.`);
 } else if (cmd === "reporte") {
   const d = await leerOS();
   d.reporte = { fecha: hoy(), texto: args[0] ?? "" };
@@ -312,5 +340,5 @@ if (cmd === "sync") {
   await guardarOS(d);
   console.log(`Traspaso ${xid}: ${x.enTransito.length} en tránsito.`);
 } else {
-  console.log(readFileSync(fileURLToPath(import.meta.url), "utf8").split("\n").slice(1, 18).join("\n"));
+  console.log(readFileSync(fileURLToPath(import.meta.url), "utf8").split("\n").slice(1, 21).join("\n"));
 }

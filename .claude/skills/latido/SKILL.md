@@ -23,15 +23,18 @@ Todo se maneja con `node agentes/os.mjs`, corrido desde la raíz de este repo (e
 
 ## Latido del CEO
 
-1. `node agentes/os.mjs sync` (foto del repo y fichas de los puestos) y `node agentes/os.mjs ver`. Leer `agentes/decisiones.md` y `agentes/ceo/MEMORIA.md`.
-2. Comparar las metas del board con el estado de cada puesto: qué foco avanza, qué está trabado, qué traspaso tiene cosas esperando, cuántas tareas dependen de Agustín como persona.
-3. Crear las tareas que falten para mover los focos (`tarea <puesto> "<nombre>" claude|agustin`). Cada tarea es física y verificable, y un puesto tiene como máximo 5 pendientes.
-4. `node agentes/os.mjs reporte "<texto>"` y `node agentes/os.mjs latido ceo "<resumen>"`. El reporte tiene máximo 10 líneas, con tres bloques (Avanzó / Trabado / Decisiones del board). Cada decisión trae una recomendación.
-5. Si Agustín lo pide ("latido completo"), después del reporte correr el latido de cada puesto que tenga tareas de Claude.
+El CEO gerencia la empresa hacia el objetivo principal del board (hoy: primer cliente pago de Yellow antes del 31/12/2026). Responde por ese resultado.
+
+1. `node agentes/os.mjs sync` y `node agentes/os.mjs ver`. Leer `agentes/decisiones.md`, `agentes/ceo/MEMORIA.md` y el último reporte.
+2. **Cadena hacia el objetivo:** escribir (o revisar, si ya existe) la cadena que lleva al objetivo principal, del resultado hacia atrás: clientes ← propuestas ← llamadas ← leads ← contenidos, y oferta lista como condición previa. Cada eslabón tiene un puesto responsable.
+3. **KPIs de todos los puestos:** cada puesto tiene al menos un KPI con meta mensual que mueve un eslabón de esa cadena (`node agentes/os.mjs kpi <puesto> "<nombre>" <meta>`). Las metas salen de la cadena y de la fecha del objetivo; anotar el cálculo en `agentes/ceo/MEMORIA.md`. Cargar los reales que se conozcan (`node agentes/os.mjs real <puesto> "<nombre>" <número>`).
+4. **Plan de la semana:** comparar cada KPI con su meta y crear las tareas que muevan el eslabón más flojo (`tarea <puesto> "<nombre>" claude|agustin`). Cada tarea es física y verificable, y un puesto tiene como máximo 5 pendientes. Las llamadas, reuniones y cierres son tareas de Agustín: el CEO las prepara, las agenda como tareas y las persigue.
+5. `node agentes/os.mjs reporte "<texto>"` y `node agentes/os.mjs latido ceo "<resumen>"`. El reporte tiene máximo 10 líneas, con cuatro bloques: Cómo vamos hacia el objetivo (semanas que quedan y eslabón más flojo) / Avanzó / Trabado / Decisiones del board. Cada decisión trae una recomendación.
+6. Si Agustín lo pide ("latido completo"), después del reporte correr el latido de cada puesto que tenga tareas de Claude.
 
 ## Decisiones del board
 
-Cuando Agustín decide algo (aprueba una opción, elige una frase, cambia una prioridad), anotarlo: `node agentes/os.mjs decision "<qué se decidió y qué cambia>"`. Si cambia la misión, un objetivo o un puesto, editarlo también en el OS y correr `node agentes/os.mjs exportar`.
+Cuando Agustín fija un objetivo nuevo, cargarlo con `node agentes/os.mjs objetivo "<título>" --dod "<cómo se verifica>" [--puesto <id>] [--padre <id>]`. Cuando decide algo (aprueba una opción, elige una frase, cambia una prioridad), anotarlo: `node agentes/os.mjs decision "<qué se decidió y qué cambia>"`. Si cambia la misión, un objetivo o un puesto, editarlo también en el OS y correr `node agentes/os.mjs exportar`.
 
 ## Reglas
 

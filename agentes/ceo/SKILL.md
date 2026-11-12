@@ -15,7 +15,9 @@ Bajar las metas del board a un plan semanal, repartir las tareas entre los puest
 
 ## Objetivo actual
 
-Sin objetivo activo. Antes de trabajar, preguntarle al board qué resultado se espera de este puesto.
+**Que Yellow facture cumpliendo su misión: primer cliente pago antes del 31/12/2026**
+
+- Definition of Done: Contrato firmado y primer pago acreditado de un cliente nuevo de Yellow, con fecha anterior al 31/12/2026. Si no se cumple, el board revisa en enero el plan, la oferta y la estrategia del CEO.
 
 ## Presupuesto
 
