@@ -18,7 +18,7 @@ Cada paso cuesta: en cada uno se reenvía todo lo leído. Juntar comandos en un 
 1. `node agentes/os.mjs empezar <puesto> <tareaId> && node agentes/os.mjs ver <puesto>`. Nunca prender el latido sin una tarea En curso. `ver` trae el DPT (misión, límites, modelo), OKRs, tareas con su detalle y Listo cuando, entregas para revisar, traspasos, la ficha, la memoria del puesto y las decisiones del board: no hace falta leer esos archivos aparte. Si avisa que agotó los latidos del mes, pedir autorización al board. Si `empezar` frena por presupuesto de IA agotado, no trabajar: avisarle al board y terminar. Solo con autorización del board se usa `--autorizado`. Si el latido se corta, `terminar <puesto>`.
 2. **OKRs:** el puesto traduce el objetivo de la empresa en su objetivo, 2 a 4 KRs (línea de base → meta) e iniciativas. Si falta algo, crearlo (`kr <puesto> "<nombre>" <meta> --base N --unidad "<u>"`, `iniciativa <puesto> "<nombre>" --kr "<KR>"`) y avisar en el cierre. Cargar los KRs medibles con `real <puesto> "<KR>" <número>`.
 3. **Primero, las entregas del equipo** (`paraRevisar`): contra su Listo cuando, `aprobar <id>`, `devolver <id> "<qué cambiar>"` o `escalar <id>` si necesita al board.
-4. **Tareas con `ejecuta: claude`** (pendiente, curso o devuelta; la devuelta trae `devolucion` y va primero). Una por vez: `estado <id> curso`, hacerla, entregar.
+4. **Tareas con `ejecuta: claude`** (pendiente, curso o devuelta; la devuelta trae `devolucion` y va primero). Una por vez: `estado <id> curso`, hacerla, entregar. Si al corregir una devuelta cambió qué se entrega, actualizar antes el nombre y el Listo cuando (`tarea-editar <codigo> "<nombre>" --dod "<...>"`): el board lee el título en la Bandeja.
 5. El resultado es un archivo en este repo (`agentes/<puesto>/`, `cases/<slug>/` o `learnings/`, nunca `playbook/`). Después `entregar <id> "<resumen en 2-4 líneas>" "<ruta>"`; lo revisa el jefe. Agregar `--board` solo si necesita una decisión del board (opciones, cambio de puesto, oferta o precio, gastar plata, tocar claves), con la opción recomendada en el resumen.
 6. Respetar los `limites`: nada se publica, envía, factura ni cobra.
 7. Lo que el puesto siguiente tiene que recibir: `transito <traspasoId> agregar "<qué>"`.
@@ -32,7 +32,7 @@ Si una tarea no pasa las cuatro, es una iniciativa y se parte. La parte el Chief
 1. Un solo entregable (si el nombre une dos cosas con "y", son dos).
 2. Primer paso obvio.
 3. Entra en un latido.
-4. `--dod "<qué archivo se entrega y cuándo está terminado>"` (obligatorio). Nombre de hasta 150 caracteres; las instrucciones van en `--detalle`. Siempre `--iniciativa <id>`.
+4. `--dod "<qué archivo se entrega y cuándo está terminado>"` (obligatorio). El nombre dice el resultado de la tarea ("Dejar listo el cobro del primer cliente"), no los datos del contenido (montos, opciones, cantidades), que pueden cambiar. Nombre de hasta 150 caracteres; las instrucciones van en `--detalle`. Siempre `--iniciativa <id>`.
 
 Una tarea es de Agustín solo si la tiene que hacer una persona (decidir, llamar, reunirse, firmar, tocar claves).
 

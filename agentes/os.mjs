@@ -430,11 +430,13 @@ if (cmd === "sync") {
   const d = await leerOS();
   const t = tareaPor(d, tid);
   if (!t) throw new Error(`No hay tarea "${tid}".`);
+  const eraDevuelta = cmd === "entregar" && (t.estado === "devuelta" || !!t.devolucion);
   if (cmd === "entregar") Object.assign(t, { estado: "revisar", resultado: valor ?? "", archivo, devolucion: "", decide: alBoard, entregada: new Date().toISOString() });
   else if (["pendiente", "curso", "devuelta", "hecha"].includes(valor)) t.estado = valor;
   else throw new Error("Estado: pendiente, curso, devuelta o hecha (para revisar se usa entregar).");
   await guardarOS(d);
   console.log(`Tarea ${tid}: ${t.estado}.`);
+  if (eraDevuelta) console.log(`AVISO: era una devolución. Nombre: "${t.nombre}". Listo cuando: "${t.dod}". Si la corrección cambió qué se entrega, actualizalos: tarea-editar ${t.codigo} "<nombre nuevo>" --dod "<listo cuando nuevo>".`);
 } else if (cmd === "aprobar" || cmd === "devolver" || cmd === "escalar") {
   const [tid, motivo] = args;
   const d = await leerOS();
