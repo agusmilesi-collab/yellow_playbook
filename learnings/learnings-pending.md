@@ -165,3 +165,11 @@ Hallazgos de la auditoría T04, aplicados en la sesión de consolidación del 20
 **Implicancia para el playbook:** `finance.md`: completar situación impositiva cuando el board conteste `agentes/cfo/como-facturar.md`; actualizar costos del negocio con los montos que conteste el board (`agentes/cfo/informes/2026-11-estado-de-resultados.md`, sección 5); agregar "horas por caso" a la planilla de tracking y la definición de margen que apruebe el board (`agentes/cfo/margen-lisandro.md`, sección 4). `contracts.md`: evaluar sumar la cláusula de atrasos de `agentes/cfo/contrato-modelo.md` si el board aprueba el modelo.
 
 **Status:** pendiente (espera respuestas del board)
+
+### LRN-024 | 2026-11-13 | caso:Lisandro | tipo:corrección
+
+**Descripción:** corrección del board en la devolución de s8900o0h (margen de Lisandro). Lisandro pagó solo el primer tramo porque nunca terminó el onboarding: dijo que iba a volver a contactar y no lo hizo. Agustín le imputó unas 40 horas (5 días de 8 horas). Aprendizaje del board: cobrar antes de entregar, o no entregar por partes sin el pago de esa parte. Para el primer cliente nuevo el board fijó ARS 500.000 en dos pagos de ARS 250.000, uno antes de empezar y otro antes de la entrega o de la reunión de onboarding (decisión del 13/11/2026).
+
+**Implicancia para el playbook:** `playbook/06-operations/contracts.md` y `finance.md`: el segundo pago se cobra antes de la entrega o del onboarding, no después; ninguna etapa se entrega sin su pago acreditado. `playbook/03-process/00-pipeline.md`: el DoD de cierre y de cada entrega suma "pago de la etapa acreditado". Revisar también el contrato modelo del CFO (`agentes/cfo/contrato-modelo.md`).
+
+**Status:** pendiente de consolidación
