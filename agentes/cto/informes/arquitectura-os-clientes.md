@@ -1,6 +1,9 @@
 # Dónde vive el OS de cada cliente: costos y factibilidad
 
-**Puesto:** CTO · **Tarea:** 8di2zbqh · **Fecha:** 2026-11-13 · **Para:** board (decisión)
+- **Puesto:** CTO
+- **Tarea:** 8di2zbqh
+- **Fecha:** 2026-11-13
+- **Para:** board (decisión)
 
 Referencias: ✅ verificado en la página oficial hoy · 🔵 inferencia o estimación del CTO · ❓ falta el dato.
 
@@ -12,21 +15,83 @@ La infraestructura actual de Yellow no se pudo ver: `node agentes/os.mjs infra` 
 
 ## 1. Precios con fuente (consultados el 2026-11-13)
 
-| Servicio | Plan | Precio | Qué incluye (lo que importa acá) | Fuente |
-|---|---|---|---|---|
-| Vercel | Hobby | USD 0 | 1 desarrollador, 200 proyectos, 50 dominios por proyecto, 100 GB de transferencia, 1 M de invocaciones. **Solo uso personal o no comercial.** No se puede comprar uso extra. | ✅ vercel.com/pricing, vercel.com/docs/plans/hobby, vercel.com/legal/terms (sección 4) |
-| Vercel | Pro | USD 20/mes por asiento de desarrollador | USD 20 de crédito de uso incluido, 1 TB de transferencia, proyectos y dominios ilimitados, asientos de lectura gratis, roles por miembro, límite de gasto | ✅ vercel.com/pricing, vercel.com/docs/plans/hobby |
-| Supabase | Free | USD 0 | 2 proyectos activos en total (suma todas las organizaciones donde uno es dueño o admin), 500 MB de base, se pausa tras 1 semana sin actividad, **sin copias de seguridad** | ✅ supabase.com/pricing, supabase.com/docs/guides/platform/billing-on-supabase |
-| Supabase | Pro | desde USD 25/mes por organización | USD 10/mes de crédito de cómputo (cubre 1 proyecto Micro), 8 GB por proyecto, 100.000 usuarios activos, copia diaria guardada 7 días, nunca se pausa | ✅ supabase.com/pricing |
-| Supabase | Cómputo por proyecto extra | Micro ~USD 10/mes (USD 0,01344/h); Small ~USD 15/mes | Cada proyecto extra es un servidor propio y paga su cómputo completo. Ejemplo oficial: 2 proyectos Micro en Pro = USD 35/mes | ✅ supabase.com/docs/guides/platform/compute-and-disk, supabase.com/pricing |
-| Resend | Free | USD 0 | 3.000 correos/mes, 100 por día, 3 dominios | ✅ resend.com/pricing |
-| Resend | Pro | USD 20/mes (50.000 correos) o USD 35/mes (100.000) | Sin límite diario, 10 dominios | ✅ resend.com/pricing |
-| Dominio .com | Vercel | USD 12,03/año (alta, renovación y traspaso iguales) | Privacidad del WHOIS incluida. El Pro pago regala el primer año de un dominio en algunas terminaciones | ✅ vercel.com/domains/pricing (resultado de búsqueda sobre la página oficial; la página no abrió desde la sesión) |
-| Dominio .com | Cloudflare | USD 11,17/año (alta y renovación) | Precio de costo, sin recargo | ✅ cloudflare.com/products/registrar (modelo de costo); 🔵 el monto sale de pricing.registrar.cloudflare.com vía búsqueda, la página devolvió 403 |
-| Dominio .com.ar | NIC Argentina | ARS 8.500/año (alta, renovación y traspaso) | Pide CUIT o CUIL y clave fiscal nivel 2 o más | 🔵 nic.ar/es/nic-argentina/normativavigente vía búsqueda; nic.ar no respondió desde la sesión (conexión cortada), y la tabla no muestra fecha. Confirmar antes de cotizar |
-| Claude API | Sonnet 5.5 | USD 2 entrada / USD 10 salida por millón de tokens; lectura de caché USD 0,10 | Términos comerciales | ✅ platform.claude.com/docs/en/about-claude/pricing |
-| Claude API | Haiku 5.5 | USD 0,10 entrada / USD 0,50 salida por millón (prompts de hasta 100.000 tokens) | Términos comerciales | ✅ misma |
-| Claude API | Opus 5.5 | USD 4 entrada / USD 20 salida por millón | Términos comerciales | ✅ misma |
+**Vercel, Hobby**
+
+- **Precio:** USD 0
+- **Qué incluye (lo que importa acá):** 1 desarrollador, 200 proyectos, 50 dominios por proyecto, 100 GB de transferencia, 1 M de invocaciones. **Solo uso personal o no comercial.** No se puede comprar uso extra.
+- **Fuente:** ✅ vercel.com/pricing, vercel.com/docs/plans/hobby, vercel.com/legal/terms (sección 4)
+
+**Vercel, Pro**
+
+- **Precio:** USD 20/mes por asiento de desarrollador
+- **Qué incluye (lo que importa acá):** USD 20 de crédito de uso incluido, 1 TB de transferencia, proyectos y dominios ilimitados, asientos de lectura gratis, roles por miembro, límite de gasto
+- **Fuente:** ✅ vercel.com/pricing, vercel.com/docs/plans/hobby
+
+**Supabase, Free**
+
+- **Precio:** USD 0
+- **Qué incluye (lo que importa acá):** 2 proyectos activos en total (suma todas las organizaciones donde uno es dueño o admin), 500 MB de base, se pausa tras 1 semana sin actividad, **sin copias de seguridad**
+- **Fuente:** ✅ supabase.com/pricing, supabase.com/docs/guides/platform/billing-on-supabase
+
+**Supabase, Pro**
+
+- **Precio:** desde USD 25/mes por organización
+- **Qué incluye (lo que importa acá):** USD 10/mes de crédito de cómputo (cubre 1 proyecto Micro), 8 GB por proyecto, 100.000 usuarios activos, copia diaria guardada 7 días, nunca se pausa
+- **Fuente:** ✅ supabase.com/pricing
+
+**Supabase, Cómputo por proyecto extra**
+
+- **Precio:** Micro ~USD 10/mes (USD 0,01344/h); Small ~USD 15/mes
+- **Qué incluye (lo que importa acá):** Cada proyecto extra es un servidor propio y paga su cómputo completo. Ejemplo oficial: 2 proyectos Micro en Pro = USD 35/mes
+- **Fuente:** ✅ supabase.com/docs/guides/platform/compute-and-disk, supabase.com/pricing
+
+**Resend, Free**
+
+- **Precio:** USD 0
+- **Qué incluye (lo que importa acá):** 3.000 correos/mes, 100 por día, 3 dominios
+- **Fuente:** ✅ resend.com/pricing
+
+**Resend, Pro**
+
+- **Precio:** USD 20/mes (50.000 correos) o USD 35/mes (100.000)
+- **Qué incluye (lo que importa acá):** Sin límite diario, 10 dominios
+- **Fuente:** ✅ resend.com/pricing
+
+**Dominio .com, Vercel**
+
+- **Precio:** USD 12,03/año (alta, renovación y traspaso iguales)
+- **Qué incluye (lo que importa acá):** Privacidad del WHOIS incluida. El Pro pago regala el primer año de un dominio en algunas terminaciones
+- **Fuente:** ✅ vercel.com/domains/pricing (resultado de búsqueda sobre la página oficial; la página no abrió desde la sesión)
+
+**Dominio .com, Cloudflare**
+
+- **Precio:** USD 11,17/año (alta y renovación)
+- **Qué incluye (lo que importa acá):** Precio de costo, sin recargo
+- **Fuente:** ✅ cloudflare.com/products/registrar (modelo de costo); 🔵 el monto sale de pricing.registrar.cloudflare.com vía búsqueda, la página devolvió 403
+
+**Dominio .com.ar, NIC Argentina**
+
+- **Precio:** ARS 8.500/año (alta, renovación y traspaso)
+- **Qué incluye (lo que importa acá):** Pide CUIT o CUIL y clave fiscal nivel 2 o más
+- **Fuente:** 🔵 nic.ar/es/nic-argentina/normativavigente vía búsqueda; nic.ar no respondió desde la sesión (conexión cortada), y la tabla no muestra fecha. Confirmar antes de cotizar
+
+**Claude API, Sonnet 5.5**
+
+- **Precio:** USD 2 entrada / USD 10 salida por millón de tokens; lectura de caché USD 0,10
+- **Qué incluye (lo que importa acá):** Términos comerciales
+- **Fuente:** ✅ platform.claude.com/docs/en/about-claude/pricing
+
+**Claude API, Haiku 5.5**
+
+- **Precio:** USD 0,10 entrada / USD 0,50 salida por millón (prompts de hasta 100.000 tokens)
+- **Qué incluye (lo que importa acá):** Términos comerciales
+- **Fuente:** ✅ misma
+
+**Claude API, Opus 5.5**
+
+- **Precio:** USD 4 entrada / USD 20 salida por millón
+- **Qué incluye (lo que importa acá):** Términos comerciales
+- **Fuente:** ✅ misma
 
 ### Términos de uso que deciden la arquitectura
 
@@ -39,20 +104,50 @@ La infraestructura actual de Yellow no se pudo ver: `node agentes/os.mjs infra` 
 
 ## 2. Las tres opciones
 
-| | A) Todo en cuentas de Yellow, una base para todos | B) Cuentas propias del cliente, planes gratis | C) Mixta (recomendada): hosting de Yellow, una base por cliente |
-|---|---|---|---|
-| Código | Un solo código y un solo proyecto de Vercel para todos los clientes | Una copia del código por cliente, en su cuenta | Un solo código y un solo proyecto de Vercel |
-| Datos | Una base compartida, separada por cliente con reglas de acceso por fila | Base gratis del cliente | Un proyecto de Supabase por cliente, en la organización Pro de Yellow |
-| Dominio | Subdominio de Yellow o dominio del cliente apuntado al proyecto | Dominio del cliente | Igual que A |
-| ¿Cumple términos? | Sí, en Pro | **No** en Vercel Hobby (uso comercial). Cumple solo si el cliente paga Vercel Pro | Sí, en Pro |
-| Costo fijo para Yellow | USD 45/mes (Vercel Pro 20 + Supabase Pro 25) | USD 0 | USD 45/mes (igual que A) |
-| Costo por cliente para Yellow | Base: USD 0 (entra en el proyecto común). IA: ~USD 11/mes 🔵 | USD 0 | Base: USD 10/mes (Micro; el primero lo cubre el crédito). IA: ~USD 11/mes 🔵 |
-| Costo para el cliente | Dominio propio si lo quiere: ARS 8.500/año (.com.ar) o USD 11-12/año (.com) | Vercel Pro USD 20/mes (obligatorio para cumplir) + dominio + IA con su tarjeta (~USD 11/mes 🔵) | Igual que A |
-| Aislamiento de datos | Débil: un error en una regla de acceso muestra datos de un cliente a otro | Total | Fuerte: cada cliente tiene su servidor de base |
-| Acceso de Agustín | Directo | El problema conocido: los códigos de verificación llegan al correo o al teléfono del cliente; Hobby tiene un solo asiento y compartir la cuenta viola términos | Directo |
-| Si el cliente se va | Hay que extraer sus filas de la base común | Se lleva todo; Yellow pierde acceso | Se le exporta su base o se le transfiere el proyecto a su propia organización de Supabase 🔵 (verificar el procedimiento de transferencia antes de prometerlo) |
-| Copias de seguridad | Diarias, 7 días | **Ninguna** en Free | Diarias, 7 días, por cliente |
-| Trabajo de Yellow por cliente nuevo | Bajo | Alto (crear cuentas, código, claves, en cada cliente) | Bajo a medio |
+### A) Todo en cuentas de Yellow, una base para todos
+
+- **Código:** Un solo código y un solo proyecto de Vercel para todos los clientes
+- **Datos:** Una base compartida, separada por cliente con reglas de acceso por fila
+- **Dominio:** Subdominio de Yellow o dominio del cliente apuntado al proyecto
+- **¿Cumple términos?:** Sí, en Pro
+- **Costo fijo para Yellow:** USD 45/mes (Vercel Pro 20 + Supabase Pro 25)
+- **Costo por cliente para Yellow:** Base: USD 0 (entra en el proyecto común). IA: ~USD 11/mes 🔵
+- **Costo para el cliente:** Dominio propio si lo quiere: ARS 8.500/año (.com.ar) o USD 11-12/año (.com)
+- **Aislamiento de datos:** Débil: un error en una regla de acceso muestra datos de un cliente a otro
+- **Acceso de Agustín:** Directo
+- **Si el cliente se va:** Hay que extraer sus filas de la base común
+- **Copias de seguridad:** Diarias, 7 días
+- **Trabajo de Yellow por cliente nuevo:** Bajo
+
+### B) Cuentas propias del cliente, planes gratis
+
+- **Código:** Una copia del código por cliente, en su cuenta
+- **Datos:** Base gratis del cliente
+- **Dominio:** Dominio del cliente
+- **¿Cumple términos?:** **No** en Vercel Hobby (uso comercial). Cumple solo si el cliente paga Vercel Pro
+- **Costo fijo para Yellow:** USD 0
+- **Costo por cliente para Yellow:** USD 0
+- **Costo para el cliente:** Vercel Pro USD 20/mes (obligatorio para cumplir) + dominio + IA con su tarjeta (~USD 11/mes 🔵)
+- **Aislamiento de datos:** Total
+- **Acceso de Agustín:** El problema conocido: los códigos de verificación llegan al correo o al teléfono del cliente; Hobby tiene un solo asiento y compartir la cuenta viola términos
+- **Si el cliente se va:** Se lleva todo; Yellow pierde acceso
+- **Copias de seguridad:** **Ninguna** en Free
+- **Trabajo de Yellow por cliente nuevo:** Alto (crear cuentas, código, claves, en cada cliente)
+
+### C) Mixta (recomendada): hosting de Yellow, una base por cliente
+
+- **Código:** Un solo código y un solo proyecto de Vercel
+- **Datos:** Un proyecto de Supabase por cliente, en la organización Pro de Yellow
+- **Dominio:** Igual que A
+- **¿Cumple términos?:** Sí, en Pro
+- **Costo fijo para Yellow:** USD 45/mes (igual que A)
+- **Costo por cliente para Yellow:** Base: USD 10/mes (Micro; el primero lo cubre el crédito). IA: ~USD 11/mes 🔵
+- **Costo para el cliente:** Igual que A
+- **Aislamiento de datos:** Fuerte: cada cliente tiene su servidor de base
+- **Acceso de Agustín:** Directo
+- **Si el cliente se va:** Se le exporta su base o se le transfiere el proyecto a su propia organización de Supabase 🔵 (verificar el procedimiento de transferencia antes de prometerlo)
+- **Copias de seguridad:** Diarias, 7 días, por cliente
+- **Trabajo de Yellow por cliente nuevo:** Bajo a medio
 
 ### Cálculo del costo por cliente (🔵, estimación del CTO)
 
@@ -85,14 +180,35 @@ Lo hace el CTO salvo donde dice "persona".
 
 ## 4. Quién tiene las claves
 
-| Clave | Opción C | Quién la toca |
-|---|---|---|
-| Cuenta de Vercel de Yellow | Agustín, con segundo factor | Board |
-| Organización de Supabase de Yellow | Agustín; el cliente puede tener lectura de su proyecto si lo pide ❓ (verificar roles por proyecto en Supabase) | Board |
-| Clave de servicio de la base de cada cliente | Solo en las variables de Vercel | Board |
-| Clave de API de Claude | Una de Yellow por cliente, para medir el gasto de cada uno 🔵 (o un espacio de trabajo por cliente en la consola, ❓ verificar) | Board |
-| Dominio del cliente | El cliente, a su nombre | Cliente |
-| Usuarios del OS | Cada persona el suyo | Cada persona |
+**Cuenta de Vercel de Yellow**
+
+- **Opción C:** Agustín, con segundo factor
+- **Quién la toca:** Board
+
+**Organización de Supabase de Yellow**
+
+- **Opción C:** Agustín; el cliente puede tener lectura de su proyecto si lo pide ❓ (verificar roles por proyecto en Supabase)
+- **Quién la toca:** Board
+
+**Clave de servicio de la base de cada cliente**
+
+- **Opción C:** Solo en las variables de Vercel
+- **Quién la toca:** Board
+
+**Clave de API de Claude**
+
+- **Opción C:** Una de Yellow por cliente, para medir el gasto de cada uno 🔵 (o un espacio de trabajo por cliente en la consola, ❓ verificar)
+- **Quién la toca:** Board
+
+**Dominio del cliente**
+
+- **Opción C:** El cliente, a su nombre
+- **Quién la toca:** Cliente
+
+**Usuarios del OS**
+
+- **Opción C:** Cada persona el suyo
+- **Quién la toca:** Cada persona
 
 Los agentes y el CTO nunca ven claves (límite del puesto).
 

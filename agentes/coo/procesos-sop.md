@@ -4,10 +4,15 @@ Guía del COO. Un SOP describe un trabajo que se repite y que cruza puestos: qu�
 
 ## Dónde viven
 
-| Tipo | Dónde | Cómo se cambia |
-|---|---|---|
-| Procesos del servicio al cliente (discovery, propuesta, cierre, entrega, traspaso) | `playbook/03-process/` | Es conocimiento estable: el COO propone el cambio como learning en `learnings/learnings-pending.md` y el board lo aprueba (regla R1 del repo) |
-| Procesos internos de la empresa (latido, bandeja, alta de puesto, ingesta de reuniones, publicación de contenido) | `agentes/coo/procesos/<nombre>.md` | El COO lo escribe y lo deja en la bandeja; vale cuando el board lo aprueba |
+**Procesos del servicio al cliente (discovery, propuesta, cierre, entrega, traspaso)**
+
+- **Dónde:** `playbook/03-process/`
+- **Cómo se cambia:** Es conocimiento estable: el COO propone el cambio como learning en `learnings/learnings-pending.md` y el board lo aprueba (regla R1 del repo)
+
+**Procesos internos de la empresa (latido, bandeja, alta de puesto, ingesta de reuniones, publicación de contenido)**
+
+- **Dónde:** `agentes/coo/procesos/<nombre>.md`
+- **Cómo se cambia:** El COO lo escribe y lo deja en la bandeja; vale cuando el board lo aprueba
 
 ## Formato de un SOP
 
@@ -22,8 +27,11 @@ Guía del COO. Un SOP describe un trabajo que se repite y que cruza puestos: qu�
 - Frecuencia: <cada cuánto pasa>
 
 ## Pasos
-| # | Qué se hace | Quién | Herramienta o archivo | Listo cuando |
-|---|---|---|---|---|
+
+### Paso 1: <qué se hace>
+- **Quién:** <puesto o persona>
+- **Herramienta o archivo:** <herramienta o archivo>
+- **Listo cuando:** <condición verificable>
 
 ## Traspasos
 - <de quién a quién se pasa el trabajo, en qué estado y por qué canal>

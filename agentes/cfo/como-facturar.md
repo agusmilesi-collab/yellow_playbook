@@ -1,7 +1,9 @@
 # Cómo facturar el primer cobro de Yellow
 
-**Tarea:** gugpi21u · **Fecha:** 13/11/2026 · **Puesto:** CFO
-**Regla:** ningún dato fiscal se inventa (R5). Lo único que hay en el repo es que el contrato de Lisandro (junio 2026) dice "Agustín Milesi (Monotributo)" y "el Consultor emite comprobante de Monotributo por cada pago" 🔵 (puede haber cambiado desde junio). `playbook/06-operations/finance.md` tiene la situación impositiva sin definir.
+- **Tarea:** gugpi21u
+- **Fecha:** 13/11/2026
+- **Puesto:** CFO
+- **Regla:** ningún dato fiscal se inventa (R5). Lo único que hay en el repo es que el contrato de Lisandro (junio 2026) dice "Agustín Milesi (Monotributo)" y "el Consultor emite comprobante de Monotributo por cada pago" 🔵 (puede haber cambiado desde junio). `playbook/06-operations/finance.md` tiene la situación impositiva sin definir.
 
 ## 1. Preguntas para el board (contestar en una línea cada una)
 
@@ -12,10 +14,15 @@
 
 ## 2. Qué factura corresponde según la respuesta
 
-| Tu régimen | Cliente en Argentina | Cliente del exterior |
-|---|---|---|
-| Monotributo | Factura C (sin IVA discriminado), sea cual sea el cliente | Factura E (exportación de servicios) |
-| Responsable inscripto | Factura A si el cliente es responsable inscripto; B si es consumidor final o monotributista. Se suma IVA 21% al precio (el contrato dice "+ IVA si corresponde") | Factura E, sin IVA |
+**Monotributo**
+
+- **Cliente en Argentina:** Factura C (sin IVA discriminado), sea cual sea el cliente
+- **Cliente del exterior:** Factura E (exportación de servicios)
+
+**Responsable inscripto**
+
+- **Cliente en Argentina:** Factura A si el cliente es responsable inscripto; B si es consumidor final o monotributista. Se suma IVA 21% al precio (el contrato dice "+ IVA si corresponde")
+- **Cliente del exterior:** Factura E, sin IVA
 
 Regla general de ARCA (ex AFIP), a verificar con tu contador antes de la primera emisión 🔵.
 

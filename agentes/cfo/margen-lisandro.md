@@ -1,27 +1,25 @@
 # Margen del caso Lisandro y meta de margen por cliente
 
-**Tarea:** s8900o0h · **Fecha:** 13/11/2026 · **Puesto:** CFO
-**Fuentes:** `cases/Lisandro/contrato-lisandro.md`, `cases/Lisandro/case-notes.md`, `cases/Lisandro/propuesta-lisandro4.md`, `playbook/06-operations/finance.md` y `pricing.md`.
-**Convención (R5):** ✅ sale de un registro · 🔵 inferencia · ❓ falta el dato.
+- **Tarea:** s8900o0h
+- **Fecha:** 13/11/2026
+- **Puesto:** CFO
+- **Fuentes:** `cases/Lisandro/contrato-lisandro.md`, `cases/Lisandro/case-notes.md`, `cases/Lisandro/propuesta-lisandro4.md`, `playbook/06-operations/finance.md` y `pricing.md`.
+- **Convención (R5):** ✅ sale de un registro · 🔵 inferencia · ❓ falta el dato.
 
 ## 1. Ingresos del caso
 
-| Concepto | ARS | USD | Fecha | Estado | Fuente |
-|---|---|---|---|---|---|
-| Precio del contrato | 500.000 | ❓ (sin tipo de cambio de cada pago) | ❓ | ✅ contratado | contrato, cláusula 4 |
-| Primer pago (50%) | 250.000 | ❓ | ❓ | 🔵 cobrado, sin confirmar | `finance.md`, tracking de junio |
-| Segundo pago (50%, post-onboarding) | 250.000 | ❓ | ❓ | ❓ | `case-notes.md`: "¿segunda mitad cobrada?" abierto |
-| **Total** | **500.000 contratado; 250.000 🔵 cobrado** | **~400-500 🔵** | | | `case-notes.md` y `pricing.md` dan "~USD 400-500" sin tipo de cambio |
+- **Precio del contrato:** ARS: 500.000 · USD: ❓ (sin tipo de cambio de cada pago) · Fecha: ❓ · Estado: ✅ contratado. Fuente: contrato, cláusula 4
+- **Primer pago (50%):** ARS: 250.000 · USD: ❓ · Fecha: ❓ · Estado: 🔵 cobrado, sin confirmar. Fuente: `finance.md`, tracking de junio
+- **Segundo pago (50%, post-onboarding):** ARS: 250.000 · USD: ❓ · Fecha: ❓ · Estado: ❓. Fuente: `case-notes.md`: "¿segunda mitad cobrada?" abierto
+- **Total:** ARS: **500.000 contratado; 250.000 🔵 cobrado** · USD: **~400-500 🔵**. Fuente: `case-notes.md` y `pricing.md` dan "~USD 400-500" sin tipo de cambio
 
 ## 2. Costos del caso
 
-| Concepto | USD | Fuente |
-|---|---|---|
-| Notion y Claude del cliente | 0 para Yellow | ✅ contrato, cláusula 11: los paga el cliente |
-| Herramientas de Agustín durante el caso (Claude, Google Workspace) | ❓ | `finance.md` estima USD 25-30/mes de herramientas 🔵; falta cuánto se usó para este caso y cuántos meses duró |
-| Horas de Agustín (venta, armado, onboarding R1-R3, manual, refinamiento) | ❓ horas × ❓ costo por hora | No hay registro de horas en el repo |
-| Latidos de los puestos | 0 | El caso es de junio; el OS empezó en noviembre |
-| **Total costos** | **❓** | |
+- **Notion y Claude del cliente:** USD: 0 para Yellow. Fuente: ✅ contrato, cláusula 11: los paga el cliente
+- **Herramientas de Agustín durante el caso (Claude, Google Workspace):** USD: ❓. Fuente: `finance.md` estima USD 25-30/mes de herramientas 🔵; falta cuánto se usó para este caso y cuántos meses duró
+- **Horas de Agustín (venta, armado, onboarding R1-R3, manual, refinamiento):** USD: ❓ horas × ❓ costo por hora. Fuente: No hay registro de horas en el repo
+- **Latidos de los puestos:** USD: 0. Fuente: El caso es de junio; el OS empezó en noviembre
+- **Total costos:** USD: **❓**
 
 ## 3. Margen del caso
 
@@ -29,11 +27,9 @@
 
 Simulación, para que el board vea qué cambia con cada dato (no es un dato del caso): con ingresos de USD 450 🔵, herramientas USD 26 🔵 y la hora de Agustín valuada en USD 10 (valor de referencia de la sección 4, sin aprobar):
 
-| Horas del caso (supuesto) | Costo total | Margen |
-|---|---|---|
-| 20 | 226 | 50% |
-| 40 | 426 | 5% |
-| 60 | 626 | -39% |
+- **20 horas del caso (supuesto):** Costo total: 226 · Margen: 50%
+- **40 horas del caso (supuesto):** Costo total: 426 · Margen: 5%
+- **60 horas del caso (supuesto):** Costo total: 626 · Margen: -39%
 
 Lectura: con cualquier valuación de la hora, el caso Lisandro tuvo margen bajo o negativo. Es coherente con lo que dice `pricing.md`: fue precio de caso fundacional, fuera de la escalera, y no sirve de referencia.
 

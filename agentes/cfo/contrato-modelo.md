@@ -1,18 +1,42 @@
 # Contrato modelo Yellow, cliente de USD 2.000
 
-**Tarea:** oh4g80e4 · **Fecha:** 13/11/2026 · **Puesto:** CFO
-**Base:** `cases/Lisandro/contrato-lisandro.md` (contrato firmado, junio 2026) y `playbook/06-operations/contracts.md`.
-**Cómo se usa:** se completan solo los cuatro campos entre corchetes: `[NOMBRE DEL CLIENTE]`, `[DNI O CUIT]`, `[FECHA]` y `[MONTO]` (por defecto USD 2.000; las mitades se calculan solas como "50% del monto"). El resto no se toca.
+- **Tarea:** oh4g80e4
+- **Fecha:** 13/11/2026
+- **Puesto:** CFO
+- **Base:** `cases/Lisandro/contrato-lisandro.md` (contrato firmado, junio 2026) y `playbook/06-operations/contracts.md`.
+- **Cómo se usa:** se completan solo los cuatro campos entre corchetes: `[NOMBRE DEL CLIENTE]`, `[DNI O CUIT]`, `[FECHA]` y `[MONTO]` (por defecto USD 2.000; las mitades se calculan solas como "50% del monto"). El resto no se toca.
 
 ## Cambios contra el contrato de Lisandro
 
-| Cláusula | Lisandro | Modelo | Por qué |
-|---|---|---|---|
-| Honorarios | ARS 500.000 | USD 2.000, pago en USD o en pesos al MEP del día | `pricing.md`: precios en USD |
-| Segundo pago | Luego del onboarding | Al cerrar la entrega (sesión de refinamiento hecha) | Pedido de la tarea; cierra el ciclo completo |
-| Plazo | Sin plazo | 6 semanas desde el primer pago 🔵 | Propuesta del CFO, a confirmar por el board |
-| Atraso del cliente | Sin cláusula | Pago: se suspende el trabajo a los 7 días. Información o sesiones: el plazo se corre | Pedido de la tarea |
-| IVA | Monotributo | "+ IVA si corresponde" | Depende de las respuestas de `como-facturar.md` ❓ |
+**Honorarios**
+
+- **Lisandro:** ARS 500.000
+- **Modelo:** USD 2.000, pago en USD o en pesos al MEP del día
+- **Por qué:** `pricing.md`: precios en USD
+
+**Segundo pago**
+
+- **Lisandro:** Luego del onboarding
+- **Modelo:** Al cerrar la entrega (sesión de refinamiento hecha)
+- **Por qué:** Pedido de la tarea; cierra el ciclo completo
+
+**Plazo**
+
+- **Lisandro:** Sin plazo
+- **Modelo:** 6 semanas desde el primer pago 🔵
+- **Por qué:** Propuesta del CFO, a confirmar por el board
+
+**Atraso del cliente**
+
+- **Lisandro:** Sin cláusula
+- **Modelo:** Pago: se suspende el trabajo a los 7 días. Información o sesiones: el plazo se corre
+- **Por qué:** Pedido de la tarea
+
+**IVA**
+
+- **Lisandro:** Monotributo
+- **Modelo:** "+ IVA si corresponde"
+- **Por qué:** Depende de las respuestas de `como-facturar.md` ❓
 
 ---
 

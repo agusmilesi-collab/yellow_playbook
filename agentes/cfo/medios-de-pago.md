@@ -1,19 +1,39 @@
 # Cómo cobrar USD 2.000 desde Argentina: 3 opciones
 
-**Tarea:** jq2lffuq · **Fecha de consulta de todas las fuentes:** 13/11/2026 · **Puesto:** CFO
-**Supuesto:** el cobro es de USD 2.000 en dos pagos de USD 1.000 (50% / 50%, `pricing.md`). Las comisiones se calculan sobre USD 1.000 por pago.
-**Aviso:** varias cifras salen de guías de terceros, no del tarifario oficial; están marcadas 🔵 y hay que confirmarlas en la app antes del primer cobro.
+- **Tarea:** jq2lffuq
+- **Fecha de consulta de todas las fuentes:** 13/11/2026
+- **Puesto:** CFO
+- **Supuesto:** el cobro es de USD 2.000 en dos pagos de USD 1.000 (50% / 50%, `pricing.md`). Las comisiones se calculan sobre USD 1.000 por pago.
+- **Aviso:** varias cifras salen de guías de terceros, no del tarifario oficial; están marcadas 🔵 y hay que confirmarlas en la app antes del primer cobro.
 
-## Tabla
+## Comparación
 
-| | 1. Transferencia bancaria (pesos o USD) | 2. Mercado Pago (link de pago) | 3. Payoneer (cliente del exterior) |
-|---|---|---|---|
-| **Para qué cliente** | Cliente en Argentina con cuenta bancaria | Cliente en Argentina que quiere pagar con tarjeta o en cuotas | Cliente fuera de Argentina |
-| **Comisión** | 0%. Las transferencias inmediatas de usuarios finales son gratuitas ✅ (BCRA) | Link con acreditación inmediata: 6,49% + IVA 🔵; a 30 días: 2,99% + IVA 🔵. Cuotas sin interés: costo extra (3 cuotas ~10,49%) 🔵 | Recibir USD por transferencia: 1% (mínimo USD 1) 🔵. Retirar a banco argentino: hasta 2% 🔵 |
-| **Costo sobre USD 1.000** | USD 0 | USD 78,50 inmediata / USD 36,20 a 30 días (con IVA 21%) | USD 10 + hasta USD 20 = hasta USD 30 |
-| **Plazo de acreditación** | Inmediato, 24 h todos los días ✅ (BCRA). Tope: USD 12.500 por día en moneda extranjera ✅ | Inmediato pagando la comisión alta; 30 días con la baja 🔵 | Al recibir: 🔵 1 a 3 días hábiles ❓ (sin fuente oficial). Retiro a banco: ❓ |
-| **Qué necesita el cliente** | CBU/CVU o alias de Agustín. En USD: que el cliente tenga caja de ahorro en dólares | Tarjeta o cuenta de Mercado Pago; Agustín genera el link | Que pague por transferencia a la cuenta de recepción en USD de Payoneer o por solicitud de pago. Con tarjeta: 3% 🔵 |
-| **Qué necesita Agustín** | Caja de ahorro en pesos (y en dólares, para cobrar en USD) | Cuenta de Mercado Pago | Cuenta Payoneer verificada; Factura E (ver `como-facturar.md`) |
+### 1. Transferencia bancaria (pesos o USD)
+
+- **Para qué cliente:** Cliente en Argentina con cuenta bancaria
+- **Comisión:** 0%. Las transferencias inmediatas de usuarios finales son gratuitas ✅ (BCRA)
+- **Costo sobre USD 1.000:** USD 0
+- **Plazo de acreditación:** Inmediato, 24 h todos los días ✅ (BCRA). Tope: USD 12.500 por día en moneda extranjera ✅
+- **Qué necesita el cliente:** CBU/CVU o alias de Agustín. En USD: que el cliente tenga caja de ahorro en dólares
+- **Qué necesita Agustín:** Caja de ahorro en pesos (y en dólares, para cobrar en USD)
+
+### 2. Mercado Pago (link de pago)
+
+- **Para qué cliente:** Cliente en Argentina que quiere pagar con tarjeta o en cuotas
+- **Comisión:** Link con acreditación inmediata: 6,49% + IVA 🔵; a 30 días: 2,99% + IVA 🔵. Cuotas sin interés: costo extra (3 cuotas ~10,49%) 🔵
+- **Costo sobre USD 1.000:** USD 78,50 inmediata / USD 36,20 a 30 días (con IVA 21%)
+- **Plazo de acreditación:** Inmediato pagando la comisión alta; 30 días con la baja 🔵
+- **Qué necesita el cliente:** Tarjeta o cuenta de Mercado Pago; Agustín genera el link
+- **Qué necesita Agustín:** Cuenta de Mercado Pago
+
+### 3. Payoneer (cliente del exterior)
+
+- **Para qué cliente:** Cliente fuera de Argentina
+- **Comisión:** Recibir USD por transferencia: 1% (mínimo USD 1) 🔵. Retirar a banco argentino: hasta 2% 🔵
+- **Costo sobre USD 1.000:** USD 10 + hasta USD 20 = hasta USD 30
+- **Plazo de acreditación:** Al recibir: 🔵 1 a 3 días hábiles ❓ (sin fuente oficial). Retiro a banco: ❓
+- **Qué necesita el cliente:** Que pague por transferencia a la cuenta de recepción en USD de Payoneer o por solicitud de pago. Con tarjeta: 3% 🔵
+- **Qué necesita Agustín:** Cuenta Payoneer verificada; Factura E (ver `como-facturar.md`)
 
 **Wise quedó fuera:** las fuentes se contradicen sobre si hoy acepta usuarios nuevos en Argentina (Rankia y Global66 hablan de funciones limitadas; El Cronista publicó que dejó de recibir nuevos usuarios). Payoneer tiene operación en Argentina documentada por la propia empresa.
 

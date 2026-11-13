@@ -1,28 +1,24 @@
 # Estado de resultados de Yellow, noviembre 2026
 
-**Corte:** parcial al 13/11/2026 (el mes sigue abierto). Moneda: USD.
-**Fuentes:** detalle de la tarea wwt13as6 (dato del board), `node agentes/os.mjs latidos` (registro del OS al 13/11), casos en `cases/`.
-**Convención (R5):** ✅ confirmado o sale de un registro · 🔵 inferencia · ❓ falta el dato (pregunta al board al final).
+- **Corte:** parcial al 13/11/2026 (el mes sigue abierto). Moneda: USD.
+- **Fuentes:** detalle de la tarea wwt13as6 (dato del board), `node agentes/os.mjs latidos` (registro del OS al 13/11), casos en `cases/`.
+- **Convención (R5):** ✅ confirmado o sale de un registro · 🔵 inferencia · ❓ falta el dato (pregunta al board al final).
 
 ## 1. Ingresos
 
-| Concepto | Facturado | Cobrado | Fuente |
-|---|---|---|---|
-| Clientes nuevos de noviembre | 0 | 0 | ✅ detalle de la tarea: hoy no hay ingresos en el mes |
-| Caso Lisandro, segunda mitad (ARS 250.000) | ❓ | ❓ | `cases/Lisandro/case-notes.md`: "¿segunda mitad cobrada?" sigue abierto. El caso es de junio; si se cobró, no fue en noviembre 🔵 |
-| Caso Sentir Mindfulness (contrato USD 3.000) | ❓ | ❓ | `cases/sentir-mindfulness/contrato.md`: no hay registro de cobro en el repo |
-| **Total ingresos del mes** | **0** | **0** | |
+- **Clientes nuevos de noviembre:** Facturado: 0 · Cobrado: 0. Fuente: ✅ detalle de la tarea: hoy no hay ingresos en el mes
+- **Caso Lisandro, segunda mitad (ARS 250.000):** Facturado: ❓ · Cobrado: ❓. Fuente: `cases/Lisandro/case-notes.md`: "¿segunda mitad cobrada?" sigue abierto. El caso es de junio; si se cobró, no fue en noviembre 🔵
+- **Caso Sentir Mindfulness (contrato USD 3.000):** Facturado: ❓ · Cobrado: ❓. Fuente: `cases/sentir-mindfulness/contrato.md`: no hay registro de cobro en el repo
+- **Total ingresos del mes:** Facturado: **0** · Cobrado: **0**
 
 ## 2. Gastos
 
-| Concepto | USD del mes | Fuente |
-|---|---|---|
-| Suscripción Claude Max | 100,00 | ✅ detalle de la tarea |
-| Vercel | ❓ | Sin registro. Falta plan (gratis o pago) y monto |
-| Supabase | ❓ | Sin registro. El OS usa un proyecto de Supabase ✅; falta plan y monto |
-| Resend | ❓ | Sin registro. Falta plan y monto |
-| Dominios (agustinmilesi.com y otros) | ❓ | Sin registro. Falta cuáles, costo anual y mes de renovación |
-| **Total gastos conocidos** | **100,00** | Más los ❓ |
+- **Suscripción Claude Max:** USD del mes: 100,00. Fuente: ✅ detalle de la tarea
+- **Vercel:** USD del mes: ❓. Fuente: Sin registro. Falta plan (gratis o pago) y monto
+- **Supabase:** USD del mes: ❓. Fuente: Sin registro. El OS usa un proyecto de Supabase ✅; falta plan y monto
+- **Resend:** USD del mes: ❓. Fuente: Sin registro. Falta plan y monto
+- **Dominios (agustinmilesi.com y otros):** USD del mes: ❓. Fuente: Sin registro. Falta cuáles, costo anual y mes de renovación
+- **Total gastos conocidos:** USD del mes: **100,00**. Fuente: Más los ❓
 
 ## 3. Costo de cada puesto
 
@@ -30,16 +26,14 @@ Latidos registrados en noviembre al 13/11: 7, más este latido del CFO = 8.
 - **Equivalente API:** suma del campo `usd` de los latidos del mes del puesto. Solo el último latido del CHRO tiene medición; los demás se dieron antes de que el OS midiera tokens (❓ sin medición, no recuperable).
 - **Parte de la suscripción:** USD 100 / 8 latidos = USD 12,50 por latido. Esta cifra baja a medida que haya más latidos en el mes: se recalcula al cierre.
 
-| Puesto | Latidos del mes | Equivalente API (USD) | Parte de la suscripción (USD) |
-|---|---|---|---|
-| CEO | 1 | ❓ sin medición | 12,50 |
-| CPO | 1 | ❓ sin medición | 12,50 |
-| CTO | 1 | ❓ sin medición | 12,50 |
-| INV | 1 | ❓ sin medición | 12,50 |
-| CHRO | 3 | 0,46 (514k tokens, 1 de 3 latidos medido) | 37,50 |
-| CFO | 1 (este latido) | ~0,96 (1.323k tokens) medido al terminar las entregas; el valor final queda en `node agentes/os.mjs latidos cfo` | 12,50 |
-| CMO, CSO, COO, CISO | 0 | 0 | 0 |
-| **Total** | **8** | **~1,42 medido + ❓** | **100,00** |
+- **CEO:** Latidos del mes: 1 · Equivalente API (USD): ❓ sin medición · Parte de la suscripción (USD): 12,50
+- **CPO:** Latidos del mes: 1 · Equivalente API (USD): ❓ sin medición · Parte de la suscripción (USD): 12,50
+- **CTO:** Latidos del mes: 1 · Equivalente API (USD): ❓ sin medición · Parte de la suscripción (USD): 12,50
+- **INV:** Latidos del mes: 1 · Equivalente API (USD): ❓ sin medición · Parte de la suscripción (USD): 12,50
+- **CHRO:** Latidos del mes: 3 · Equivalente API (USD): 0,46 (514k tokens, 1 de 3 latidos medido) · Parte de la suscripción (USD): 37,50
+- **CFO:** Latidos del mes: 1 (este latido) · Equivalente API (USD): ~0,96 (1.323k tokens) medido al terminar las entregas; el valor final queda en `node agentes/os.mjs latidos cfo` · Parte de la suscripción (USD): 12,50
+- **CMO, CSO, COO, CISO:** Latidos del mes: 0 · Equivalente API (USD): 0 · Parte de la suscripción (USD): 0
+- **Total:** Latidos del mes: **8** · Equivalente API (USD): **~1,42 medido + ❓** · Parte de la suscripción (USD): **100,00**
 
 Lectura de las dos columnas: la parte de la suscripción es lo que Yellow paga de verdad (sale de los USD 100). El equivalente API es lo que costaría el mismo trabajo pagando por uso; sirve para saber si la suscripción conviene, no es un gasto adicional.
 
