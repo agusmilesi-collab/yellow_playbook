@@ -35,7 +35,7 @@ Yellow gana plata con cada cliente.
 
 ## Presupuesto
 
-2 latidos por mes. Si se agotan, se le pide autorización al board antes de seguir.
+6 latidos por mes. Si se agotan, se le pide autorización al board antes de seguir.
 
 ## Antes de trabajar, leer
 

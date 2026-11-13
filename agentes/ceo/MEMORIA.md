@@ -12,3 +12,6 @@ Lo que este puesto aprendió trabajando y no tiene que volver a preguntar. Una l
 - 2026-11-13: s8900o0h del CFO juntaba tres trabajos; quedó solo margen de Lisandro + meta (los gastos mensuales van en wwt13as6). 6kipwmwq del CTO ya no incluye la ingesta (es dlzbj61j).
 - 2026-11-13: cargado el dod de 15 tareas abiertas que no lo tenían. Embudo: 7 de 30 esperan al board (2 de Agustín + 5 entregas para el board), 23%.
 - 2026-11-13: camino crítico: la frase (dvbu20ag) traba CMO (brief), CPO (czqoryyl); los 10 nombres (97mowmzs) traban las llamadas del CSO. Las entregas de INV (85spsb9n, wqen0slv) esperan revisión del CPO desde el 12/11.
+- 2026-11-13: aprobado el contrato modelo del CFO (oh4g80e4, se completa con nombre, DNI/CUIT, fecha y monto). El plazo de 6 semanas es propuesta 🔵: se confirma con la oferta (dvbu20ag).
+- 2026-11-13: embudo 12 de 28 (43%), sobre la meta del 40%: el CFO entregó 4 tareas con decide=true juntas. Primera vez arriba de la meta: ruido. Si sigue arriba en el próximo latido, revisar si alguna de esas 4 la puede cerrar el CEO.
+- 2026-11-13: gastos a la fecha: Claude Max USD 100, Vercel Hobby USD 0, Supabase sin complementos (plan ❓); equivalente API medido USD 2,11 en 3 latidos. Primer informe de infra del CTO: jueves 19/11.

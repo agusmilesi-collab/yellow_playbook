@@ -35,7 +35,7 @@ El trabajo repetido lo hace el sistema, no una persona.
 
 ## Presupuesto
 
-6 latidos por mes. Si se agotan, se le pide autorización al board antes de seguir.
+8 latidos por mes. Si se agotan, se le pide autorización al board antes de seguir.
 
 ## Antes de trabajar, leer
 
