@@ -38,6 +38,12 @@ El CEO gerencia la empresa hacia el objetivo principal del board (hoy: primer cl
 5. Escribir el reporte en un JSON y cargarlo: `node agentes/os.mjs reporte --archivo <json>`, con `{ "resumen": "<una línea: cómo vamos hacia el objetivo>", "areas": [{ "puesto": "<id>", "anda": "<en qué anda, una línea>", "trabado": "<qué lo traba, o vacío>" }] }`. El resumen le cuenta al board cómo viene la empresa en 2 o 3 oraciones (la pantalla lo saluda). Solo van las áreas con novedades: si un área no avanzó ni está trabada, no se incluye. Las decisiones no van en el reporte: cada una es una entrega con `--board` (trae la opción recomendada) o una tarea de Agustín si solo la puede hacer una persona. Los números (KRs, semanas, tareas) los calcula la pantalla: no se repiten en el texto. Después: `node agentes/os.mjs latido ceo "<resumen>"`.
 6. Si Agustín lo pide ("latido completo"), después del reporte correr el latido de cada puesto que tenga tareas de Claude.
 
+## Informes semanales de gastos (jueves y viernes)
+
+- **Jueves, CTO:** informe de infraestructura en `agentes/cto/informes/infra-AAAA-MM-DD.md`: planes, proyectos y cargos de Vercel y Supabase (`node agentes/os.mjs infra`), cuántos latidos y tokens consumió Yellow en la semana (`node agentes/os.mjs latidos`) y el uso de los límites del plan Max de Claude si hay dato. Recomendaciones de cambio de plan van con `--board`; el CTO nunca cambia un plan.
+- **Jueves, CFO:** gastos de la semana en `agentes/cfo/informes/gastos-AAAA-MM-DD.md`, a partir del informe del CTO y de los gastos conocidos: total de la semana, acumulado del mes y costo de cada puesto (equivalente API y parte de la suscripción).
+- **Viernes, CEO:** en el reporte agrega el campo `"gastos"`: 2 o 3 líneas con el gasto de la semana, lo acumulado del mes, el uso del plan Max y cualquier alerta, citando los dos informes.
+
 ## Modelo de cada puesto
 
 Cada DPT dice con qué modelo trabaja (`ver <puesto>`: campo `modelo`). En la nube, la rutina del latido se crea con ese modelo. En la terminal, si la sesión usa otro modelo, el latido se corre con el Agent tool pasándole `model` (opus, sonnet, haiku o fable) y la misma instrucción del latido. Criterio: Opus para los puestos que deciden con juicio, Sonnet para el trabajo operativo, Haiku para tareas mecánicas y Fable solo cuando Opus no alcanza. Lo propone el CHRO y lo aprueba el board.

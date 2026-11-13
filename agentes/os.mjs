@@ -627,8 +627,8 @@ if (cmd === "sync") {
   const iA = args.indexOf("--archivo");
   if (iA >= 0) {
     const j = JSON.parse(readFileSync(args[iA + 1], "utf8"));
-    d.reporte = { fecha: hoy(), texto: "", resumen: String(j.resumen ?? ""), areas: Array.isArray(j.areas) ? j.areas : [], decisiones: Array.isArray(j.decisiones) ? j.decisiones : [] };
-  } else d.reporte = { fecha: hoy(), texto: args[0] ?? "", resumen: "", areas: [], decisiones: [] };
+    d.reporte = { fecha: hoy(), texto: "", resumen: String(j.resumen ?? ""), areas: Array.isArray(j.areas) ? j.areas : [], decisiones: Array.isArray(j.decisiones) ? j.decisiones : [], gastos: String(j.gastos ?? "") };
+  } else d.reporte = { fecha: hoy(), texto: args[0] ?? "", resumen: "", areas: [], decisiones: [], gastos: "" };
   await guardarOS(d);
   console.log("Reporte del CEO guardado.");
 } else if (cmd === "transito") {
