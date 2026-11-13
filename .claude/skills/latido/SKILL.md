@@ -37,6 +37,17 @@ El CEO gerencia la empresa hacia el objetivo principal del board (hoy: primer cl
 5. Escribir el reporte en un JSON y cargarlo: `node agentes/os.mjs reporte --archivo <json>`, con `{ "resumen": "<una línea: cómo vamos hacia el objetivo>", "areas": [{ "puesto": "<id>", "anda": "<en qué anda, una línea>", "trabado": "<qué lo traba, o vacío>" }] }`. El resumen le cuenta al board cómo viene la empresa en 2 o 3 oraciones (la pantalla lo saluda). Solo van las áreas con novedades: si un área no avanzó ni está trabada, no se incluye. Las decisiones no van en el reporte: cada una es una entrega con `--board` (trae la opción recomendada) o una tarea de Agustín si solo la puede hacer una persona. Los números (KRs, semanas, tareas) los calcula la pantalla: no se repiten en el texto. Después: `node agentes/os.mjs latido ceo "<resumen>"`.
 6. Si Agustín lo pide ("latido completo"), después del reporte correr el latido de cada puesto que tenga tareas de Claude.
 
+## Test de una tarea (antes de crearla)
+
+Una tarea entra al OS solo si pasa las cuatro. Si no pasa, es una iniciativa: se parte en tareas.
+
+1. **Un solo entregable:** un archivo o una decisión. Si el nombre tiene "y" uniendo dos cosas distintas, son dos tareas.
+2. **Primer paso obvio:** quien la lee sabe qué abrir o qué buscar primero, sin pensar.
+3. **Entra en un latido:** se termina en una sentada.
+4. **Listo cuando, escrito:** el `--detalle` dice qué archivo se entrega y cuándo está listo, en una línea que se puede verificar.
+
+Quién parte las iniciativas en tareas: el Chief dueño de la iniciativa, en su latido. El CEO crea iniciativas y pide resultados; no reparte microtareas.
+
 ## Decisiones del board
 
 Cuando Agustín fija un objetivo nuevo, cargarlo con `node agentes/os.mjs objetivo "<título>" --dod "<cómo se verifica>" [--puesto <id>] [--padre <id>]`. Cuando decide algo (aprueba una opción, elige una frase, cambia una prioridad), anotarlo: `node agentes/os.mjs decision "<qué se decidió y qué cambia>"`. Si cambia la misión, un objetivo o un puesto, editarlo también en el OS y correr `node agentes/os.mjs exportar`.
