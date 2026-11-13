@@ -21,3 +21,7 @@ Lo que este puesto aprendió trabajando y no tiene que volver a preguntar. Una l
 - 2026-11-13: embudo 5 de 31 (16%), dentro de la meta: la señal del latido anterior se cerró sola cuando el board contestó. Esperan al board: 8di2zbqh (CTO) y i49mvsag (CISO), más 3 tareas de Agustín.
 - 2026-11-13: CPO sin latir desde el 12/11 con 2 entregas del INV sin revisar y la oferta en dos capas sin escribir: si sigue igual en la próxima revisión, es señal (traba CMO y la revisión del INV).
 - 2026-11-13: tareas nuevas: 9ynf7jwo (INV, precios de Google Workspace) y luh7bgfj (CHRO, puesto de legales). Lo de enseñar a facturar al agente quedó en el detalle del DPT del Administrador (ylwxyxzh) porque el CTO ya tiene 5 pendientes.
+- 2026-11-13 (latido de las 7:30): aprobado el DPT del Administrador de consultorio del CPO (ylwxyxzh, cumple su dod; precio y costo quedan 🔵 hasta que el board apruebe oferta y opción C). La señal del CPO se cerró: latió y entregó.
+- 2026-11-13: embudo 6 de 29 (21%), dentro de la meta. Esperan al board: qjs913nz (oferta en dos capas), 8di2zbqh (CTO), i49mvsag (CISO) y 3 tareas de Agustín (czqoryyl, qejrbrlq, 97mowmzs).
+- 2026-11-13: camino crítico: qjs913nz traba al CMO (brief); 97mowmzs traba las llamadas del CSO. CMO, CSO y COO no latieron en el mes; el CSO tiene 2 tareas que no esperan a nadie (yj77vg7y, 1132amk2). Si en la próxima revisión siguen sin latir, es señal.
+- 2026-11-13: gastos viernes: Claude Max USD 100; infra gratis; dominio USD 9 a 11/año ❓; equivalente API USD 7,19 en 9 de 15 latidos medidos.
