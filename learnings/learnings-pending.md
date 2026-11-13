@@ -173,3 +173,11 @@ Hallazgos de la auditoría T04, aplicados en la sesión de consolidación del 20
 **Implicancia para el playbook:** `playbook/06-operations/contracts.md` y `finance.md`: el segundo pago se cobra antes de la entrega o del onboarding, no después; ninguna etapa se entrega sin su pago acreditado. `playbook/03-process/00-pipeline.md`: el DoD de cierre y de cada entrega suma "pago de la etapa acreditado". Revisar también el contrato modelo del CFO (`agentes/cfo/contrato-modelo.md`).
 
 **Status:** pendiente de consolidación
+
+### LRN-025 | 2026-11-13 | caso:meta | tipo:refinamiento
+
+**Descripción:** el board decidió el 13/11/2026 que Yellow vende una oferta en dos capas: (1) rediseño de cómo el profesional entrega su servicio, que se cobra una vez; (2) el equipo de agentes del catálogo que opera el servicio rediseñado, que se instala de a uno y se cobra por mes. Primer segmento: profesionales independientes en consultorio, empezando por nutricionistas. El CPO la escribió completa en `learnings/oferta/oferta-os-agentes.md`.
+
+**Implicancia para el playbook:** `offer.md`: tagline y oferta principal con la frase nueva, sección "Dos capas", modelos A/B/C remapeados (B = capa 1, C = capa 1 más capa 2), "Lo que NO vendemos" sin programación ni marketing y con atención clínica y automatizar sin rediseñar, pitch nivel 3 con el caso Lisandro. `icp.md`: Tier 1 pasa a segmento comercial de este año y suma la señal "hace la administración ella misma". `pricing.md`: abono mensual por agente y precio de prueba del primer cliente. Detalle en la sección 9 de la oferta.
+
+**Status:** pendiente (espera aprobación del board de la oferta, tarea qjs913nz)
