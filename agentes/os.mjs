@@ -462,7 +462,7 @@ if (cmd === "sync") {
 } else if (cmd === "latidos") {
   // latidos [puesto]: lista los latidos con su id, fecha y entregas vinculadas
   const d = await leerOS();
-  for (const l of d.latidos.filter((x) => !args[0] || x.puesto === args[0])) console.log(`${l.id} ${l.fecha} ${l.puesto.padEnd(4)} entregas:${(l.entregas ?? []).length} ${l.usd != null ? `USD ${l.usd}` : ""} · ${l.resumen.slice(0, 70)}`);
+  for (const l of d.latidos.filter((x) => !args[0] || x.puesto === args[0])) console.log(`${l.id} ${l.fecha} ${l.puesto.padEnd(4)} entregas:${(l.entregas ?? []).length} ${l.usd != null ? `USD ${l.usd} (${Math.round((l.tokens ?? 0) / 1000)}k tokens)` : ""} · ${l.resumen.slice(0, 70)}`);
 } else if (cmd === "latido-entregas") {
   // latido-entregas <latidoId> <tareaId,tareaId>: vincula a mano entregas con un latido (para latidos viejos)
   const [lid, lista] = args;
