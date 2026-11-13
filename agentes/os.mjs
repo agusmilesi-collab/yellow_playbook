@@ -24,6 +24,7 @@
 //   node scripts/os.mjs latidos [puesto]             lista los latidos con su id y sus entregas
 //   node scripts/os.mjs latido-entregas <latidoId> <tareaId,tareaId>   vincula entregas con un latido viejo
 //   node scripts/os.mjs accountability <puesto> "<texto>"   el resultado por el que responde (aprobado por el board)
+//   node scripts/os.mjs infra                        foto de infraestructura del día (planes y facturación), solo lectura
 //   node scripts/os.mjs puesto-campo <puesto> <mision|limites|criterio> "<texto>"
 //   node scripts/os.mjs traspaso-crear <de> <a> "<qué>" "<listo cuando>" ["<cuándo>"] ["<canal>"]
 //   node scripts/os.mjs modelo <puesto> <claude-opus-5-5|claude-sonnet-5-5|claude-haiku-5-5|claude-fable-5-2>
@@ -484,6 +485,11 @@ if (cmd === "sync") {
   p.accountability = texto;
   await guardarOS(d);
   console.log(`${p.sigla}: accountability cargado.`);
+} else if (cmd === "infra") {
+  // infra: la foto de infraestructura del día (planes y facturación de Vercel y Supabase). Solo lectura.
+  const f = await leer(`${CLAVE}-infra`);
+  if (!f) throw new Error("Todavía no hay foto de infraestructura (la toma el cron de las 8).");
+  console.log(JSON.stringify(f, null, 2));
 } else if (cmd === "puesto-campo") {
   // puesto-campo <puesto> <mision|limites|criterio> "<texto>": cambia un campo del DPT (aprobado por el board)
   const [puesto, campo, texto] = args;

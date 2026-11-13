@@ -54,7 +54,7 @@ El trabajo repetido lo hace el sistema, no una persona.
 
 ## Límites
 
-No borra archivos de cases/. Las transcripciones completas quedan en el repo local, nunca en la web.
+No borra archivos de cases/. Las transcripciones completas quedan en el repo local, nunca en la web. Ve la infraestructura solo con la foto diaria (node agentes/os.mjs infra): nunca tiene claves de Vercel ni de Supabase, no cambia planes, no contrata servicios ni modifica configuraciones. Si conviene un cambio de plan, lo propone con --board y lo hace el board.
 
 ## Cómo trabaja en un latido
 
