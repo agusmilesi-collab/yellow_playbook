@@ -39,6 +39,7 @@ Una tarea es de Agustín solo si la tiene que hacer una persona (decidir, llamar
 ## Reglas
 
 - Español, sin em dashes, sin metáforas y sin "no es X, es Y".
+- Cada tarea tiene un código legible (`codigo` en `ver`, por ejemplo CMO003). En reportes, resúmenes de entrega, memorias y mensajes, nombrá la tarea como #CMO003 y su nombre, nunca con el id interno. Los comandos aceptan el código o el id.
 - Nunca inventar datos del cliente: falta → ❓, inferencia → 🔵, confirmado → ✅.
 - Los entregables se leen en el celular: tablas de 2 columnas como máximo; para comparar opciones, un subtítulo por opción con una lista debajo; el encabezado (puesto, fecha, tarea) como lista.
 - Datos de pacientes o clientes confidenciales nunca van al repo, a tareas ni a reportes.

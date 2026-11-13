@@ -108,8 +108,19 @@ async function escribir(clave, valor) {
 async function leerOS() {
   const d = await leer(CLAVE);
   if (!d || d.version !== 3) throw new Error(`El documento ${CLAVE} no existe o está en la versión vieja: abrí os.agustinmilesi.com una vez y se actualiza solo.`);
+  // Código legible de cada tarea (CMO003), igual que lib/os/modelo.ts: los que faltan se asignan en orden de creación.
+  for (const t of d.tareas) t.codigo = /^[A-Z]{2,8}\d{3,}$/.test(t.codigo ?? "") ? t.codigo : "";
+  for (const t of d.tareas) if (!t.codigo) { const p = d.puestos.find((x) => x.id === t.puesto); if (p) t.codigo = proximoCodigo(d.tareas, p); }
   return d;
 }
+const prefijoTareas = (p) => (p.sigla.normalize("NFD").replace(/[^A-Za-z]/g, "").toUpperCase().slice(0, 8)) || p.id.toUpperCase().replace(/[^A-Z]/g, "").slice(0, 8) || "T";
+function proximoCodigo(tareas, p) {
+  const pre = prefijoTareas(p);
+  const max = tareas.reduce((m, t) => (t.codigo?.startsWith(pre) && /^\d+$/.test(t.codigo.slice(pre.length)) ? Math.max(m, Number(t.codigo.slice(pre.length))) : m), 0);
+  return `${pre}${String(max + 1).padStart(3, "0")}`;
+}
+/** Una tarea por id (k3x9a2bq) o por código (CMO003, con o sin #). */
+const tareaPor = (d, ref = "") => { const r = String(ref).replace(/^#/, ""); return d.tareas.find((t) => t.id === r || (t.codigo ?? "").toLowerCase() === r.toLowerCase()); };
 // Cada escritura sube la rev: si la pantalla estaba abierta, avisa en vez de pisar.
 const guardarOS = (d) => escribir(CLAVE, { ...d, rev: (d.rev ?? 0) + 1 });
 const ahora = () => {
@@ -394,17 +405,17 @@ if (cmd === "sync") {
   const ini = iniciativa ? d.iniciativas.find((i) => i.id === iniciativa) : null;
   if (iniciativa && !ini) throw new Error(`No hay iniciativa "${iniciativa}".`);
   const objetivo = ini?.objetivo ?? d.objetivos.find((o) => o.puesto === puesto && o.estado === "activo")?.id ?? null;
-  const t = { id: nuevoId(), puesto, objetivo, iniciativa: ini?.id ?? null, nombre, ejecuta: ejecuta === "agustin" ? "agustin" : "claude", estado: "pendiente", fecha: null, resultado: "", archivo: "", devolucion: "", decide: false, entregada: null, detalle, dod };
+  const t = { id: nuevoId(), codigo: proximoCodigo(d.tareas, d.puestos.find((p) => p.id === puesto)), puesto, objetivo, iniciativa: ini?.id ?? null, nombre, ejecuta: ejecuta === "agustin" ? "agustin" : "claude", estado: "pendiente", fecha: null, resultado: "", archivo: "", devolucion: "", decide: false, entregada: null, detalle, dod };
   d.tareas.push(t);
   await guardarOS(d);
-  console.log(`Tarea ${t.id} creada en ${puesto}.`);
+  console.log(`Tarea ${t.codigo} creada en ${puesto} (también sirve el id ${t.id}).`);
 } else if (cmd === "entregar" || cmd === "estado") {
   const iBoard = args.indexOf("--board");
   const alBoard = iBoard >= 0;
   if (alBoard) args.splice(iBoard, 1);
   const [tid, valor, archivo = ""] = args;
   const d = await leerOS();
-  const t = d.tareas.find((x) => x.id === tid);
+  const t = tareaPor(d, tid);
   if (!t) throw new Error(`No hay tarea "${tid}".`);
   if (cmd === "entregar") Object.assign(t, { estado: "revisar", resultado: valor ?? "", archivo, devolucion: "", decide: alBoard, entregada: new Date().toISOString() });
   else if (["pendiente", "curso", "devuelta", "hecha"].includes(valor)) t.estado = valor;
@@ -414,7 +425,7 @@ if (cmd === "sync") {
 } else if (cmd === "aprobar" || cmd === "devolver" || cmd === "escalar") {
   const [tid, motivo] = args;
   const d = await leerOS();
-  const t = d.tareas.find((x) => x.id === tid);
+  const t = tareaPor(d, tid);
   if (!t) throw new Error(`No hay tarea "${tid}".`);
   if (t.estado !== "revisar") throw new Error(`La tarea ${tid} no está para revisar (está ${t.estado}).`);
   if (cmd === "aprobar") Object.assign(t, { estado: "hecha", devolucion: "" });
@@ -434,7 +445,7 @@ if (cmd === "sync") {
   const vence = iVen >= 0 ? args.splice(iVen, 2)[1] : null;
   const [tid, nombre] = args;
   const d = await leerOS();
-  const t = d.tareas.find((x) => x.id === tid);
+  const t = tareaPor(d, tid);
   if (vence !== null && t) t.fecha = /^\d{4}-\d{2}-\d{2}$/.test(vence) ? vence : null;
   if (!t || (!nombre && detalle === null && dodN === null && vence === null)) throw new Error('Uso: tarea-editar <tareaId> ["<nombre>"] [--detalle "<texto>"] [--dod "<listo cuando>"]');
   if (nombre) t.nombre = nombre;
@@ -445,7 +456,8 @@ if (cmd === "sync") {
 } else if (cmd === "borrar") {
   const d = await leerOS();
   const antes = d.tareas.length;
-  d.tareas = d.tareas.filter((t) => t.id !== args[0]);
+  const quitar = tareaPor(d, args[0]);
+  d.tareas = d.tareas.filter((t) => t !== quitar);
   if (d.tareas.length === antes) throw new Error(`No hay tarea "${args[0]}".`);
   await guardarOS(d);
   console.log(`Tarea ${args[0]} borrada.`);
@@ -476,7 +488,7 @@ if (cmd === "sync") {
   if (!p) throw new Error(`Uso: ${cmd} <puesto> [tareaId]`);
   p.trabajando = cmd === "empezar" ? new Date().toISOString() : null;
   if (cmd === "empezar" && tid) {
-    const t = d.tareas.find((x) => x.id === tid && x.puesto === puesto);
+    const t = d.tareas.find((x) => x === tareaPor(d, tid) && x.puesto === puesto);
     if (!t) throw new Error(`${p.sigla} no tiene la tarea "${tid}".`);
     t.estado = "curso";
   }
