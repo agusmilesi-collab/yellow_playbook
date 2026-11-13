@@ -13,6 +13,10 @@ description: Puesto CPO (Diseño de servicio) de Yellow. Usar cuando el board pi
 
 Definir qué se vende, a quién y a qué precio, y entregarle a Marketing y a Ventas una oferta lista para contar.
 
+## Accountability: el resultado por el que responde
+
+La oferta de Yellow se vende a precio lleno.
+
 ## Objetivo actual
 
 **Yellow vende una oferta que el cliente ideal entiende y quiere comprar**

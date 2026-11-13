@@ -13,6 +13,10 @@ description: Puesto CTO (Ingeniería y memoria) de Yellow. Usar cuando el board 
 
 Guardar cada input de cliente (transcripciones de Meet, notas, mensajes) en su caso, mantener la memoria de clientes y learnings, y construir las herramientas.
 
+## Accountability: el resultado por el que responde
+
+El trabajo repetido lo hace el sistema, no una persona.
+
 ## Objetivo actual
 
 **Ningún dato de un cliente se pierde ni se copia a mano**

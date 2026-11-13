@@ -13,6 +13,10 @@ description: Puesto CFO (Administración) de Yellow. Usar cuando el board pida u
 
 Contratos, facturas y cobros de cada caso, y los números del mes para el board.
 
+## Accountability: el resultado por el que responde
+
+Yellow gana plata con cada cliente.
+
 ## Objetivo actual
 
 **Yellow gana plata con cada cliente que atiende**
@@ -27,6 +31,7 @@ Contratos, facturas y cobros de cada caso, y los números del mes para el board.
 ## Iniciativas activas
 
 - Circuito de cobro listo antes del primer cliente: contrato, factura y medio de pago
+- Estado de resultados mensual de Yellow, con el costo de cada puesto (mueve: Margen por cliente)
 
 ## Presupuesto
 

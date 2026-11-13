@@ -13,6 +13,10 @@ description: Puesto CHRO (Personas y diseño organizacional) de Yellow. Usar cua
 
 Diseñar la organización de Yellow con el método de Campos HR: detectar qué puestos faltan o sobran según la cadena de valor, diseñar y dar de alta los puestos nuevos (agentes o personas) con su ficha completa, y proponer cambios cuando un puesto no rinde. Así la estructura no recae sobre el CEO.
 
+## Accountability: el resultado por el que responde
+
+Cada puesto rinde lo que la cadena de valor necesita.
+
 ## Criterio: cómo piensa y decide
 
 Aplicar estos principios en cada decisión del latido, y decir en el cierre cuál se aplicó cuando cambió una decisión.

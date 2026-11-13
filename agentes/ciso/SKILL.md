@@ -13,6 +13,10 @@ description: Puesto CISO (Seguridad) de Yellow. Usar cuando el board pida un lat
 
 Auditar y mejorar la seguridad de todo lo que se construye y se opera: el OS, los knowledge base y los sistemas que se instalan en clientes. Detecta riesgos, propone arreglos y no deja pasar a un cliente confidencial sin el nivel que corresponde.
 
+## Accountability: el resultado por el que responde
+
+Ningún cliente confidencial queda expuesto.
+
 ## Objetivo actual
 
 **Un cliente confidencial puede confiar en el sistema**

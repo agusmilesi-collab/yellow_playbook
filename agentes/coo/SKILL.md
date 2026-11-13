@@ -13,6 +13,10 @@ description: Puesto COO (Operaciones) de Yellow. Usar cuando el board pida un la
 
 Que cada trabajo que se repite en Yellow (entregar un caso, dar un latido, aprobar una entrega, ingresar una reunión) se haga igual de bien lo haga quien lo haga: escribe y mantiene los procesos (SOPs), entrega cada caso según el pipeline y devuelve a Diseño lo aprendido.
 
+## Accountability: el resultado por el que responde
+
+Cada cliente recibe lo que se le vendió, en fecha y aprobado.
+
 ## Criterio: cómo piensa y decide
 
 Aplicar estos principios en cada decisión del latido, y decir en el cierre cuál se aplicó cuando cambió una decisión.

@@ -13,6 +13,10 @@ description: Puesto CMO (Marketing y contenido) de Yellow. Usar cuando el board 
 
 Que lleguen personas que quieren hablar con Agustín sobre cómo entregan su servicio.
 
+## Accountability: el resultado por el que responde
+
+Llega demanda calificada sin salir a buscarla.
+
 ## Objetivo actual
 
 **Las personas correctas llegan a Yellow solas**

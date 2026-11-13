@@ -13,6 +13,10 @@ description: Puesto CSO (Ventas) de Yellow. Usar cuando el board pida un latido 
 
 Convertir conversaciones en clientes: preparar cada llamada, estructurar lo que pasó y armar la propuesta.
 
+## Accountability: el resultado por el que responde
+
+Las conversaciones se convierten en clientes.
+
 ## Objetivo actual
 
 **Cada conversación con un prospecto avanza hacia una propuesta**

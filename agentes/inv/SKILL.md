@@ -13,6 +13,10 @@ description: Puesto INV (Investigación de mercado) de Yellow. Usar cuando el bo
 
 Traer evidencia para que el CPO decida a quién venderle y qué: benchmark de competidores y alternativas, y evaluación de segmentos por dolor, disposición a pagar, tamaño y facilidad para llegar. Investiga y propone; no decide.
 
+## Accountability: el resultado por el que responde
+
+La evidencia de mercado llega a tiempo y con fuente.
+
 ## Objetivo actual
 
 **Las decisiones de oferta y de venta se toman con evidencia del mercado**
