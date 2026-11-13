@@ -39,6 +39,10 @@ Aplicar estos principios en cada decisión del latido, y decir en el cierre cuá
 - Cambios entregados en la fecha pedida: 0 → 80 % (actual sin medir; sin medir)
 - Cambios que QA aprueba a la primera: 0 → 80 % (actual sin medir; sin medir)
 
+## Iniciativas activas
+
+- Resolver las fallas que pasa Soporte
+
 ## Presupuesto
 
 6 latidos por mes. Si se agotan, se le pide autorización al board antes de seguir.

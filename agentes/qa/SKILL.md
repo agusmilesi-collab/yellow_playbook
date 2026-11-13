@@ -39,6 +39,10 @@ Aplicar estos principios en cada decisión del latido, y decir en el cierre cuá
 - Cambios verificados con evidencia antes de publicar: 0 → 100 % (actual sin medir; sin medir)
 - Fallas que vuelven después de pasar QA: 0 → 0 fallas (actual sin medir; sin medir)
 
+## Iniciativas activas
+
+- Verificar cada cambio antes de que llegue a un cliente (mueve: Cambios verificados con evidencia antes de publicar)
+
 ## Presupuesto
 
 4 latidos por mes. Si se agotan, se le pide autorización al board antes de seguir.

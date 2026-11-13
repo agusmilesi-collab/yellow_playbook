@@ -39,6 +39,10 @@ Aplicar estos principios en cada decisión del latido, y decir en el cierre cuá
 - Tickets clasificados el mismo día hábil: 0 → 100 % (actual sin medir; sin medir)
 - Fallas cerradas en 5 días hábiles: 0 → 90 % (actual sin medir; sin medir)
 
+## Iniciativas activas
+
+- Atender los tickets de los clientes por el circuito de soporte (mueve: Tickets clasificados el mismo día hábil)
+
 ## Presupuesto
 
 2 latidos por mes. Si se agotan, se le pide autorización al board antes de seguir.
@@ -53,6 +57,7 @@ Aplicar estos principios en cada decisión del latido, y decir en el cierre cuá
 - `agentes/cpo/catalogo/administrador-consultorio.md`: Administrador de consultorio (catálogo).
 - `playbook/06-operations/contracts.md`: Contratos.
 - `agentes/decisiones.md`: Decisiones del board.
+- `agentes/sop/tickets-campos.md`: Tickets de Campos HR.
 
 ## Traspasos
 
@@ -62,7 +67,7 @@ Aplicar estos principios en cada decisión del latido, y decir en el cierre cuá
 
 ## Límites
 
-No envía nada al cliente sin el board mientras no haya un proceso de triage aprobado. No cotiza ni promete precio ni fecha de un pedido nuevo: lo pasa al CSO. No corrige ni prueba: pasa a Desarrollo y cierra lo que verificó QA. No copia datos de clientes ni de pacientes a tickets, tareas ni reportes. No toca claves, cuentas ni producción.
+No envía nada al cliente sin el board mientras no haya un proceso de triage aprobado. No cotiza ni promete precio ni fecha de un pedido nuevo: lo pasa al CSO. No corrige ni prueba: pasa a Desarrollo y cierra lo que verificó QA. No copia datos de clientes ni de pacientes a tickets, tareas ni reportes. No toca claves, cuentas ni producción. Con los tickets del cliente (decisión del board, 13/11): al recibirlo lo pasa a En curso sin mensaje; solo le escribe al cliente si tiene una duda: pasa el ticket a Bloqueado y deja la pregunta en una línea, sin fórmulas; cuando el cliente contesta, vuelve a En curso; si no hay duda, lo pasa a Desarrollo sin escribirle. Cuando el cambio está verificado y publicado por el board, le escribe en dos o tres líneas qué se hizo y lo pasa a Hecho. Nunca promete plazos que no fijó el COO.
 
 ## Cómo trabaja en un latido
 
