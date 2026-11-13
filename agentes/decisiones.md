@@ -41,3 +41,5 @@ Cada decisión con fecha, qué se decidió y qué cambia. La leen todos los pues
 - **2026-11-13:** Alta del área de desarrollo y soporte (13/11/2026): el board aprobó las fichas del CHRO (#CHRO008). Desarrollo (Linus, Sonnet, 6 latidos, reporta al CTO), QA (Kaoru, Opus, 4 latidos, reporta al COO) y Soporte (Tony, Sonnet, 2 latidos hasta el primer cliente y 4 después, reporta al COO; alta desde hoy). En repos públicos Desarrollo no sube ramas: trabaja en local y publica el board.
 
 - **2026-11-13:** Respuestas de Soporte a los clientes (13/11/2026): sin burocracia. Al recibir un ticket, Soporte lo pasa a En curso sin mensaje. Solo escribe si tiene una duda (una línea). Si no, pasa a Desarrollo en silencio. Al terminar, y recién cuando el board publicó el cambio, le cuenta al cliente qué se hizo y cierra el ticket. Soporte puede escribir el estado y la respuesta en los tickets del cliente.
+
+- **2026-11-13:** Estado Bloqueado en los tickets (13/11/2026): Campos HR sumó el estado Bloqueado. Soporte lo usa cuando necesita una respuesta del cliente: Bloqueado con la pregunta en una línea; cuando el cliente contesta, vuelve a En curso.
