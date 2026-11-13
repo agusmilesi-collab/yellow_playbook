@@ -505,6 +505,16 @@ if (cmd === "sync") {
   const f = await leer(`${CLAVE}-infra`);
   if (!f) throw new Error("Todavía no hay foto de infraestructura (la toma el cron de las 8).");
   console.log(JSON.stringify(f, null, 2));
+} else if (cmd === "skill-agregar") {
+  // skill-agregar <puesto> "<nombre>" <ruta>: suma un archivo de skills al DPT (aprobado por el board)
+  const [puesto, nombre, ruta] = args;
+  const d = await leerOS();
+  const p = d.puestos.find((x) => x.id === puesto);
+  if (!p || !nombre || !ruta) throw new Error('Uso: skill-agregar <puesto> "<nombre>" <ruta>');
+  p.skills = [...p.skills.filter((k) => k.ruta !== ruta), { nombre, ruta }];
+  await guardarOS(d);
+  exportar(d);
+  console.log(`${p.sigla}: skill "${nombre}" agregada.`);
 } else if (cmd === "puesto-campo") {
   // puesto-campo <puesto> <mision|limites|criterio> "<texto>": cambia un campo del DPT (aprobado por el board)
   const [puesto, campo, texto] = args;
