@@ -11,3 +11,5 @@ Lo que este puesto aprendió trabajando y no tiene que volver a preguntar. Una l
 - 2026-11-13 | Los agentes de clientes van por la API de Claude (términos comerciales, sin entrenamiento); el plan Max (términos de consumo) no admite acceso automatizado ni cuentas compartidas. Fuente: anthropic.com/legal.
 - 2026-11-13 | Desde la sesión en la nube no abren nic.ar (conexión cortada) ni pricing.registrar.cloudflare.com (403); esos precios salen de búsquedas web y van como 🔵. Fuente: latido CTO.
 - 2026-11-13 | `node agentes/os.mjs infra` no trae datos hasta que el board cargue VERCEL_TOKEN_LECTURA y SUPABASE_PAT_LECTURA en Vercel. Fuente: latido CTO.
+- 2026-11-13 | Paperclip (MIT) es para equipos técnicos; se copian ideas (corte de gasto, tope de rondas de devolución, paquete de equipo), no código. Fuente: agentes/cto/informes/paperclip-2026-11-13.md.
+- 2026-11-13 | Console de Anthropic: crédito prepago por organización, vence al año y no se reembolsa; tope mensual en settings/spend-limits (Start USD 500). La docs no explica cómo crear una organización nueva. Fuente: agentes/cto/informes/console-clientes-2026-11-13.md.

@@ -9,3 +9,5 @@ Lo que este puesto aprendió trabajando y no tiene que volver a preguntar. Una l
 - 2026-11-13: Margen 60% con Modelo B (USD 2.000, 60-80 h según `pricing.md`) equivale a valuar la hora de Agustín en ~USD 10. No hay registro de horas por caso.
 - 2026-11-13: Medio de cobro recomendado: transferencia bancaria (gratis e inmediata, BCRA, tope USD 12.500/día). Wise con dudas de alta en Argentina; Payoneer para exterior.
 - 2026-11-13: Lisandro: el estado de la segunda mitad (ARS 250.000) y las fechas de pago siguen sin confirmar.
+- 2026-11-13: Cobro del primer cliente decidido: transferencia a la cuenta de Agustín, ARS 500.000 en dos pagos de 250.000, ambos antes de lo que habilitan (decisiones.md). Los datos de la cuenta los completa el board al enviar el mensaje; nunca van al repo ni al OS.
+- 2026-11-13: El contrato modelo sigue en USD 2.000 con segundo pago post entrega; hay que alinearlo con la decisión del 13/11.

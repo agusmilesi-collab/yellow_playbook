@@ -1,0 +1,233 @@
+{
+  "configuracion": "taller",
+  "actividades": [
+    {
+      "id": "generar-demanda",
+      "nombre": "Generar demanda de profesionales",
+      "tipo": "primaria",
+      "ciclo": false,
+      "responsable": "cmo",
+      "colaboradores": ["cpo"],
+      "pasos": [
+        "Contar la oferta aprobada en el sitio y en contenidos",
+        "Recibir el pedido de llamada",
+        "Pasar el lead al CSO con nombre, contacto, origen y problema nombrado"
+      ]
+    },
+    {
+      "id": "vender",
+      "nombre": "Vender la propuesta",
+      "tipo": "primaria",
+      "ciclo": false,
+      "responsable": "cso",
+      "colaboradores": ["inv", "cfo"],
+      "pasos": [
+        "Hacer la llamada de discovery",
+        "Enviar la propuesta con precio en dos partes",
+        "Firmar el contrato",
+        "Confirmar el primer pago acreditado",
+        "Pasar el cliente al COO"
+      ]
+    },
+    {
+      "id": "diagnosticar",
+      "nombre": "Diagnosticar el servicio del profesional",
+      "tipo": "primaria",
+      "ciclo": true,
+      "responsable": "coo",
+      "colaboradores": ["cto"],
+      "pasos": [
+        "Hacer la entrevista de diagnóstico",
+        "Guardar la transcripción en el caso",
+        "Mapear el trabajo que su cliente le encarga al profesional (JTBD)",
+        "Detectar dónde se pierde valor y qué tareas se repiten"
+      ]
+    },
+    {
+      "id": "redisenar",
+      "nombre": "Rediseñar la entrega del servicio",
+      "tipo": "primaria",
+      "ciclo": true,
+      "responsable": "coo",
+      "colaboradores": ["cpo"],
+      "pasos": [
+        "Diseñar el servicio nuevo con el método Yellow",
+        "Elegir qué agentes del catálogo lo operan",
+        "Validar el rediseño con el profesional",
+        "Pasar al CTO el alcance del sistema a construir"
+      ]
+    },
+    {
+      "id": "instalar",
+      "nombre": "Instalar los agentes en el servicio del cliente",
+      "tipo": "primaria",
+      "ciclo": true,
+      "responsable": "coo",
+      "colaboradores": ["cto", "ciso"],
+      "pasos": [
+        "Configurar el agente con los datos del profesional",
+        "Revisar el acceso a los datos de sus clientes",
+        "Probar el agente con casos reales",
+        "Hacer la reunión de onboarding"
+      ]
+    },
+    {
+      "id": "cerrar-etapa",
+      "nombre": "Evaluar y cerrar la etapa",
+      "tipo": "primaria",
+      "ciclo": true,
+      "responsable": "coo",
+      "colaboradores": [],
+      "pasos": [
+        "Validar con el profesional el Listo cuando de la etapa",
+        "Avisar al CFO que la etapa está para facturar",
+        "Escribir lo aprendido para el CPO"
+      ]
+    },
+    {
+      "id": "cobrar",
+      "nombre": "Facturar y cobrar",
+      "tipo": "primaria",
+      "ciclo": true,
+      "responsable": "cfo",
+      "colaboradores": ["coo"],
+      "pasos": [
+        "Emitir la factura de la etapa o del mes",
+        "Seguir el pago hasta que se acredita",
+        "Registrar el cobro en el caso"
+      ]
+    },
+    {
+      "id": "operar-agentes",
+      "nombre": "Operar los agentes instalados cada mes",
+      "tipo": "primaria",
+      "ciclo": true,
+      "responsable": null,
+      "colaboradores": ["coo", "cto"],
+      "pasos": [
+        "Revisar que cada agente cumpla su Listo cuando",
+        "Corregir lo que falla",
+        "Medir el costo mensual de cada agente",
+        "Informar al profesional qué hizo su equipo en el mes"
+      ]
+    },
+    {
+      "id": "recompra-referidos",
+      "nombre": "Pedir recompra y referidos",
+      "tipo": "primaria",
+      "ciclo": true,
+      "responsable": null,
+      "colaboradores": ["cso", "coo"],
+      "pasos": [
+        "Proponer el agente siguiente del catálogo al cerrar una etapa",
+        "Pedir un referido",
+        "Volver a diagnosticar cuando el profesional suma un agente"
+      ]
+    },
+    {
+      "id": "disenar-oferta",
+      "nombre": "Diseñar la oferta y el catálogo de agentes",
+      "tipo": "soporte",
+      "ciclo": false,
+      "responsable": "cpo",
+      "colaboradores": ["inv"],
+      "pasos": [
+        "Definir a quién se le vende y la frase",
+        "Escribir el DPT de cada agente del catálogo",
+        "Fijar qué entra en el rediseño y qué en el abono mensual"
+      ]
+    },
+    {
+      "id": "investigar-mercado",
+      "nombre": "Investigar el mercado y calificar prospectos",
+      "tipo": "soporte",
+      "ciclo": false,
+      "responsable": "inv",
+      "colaboradores": [],
+      "pasos": [
+        "Comparar segmentos, competidores y precios con fuentes",
+        "Armar la lista de prospectos calificados",
+        "Entregar una recomendación marcada como tal"
+      ]
+    },
+    {
+      "id": "mantener-metodo",
+      "nombre": "Mantener el método con lo aprendido",
+      "tipo": "soporte",
+      "ciclo": false,
+      "responsable": "cpo",
+      "colaboradores": ["coo"],
+      "pasos": [
+        "Leer los learnings de cada caso",
+        "Decidir qué cambia en el playbook",
+        "Actualizar los procesos del servicio"
+      ]
+    },
+    {
+      "id": "construir-tecnologia",
+      "nombre": "Construir los agentes y la memoria interna",
+      "tipo": "soporte",
+      "ciclo": false,
+      "responsable": "cto",
+      "colaboradores": ["ciso"],
+      "pasos": [
+        "Construir cada agente del catálogo una vez para todos los clientes",
+        "Guardar cada reunión y dato en su caso",
+        "Bajar el costo por latido"
+      ]
+    },
+    {
+      "id": "proteger-datos",
+      "nombre": "Proteger los datos de los clientes y de sus clientes",
+      "tipo": "soporte",
+      "ciclo": false,
+      "responsable": "ciso",
+      "colaboradores": [],
+      "pasos": [
+        "Auditar accesos y claves",
+        "Cerrar los hallazgos críticos",
+        "Revisar cada sistema antes de instalarlo en un cliente"
+      ]
+    },
+    {
+      "id": "administrar-margen",
+      "nombre": "Administrar el margen y los gastos",
+      "tipo": "soporte",
+      "ciclo": false,
+      "responsable": "cfo",
+      "colaboradores": [],
+      "pasos": [
+        "Registrar los gastos del mes",
+        "Calcular el margen por cliente",
+        "Avisar cuando un gasto o un precio pone en riesgo el margen"
+      ]
+    },
+    {
+      "id": "disenar-puestos",
+      "nombre": "Diseñar la estructura y los puestos",
+      "tipo": "soporte",
+      "ciclo": false,
+      "responsable": "chro",
+      "colaboradores": [],
+      "pasos": [
+        "Derivar los puestos de esta cadena",
+        "Escribir el criterio y el accountability de cada puesto",
+        "Proponer altas, cambios y bajas con la ficha completa"
+      ]
+    },
+    {
+      "id": "dirigir",
+      "nombre": "Dirigir la empresa",
+      "tipo": "soporte",
+      "ciclo": false,
+      "responsable": "ceo",
+      "colaboradores": [],
+      "pasos": [
+        "Bajar el objetivo del board a cada puesto",
+        "Revisar las entregas de los Chiefs",
+        "Destrabar el camino crítico",
+        "Reportar al board cada semana"
+      ]
+    }
+  ]
+}

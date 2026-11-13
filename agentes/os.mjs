@@ -218,7 +218,11 @@ function sync() {
     const desc = (b.match(/\*\*Descripción:\*\*\s*([^\n]+)/)?.[1] ?? "").split(/(?<=\.)\s/)[0];
     learnings.push({ codigo, titulo: `${caso} · ${tipo}: ${desc}`.slice(0, 300) });
   }
-  return { sincronizado: hoy(), casos, learnings };
+  // Cadena de valor del CHRO (método Campos): la lee Objetivos.
+  const rutaCadena = join(REPO, "agentes", "chro", "cadena-de-valor.json");
+  let cadena = null;
+  if (existsSync(rutaCadena)) { try { cadena = JSON.parse(readFileSync(rutaCadena, "utf8")); } catch { console.log("AVISO: agentes/chro/cadena-de-valor.json no es un JSON válido; no se subió la cadena."); } }
+  return { sincronizado: hoy(), casos, learnings, cadena };
 }
 
 const AGENTES = { "claude-code": "Claude Code", api: "Clave de API", openclaw: "OpenClaw", hermes: "Hermes", persona: "Persona" };

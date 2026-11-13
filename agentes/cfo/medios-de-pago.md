@@ -1,62 +1,78 @@
-# Cómo cobrar USD 2.000 desde Argentina: 3 opciones
+# Cobro del primer cliente: transferencia, ARS 500.000 en dos pagos
 
-- **Tarea:** jq2lffuq
-- **Fecha de consulta de todas las fuentes:** 13/11/2026
 - **Puesto:** CFO
-- **Supuesto:** el cobro es de USD 2.000 en dos pagos de USD 1.000 (50% / 50%, `pricing.md`). Las comisiones se calculan sobre USD 1.000 por pago.
-- **Aviso:** varias cifras salen de guías de terceros, no del tarifario oficial; están marcadas 🔵 y hay que confirmarlas en la app antes del primer cobro.
+- **Fecha:** 13/11/2026
+- **Tarea:** jq2lffuq (vence 16/11/2026)
+- **Decisión que aplica:** precio y cobro del primer cliente, `agentes/decisiones.md`, 13/11/2026 ✅
 
-## Comparación
+## Medio de cobro elegido
 
-### 1. Transferencia bancaria (pesos o USD)
+Transferencia bancaria a la cuenta de Agustín ✅ (decisión del board, 13/11/2026).
 
-- **Para qué cliente:** Cliente en Argentina con cuenta bancaria
-- **Comisión:** 0%. Las transferencias inmediatas de usuarios finales son gratuitas ✅ (BCRA)
-- **Costo sobre USD 1.000:** USD 0
-- **Plazo de acreditación:** Inmediato, 24 h todos los días ✅ (BCRA). Tope: USD 12.500 por día en moneda extranjera ✅
-- **Qué necesita el cliente:** CBU/CVU o alias de Agustín. En USD: que el cliente tenga caja de ahorro en dólares
-- **Qué necesita Agustín:** Caja de ahorro en pesos (y en dólares, para cobrar en USD)
+- **Comisión:** 0%. Las transferencias inmediatas de usuarios finales son gratuitas ✅ (BCRA, consultado 13/11/2026)
+- **Plazo:** inmediato, 24 horas todos los días ✅ (BCRA)
+- **Moneda:** pesos. Se cobra en ARS, sin tipo de cambio
+- **Qué necesita el cliente:** el CBU o alias de Agustín y el CUIT del titular para verificar el destino
 
-### 2. Mercado Pago (link de pago)
+Mercado Pago y Payoneer quedan fuera para este cliente: cobran comisión (Mercado Pago 2,99% a 6,49% más IVA 🔵) y el cliente es de Argentina. Se retoman solo si un cliente pide tarjeta o paga desde el exterior.
 
-- **Para qué cliente:** Cliente en Argentina que quiere pagar con tarjeta o en cuotas
-- **Comisión:** Link con acreditación inmediata: 6,49% + IVA 🔵; a 30 días: 2,99% + IVA 🔵. Cuotas sin interés: costo extra (3 cuotas ~10,49%) 🔵
-- **Costo sobre USD 1.000:** USD 78,50 inmediata / USD 36,20 a 30 días (con IVA 21%)
-- **Plazo de acreditación:** Inmediato pagando la comisión alta; 30 días con la baja 🔵
-- **Qué necesita el cliente:** Tarjeta o cuenta de Mercado Pago; Agustín genera el link
-- **Qué necesita Agustín:** Cuenta de Mercado Pago
+## Los dos pagos
 
-### 3. Payoneer (cliente del exterior)
+| Pago | Condición |
+|---|---|
+| 1: ARS 250.000 | Antes de empezar. Sin este pago no arranca el diagnóstico |
+| 2: ARS 250.000 | Antes de la entrega o de la reunión de onboarding, lo que ocurra primero |
 
-- **Para qué cliente:** Cliente fuera de Argentina
-- **Comisión:** Recibir USD por transferencia: 1% (mínimo USD 1) 🔵. Retirar a banco argentino: hasta 2% 🔵
-- **Costo sobre USD 1.000:** USD 10 + hasta USD 20 = hasta USD 30
-- **Plazo de acreditación:** Al recibir: 🔵 1 a 3 días hábiles ❓ (sin fuente oficial). Retiro a banco: ❓
-- **Qué necesita el cliente:** Que pague por transferencia a la cuenta de recepción en USD de Payoneer o por solicitud de pago. Con tarjeta: 3% 🔵
-- **Qué necesita Agustín:** Cuenta Payoneer verificada; Factura E (ver `como-facturar.md`)
+Regla: nunca se entrega una parte sin haber cobrado antes el pago que la habilita (aprendizaje del caso Lisandro, que pagó solo el primer tramo y no terminó el onboarding ✅).
 
-**Wise quedó fuera:** las fuentes se contradicen sobre si hoy acepta usuarios nuevos en Argentina (Rankia y Global66 hablan de funciones limitadas; El Cronista publicó que dejó de recibir nuevos usuarios). Payoneer tiene operación en Argentina documentada por la propia empresa.
+## Datos de la cuenta: los completa el board
 
-## Recomendación
+El CFO no escribe ni guarda números de cuenta. El board completa estos campos en el mensaje al cliente en el momento de enviarlo, y no en este archivo ni en el repo.
 
-**Por defecto: transferencia bancaria** para cualquier cliente en Argentina. Cuesta 0, acredita en el momento y USD 1.000 entra holgado en el tope diario. Si el cliente paga en pesos, se toma el MEP del día de cada pago (`pricing.md`).
+- **Titular:** [TITULAR DE LA CUENTA]
+- **CUIT del titular:** [CUIT]
+- **Banco:** [BANCO]
+- **Tipo de cuenta:** caja de ahorro en pesos [CONFIRMAR]
+- **CBU:** [CBU, 22 DÍGITOS]
+- **Alias:** [ALIAS]
 
-- Si el cliente pide pagar con tarjeta o en cuotas: Mercado Pago **a 30 días**, y el costo (~3,6% con IVA) se suma al precio o lo absorbe Yellow; decisión del board ❓. La acreditación inmediata (~7,9%) no conviene.
-- Si el cliente es del exterior: Payoneer, con transferencia (no tarjeta). Costo total estimado hasta 3%.
+Pregunta al board ❓: ¿la cuenta es caja de ahorro personal o cuenta a nombre del monotributo? Para el monotributo es la misma persona; alcanza con que el titular coincida con quien factura.
 
-## Qué tiene que decidir el board
+## Mensaje al cliente para el primer pago
 
-1. Aprobar la transferencia bancaria como medio por defecto (recomendado).
-2. Si se ofrece Mercado Pago, ¿la comisión la paga el cliente o Yellow?
-3. ❓ ¿Agustín ya tiene caja de ahorro en dólares, cuenta de Mercado Pago o cuenta Payoneer? Con eso se sabe qué hay que abrir antes del primer cliente.
+Para mandar por WhatsApp o correo cuando el cliente confirme. Lo envía el board.
 
-## Fuentes (consultadas el 13/11/2026)
+> Hola [NOMBRE]. Para arrancar, te paso los datos para el primer pago de ARS 250.000:
+>
+> Titular: [TITULAR DE LA CUENTA]
+> CUIT: [CUIT]
+> Banco: [BANCO]
+> CBU: [CBU]
+> Alias: [ALIAS]
+>
+> Cuando lo transfieras, mandame el comprobante y agendamos el primer encuentro. El segundo pago, también de ARS 250.000, se hace antes de la reunión de entrega. Por cada pago te mando la factura.
 
-- BCRA, "Conocer los límites de las transferencias inmediatas": https://www.bcra.gob.ar/conocer-los-limites-de-las-transferencias-inmediatas/
-- Mercado Pago Argentina, link de pago: https://www.mercadopago.com.ar/herramientas-para-vender/link-de-pago
-- Simulador de comisiones Mercado Pago 2026 (tercero): https://app.spomsolutions.com/herramientas/comisiones-mercado-pago-2026
-- Payoneer, "Estrategias para usar y mover tus fondos en Argentina": https://www.payoneer.com/es/resources/business/estrategias-para-usar-y-mover-tus-fondos-en-argentina/
-- Payoneer, centro de ayuda (tarifa de recepción en USD): https://payoneer.custhelp.com/app/answers/detail/a_id/38762
-- Finder, reseña de Payoneer (tarjeta 3%): https://www.finder.com/ca/payoneer-review
-- Rankia, cómo enviar dinero del extranjero a Argentina: https://www.rankia.com.ar/blog/mejores-cuentas-bancarias-argentina/4250874-como-enviar-dinero-extranjero-argentina
-- El Cronista, tema Wise: https://www.cronista.com/tema/wise/
+## Mensaje al cliente para el segundo pago
+
+> Hola [NOMBRE]. Ya está todo listo para la entrega del [FECHA]. Antes de esa reunión te pido el segundo pago de ARS 250.000 a la misma cuenta (alias [ALIAS]). Con el comprobante confirmamos el horario.
+
+## Paso a paso del cobro
+
+1. El cliente confirma: el board le manda el mensaje del primer pago con los datos completos.
+2. Llega el comprobante: el board verifica en el homebanking que el dinero entró (el comprobante solo no alcanza).
+3. El board avisa al CFO en el OS: fecha y monto acreditado. El CFO lo anota en el estado de resultados del mes.
+4. Factura C por ARS 250.000 (Agustín es monotributista ✅). La emite el board hasta que el agente Administrador aprenda a hacerlo (lo construye el CTO).
+5. Recién entonces se agenda el primer encuentro.
+6. Antes de la entrega: mensaje del segundo pago y se repiten los pasos 2 a 4.
+
+## Qué queda para el board
+
+1. Completar los datos de la cuenta en el mensaje al enviarlo (nunca en el repo ni en el OS).
+2. ❓ Confirmar si la cuenta es personal y si el titular coincide con quien factura.
+3. Recomendación del CFO: el contrato modelo (`agentes/cfo/contrato-modelo.md`) todavía dice USD 2.000 y cobra el segundo pago después de la entrega. Hay que actualizarlo a ARS 500.000 y segundo pago antes de la entrega. Propongo hacerlo como tarea nueva del CFO.
+
+## Fuentes
+
+- `agentes/decisiones.md`, 13/11/2026: "ARS 500.000 en dos pagos de ARS 250.000, el primero antes de empezar y el segundo antes de la entrega o de la reunión de onboarding, por transferencia a la cuenta de Agustín (el CFO pide el CBU)".
+- Devolución del board a la tarea jq2lffuq: "Transferencia a mi cuenta. Luego pedime cbu."
+- BCRA, "Conocer los límites de las transferencias inmediatas" (consultado 13/11/2026): https://www.bcra.gob.ar/conocer-los-limites-de-las-transferencias-inmediatas/

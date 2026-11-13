@@ -10,3 +10,4 @@ Lo que este puesto aprendió trabajando y no tiene que volver a preguntar. Una l
 - **2026-11-13:** La oferta en dos capas choca con `offer.md` en "Lo que NO vendemos" (programación y marketing) y con `icp.md` Tier 1 (fábrica de casos). Propuesto en LRN-025. Fuente: `learnings/oferta/oferta-os-agentes.md`.
 - **2026-11-13:** Abono del agente calculado desde el costo del CTO (USD 21 por mes por cliente) y la meta de margen del CFO (60%): unos USD 53. Fuente: misma.
 - **2026-11-13:** El catálogo de agentes vive en `agentes/cpo/catalogo/`, con un .md para leer y un .json para dar de alta. Fuente: tarea ylwxyxzh.
+- **2026-11-13:** Planteo del board: precio fijo sin suscripción, IA con la tarjeta del cliente. Postura del CPO: MVP OS + Secretario por Telegram a ARS 500.000; el abono mensual por agente se cambia por empleado nuevo a ARS 250.000 y cambios en paquetes de 4 h a ARS 100.000 (a aprobar). Fuente: `agentes/reuniones/2026-11-13-cpo.md`.
