@@ -325,6 +325,14 @@ if (cmd === "sync") {
   appendFileSync(dec, `\n- **${ahora().slice(0, 10)}:** ${args[0]}\n`);
   console.log("Decisión anotada en agentes/decisiones.md.");
 } else if (cmd === "ver") {
+  // Lo que el puesto tiene que leer antes de trabajar va en la misma salida: un paso en vez de cuatro.
+  const leerSi = (ruta) => (existsSync(ruta) ? readFileSync(ruta, "utf8").trim() : "(no existe)");
+  const contexto = (pid) => {
+    const a = join(REPO, "agentes");
+    const partes = pid ? [["FICHA", join(a, pid, "SKILL.md")], ["MEMORIA", join(a, pid, "MEMORIA.md")]] : [["MEMORIA DEL CEO", join(a, "ceo", "MEMORIA.md")]];
+    partes.push(["DECISIONES DEL BOARD", join(a, "decisiones.md")]);
+    for (const [t, r] of partes) console.log(`\n===== ${t} (${r.slice(REPO.length + 1)}) =====\n${leerSi(r)}`);
+  };
   const d = await leerOS();
   const [pid] = args;
   const mes = ahora().slice(0, 7);
@@ -348,6 +356,7 @@ if (cmd === "sync") {
     console.log("\nTraspasos:");
     for (const x of d.traspasos) console.log(`${x.id}: ${x.de} → ${x.a} (${x.que}; listo cuando: ${x.criterio || "-"}) en tránsito: ${x.enTransito.length ? x.enTransito.join("; ") : "-"}`);
     if (d.reporte) console.log(`\nÚltimo reporte del CEO (${d.reporte.fecha}):\n${d.reporte.texto}`);
+    if (!args.includes("--corto")) contexto(null);
   } else {
     const p = d.puestos.find((x) => x.id === pid);
     if (!p) throw new Error(`No hay puesto "${pid}". Puestos: ${d.puestos.map((x) => x.id).join(", ")}`);
@@ -363,11 +372,9 @@ if (cmd === "sync") {
       paraRevisar: d.tareas.filter((t) => t.estado === "revisar" && !t.decide && d.puestos.find((x) => x.id === t.puesto)?.reportaA === pid),
       traspasos: d.traspasos.filter((x) => x.de === pid || x.a === pid),
       repo: REPO,
-      ficha: join(REPO, "agentes", pid, "SKILL.md"),
-      memoria: join(REPO, "agentes", pid, "MEMORIA.md"),
-      decisiones: join(REPO, "agentes", "decisiones.md"),
-    }, null, 2));
+    }, null, 1));
     if (p.presupuesto.latidosMes && lat(pid) >= p.presupuesto.latidosMes) console.log(`\nAVISO: ${p.sigla} ya usó sus ${p.presupuesto.latidosMes} latidos del mes. Pedirle al board que lo autorice antes de trabajar.`);
+    if (!args.includes("--corto")) contexto(pid);
   }
 } else if (cmd === "tarea") {
   const iIni = args.indexOf("--iniciativa");

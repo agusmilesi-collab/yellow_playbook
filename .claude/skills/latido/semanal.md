@@ -1,0 +1,5 @@
+# Informes semanales de gastos
+
+- **Jueves, CTO:** `agentes/cto/informes/infra-AAAA-MM-DD.md` con planes, proyectos y cargos de Vercel y Supabase (`node agentes/os.mjs infra`), latidos y tokens de la semana (`node agentes/os.mjs latidos`) y el uso de los límites del plan Max de Claude si hay dato. Un cambio de plan se recomienda con `--board`; el CTO nunca cambia un plan.
+- **Jueves, CFO:** `agentes/cfo/informes/gastos-AAAA-MM-DD.md` a partir del informe del CTO y de los gastos conocidos: total de la semana, acumulado del mes y costo de cada puesto (equivalente API y parte de la suscripción).
+- **Viernes, CEO:** el reporte suma `"gastos"`: 2 o 3 líneas con el gasto de la semana, el acumulado del mes, el uso del plan Max y cualquier alerta, citando los dos informes.
