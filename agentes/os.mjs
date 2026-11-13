@@ -24,6 +24,8 @@
 //   node scripts/os.mjs latidos [puesto]             lista los latidos con su id y sus entregas
 //   node scripts/os.mjs latido-entregas <latidoId> <tareaId,tareaId>   vincula entregas con un latido viejo
 //   node scripts/os.mjs accountability <puesto> "<texto>"   el resultado por el que responde (aprobado por el board)
+//   node scripts/os.mjs puesto-campo <puesto> <mision|limites|criterio> "<texto>"
+//   node scripts/os.mjs traspaso-crear <de> <a> "<qué>" "<listo cuando>" ["<cuándo>"] ["<canal>"]
 //   node scripts/os.mjs modelo <puesto> <claude-opus-5-5|claude-sonnet-5-5|claude-haiku-5-5|claude-fable-5-2>
 //   node scripts/os.mjs presupuesto <puesto> <latidos por mes>
 //   node scripts/os.mjs costo <puesto>               equivalente API de lo que lleva el latido en curso
@@ -482,6 +484,24 @@ if (cmd === "sync") {
   p.accountability = texto;
   await guardarOS(d);
   console.log(`${p.sigla}: accountability cargado.`);
+} else if (cmd === "puesto-campo") {
+  // puesto-campo <puesto> <mision|limites|criterio> "<texto>": cambia un campo del DPT (aprobado por el board)
+  const [puesto, campo, texto] = args;
+  const d = await leerOS();
+  const p = d.puestos.find((x) => x.id === puesto);
+  if (!p || !["mision", "limites", "criterio"].includes(campo) || !texto) throw new Error('Uso: puesto-campo <puesto> <mision|limites|criterio> "<texto>"');
+  p[campo] = texto;
+  await guardarOS(d);
+  console.log(`${p.sigla}: ${campo} actualizado.`);
+} else if (cmd === "traspaso-crear") {
+  // traspaso-crear <de> <a> "<qué>" "<listo cuando>" ["<cuándo>"] ["<canal>"]
+  const [de, a, que, criterio, cuando = "", canal = ""] = args;
+  const d = await leerOS();
+  if (!d.puestos.some((x) => x.id === de) || !d.puestos.some((x) => x.id === a) || !que || !criterio) throw new Error('Uso: traspaso-crear <de> <a> "<qué>" "<listo cuando>" ["<cuándo>"] ["<canal>"]');
+  const t = { id: nuevoId(), de, a, que, criterio, cuando, canal, enTransito: [] };
+  d.traspasos.push(t);
+  await guardarOS(d);
+  console.log(`Traspaso ${t.id} creado: ${de} → ${a}.`);
 } else if (cmd === "modelo") {
   // modelo <puesto> <claude-opus-5-5|claude-sonnet-5-5|claude-haiku-5-5|claude-fable-5-2>
   const [puesto, m] = args;

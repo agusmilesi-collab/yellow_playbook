@@ -17,3 +17,5 @@ Cada decisión con fecha, qué se decidió y qué cambia. La leen todos los pues
 - **2026-11-12:** Accountability por nivel (12/11/2026): un Chief responde por un resultado de negocio, no por un proceso. El CFO vela por el margen y los gastos de Yellow; cobrar a tiempo y registrar es trabajo de un puesto operativo de administración, que hoy absorbe el CFO como iniciativa hasta que el volumen justifique el puesto. El CHRO define el accountability de cada puesto por nivel y propone cuándo crece la estructura.
 
 - **2026-11-12:** Accountability aprobado (12/11/2026): el board aprobó el resultado por el que responde cada uno de los 10 puestos (propuesta del CHRO en accountability-y-crecimiento-2026-11-12.md, tabla 1). Queda en el DPT de cada puesto. Pendiente del board: los cambios de KRs y los disparadores de crecimiento de esa misma entrega.
+
+- **2026-11-12:** D2 aprobada (12/11/2026): el COO se hace cargo de instalar el sistema del cliente como parte de la entrega (diagnóstico, plan e instalación), con un traspaso nuevo COO → CTO para lo que haya que construir. D1 (confirmar la estructura) y D3 (referidos al CSO) siguen pendientes del board.

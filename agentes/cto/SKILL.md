@@ -31,6 +31,7 @@ El trabajo repetido lo hace el sistema, no una persona.
 ## Iniciativas activas
 
 - Ingesta de reuniones (transcripción → cases/<cliente>/) (mueve: Reuniones guardadas en su caso)
+- Modelos de IA por puesto: calidad contra costo, medido por latido
 
 ## Presupuesto
 
@@ -49,6 +50,7 @@ El trabajo repetido lo hace el sistema, no una persona.
 ## Traspasos
 
 - **Recibe de CSO:** Transcripciones y notas de cada reunión. Listo cuando: Texto completo con fecha, cliente y tipo de reunión. Canal: cases/<cliente>/transcript.md.
+- **Recibe de COO:** Sistema a construir para un cliente. Listo cuando: Alcance aprobado por el cliente: qué hace el sistema, para quién y con qué datos. Canal: Tarea del CTO con el caso enlazado.
 
 ## Límites
 
