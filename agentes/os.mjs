@@ -14,7 +14,7 @@
 //   node scripts/os.mjs devolver <tareaId> "<qué cambiar>"   el jefe la devuelve al puesto
 //   node scripts/os.mjs escalar <tareaId>             el jefe la pasa al board (necesita una decisión)
 //   node scripts/os.mjs estado <tareaId> pendiente|curso|devuelta|hecha
-//   node scripts/os.mjs tarea-editar <tareaId> "<nombre>"
+//   node scripts/os.mjs tarea-editar <tareaId> ["<nombre>"] [--detalle "<instrucciones>"]
 //   node scripts/os.mjs borrar <tareaId>
 //   node scripts/os.mjs puesto crear <archivo.json>   da de alta un puesto aprobado por el board (ficha del CHRO)
 //   node scripts/os.mjs empezar <puesto> [tareaId]    marca que el puesto está trabajando (su circulito late) y, si se pasa, la tarea En curso
@@ -31,7 +31,7 @@
 //   node scripts/os.mjs kr <puesto> "<nombre>" <meta> [--base N] [--unidad "<u>"] [--objetivo <id>]   crea o actualiza un KR
 //   node scripts/os.mjs real <puesto> "<nombre del KR>" <número>   carga el valor actual de un KR
 //   node scripts/os.mjs iniciativa <puesto> "<nombre>" [--kr "<nombre del KR>"] [--objetivo <id>]
-//   node scripts/os.mjs tarea <puesto> "<nombre>" [claude|agustin] [--iniciativa <id>]
+//   node scripts/os.mjs tarea <puesto> "<nombre>" [claude|agustin] [--iniciativa <id>] [--detalle "<instrucciones>"]
 //   node scripts/os.mjs reporte --archivo <json>      reporte del CEO al board: { resumen, areas: [{ puesto, anda, trabado }], decisiones: [{ que, recomienda, tarea }] }
 //   node scripts/os.mjs transito <traspasoId> agregar|sacar "<texto>"
 //
@@ -363,13 +363,15 @@ if (cmd === "sync") {
 } else if (cmd === "tarea") {
   const iIni = args.indexOf("--iniciativa");
   const iniciativa = iIni >= 0 ? args.splice(iIni, 2)[1] : null;
+  const iDet = args.indexOf("--detalle");
+  const detalle = iDet >= 0 ? args.splice(iDet, 2)[1] : "";
   const [puesto, nombre, ejecuta = "claude"] = args;
   const d = await leerOS();
   if (!d.puestos.some((p) => p.id === puesto) || !nombre) throw new Error("Uso: tarea <puesto> \"<nombre>\" [claude|agustin]");
   const ini = iniciativa ? d.iniciativas.find((i) => i.id === iniciativa) : null;
   if (iniciativa && !ini) throw new Error(`No hay iniciativa "${iniciativa}".`);
   const objetivo = ini?.objetivo ?? d.objetivos.find((o) => o.puesto === puesto && o.estado === "activo")?.id ?? null;
-  const t = { id: nuevoId(), puesto, objetivo, iniciativa: ini?.id ?? null, nombre, ejecuta: ejecuta === "agustin" ? "agustin" : "claude", estado: "pendiente", fecha: null, resultado: "", archivo: "", devolucion: "", decide: false, entregada: null };
+  const t = { id: nuevoId(), puesto, objetivo, iniciativa: ini?.id ?? null, nombre, ejecuta: ejecuta === "agustin" ? "agustin" : "claude", estado: "pendiente", fecha: null, resultado: "", archivo: "", devolucion: "", decide: false, entregada: null, detalle };
   d.tareas.push(t);
   await guardarOS(d);
   console.log(`Tarea ${t.id} creada en ${puesto}.`);
@@ -400,12 +402,15 @@ if (cmd === "sync") {
   await guardarOS(d);
   console.log(cmd === "aprobar" ? `Tarea ${tid}: aprobada.` : cmd === "devolver" ? `Tarea ${tid}: devuelta al puesto.` : `Tarea ${tid}: pasa a la bandeja del board.`);
 } else if (cmd === "tarea-editar") {
-  // tarea-editar <tareaId> "<nombre nuevo>"
+  // tarea-editar <tareaId> ["<nombre nuevo>"] [--detalle "<instrucciones>"]
+  const iDet = args.indexOf("--detalle");
+  const detalle = iDet >= 0 ? args.splice(iDet, 2)[1] : null;
   const [tid, nombre] = args;
   const d = await leerOS();
   const t = d.tareas.find((x) => x.id === tid);
-  if (!t || !nombre) throw new Error('Uso: tarea-editar <tareaId> "<nombre>"');
-  t.nombre = nombre;
+  if (!t || (!nombre && detalle === null)) throw new Error('Uso: tarea-editar <tareaId> ["<nombre>"] [--detalle "<texto>"]');
+  if (nombre) t.nombre = nombre;
+  if (detalle !== null) t.detalle = detalle;
   await guardarOS(d);
   console.log(`Tarea ${tid} renombrada.`);
 } else if (cmd === "borrar") {
