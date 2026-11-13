@@ -119,6 +119,17 @@ function proximoCodigo(tareas, p) {
   const max = tareas.reduce((m, t) => (t.codigo?.startsWith(pre) && /^\d+$/.test(t.codigo.slice(pre.length)) ? Math.max(m, Number(t.codigo.slice(pre.length))) : m), 0);
   return `${pre}${String(max + 1).padStart(3, "0")}`;
 }
+// Presupuesto de IA (igual que lib/os/modelo.ts): tope del puesto y de cada área que lo contiene.
+function areaDe(d, id) { const l = [id]; for (let i = 0; i < l.length; i++) for (const p of d.puestos) if (p.reportaA === l[i] && !l.includes(p.id)) l.push(p.id); return l; }
+const gastoIA = (d, ids, mes) => d.latidos.filter((l) => ids.includes(l.puesto) && l.fecha.startsWith(mes)).reduce((s, l) => s + (l.usd ?? 0), 0);
+function topesIA(d, puestoId, mes) {
+  const l = [];
+  const p = d.puestos.find((x) => x.id === puestoId);
+  if (!p) return l;
+  if (p.presupuesto.usdMes) l.push({ de: p.sigla, tipo: "puesto", gasto: gastoIA(d, [p.id], mes), tope: p.presupuesto.usdMes });
+  for (let q = p; q; q = d.puestos.find((x) => x.id === q.reportaA)) if (q.presupuesto.usdAreaMes) l.push({ de: q.sigla, tipo: "area", gasto: gastoIA(d, areaDe(d, q.id), mes), tope: q.presupuesto.usdAreaMes });
+  return l;
+}
 /** Una tarea por id (k3x9a2bq) o por código (CMO003, con o sin #). */
 const tareaPor = (d, ref = "") => { const r = String(ref).replace(/^#/, ""); return d.tareas.find((t) => t.id === r || (t.codigo ?? "").toLowerCase() === r.toLowerCase()); };
 // Cada escritura sube la rev: si la pantalla estaba abierta, avisa en vez de pisar.
@@ -379,6 +390,8 @@ if (cmd === "sync") {
     console.log(JSON.stringify({
       ...p,
       latidosEsteMes: lat(pid),
+      // Gasto de IA del mes contra los topes que lo alcanzan (el suyo y los de sus áreas).
+      iaEsteMes: { gastoUsd: Number(gastoIA(d, [pid], mes).toFixed(2)), topes: topesIA(d, pid, mes).map((x) => ({ ...x, gasto: Number(x.gasto.toFixed(2)) })) },
       objetivos,
       krs: d.krs.filter((k) => objetivos.some((o) => o.id === k.objetivo)).map((k) => ({ ...k, estado: estadoKR(d, k) })),
       iniciativas: d.iniciativas.filter((i) => objetivos.some((o) => o.id === i.objetivo)),
@@ -482,10 +495,18 @@ if (cmd === "sync") {
   exportar(d);
   console.log(`Puesto ${p.sigla} creado (reporta a ${p.reportaA}). Falta cargarle objetivo, KRs y traspasos.`);
 } else if (cmd === "empezar" || cmd === "terminar") {
-  const [puesto, tid] = args;
+  const autorizado = args.includes("--autorizado");
+  const [puesto, tid] = args.filter((a) => a !== "--autorizado");
   const d = await leerOS();
   const p = d.puestos.find((x) => x.id === puesto);
-  if (!p) throw new Error(`Uso: ${cmd} <puesto> [tareaId]`);
+  if (!p) throw new Error(`Uso: ${cmd} <puesto> [tareaId] [--autorizado]`);
+  if (cmd === "empezar") {
+    // Freno del presupuesto de IA: con un tope alcanzado no arranca el latido. Solo el board lo levanta (--autorizado).
+    const topes = topesIA(d, p.id, ahora().slice(0, 7));
+    const pasado = topes.find((x) => x.gasto >= x.tope);
+    if (pasado && !autorizado) throw new Error(`Presupuesto de IA agotado: ${pasado.tipo === "area" ? `el área del ${pasado.de}` : p.sigla} gastó USD ${pasado.gasto.toFixed(2)} de USD ${pasado.tope} este mes. El latido no arranca. Para seguir, el board sube el tope (lo propone el CFO) o autoriza este latido (--autorizado).`);
+    for (const x of topes) if (x.gasto >= x.tope * 0.8 && x.gasto < x.tope) console.log(`AVISO: ${x.tipo === "area" ? `el área del ${x.de}` : p.sigla} va por USD ${x.gasto.toFixed(2)} de USD ${x.tope} de IA este mes (más del 80%).`);
+  }
   p.trabajando = cmd === "empezar" ? new Date().toISOString() : null;
   if (cmd === "empezar" && tid) {
     const t = d.tareas.find((x) => x === tareaPor(d, tid) && x.puesto === puesto);
@@ -567,6 +588,19 @@ if (cmd === "sync") {
   p.presupuesto.latidosMes = Number(n);
   await guardarOS(d);
   console.log(`${p.sigla}: ${n} latidos por mes.`);
+} else if (cmd === "presupuesto-ia") {
+  // presupuesto-ia <puesto> <usd por mes|-> [--area <usd por mes|->]: topes de IA (los propone el CFO, los aprueba el board)
+  const iA = args.indexOf("--area");
+  const area = iA >= 0 ? args.splice(iA, 2)[1] : undefined;
+  const [puesto, usd] = args;
+  const d = await leerOS();
+  const p = d.puestos.find((x) => x.id === puesto);
+  const valor = (v) => (v === "-" ? null : Number(v));
+  if (!p || usd === undefined || (usd !== "-" && !(Number(usd) > 0)) || (area !== undefined && area !== "-" && !(Number(area) > 0))) throw new Error('Uso: presupuesto-ia <puesto> <usd por mes o -> [--area <usd por mes o ->]  ("-" = sin tope)');
+  p.presupuesto.usdMes = valor(usd);
+  if (area !== undefined) p.presupuesto.usdAreaMes = valor(area);
+  await guardarOS(d);
+  console.log(`${p.sigla}: tope de IA ${p.presupuesto.usdMes ? `USD ${p.presupuesto.usdMes}` : "sin tope"} por mes${p.presupuesto.usdAreaMes ? `; área USD ${p.presupuesto.usdAreaMes}` : ""}.`);
 } else if (cmd === "costo") {
   // costo <puesto>: equivalente API de lo que lleva el latido en curso (sin registrarlo)
   const d = await leerOS();
