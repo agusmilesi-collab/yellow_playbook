@@ -12,7 +12,7 @@ Este archivo es trabajo del puesto y queda fuera de `playbook/` por la regla R1.
 
 ## 1. Qué tiene que resolver la herramienta
 
-La Definition of Done del foco dice: una transcripción de Meet llega a `cases/<cliente>/transcript.md` con su fecha y tipo de reunión, y `case-notes.md` queda actualizado, sin que Agustín copie nada a mano.
+La Definition of Done del foco dice: una transcripción de Meet llega al `transcript.md` de la carpeta del cliente (en `cases/`) con su fecha y tipo de reunión, y `case-notes.md` queda actualizado, sin que Agustín copie nada a mano.
 
 De ahí salen cuatro criterios:
 
@@ -61,14 +61,14 @@ Los precios son por usuario por mes, en dólares. No pude abrir las páginas ofi
 - **A favor:** nada para este caso.
 - **En contra:** plan gratis demasiado chico y API dudosa.
 
-## 3. Cómo llegaría cada una a `cases/<cliente>/`
+## 3. Cómo llegaría cada una a la carpeta del cliente
 
 El repo vive en GitHub. Para que el texto llegue sin que Agustín copie nada, algo tiene que escribir el archivo. Hay dos caminos:
 
 - **A. Zapier.** La herramienta avisa que terminó la reunión, Zapier crea o actualiza el archivo en GitHub. Sirve con Fathom y con tl;dv. No hace falta código, pero suma otra cuenta (Zapier) y el plan gratis de Zapier tiene un límite de tareas por mes.
-- **B. Script del OS.** Un comando nuevo (por ejemplo `node agentes/os.mjs ingerir`) le pide a la API las reuniones nuevas, arma el `transcript.md` y agrega la entrada en `case-notes.md`. Sirve con Workspace (API de Meet más Docs), con Fathom y con tl;dv Pro. Corre en el latido del CTO, así que el texto llega en el próximo latido y no en el momento.
+- **B. Script del OS.** Un comando nuevo (por ejemplo `os.mjs ingerir`) le pide a la API las reuniones nuevas, arma el `transcript.md` y agrega la entrada en `case-notes.md`. Sirve con Workspace (API de Meet más Docs), con Fathom y con tl;dv Pro. Corre en el latido del CTO, así que el texto llega en el próximo latido y no en el momento.
 
-Con cualquiera de los dos hay un problema que la herramienta no resuelve: **cómo sabe a qué cliente pertenece la reunión.** Propuesta: el título del evento en el calendario lleva el slug y el tipo, por ejemplo `[psicologa-rosario] discovery`. El script o el Zap lee el título y elige la carpeta. Si el título no trae slug, la transcripción queda en una bandeja (`cases/_sin-asignar/`) y no se pierde.
+Con cualquiera de los dos hay un problema que la herramienta no resuelve: **cómo sabe a qué cliente pertenece la reunión.** Propuesta: el título del evento en el calendario lleva el slug y el tipo, por ejemplo **[psicologa-rosario] discovery**. El script o el Zap lee el título y elige la carpeta. Si el título no trae slug, la transcripción queda en una bandeja (la carpeta `_sin-asignar` dentro de `cases/`) y no se pierde.
 
 ## 4. Recomendación
 
