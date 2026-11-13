@@ -12,7 +12,9 @@
 - **Hecho:** el cambio está verificado por QA y publicado por el board. Soporte escribe en dos o tres líneas qué se hizo.
 - **Descartado:** no se hace, con el motivo en la conversación.
 
-## Comandos (desde `~/Documents/camposhr-site`, con `set -a && . ./.env.local && set +a`)
+## Comandos
+
+Cada comando va entre paréntesis, en una subterminal: `( cd ~/Documents/camposhr-site && set -a && . ./.env.local && set +a && <comando> )`. Si las credenciales de Campos quedan cargadas en la terminal, el script del OS de Yellow se conecta a la base de Campos y falla.
 
 Leer un ticket con su conversación:
 
