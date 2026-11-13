@@ -14,6 +14,7 @@
 //   node scripts/os.mjs devolver <tareaId> "<qué cambiar>"   el jefe la devuelve al puesto
 //   node scripts/os.mjs escalar <tareaId>             el jefe la pasa al board (necesita una decisión)
 //   node scripts/os.mjs estado <tareaId> pendiente|curso|devuelta|hecha
+//   node scripts/os.mjs tarea-editar <tareaId> "<nombre>"
 //   node scripts/os.mjs borrar <tareaId>
 //   node scripts/os.mjs puesto crear <archivo.json>   da de alta un puesto aprobado por el board (ficha del CHRO)
 //   node scripts/os.mjs empezar <puesto> [tareaId]    marca que el puesto está trabajando (su circulito late) y, si se pasa, la tarea En curso
@@ -398,6 +399,15 @@ if (cmd === "sync") {
   } else t.decide = true;
   await guardarOS(d);
   console.log(cmd === "aprobar" ? `Tarea ${tid}: aprobada.` : cmd === "devolver" ? `Tarea ${tid}: devuelta al puesto.` : `Tarea ${tid}: pasa a la bandeja del board.`);
+} else if (cmd === "tarea-editar") {
+  // tarea-editar <tareaId> "<nombre nuevo>"
+  const [tid, nombre] = args;
+  const d = await leerOS();
+  const t = d.tareas.find((x) => x.id === tid);
+  if (!t || !nombre) throw new Error('Uso: tarea-editar <tareaId> "<nombre>"');
+  t.nombre = nombre;
+  await guardarOS(d);
+  console.log(`Tarea ${tid} renombrada.`);
 } else if (cmd === "borrar") {
   const d = await leerOS();
   const antes = d.tareas.length;
