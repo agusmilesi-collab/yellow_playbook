@@ -14,7 +14,7 @@
 //   node scripts/os.mjs devolver <tareaId> "<qué cambiar>"   el jefe la devuelve al puesto
 //   node scripts/os.mjs escalar <tareaId>             el jefe la pasa al board (necesita una decisión)
 //   node scripts/os.mjs estado <tareaId> pendiente|curso|devuelta|hecha
-//   node scripts/os.mjs tarea-editar <tareaId> ["<nombre>"] [--detalle "<instrucciones>"] [--dod "<listo cuando>"]
+//   node scripts/os.mjs tarea-editar <tareaId> ["<nombre>"] [--detalle "<instrucciones>"] [--dod "<listo cuando>"] [--vence AAAA-MM-DD]
 //   node scripts/os.mjs borrar <tareaId>
 //   node scripts/os.mjs puesto crear <archivo.json>   da de alta un puesto aprobado por el board (ficha del CHRO)
 //   node scripts/os.mjs empezar <puesto> [tareaId]    marca que el puesto está trabajando (su circulito late) y, si se pasa, la tarea En curso
@@ -133,11 +133,16 @@ function costoDesde(desdeIso) {
   try {
     const raizP = join(homedir(), ".claude", "projects");
     const archivos = [];
-    for (const dir of readdirSync(raizP)) {
-      const full = join(raizP, dir);
-      if (!statSync(full).isDirectory()) continue;
-      for (const a of readdirSync(full)) if (a.endsWith(".jsonl")) archivos.push(join(full, a));
-    }
+    // Recorre también las subcarpetas: los latidos que el CEO corre como subagentes guardan su registro ahí.
+    const recorrer = (dir, nivel) => {
+      for (const a of readdirSync(dir)) {
+        const full = join(dir, a);
+        const st = statSync(full);
+        if (st.isDirectory() && nivel < 4) recorrer(full, nivel + 1);
+        else if (a.endsWith(".jsonl")) archivos.push(full);
+      }
+    };
+    recorrer(raizP, 0);
     if (!archivos.length) return null;
     const ultimo = archivos.sort((a, b) => statSync(b).mtimeMs - statSync(a).mtimeMs)[0];
     const desde = Date.parse(desdeIso);
@@ -414,10 +419,13 @@ if (cmd === "sync") {
   const detalle = iDet >= 0 ? args.splice(iDet, 2)[1] : null;
   const iDod = args.indexOf("--dod");
   const dodN = iDod >= 0 ? args.splice(iDod, 2)[1] : null;
+  const iVen = args.indexOf("--vence");
+  const vence = iVen >= 0 ? args.splice(iVen, 2)[1] : null;
   const [tid, nombre] = args;
   const d = await leerOS();
   const t = d.tareas.find((x) => x.id === tid);
-  if (!t || (!nombre && detalle === null && dodN === null)) throw new Error('Uso: tarea-editar <tareaId> ["<nombre>"] [--detalle "<texto>"] [--dod "<listo cuando>"]');
+  if (vence !== null && t) t.fecha = /^\d{4}-\d{2}-\d{2}$/.test(vence) ? vence : null;
+  if (!t || (!nombre && detalle === null && dodN === null && vence === null)) throw new Error('Uso: tarea-editar <tareaId> ["<nombre>"] [--detalle "<texto>"] [--dod "<listo cuando>"]');
   if (nombre) t.nombre = nombre;
   if (detalle !== null) t.detalle = detalle;
   if (dodN !== null) t.dod = dodN;
