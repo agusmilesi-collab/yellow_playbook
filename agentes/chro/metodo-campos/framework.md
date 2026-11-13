@@ -101,10 +101,15 @@ Una vez que una función hace falta, la segunda decisión es si se interna (empl
 - **¿Core o soporte?** Lo que da ventaja competitiva y diferencia al negocio se construye adentro; el soporte se puede comprar. El core no se terceriza.
 - **¿Continuo o intermitente?** Lo que se necesita todos los días, con presencia, tiende a interno; lo de proyecto o por picos, a tercero o fractional.
 
-| | Continuo | Intermitente / por proyecto |
-|---|---|---|
-| **Core** | Contratar (empleado) | Contratar o desarrollar adentro |
-| **Soporte** | Internar si el volumen lo justifica, o tercerizar | Tercerizar / fractional |
+**Core**
+
+- **Continuo:** Contratar (empleado)
+- **Intermitente / por proyecto:** Contratar o desarrollar adentro
+
+**Soporte**
+
+- **Continuo:** Internar si el volumen lo justifica, o tercerizar
+- **Intermitente / por proyecto:** Tercerizar / fractional
 
 **Factores de ajuste:** especialización escasa con uso puntual (abogado, contador, asesor de normas) → tercerizar; falla catastrófica o información sensible → internar por control; volumen insuficiente para un full-time → fractional. La decisión es dinámica: una función migra de tercerizada a interna a medida que el volumen crece.
 

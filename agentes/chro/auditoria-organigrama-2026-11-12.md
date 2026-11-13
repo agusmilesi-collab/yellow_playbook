@@ -1,9 +1,9 @@
 # Auditoría del organigrama de Yellow con el método Campos
 
-**Puesto:** CHRO, Yellow OS
-**Fecha:** 2026-11-12
-**Para:** el board, que aprueba o veta cada decisión en la bandeja.
-**Base:** el OS al 12/11/2026 (`node scripts/os.mjs ver`), `agentes/chro/diseno-de-agentes.md` y `agentes/chro/metodo-campos/framework.md` (checklist de inconsistencias y catálogo de decisiones). Leyenda: ✅ dato del OS, 🔵 lectura del puesto, ❓ falta el dato.
+- **Puesto:** CHRO, Yellow OS
+- **Fecha:** 2026-11-12
+- **Para:** el board, que aprueba o veta cada decisión en la bandeja.
+- **Base:** el OS al 12/11/2026 (`node scripts/os.mjs ver`), `agentes/chro/diseno-de-agentes.md` y `agentes/chro/metodo-campos/framework.md` (checklist de inconsistencias y catálogo de decisiones). Leyenda: ✅ dato del OS, 🔵 lectura del puesto, ❓ falta el dato.
 
 ## Resumen
 
@@ -11,19 +11,49 @@ La estructura sirve para llegar al primer cliente: no hace falta crear ni elimin
 
 ## Cadena de valor de Yellow
 
-| # | Actividad | Puesto que rinde cuentas |
-|---|---|---|
-| 1 | Definir qué se vende y a quién | CPO (con evidencia del INV) ✅ |
-| 2 | Atraer personas que quieren hablar | CMO ✅ |
-| 3 | Convertir conversaciones en propuestas y clientes | CSO ✅ |
-| 4 | Rediseñar el servicio del cliente | COO (entrega según pipeline) ✅ |
-| 5 | Armar e instalar el sistema del cliente | **nadie** (ver hallazgo 2) |
-| 6 | Cobrar | CFO ✅ |
-| 7 | Que el cliente vuelva y recomiende | **nadie** (ver hallazgo 3) |
-| 8 | Aprender de cada caso | COO → CPO (traspaso "aprendido") ✅ |
-| Soporte | Memoria y herramientas internas | CTO ✅ |
-| Control | Seguridad | CISO, reporta al CEO ✅ |
-| Soporte | Estructura y puestos | CHRO ✅ |
+**1.** Definir qué se vende y a quién
+
+- **Puesto que rinde cuentas:** CPO (con evidencia del INV) ✅
+
+**2.** Atraer personas que quieren hablar
+
+- **Puesto que rinde cuentas:** CMO ✅
+
+**3.** Convertir conversaciones en propuestas y clientes
+
+- **Puesto que rinde cuentas:** CSO ✅
+
+**4.** Rediseñar el servicio del cliente
+
+- **Puesto que rinde cuentas:** COO (entrega según pipeline) ✅
+
+**5.** Armar e instalar el sistema del cliente
+
+- **Puesto que rinde cuentas:** **nadie** (ver hallazgo 2)
+
+**6.** Cobrar
+
+- **Puesto que rinde cuentas:** CFO ✅
+
+**7.** Que el cliente vuelva y recomiende
+
+- **Puesto que rinde cuentas:** **nadie** (ver hallazgo 3)
+
+**8.** Aprender de cada caso
+
+- **Puesto que rinde cuentas:** COO → CPO (traspaso "aprendido") ✅
+
+**Soporte.** Memoria y herramientas internas
+
+- **Puesto que rinde cuentas:** CTO ✅
+
+**Control.** Seguridad
+
+- **Puesto que rinde cuentas:** CISO, reporta al CEO ✅
+
+**Soporte.** Estructura y puestos
+
+- **Puesto que rinde cuentas:** CHRO ✅
 
 ## Hallazgos
 
@@ -37,11 +67,23 @@ La estructura sirve para llegar al primer cliente: no hace falta crear ni elimin
 
 ## Decisiones propuestas (catálogo Campos)
 
-| # | Decisión | Sobre | Qué cambia | Costo de no hacerlo |
-|---|---|---|---|---|
-| D1 | **Confirmar** la estructura actual hasta el primer cliente | Puestos | Nada | Mover puestos ahora distrae del objetivo 🔵 |
-| D2 | **Redefinir** el COO: suma "instalar el sistema del cliente" como parte de la entrega, con un traspaso nuevo COO → CTO ("sistema a construir", listo cuando: alcance aprobado por el cliente) | Puesto | Misión del COO y un traspaso | El primer cliente pago cae en el board, como Lisandro 🔵 |
-| D3 | **Redefinir** el CSO: suma "pedir referidos a cada cliente al cerrar una etapa" y un KR de referidos (0 → 2 al 31/12) | Puesto | Misión y KR del CSO (el KR lo carga el CEO) | El canal más barato para el primer cliente queda sin dueño 🔵 |
+**D1.** **Confirmar** la estructura actual hasta el primer cliente
+
+- **Sobre:** Puestos
+- **Qué cambia:** Nada
+- **Costo de no hacerlo:** Mover puestos ahora distrae del objetivo 🔵
+
+**D2.** **Redefinir** el COO: suma "instalar el sistema del cliente" como parte de la entrega, con un traspaso nuevo COO → CTO ("sistema a construir", listo cuando: alcance aprobado por el cliente)
+
+- **Sobre:** Puesto
+- **Qué cambia:** Misión del COO y un traspaso
+- **Costo de no hacerlo:** El primer cliente pago cae en el board, como Lisandro 🔵
+
+**D3.** **Redefinir** el CSO: suma "pedir referidos a cada cliente al cerrar una etapa" y un KR de referidos (0 → 2 al 31/12)
+
+- **Sobre:** Puesto
+- **Qué cambia:** Misión y KR del CSO (el KR lo carga el CEO)
+- **Costo de no hacerlo:** El canal más barato para el primer cliente queda sin dueño 🔵
 
 Por qué no puestos nuevos (orden de `diseno-de-agentes.md`): las dos funciones caben en puestos existentes sin juntar perfiles opuestos. Instalar es entrega (COO) con capacidad técnica comprada al CTO por traspaso; referidos es conversación con el cliente (CSO).
 

@@ -47,11 +47,23 @@ Formato para el alta: un archivo JSON en `agentes/chro/altas/<sigla>.json` con l
 
 El resultado de un puesto depende de su nivel, no solo de su función. Base: Elliott Jaques, *Requisite Organization* (estratos y horizonte temporal de la tarea).
 
-| Nivel | Responde por | Horizonte | Ejemplo en Yellow |
-|---|---|---|---|
-| Chief (C-level) | Un resultado de negocio de su área | 1 a 2 años | CFO: margen por cliente y gastos de Yellow |
-| Responsable o analista | Que un proceso salga bien y a tiempo | 3 a 12 meses | Administración: cobrar a tiempo y registrar cada cobro |
-| Operativo | Tareas concretas con criterio de listo | días a semanas | Cargar facturas, mandar recordatorios de pago |
+**Chief (C-level)**
+
+- **Responde por:** Un resultado de negocio de su área
+- **Horizonte:** 1 a 2 años
+- **Ejemplo en Yellow:** CFO: margen por cliente y gastos de Yellow
+
+**Responsable o analista**
+
+- **Responde por:** Que un proceso salga bien y a tiempo
+- **Horizonte:** 3 a 12 meses
+- **Ejemplo en Yellow:** Administración: cobrar a tiempo y registrar cada cobro
+
+**Operativo**
+
+- **Responde por:** Tareas concretas con criterio de listo
+- **Horizonte:** días a semanas
+- **Ejemplo en Yellow:** Cargar facturas, mandar recordatorios de pago
 
 Reglas:
 

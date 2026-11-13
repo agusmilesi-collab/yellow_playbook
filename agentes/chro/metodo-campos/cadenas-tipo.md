@@ -6,11 +6,23 @@ Punto de partida del bloque 3. El motor instancia la plantilla que corresponde a
 
 Antes de elegir plantilla, se clasifica el negocio por su **lógica de creación de valor** (Stabell & Fjeldstad, 1998), no por su industria:
 
-| Configuración | Cómo crea valor | El "flujo" tiene forma de | Ejemplos |
-|---|---|---|---|
-| **Cadena** (value chain) | Transforma inputs en outputs; eficiencia secuencial | Línea | Fábricas, fazón, agro, gastronomía, comercio |
-| **Taller** (value shop) | Resuelve problemas únicos por cliente | Ciclo: diagnóstico → solución → ejecución → evaluación | Consultoras, estudios jurídicos, médicos, psicólogos, ingeniería |
-| **Red** (value network) | Conecta partes; intermediación y tamaño de red | Malla: captar miembros de ambos lados + facilitar intercambios | Bancos, corretaje, marketplaces, telcos, inmobiliarias |
+****Cadena** (value chain)**
+
+- **Cómo crea valor:** Transforma inputs en outputs; eficiencia secuencial
+- **El "flujo" tiene forma de:** Línea
+- **Ejemplos:** Fábricas, fazón, agro, gastronomía, comercio
+
+****Taller** (value shop)**
+
+- **Cómo crea valor:** Resuelve problemas únicos por cliente
+- **El "flujo" tiene forma de:** Ciclo: diagnóstico → solución → ejecución → evaluación
+- **Ejemplos:** Consultoras, estudios jurídicos, médicos, psicólogos, ingeniería
+
+****Red** (value network)**
+
+- **Cómo crea valor:** Conecta partes; intermediación y tamaño de red
+- **El "flujo" tiene forma de:** Malla: captar miembros de ambos lados + facilitar intercambios
+- **Ejemplos:** Bancos, corretaje, marketplaces, telcos, inmobiliarias
 
 Casi todo negocio cae en una o es híbrido con una dominante; se modela por la dominante y se anotan los injertos. La configuración cambia qué significa "cuello de botella" (en la cadena es la etapa lenta; en el taller, la capacidad de diagnóstico o los seniors; en la red, la liquidez de la red: el lado que falta) y dónde se captura el valor. La biblioteca sigue la lógica APQC (Process Classification Framework): el esqueleto por arquetipo se repite muchísimo; lo individual de cada cliente (el 20-30%) son los handoffs, los cuellos de botella y qué eslabón captura el valor.
 

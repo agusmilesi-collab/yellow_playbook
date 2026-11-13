@@ -14,16 +14,85 @@ Cada familia ocupa una región del espacio de las cinco exigencias del puesto (p
 
 Las familias son las mismas ocho del campo **Familia de puesto** de la base (línea de selección), para que las dos líneas compartan un solo vocabulario.
 
-| Familia (de la base) | Problemas | Presión | Interacción | Autonomía | Raven mínimo | Benziger | Foco Exner (3 a 5) |
-|---|---|---|---|---|---|---|---|
-| **Comercial / Ventas** | mixtos | media a alta (rechazo) | mucha gente | media a alta | promedio superior | frontal derecho (vínculo, acción) | gente (CDI, H), aguante del rechazo (D, AdjD) |
-| **Administración / Contable / Finanzas** | claros | baja a media | poca gente | baja | promedio | basal izquierdo (orden, procedimiento) | control de impulsos (FC:CF+C), prolijidad (XA% razonable) |
-| **Operaciones / Producción / Logística** | claros | media a alta (ritmo) | equipo | baja | promedio | basal izquierdo | presión sostenida (D, AdjD), tolerancia a la rutina |
-| **IT / Sistemas / Tecnología** | complejos | media | poca gente | alta | alto | frontal izquierdo (análisis, lógica) | juicio y calidad del pensamiento (XA%, X-%), flexibilidad |
-| **RRHH / Capital Humano** | mixtos | media | mucha gente | media | promedio superior | basal derecho + frontal | lectura de gente (H, COP, CDI) |
-| **Marketing / Comunicación** | mixtos | media | media a mucha | alta | promedio superior | frontal derecho (creación, riesgo) | apertura, trabajo con gente |
-| **Ingeniería / Técnica** | complejos | media a alta | equipo | alta | alto a superior | frontal izquierdo (análisis, números) | juicio (XA%, WDA%, X-%), recursos (EA) |
-| **Dirección / Gerencia** | complejos | alta | visión de conjunto | total | alto a superior | frontal, con peso de visión | juicio (XA%, X-%) + recursos y aguante (EA, es, D-score) + gente |
+**Comercial / Ventas**
+
+- **Problemas:** mixtos
+- **Presión:** media a alta (rechazo)
+- **Interacción:** mucha gente
+- **Autonomía:** media a alta
+- **Raven mínimo:** promedio superior
+- **Benziger:** frontal derecho (vínculo, acción)
+- **Foco Exner (3 a 5):** gente (CDI, H), aguante del rechazo (D, AdjD)
+
+**Administración / Contable / Finanzas**
+
+- **Problemas:** claros
+- **Presión:** baja a media
+- **Interacción:** poca gente
+- **Autonomía:** baja
+- **Raven mínimo:** promedio
+- **Benziger:** basal izquierdo (orden, procedimiento)
+- **Foco Exner (3 a 5):** control de impulsos (FC:CF+C), prolijidad (XA% razonable)
+
+**Operaciones / Producción / Logística**
+
+- **Problemas:** claros
+- **Presión:** media a alta (ritmo)
+- **Interacción:** equipo
+- **Autonomía:** baja
+- **Raven mínimo:** promedio
+- **Benziger:** basal izquierdo
+- **Foco Exner (3 a 5):** presión sostenida (D, AdjD), tolerancia a la rutina
+
+**IT / Sistemas / Tecnología**
+
+- **Problemas:** complejos
+- **Presión:** media
+- **Interacción:** poca gente
+- **Autonomía:** alta
+- **Raven mínimo:** alto
+- **Benziger:** frontal izquierdo (análisis, lógica)
+- **Foco Exner (3 a 5):** juicio y calidad del pensamiento (XA%, X-%), flexibilidad
+
+**RRHH / Capital Humano**
+
+- **Problemas:** mixtos
+- **Presión:** media
+- **Interacción:** mucha gente
+- **Autonomía:** media
+- **Raven mínimo:** promedio superior
+- **Benziger:** basal derecho + frontal
+- **Foco Exner (3 a 5):** lectura de gente (H, COP, CDI)
+
+**Marketing / Comunicación**
+
+- **Problemas:** mixtos
+- **Presión:** media
+- **Interacción:** media a mucha
+- **Autonomía:** alta
+- **Raven mínimo:** promedio superior
+- **Benziger:** frontal derecho (creación, riesgo)
+- **Foco Exner (3 a 5):** apertura, trabajo con gente
+
+**Ingeniería / Técnica**
+
+- **Problemas:** complejos
+- **Presión:** media a alta
+- **Interacción:** equipo
+- **Autonomía:** alta
+- **Raven mínimo:** alto a superior
+- **Benziger:** frontal izquierdo (análisis, números)
+- **Foco Exner (3 a 5):** juicio (XA%, WDA%, X-%), recursos (EA)
+
+**Dirección / Gerencia**
+
+- **Problemas:** complejos
+- **Presión:** alta
+- **Interacción:** visión de conjunto
+- **Autonomía:** total
+- **Raven mínimo:** alto a superior
+- **Benziger:** frontal, con peso de visión
+- **Foco Exner (3 a 5):** juicio (XA%, X-%) + recursos y aguante (EA, es, D-score) + gente
 
 Las familias son un punto de partida, no una caja cerrada. Un puesto puede ser híbrido (un jefe de planta técnico pesa más al frontal izquierdo; un comercial que además cobra suma la exigencia administrativa). El arquetipo se elige por el trabajo que llena la mayor parte de la semana, y se ajusta.
 

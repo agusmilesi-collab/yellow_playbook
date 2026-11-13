@@ -1,9 +1,9 @@
 # ¿Yellow necesita un Project manager?
 
-**Puesto:** CHRO, Yellow OS
-**Fecha:** 2026-11-13
-**Tarea:** oo7bqfmx (iniciativa "Auditoría del organigrama con el método Campos")
-**Base:** `agentes/chro/diseno-de-agentes.md` (cuándo hace falta un puesto, orden de prueba, accountability por nivel), `agentes/chro/metodo-campos/framework.md` (función huérfana, alcance de control) y `agentes/chro/metodo-campos/modelo-operativo-y-gobierno.md` (tipos de interdependencia), `agentes/decisiones.md` y la skill del latido. Leyenda: ✅ dato del OS o del repo, 🔵 lectura del puesto, ❓ falta el dato.
+- **Puesto:** CHRO, Yellow OS
+- **Fecha:** 2026-11-13
+- **Tarea:** oo7bqfmx (iniciativa "Auditoría del organigrama con el método Campos")
+- **Base:** `agentes/chro/diseno-de-agentes.md` (cuándo hace falta un puesto, orden de prueba, accountability por nivel), `agentes/chro/metodo-campos/framework.md` (función huérfana, alcance de control) y `agentes/chro/metodo-campos/modelo-operativo-y-gobierno.md` (tipos de interdependencia), `agentes/decisiones.md` y la skill del latido. Leyenda: ✅ dato del OS o del repo, 🔵 lectura del puesto, ❓ falta el dato.
 
 ## Respuesta
 
@@ -19,14 +19,35 @@ Lectura 🔵: el problema era un estándar que nadie había escrito. El método 
 
 ## 2. Qué función cubriría un PM y quién la tiene hoy
 
-| Función típica de un PM | ¿Huérfana? | Quién la tiene hoy |
-|---|---|---|
-| Partir iniciativas en tareas de una sentada | No | Cada Chief dueño de la iniciativa, en su latido ✅ (skill del latido, "Quién parte las iniciativas en tareas") |
-| Seguir plazos y avance de los KRs | No | CEO, con la escalera de accountability (ruido, señal, problema) y el semáforo ✅ |
-| Que cada tarea tenga Listo cuando y se revise contra él | No | El jefe de cada puesto revisa con `aprobar` o `devolver` ✅; el CEO carga el `dod` si falta ✅ |
-| Coordinar el trabajo que pasa de un puesto a otro | No | Traspasos con criterio de listo en el OS ✅; los procesos que cruzan puestos los escribe el COO ✅ (decisión del 12/11) |
-| Llevar el proyecto de cada cliente (etapas, plazos, entrega) | No | COO, según `playbook/03-process/00-pipeline.md` ✅ |
-| Que el board no reciba tareas que no son suyas | No | CEO, con la regla del embudo y su KR de menos del 40% ✅ |
+**Partir iniciativas en tareas de una sentada**
+
+- **¿Huérfana?:** No
+- **Quién la tiene hoy:** Cada Chief dueño de la iniciativa, en su latido ✅ (skill del latido, "Quién parte las iniciativas en tareas")
+
+**Seguir plazos y avance de los KRs**
+
+- **¿Huérfana?:** No
+- **Quién la tiene hoy:** CEO, con la escalera de accountability (ruido, señal, problema) y el semáforo ✅
+
+**Que cada tarea tenga Listo cuando y se revise contra él**
+
+- **¿Huérfana?:** No
+- **Quién la tiene hoy:** El jefe de cada puesto revisa con `aprobar` o `devolver` ✅; el CEO carga el `dod` si falta ✅
+
+**Coordinar el trabajo que pasa de un puesto a otro**
+
+- **¿Huérfana?:** No
+- **Quién la tiene hoy:** Traspasos con criterio de listo en el OS ✅; los procesos que cruzan puestos los escribe el COO ✅ (decisión del 12/11)
+
+**Llevar el proyecto de cada cliente (etapas, plazos, entrega)**
+
+- **¿Huérfana?:** No
+- **Quién la tiene hoy:** COO, según `playbook/03-process/00-pipeline.md` ✅
+
+**Que el board no reciba tareas que no son suyas**
+
+- **¿Huérfana?:** No
+- **Quién la tiene hoy:** CEO, con la regla del embudo y su KR de menos del 40% ✅
 
 Ninguna es huérfana. Un PM interno sobre los Chiefs, además, rompería dos reglas de diseño 🔵:
 
@@ -45,9 +66,13 @@ Alcance de control: un PM no le saca reportes al CEO (los Chiefs le siguen repor
 
 Donde sí puede aparecer un puesto de coordinación es en la entrega a clientes, cuando haya varios proyectos a la vez que cruzan puestos y se ajustan entre sí (interdependencia recíproca). Hoy hay un caso (Lisandro) y ningún cliente pago ✅.
 
-| Puesto futuro | Nivel | Bajo | Responde por | Disparador | Hoy lo absorbe |
-|---|---|---|---|---|---|
-| Coordinación de entregas | Responsable | COO | Que cada proyecto de cliente cumpla sus etapas en fecha | 3 casos en entrega al mismo tiempo, o 2 casos con una etapa vencida en el mismo mes | COO |
+**Coordinación de entregas**
+
+- **Nivel:** Responsable
+- **Bajo:** COO
+- **Responde por:** Que cada proyecto de cliente cumpla sus etapas en fecha
+- **Disparador:** 3 casos en entrega al mismo tiempo, o 2 casos con una etapa vencida en el mismo mes
+- **Hoy lo absorbe:** COO
 
 Notas 🔵:
 

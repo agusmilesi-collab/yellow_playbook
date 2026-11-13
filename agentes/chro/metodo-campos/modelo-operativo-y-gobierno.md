@@ -10,11 +10,23 @@ Cubre los bloques **7 (modelo operativo), 8 (derechos de decisión) y 9 (gobiern
 
 **El criterio que ordena todo el bloque.** La coordinación no se elige por gusto: **la determina el tipo de interdependencia entre los puestos** (Thompson, ver `fundamentos-teoricos.md`, bloque 7). Antes de decidir si algo va al RACI, al mapa de decisiones o al gobierno, se clasifica el vínculo:
 
-| Interdependencia | Qué la define | Qué la resuelve | Dónde vive |
-|---|---|---|---|
-| **Compartida** | Usan un recurso común sin pasarse trabajo | Una regla escrita | La ficha de cada puesto |
-| **Secuencial** | Uno entrega, el otro sigue, siempre en el mismo sentido | El criterio de aceptación | Una fila del RACI |
-| **Recíproca** | Cada uno es input del otro y se ajustan entre sí | Ajuste mutuo, en vivo | **Un espacio de gobierno** |
+**Compartida**
+
+- **Qué la define:** Usan un recurso común sin pasarse trabajo
+- **Qué la resuelve:** Una regla escrita
+- **Dónde vive:** La ficha de cada puesto
+
+**Secuencial**
+
+- **Qué la define:** Uno entrega, el otro sigue, siempre en el mismo sentido
+- **Qué la resuelve:** El criterio de aceptación
+- **Dónde vive:** Una fila del RACI
+
+**Recíproca**
+
+- **Qué la define:** Cada uno es input del otro y se ajustan entre sí
+- **Qué la resuelve:** Ajuste mutuo, en vivo
+- **Dónde vive:** **Un espacio de gobierno**
 
 Dos consecuencias que se usan como prueba de calidad. **La reunión se justifica solo donde hay reciprocidad:** si el trabajo va en un solo sentido, alcanza con el criterio escrito, y agregar una reunión ahí es gastar horas de todos para reemplazar un estándar que nadie redactó. Y al revés: **una reunión que hoy existe sobre trabajo secuencial delata el estándar faltante**, así que la recomendación es escribir el criterio y liberar la reunión, no formalizarla.
 

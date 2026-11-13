@@ -18,21 +18,47 @@ Todas consultadas el 2026-11-13.
 
 ## 1. Quién es quién
 
-| Rol | Quién | Fuente |
-|---|---|---|
-| Responsable de la base y depositaria de la historia clínica | La profesional | ✅ Ley 25.326, art. 8; Ley 26.529, art. 18 |
-| Titular de los datos y de la historia clínica | El paciente | ✅ Ley 26.529, art. 14; Ley 27.706, art. 8 |
-| Encargado de tratamiento (presta el servicio) | Yellow, incluidos Agustín y los agentes | ✅ Ley 25.326, art. 25; Decreto 1558/2001, art. 25 |
+**Responsable de la base y depositaria de la historia clínica**
+
+- **Quién:** La profesional
+- **Fuente:** ✅ Ley 25.326, art. 8; Ley 26.529, art. 18
+
+**Titular de los datos y de la historia clínica**
+
+- **Quién:** El paciente
+- **Fuente:** ✅ Ley 26.529, art. 14; Ley 27.706, art. 8
+
+**Encargado de tratamiento (presta el servicio)**
+
+- **Quién:** Yellow, incluidos Agustín y los agentes
+- **Fuente:** ✅ Ley 25.326, art. 25; Decreto 1558/2001, art. 25
 
 ## 2. Qué datos puede tocar un agente
 
-| Dato | ¿Puede? | Regla y fuente |
-|---|---|---|
-| Nombre, contacto, DNI o CUIT para facturar | Sí, si lo necesita su tarea | ✅ Los datos tienen que ser adecuados, pertinentes y no excesivos para la finalidad (Ley 25.326, art. 4). |
-| Turnos (fecha, hora, profesional) | Sí, el Administrador | 🔵 Que una persona se atiende con una nutricionista revela un dato de salud (Ley 25.326, art. 2): se trata con el mismo cuidado que un dato sensible. |
-| Pagos y comprobantes | Sí, el Administrador | ✅ Ley 25.326, art. 4 (pertinencia). |
-| Motivo de consulta, diagnóstico, plan alimentario, mediciones, notas de sesión | No en la primera etapa | 🔵 Es historia clínica (Ley 26.529, arts. 12 y 15). Guardarla en el OS exige integridad, inalterabilidad, control de modificaciones y conservación de 10 años (Ley 26.529, arts. 13 y 18). Queda en el sistema actual de la profesional hasta que el OS cumpla eso. |
-| Datos de salud que el paciente escribe por su cuenta (por ejemplo, en un mensaje para pedir turno) | Solo lo necesario para el turno; el resto no se copia ni se resume en otro lado | 🔵 Ley 25.326, art. 4 (no excesivos) y art. 10 (secreto). |
+**Nombre, contacto, DNI o CUIT para facturar**
+
+- **¿Puede?:** Sí, si lo necesita su tarea
+- **Regla y fuente:** ✅ Los datos tienen que ser adecuados, pertinentes y no excesivos para la finalidad (Ley 25.326, art. 4).
+
+**Turnos (fecha, hora, profesional)**
+
+- **¿Puede?:** Sí, el Administrador
+- **Regla y fuente:** 🔵 Que una persona se atiende con una nutricionista revela un dato de salud (Ley 25.326, art. 2): se trata con el mismo cuidado que un dato sensible.
+
+**Pagos y comprobantes**
+
+- **¿Puede?:** Sí, el Administrador
+- **Regla y fuente:** ✅ Ley 25.326, art. 4 (pertinencia).
+
+**Motivo de consulta, diagnóstico, plan alimentario, mediciones, notas de sesión**
+
+- **¿Puede?:** No en la primera etapa
+- **Regla y fuente:** 🔵 Es historia clínica (Ley 26.529, arts. 12 y 15). Guardarla en el OS exige integridad, inalterabilidad, control de modificaciones y conservación de 10 años (Ley 26.529, arts. 13 y 18). Queda en el sistema actual de la profesional hasta que el OS cumpla eso.
+
+**Datos de salud que el paciente escribe por su cuenta (por ejemplo, en un mensaje para pedir turno)**
+
+- **¿Puede?:** Solo lo necesario para el turno; el resto no se copia ni se resume en otro lado
+- **Regla y fuente:** 🔵 Ley 25.326, art. 4 (no excesivos) y art. 10 (secreto).
 
 ## 3. Dónde se guardan
 

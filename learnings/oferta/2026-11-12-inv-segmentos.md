@@ -1,9 +1,9 @@
 # Evaluación de los segmentos de las frases A, B y C del CPO
 
-**Puesto:** INV (Investigación de mercado), Yellow OS
-**Fecha:** 2026-11-12
-**Para:** CPO, como insumo para cerrar la oferta (tarea `wqen0slv`)
-**Base:** `learnings/oferta/2026-11-12-cpo-oferta.md` (las tres frases), casos del repo, búsqueda web del 12/11/2026 y el benchmark del mismo día (`2026-11-12-inv-benchmark.md`). Leyenda: ✅ dato con fuente o confirmado en un caso, 🔵 inferencia del puesto, ❓ no se pudo verificar.
+- **Puesto:** INV (Investigación de mercado), Yellow OS
+- **Fecha:** 2026-11-12
+- **Para:** CPO, como insumo para cerrar la oferta (tarea `wqen0slv`)
+- **Base:** `learnings/oferta/2026-11-12-cpo-oferta.md` (las tres frases), casos del repo, búsqueda web del 12/11/2026 y el benchmark del mismo día (`2026-11-12-inv-benchmark.md`). Leyenda: ✅ dato con fuente o confirmado en un caso, 🔵 inferencia del puesto, ❓ no se pudo verificar.
 
 ---
 
@@ -17,13 +17,35 @@
 
 Escala de 1 a 5 por dimensión (5 = más favorable para Yellow). El puntaje es una lectura del puesto 🔵; la evidencia de cada celda lleva su marca.
 
-| Dimensión | A. Profesional independiente | B. Dueño de PyME | C. Responsable de equipo que entrega a mano |
-|---|---|---|---|
-| **Dolor** | 2. Según el ICP, no reconoce el problema de entrega ✅ (`icp.md`, job por tier). El dolor que sí nombra es económico: en Rosario los honorarios "quedan atrás" y los pacientes no pueden sostener el tratamiento ✅ (La Capital, ene-2024). Eso empuja a buscar más pacientes (marketing), no a rediseñar la entrega 🔵 | 4. Reconoce el problema sin que haya que explicárselo ("cómo cobro más por algo que el mercado ve como commodity") ✅ (`icp.md`). Contexto de presión: 1,6% menos PyMEs interanual a dic-2025 ✅ (UCEMA) | 4. Dolor nombrado por el comprador real: "dejar de ser el cuello de botella de mi área", "si me tomo 3 días de vacaciones, todo explota" ✅ (`cases/Lisandro/jtbd-lisandro.md`). Un solo caso: n=1 |
-| **Disposición a pagar** | 1. Sesión en Rosario: ARS 3.000-20.000, referencia del Colegio ARS 8.000 (ene-2024) ✅. Lo que el segmento compra hoy para su negocio son cursos de USD 10-100 ✅ (benchmark). Las obras sociales recortan cobertura ✅. El Modelo B (USD 2.000) equivale a cientos de sesiones 🔵 | 4. `offer.md` lo marca como el que más paga ✅ (dato interno, sin venta que lo confirme ❓). Las PyMEs ya pagan USD 2.000-25.000 por proyectos de automatización ✅ (Develop Argentina). Consultoras de PyME no publican precio ❓ | 3. Hay una venta: ARS 500.000 (~USD 400-500) ✅ (contrato Lisandro). Paga como gasto personal o con presupuesto del área ❓. Referencia de mercado para un sistema acotado: USD 2.000-5.000 ✅ (agencias de automatización). Que este segmento pague eso: ❓ |
-| **Tamaño** | 5. Unos 2,1 a 2,5 millones de monotributistas en Argentina ✅ (El Cronista, iProfesional, nov-2025), no todos profesionales. Psicólogos: 240-286 cada 100.000 habitantes ✅ (Modesto Alonso; informe OCDE/OPS 2023), 🔵 del orden de 100.000 en el país | 4. 519.531 PyMEs empleadoras a dic-2025 ✅ (UCEMA). Las que tienen producto rentable pero indiferenciado: ❓ sin dato | 3. ❓ No hay cifra de mandos medios o responsables de equipo. 🔵 Existe dentro de esas 519.531 PyMEs y de las empresas grandes, pero no se puede contar con lo publicado |
-| **Facilidad para llegar** | 3. Hay colegios profesionales y directorios (Psychology Today, Psicología y Mente) ✅. Hay un caso abierto (`psicologa-rosario`) pero en discovery sin transcript desde mayo ✅. Un segmento al que hoy le hablan muchos vendedores de marketing barato ✅ | 2. Al mismo dueño ya le habla Campos HR, del propio board ✅ (CPO). Consultoras como BPS trabajan el mismo mercado con 25 años de marca ✅. Sin caso ni referido en Yellow ✅ | 4. Canal concreto: los pares de Lisandro en la corredora y en el rubro granos, ya anotados como canal de referidos ✅ (`cases/Lisandro/case-notes.md`). El caso existe y se puede mostrar funcionando ✅. Falta medir resultados a 30-60 días ✅ (pendiente del caso) |
-| **Total (sobre 20)** | **11** | **14** | **14** |
+**Dolor**
+
+- **A. Profesional independiente:** 2. Según el ICP, no reconoce el problema de entrega ✅ (`icp.md`, job por tier). El dolor que sí nombra es económico: en Rosario los honorarios "quedan atrás" y los pacientes no pueden sostener el tratamiento ✅ (La Capital, ene-2024). Eso empuja a buscar más pacientes (marketing), no a rediseñar la entrega 🔵
+- **B. Dueño de PyME:** 4. Reconoce el problema sin que haya que explicárselo ("cómo cobro más por algo que el mercado ve como commodity") ✅ (`icp.md`). Contexto de presión: 1,6% menos PyMEs interanual a dic-2025 ✅ (UCEMA)
+- **C. Responsable de equipo que entrega a mano:** 4. Dolor nombrado por el comprador real: "dejar de ser el cuello de botella de mi área", "si me tomo 3 días de vacaciones, todo explota" ✅ (`cases/Lisandro/jtbd-lisandro.md`). Un solo caso: n=1
+
+**Disposición a pagar**
+
+- **A. Profesional independiente:** 1. Sesión en Rosario: ARS 3.000-20.000, referencia del Colegio ARS 8.000 (ene-2024) ✅. Lo que el segmento compra hoy para su negocio son cursos de USD 10-100 ✅ (benchmark). Las obras sociales recortan cobertura ✅. El Modelo B (USD 2.000) equivale a cientos de sesiones 🔵
+- **B. Dueño de PyME:** 4. `offer.md` lo marca como el que más paga ✅ (dato interno, sin venta que lo confirme ❓). Las PyMEs ya pagan USD 2.000-25.000 por proyectos de automatización ✅ (Develop Argentina). Consultoras de PyME no publican precio ❓
+- **C. Responsable de equipo que entrega a mano:** 3. Hay una venta: ARS 500.000 (~USD 400-500) ✅ (contrato Lisandro). Paga como gasto personal o con presupuesto del área ❓. Referencia de mercado para un sistema acotado: USD 2.000-5.000 ✅ (agencias de automatización). Que este segmento pague eso: ❓
+
+**Tamaño**
+
+- **A. Profesional independiente:** 5. Unos 2,1 a 2,5 millones de monotributistas en Argentina ✅ (El Cronista, iProfesional, nov-2025), no todos profesionales. Psicólogos: 240-286 cada 100.000 habitantes ✅ (Modesto Alonso; informe OCDE/OPS 2023), 🔵 del orden de 100.000 en el país
+- **B. Dueño de PyME:** 4. 519.531 PyMEs empleadoras a dic-2025 ✅ (UCEMA). Las que tienen producto rentable pero indiferenciado: ❓ sin dato
+- **C. Responsable de equipo que entrega a mano:** 3. ❓ No hay cifra de mandos medios o responsables de equipo. 🔵 Existe dentro de esas 519.531 PyMEs y de las empresas grandes, pero no se puede contar con lo publicado
+
+**Facilidad para llegar**
+
+- **A. Profesional independiente:** 3. Hay colegios profesionales y directorios (Psychology Today, Psicología y Mente) ✅. Hay un caso abierto (`psicologa-rosario`) pero en discovery sin transcript desde mayo ✅. Un segmento al que hoy le hablan muchos vendedores de marketing barato ✅
+- **B. Dueño de PyME:** 2. Al mismo dueño ya le habla Campos HR, del propio board ✅ (CPO). Consultoras como BPS trabajan el mismo mercado con 25 años de marca ✅. Sin caso ni referido en Yellow ✅
+- **C. Responsable de equipo que entrega a mano:** 4. Canal concreto: los pares de Lisandro en la corredora y en el rubro granos, ya anotados como canal de referidos ✅ (`cases/Lisandro/case-notes.md`). El caso existe y se puede mostrar funcionando ✅. Falta medir resultados a 30-60 días ✅ (pendiente del caso)
+
+**Total (sobre 20)**
+
+- **A. Profesional independiente:** **11**
+- **B. Dueño de PyME:** **14**
+- **C. Responsable de equipo que entrega a mano:** **14**
 
 ## 3. Lectura
 

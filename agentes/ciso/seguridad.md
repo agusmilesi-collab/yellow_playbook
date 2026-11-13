@@ -8,13 +8,30 @@ La seguridad se diseña desde el principio y se vende como argumento. Agregada a
 
 ## Dos niveles de producto
 
-| | Nivel estándar (PyMEs, Campos, Yellow) | Nivel confidencial (estudios, arbitraje, salud) |
-|---|---|---|
-| Dónde corre | Plataforma compartida, datos de cada cliente aislados | Instalación dedicada en las cuentas del cliente (su base, su almacenamiento, su cuenta de IA) |
-| Documentos | Almacenamiento del OS o repo privado | Almacenamiento cifrado del cliente (Drive o M365 de nivel empresa, o uno de cero conocimiento). El OS guarda solo índice y tareas. |
-| IA | Clave de API del cliente, términos comerciales (no se entrena con sus datos) | Cuenta empresa del cliente; retención cero de datos si el contrato lo exige (confirmar qué servicios y modelos la admiten antes de prometerla) |
-| Separación | Por cliente | Por cliente y por caso: el agente de un caso no lee otro |
-| Salida a internet del agente | Restringida a lo necesario | Solo a sitios permitidos explícitamente |
+**Dónde corre**
+
+- **Nivel estándar (PyMEs, Campos, Yellow):** Plataforma compartida, datos de cada cliente aislados
+- **Nivel confidencial (estudios, arbitraje, salud):** Instalación dedicada en las cuentas del cliente (su base, su almacenamiento, su cuenta de IA)
+
+**Documentos**
+
+- **Nivel estándar (PyMEs, Campos, Yellow):** Almacenamiento del OS o repo privado
+- **Nivel confidencial (estudios, arbitraje, salud):** Almacenamiento cifrado del cliente (Drive o M365 de nivel empresa, o uno de cero conocimiento). El OS guarda solo índice y tareas.
+
+**IA**
+
+- **Nivel estándar (PyMEs, Campos, Yellow):** Clave de API del cliente, términos comerciales (no se entrena con sus datos)
+- **Nivel confidencial (estudios, arbitraje, salud):** Cuenta empresa del cliente; retención cero de datos si el contrato lo exige (confirmar qué servicios y modelos la admiten antes de prometerla)
+
+**Separación**
+
+- **Nivel estándar (PyMEs, Campos, Yellow):** Por cliente
+- **Nivel confidencial (estudios, arbitraje, salud):** Por cliente y por caso: el agente de un caso no lee otro
+
+**Salida a internet del agente**
+
+- **Nivel estándar (PyMEs, Campos, Yellow):** Restringida a lo necesario
+- **Nivel confidencial (estudios, arbitraje, salud):** Solo a sitios permitidos explícitamente
 
 ## Riesgos propios de los agentes
 

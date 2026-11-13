@@ -1,9 +1,9 @@
 # Oferta de Yellow: estado actual y tres frases candidatas
 
-**Puesto:** CPO (Diseño de servicio), Yellow OS
-**Fecha:** 2026-11-12
-**Foco:** Oferta redefinida
-**Para:** el board (Agustín), que elige la frase y decide a quién se le vende hoy
+- **Puesto:** CPO (Diseño de servicio), Yellow OS
+- **Fecha:** 2026-11-12
+- **Foco:** Oferta redefinida
+- **Para:** el board (Agustín), que elige la frase y decide a quién se le vende hoy
 
 Este archivo es trabajo del puesto y queda fuera de `playbook/` por la regla R1. Cuando el board elija, el cambio a `offer.md` e `icp.md` se registra como learning y se consolida.
 
@@ -20,15 +20,40 @@ Fuentes: `playbook/01-identity/offer.md` (v0.10, 2026-06-11) e `icp.md`.
 
 ## 2. Qué choca con la realidad
 
-| # | Lo que dice el playbook | Lo que muestran los casos y los learnings | Fuente |
-|---|---|---|---|
-| 1 | El cliente es el profesional independiente | La única venta real (Lisandro) fue a un empleado con mando dentro de una empresa, para su equipo. ✅ | `cases/Lisandro/case-notes.md`, LRN-013 |
-| 2 | Se vende el rediseño de la entrega, con diagnóstico y plan | Lisandro compró un sistema instalado y funcionando; el documento fue soporte. El producto fue el sistema. ✅ | LRN-013: "el documento fue soporte, el sistema fue el producto" |
-| 3 | El tagline apunta al Tier 1 | La propia `offer.md` dice que quien más paga es el dueño de PyME (Tier 2) y que el Tier 1 sirve como fábrica de casos | `offer.md`, "Recomendación de modelo por perfil" |
-| 4 | Tier 2 = PyME trabada en la profesionalización (ejemplo del agro) | Es exactamente el cliente de Campos HR ("profesionalización organizacional para PYMEs en transición de fase"). Las dos marcas le hablarían al mismo dueño. 🔵 | `icp.md` Tier 2; `Campos HR/README.md` |
-| 5 | Pitch nivel 3: "eso le permitió subir el precio" | No hay resultado medido. El caso `psicologa-rosario` sigue en discovery desde el 9/5/2026 con el transcript vacío. El texto del playbook ya pide reemplazarlo cuando haya números. ❓ | `cases/psicologa-rosario/`, `offer.md` nivel 3 |
-| 6 | Dos maneras de presentarse: "rediseño servicios" y "Gerente de Experiencia del Cliente fractional" | Ninguna de las dos se entiende sin explicación, que es el problema que trae el board ("me cuesta explicar qué hago") | `offer.md` |
-| 7 | Decisión abierta de LRN-013: reencuadrar el ICP para incluir al profesional con mando, o abrir una línea aparte | Sigue sin decidir desde el 10/6/2026, y bloquea cualquier frase nueva | LRN-013, `analisis-yellow-lisandro.md` Parte III |
+**1. Lo que dice el playbook:** El cliente es el profesional independiente
+
+- **Lo que muestran los casos y los learnings:** La única venta real (Lisandro) fue a un empleado con mando dentro de una empresa, para su equipo. ✅
+- **Fuente:** `cases/Lisandro/case-notes.md`, LRN-013
+
+**2. Lo que dice el playbook:** Se vende el rediseño de la entrega, con diagnóstico y plan
+
+- **Lo que muestran los casos y los learnings:** Lisandro compró un sistema instalado y funcionando; el documento fue soporte. El producto fue el sistema. ✅
+- **Fuente:** LRN-013: "el documento fue soporte, el sistema fue el producto"
+
+**3. Lo que dice el playbook:** El tagline apunta al Tier 1
+
+- **Lo que muestran los casos y los learnings:** La propia `offer.md` dice que quien más paga es el dueño de PyME (Tier 2) y que el Tier 1 sirve como fábrica de casos
+- **Fuente:** `offer.md`, "Recomendación de modelo por perfil"
+
+**4. Lo que dice el playbook:** Tier 2 = PyME trabada en la profesionalización (ejemplo del agro)
+
+- **Lo que muestran los casos y los learnings:** Es exactamente el cliente de Campos HR ("profesionalización organizacional para PYMEs en transición de fase"). Las dos marcas le hablarían al mismo dueño. 🔵
+- **Fuente:** `icp.md` Tier 2; `Campos HR/README.md`
+
+**5. Lo que dice el playbook:** Pitch nivel 3: "eso le permitió subir el precio"
+
+- **Lo que muestran los casos y los learnings:** No hay resultado medido. El caso `psicologa-rosario` sigue en discovery desde el 9/5/2026 con el transcript vacío. El texto del playbook ya pide reemplazarlo cuando haya números. ❓
+- **Fuente:** `cases/psicologa-rosario/`, `offer.md` nivel 3
+
+**6. Lo que dice el playbook:** Dos maneras de presentarse: "rediseño servicios" y "Gerente de Experiencia del Cliente fractional"
+
+- **Lo que muestran los casos y los learnings:** Ninguna de las dos se entiende sin explicación, que es el problema que trae el board ("me cuesta explicar qué hago")
+- **Fuente:** `offer.md`
+
+**7. Lo que dice el playbook:** Decisión abierta de LRN-013: reencuadrar el ICP para incluir al profesional con mando, o abrir una línea aparte
+
+- **Lo que muestran los casos y los learnings:** Sigue sin decidir desde el 10/6/2026, y bloquea cualquier frase nueva
+- **Fuente:** LRN-013, `analisis-yellow-lisandro.md` Parte III
 
 **Lectura del puesto (🔵):** la evidencia apunta a que lo que Yellow vende con éxito es armar e instalar el sistema con el que alguien entrega su trabajo (Lisandro, y las herramientas que el board construye para sí: OS de Campos, tools, este OS). El rediseño de la experiencia es el método; el sistema instalado es lo que el cliente paga. La frase tiene que elegir entre esas dos cosas, y elegir a quién.
 

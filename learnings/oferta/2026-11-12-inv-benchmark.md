@@ -1,9 +1,9 @@
 # Benchmark: quién más vende rediseño de servicio o de la entrega a profesionales y PyMEs (Argentina y LatAm)
 
-**Puesto:** INV (Investigación de mercado), Yellow OS
-**Fecha:** 2026-11-12
-**Para:** CPO, como insumo para cerrar la oferta (tarea `85spsb9n`)
-**Método:** búsqueda web del 12/11/2026. Ninguna empresa fue contactada. Las cifras salen de lo que cada proveedor publica sobre sí mismo, salvo donde se indica otra fuente. Leyenda: ✅ dato publicado con fuente, 🔵 inferencia del puesto, ❓ no se pudo verificar.
+- **Puesto:** INV (Investigación de mercado), Yellow OS
+- **Fecha:** 2026-11-12
+- **Para:** CPO, como insumo para cerrar la oferta (tarea `85spsb9n`)
+- **Método:** búsqueda web del 12/11/2026. Ninguna empresa fue contactada. Las cifras salen de lo que cada proveedor publica sobre sí mismo, salvo donde se indica otra fuente. Leyenda: ✅ dato publicado con fuente, 🔵 inferencia del puesto, ❓ no se pudo verificar.
 
 ---
 
@@ -16,14 +16,53 @@
 
 ## 2. Mapa de alternativas
 
-| Tipo | Ejemplos encontrados | Qué ofrecen | A quién | Precio publicado | Cómo se presentan |
-|---|---|---|---|---|---|
-| Consultoras de CX corporativas | EY Design Studio LAS (sede en Buenos Aires), Destí by BDO Argentina, Renascence | Service design, mapeo de recorridos, modelos de CX | Empresas grandes y corporaciones | ❓ no publican | "Experiencia del cliente", "ecosistemas", metodología propia. Renascence declara "1000+ recorridos y procesos mapeados" ✅ |
-| Consultoras de profesionalización de PyMEs | Consultora BPS (programa "Profesionalización Integral de PyMEs"), Campos HR (del propio board) | Diagnóstico, procesos, personas y cultura, tableros de indicadores | PyMEs y empresas familiares | ❓ no publican. BPS dice cobrar "lo mismo o incluso menos" que consultoras con enfoque de coaching ✅ | "Implantar, no solo aconsejar". BPS declara 350 empresas, 700 proyectos, 25 años (dato propio, sin verificación independiente) ✅ |
-| Agencias de automatización e IA | Develop Argentina, Duotach (Buenos Aires), AI.KESTAR de JC MKT | Agentes de IA en WhatsApp, integraciones Make/Zapier/n8n, software a medida | PyMEs que hacen tareas administrativas a mano | Agente simple USD 2.000-5.000; multicanal USD 5.000-15.000; Duotach "desde USD 1.500"; agentes IA en ARS 150.000-600.000 ✅ | Ahorro de horas, "empleado IA", presupuesto por WhatsApp |
-| Implementadores de Notion | Consultores del directorio de Notion con perfil argentino; freelancers en Fiverr y Contra | Armado de espacios de trabajo, CRM, gestión de equipos y proyectos, capacitación | Equipos chicos y profesionales | Fiverr: USD 100-200 por 3 días; USD 1.500-2.000 por 3 meses (mercado global) ✅. En ARS: ❓ | Por herramienta: "te armo tu Notion" |
-| CX fractional (freelance, fuera de Argentina) | Perfiles en Contra (España), Céntrica (Guatemala) | Head of CX por horas, talleres, investigación con clientes | PyMEs y startups | Contra: desde USD 2.950 por mes, 8 horas semanales ✅ | "Fractional Head of Customer Experience" |
-| Mentorías y cursos de marketing para psicólogos y nutricionistas | Cursos en Psyciencia, mentorías gratuitas con formulario | Posicionamiento del consultorio, redes, web | Profesionales de salud | Curso USD 9,99 en promoción (USD 104,99 de lista) ✅ | Captar pacientes, marketing digital |
+**Consultoras de CX corporativas**
+
+- **Ejemplos encontrados:** EY Design Studio LAS (sede en Buenos Aires), Destí by BDO Argentina, Renascence
+- **Qué ofrecen:** Service design, mapeo de recorridos, modelos de CX
+- **A quién:** Empresas grandes y corporaciones
+- **Precio publicado:** ❓ no publican
+- **Cómo se presentan:** "Experiencia del cliente", "ecosistemas", metodología propia. Renascence declara "1000+ recorridos y procesos mapeados" ✅
+
+**Consultoras de profesionalización de PyMEs**
+
+- **Ejemplos encontrados:** Consultora BPS (programa "Profesionalización Integral de PyMEs"), Campos HR (del propio board)
+- **Qué ofrecen:** Diagnóstico, procesos, personas y cultura, tableros de indicadores
+- **A quién:** PyMEs y empresas familiares
+- **Precio publicado:** ❓ no publican. BPS dice cobrar "lo mismo o incluso menos" que consultoras con enfoque de coaching ✅
+- **Cómo se presentan:** "Implantar, no solo aconsejar". BPS declara 350 empresas, 700 proyectos, 25 años (dato propio, sin verificación independiente) ✅
+
+**Agencias de automatización e IA**
+
+- **Ejemplos encontrados:** Develop Argentina, Duotach (Buenos Aires), AI.KESTAR de JC MKT
+- **Qué ofrecen:** Agentes de IA en WhatsApp, integraciones Make/Zapier/n8n, software a medida
+- **A quién:** PyMEs que hacen tareas administrativas a mano
+- **Precio publicado:** Agente simple USD 2.000-5.000; multicanal USD 5.000-15.000; Duotach "desde USD 1.500"; agentes IA en ARS 150.000-600.000 ✅
+- **Cómo se presentan:** Ahorro de horas, "empleado IA", presupuesto por WhatsApp
+
+**Implementadores de Notion**
+
+- **Ejemplos encontrados:** Consultores del directorio de Notion con perfil argentino; freelancers en Fiverr y Contra
+- **Qué ofrecen:** Armado de espacios de trabajo, CRM, gestión de equipos y proyectos, capacitación
+- **A quién:** Equipos chicos y profesionales
+- **Precio publicado:** Fiverr: USD 100-200 por 3 días; USD 1.500-2.000 por 3 meses (mercado global) ✅. En ARS: ❓
+- **Cómo se presentan:** Por herramienta: "te armo tu Notion"
+
+**CX fractional (freelance, fuera de Argentina)**
+
+- **Ejemplos encontrados:** Perfiles en Contra (España), Céntrica (Guatemala)
+- **Qué ofrecen:** Head of CX por horas, talleres, investigación con clientes
+- **A quién:** PyMEs y startups
+- **Precio publicado:** Contra: desde USD 2.950 por mes, 8 horas semanales ✅
+- **Cómo se presentan:** "Fractional Head of Customer Experience"
+
+**Mentorías y cursos de marketing para psicólogos y nutricionistas**
+
+- **Ejemplos encontrados:** Cursos en Psyciencia, mentorías gratuitas con formulario
+- **Qué ofrecen:** Posicionamiento del consultorio, redes, web
+- **A quién:** Profesionales de salud
+- **Precio publicado:** Curso USD 9,99 en promoción (USD 104,99 de lista) ✅
+- **Cómo se presentan:** Captar pacientes, marketing digital
 
 ## 3. Lo que se lee del mapa (🔵 lecturas del puesto)
 
