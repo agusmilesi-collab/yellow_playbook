@@ -67,6 +67,7 @@ Cuando Agustín fija un objetivo nuevo, cargarlo con `node agentes/os.mjs objeti
 
 - Español, sin em dashes, sin metáforas y sin "no es X, es Y" (guía de estilo del repo).
 - Al cliente nunca se le inventa información: falta → ❓, inferencia → 🔵, confirmado → ✅ (R5).
+- Los entregables se leen en el celular. Una tabla ancha hace que toda la página quede más ancha que la pantalla y se corta el texto. Por eso: tablas de 2 columnas como máximo y con celdas cortas; para comparar opciones, un subtítulo por opción con una lista de atributos debajo. Los datos del encabezado (puesto, fecha, tarea) van como lista, porque un salto de línea simple en markdown no corta la línea.
 - Las transcripciones completas viven en `cases/<slug>/transcript.md` del repo local. A la web sube solo la foto de `sync`.
 - Si `guardar` choca con la pantalla abierta, la pantalla le avisa a Agustín que recargue. El script nunca pisa sin subir la rev.
 

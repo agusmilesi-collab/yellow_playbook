@@ -1,10 +1,10 @@
 # Transcripción de Meet: comparación de cuatro opciones
 
-**Puesto:** CTO (Ingeniería y memoria), Yellow OS
-**Fecha:** 2026-11-12
-**Foco:** Ingesta de reuniones (obj-cto)
-**Tarea:** vbm88toh
-**Para:** el board (Agustín), que elige la herramienta (tarea 6kipwmwq)
+- **Puesto:** CTO (Ingeniería y memoria), Yellow OS
+- **Fecha:** 2026-11-12
+- **Foco:** Ingesta de reuniones (obj-cto)
+- **Tarea:** vbm88toh
+- **Para:** el board (Agustín), que elige la herramienta (tarea 6kipwmwq)
 
 Este archivo es trabajo del puesto y queda fuera de `playbook/` por la regla R1.
 
@@ -25,15 +25,41 @@ De ahí salen cuatro criterios:
 
 Los precios son por usuario por mes, en dólares. No pude abrir las páginas oficiales de precios desde esta sesión, porque la red no deja salir a esos dominios. Los números vienen de reseñas de 2026 que no coinciden entre sí, así que se marcan 🔵 y hay que confirmarlos antes de pagar.
 
-| | Google Workspace (Meet nativo) | Fathom | tl;dv | Read.ai |
-|---|---|---|---|---|
-| Plan mínimo que transcribe | Business Standard, 🔵 USD 14 anual | Gratis, ilimitado | Gratis, ilimitado | Gratis, 5 reuniones por mes y hasta 1 h |
-| Plan pago que hace falta para automatizar | El mismo Business Standard | 🔵 Premium, USD 16-20 | Pro, 🔵 USD 18 anual o 29 mensual | 🔵 Pro, USD 15-20 (la API no está confirmada) |
-| Cómo sale el texto | Google Doc en el Drive de quien organiza, más la API de Meet (`transcripts.entries`) y el evento `transcript.fileGenerated` | API pública, webhooks, Zapier (texto a Google Drive) | API y webhooks desde Pro, Zapier (a Google Drive) | TXT y envío a Google Docs y Notion. API sin documentación pública verificable |
-| Necesita un bot en la llamada | No | Sí, aunque hay grabación sin bot 🔵 | Sí | Sí |
-| Español | Sí | Bueno según una comparación de tl;dv | Primero en un test en español hecho por tl;dv | Sin datos |
-| Ventaja | Nadie extra en la llamada y nada guardado fuera de Google | El camino a Zapier y Drive más armado | El plan gratis más generoso y la mejor evidencia en español | Ninguna para este caso |
-| Riesgo | Si Yellow usa una cuenta Gmail personal, no hay transcripción: hay que pasar a Workspace | En el plan gratis, las funciones Premium (Zapier incluido) se limitan a 5 llamadas por mes | La API exige pagar Pro | Plan gratis demasiado chico y API dudosa |
+### Google Workspace (Meet nativo)
+
+- **Precio:** hace falta Business Standard o superior (🔵 USD 14 anual). Con ese plan ya alcanza para automatizar.
+- **Cómo sale el texto:** un Google Doc en el Drive de quien organiza, más la API de Meet y un aviso cuando el archivo está listo.
+- **Bot en la llamada:** no.
+- **Español:** sí.
+- **A favor:** nadie extra en la llamada y nada guardado fuera de Google.
+- **En contra:** si Yellow usa una cuenta Gmail personal, no hay transcripción y hay que pasar a Workspace.
+
+### Fathom
+
+- **Precio:** gratis e ilimitado para transcribir. Para automatizar, 🔵 Premium a USD 16-20.
+- **Cómo sale el texto:** API pública, webhooks y Zapier (texto a Google Drive).
+- **Bot en la llamada:** sí, aunque hay grabación sin bot 🔵.
+- **Español:** bueno, según una comparación hecha por tl;dv.
+- **A favor:** el camino a Zapier y Drive más armado.
+- **En contra:** en el plan gratis, las funciones Premium (Zapier incluido) se limitan a 5 llamadas por mes.
+
+### tl;dv
+
+- **Precio:** gratis e ilimitado para transcribir. Para automatizar, Pro a 🔵 USD 18 anual o 29 mensual.
+- **Cómo sale el texto:** API y webhooks desde Pro, y Zapier (a Google Drive).
+- **Bot en la llamada:** sí.
+- **Español:** primero en un test en español hecho por tl;dv.
+- **A favor:** el plan gratis más generoso y la mejor evidencia en español.
+- **En contra:** la API exige pagar Pro.
+
+### Read.ai
+
+- **Precio:** gratis hasta 5 reuniones por mes y de hasta 1 h. Pro a 🔵 USD 15-20.
+- **Cómo sale el texto:** TXT y envío a Google Docs y Notion. La API no tiene documentación pública que se pueda verificar.
+- **Bot en la llamada:** sí.
+- **Español:** sin datos.
+- **A favor:** nada para este caso.
+- **En contra:** plan gratis demasiado chico y API dudosa.
 
 ## 3. Cómo llegaría cada una a `cases/<cliente>/`
 
