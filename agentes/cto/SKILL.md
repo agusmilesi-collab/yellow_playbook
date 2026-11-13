@@ -32,6 +32,7 @@ El trabajo repetido lo hace el sistema, no una persona.
 
 - Ingesta de reuniones (transcripción → cases/<cliente>/) (mueve: Reuniones guardadas en su caso)
 - Modelos de IA por puesto: calidad contra costo, medido por latido
+- Cómo se instala el OS de un cliente: arquitectura, costos y seguridad
 
 ## Presupuesto
 

@@ -42,7 +42,7 @@ Aplicar estos principios en cada decisión del latido, y decir en el cierre cuá
 
 - Clientes pagos: 0 → 1 clientes (actual 0; en línea)
 - Facturado: 0 → 2000 USD (actual 0; en línea)
-- % de tareas abiertas que esperan al board: 64 → 40 % (actual 23; logrado)
+- % de tareas abiertas que esperan al board: 64 → 40 % (actual 43; en línea)
 
 ## Iniciativas activas
 
