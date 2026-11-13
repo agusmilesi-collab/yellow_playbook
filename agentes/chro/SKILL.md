@@ -7,7 +7,7 @@ description: Puesto CHRO (Personas y diseño organizacional) de Yellow. Usar cua
 
 # CHRO · Personas y diseño organizacional (Yellow)
 
-**Reporta a:** CEO · **Agente:** Claude Code · **Modelo:** claude-opus-5-5 · **Ocupa:** Claude · **Estado:** activo
+**Reporta a:** CEO · **Agente:** Claude Code · **Modelo:** claude-opus-5-5 · **Ocupa:** Patty · **Estado:** activo
 
 ## Misión
 
@@ -46,7 +46,7 @@ Aplicar estos principios en cada decisión del latido, y decir en el cierre cuá
 
 ## Presupuesto
 
-4 latidos por mes. Si se agotan, se le pide autorización al board antes de seguir.
+7 latidos por mes. Si se agotan, se le pide autorización al board antes de seguir.
 
 ## Antes de trabajar, leer
 

@@ -7,7 +7,9 @@
       "tipo": "primaria",
       "ciclo": false,
       "responsable": "cmo",
-      "colaboradores": ["cpo"],
+      "colaboradores": [
+        "cpo"
+      ],
       "pasos": [
         "Contar la oferta aprobada en el sitio y en contenidos",
         "Recibir el pedido de llamada",
@@ -20,7 +22,10 @@
       "tipo": "primaria",
       "ciclo": false,
       "responsable": "cso",
-      "colaboradores": ["inv", "cfo"],
+      "colaboradores": [
+        "inv",
+        "cfo"
+      ],
       "pasos": [
         "Hacer la llamada de discovery",
         "Enviar la propuesta con precio en dos partes",
@@ -35,7 +40,9 @@
       "tipo": "primaria",
       "ciclo": true,
       "responsable": "coo",
-      "colaboradores": ["cto"],
+      "colaboradores": [
+        "cto"
+      ],
       "pasos": [
         "Hacer la entrevista de diagnóstico",
         "Guardar la transcripción en el caso",
@@ -49,7 +56,9 @@
       "tipo": "primaria",
       "ciclo": true,
       "responsable": "coo",
-      "colaboradores": ["cpo"],
+      "colaboradores": [
+        "cpo"
+      ],
       "pasos": [
         "Diseñar el servicio nuevo con el método Yellow",
         "Elegir qué agentes del catálogo lo operan",
@@ -63,7 +72,10 @@
       "tipo": "primaria",
       "ciclo": true,
       "responsable": "coo",
-      "colaboradores": ["cto", "ciso"],
+      "colaboradores": [
+        "cto",
+        "ciso"
+      ],
       "pasos": [
         "Configurar el agente con los datos del profesional",
         "Revisar el acceso a los datos de sus clientes",
@@ -90,7 +102,9 @@
       "tipo": "primaria",
       "ciclo": true,
       "responsable": "cfo",
-      "colaboradores": ["coo"],
+      "colaboradores": [
+        "coo"
+      ],
       "pasos": [
         "Emitir la factura de la etapa o del mes",
         "Seguir el pago hasta que se acredita",
@@ -102,8 +116,11 @@
       "nombre": "Operar los agentes instalados cada mes",
       "tipo": "primaria",
       "ciclo": true,
-      "responsable": null,
-      "colaboradores": ["coo", "cto"],
+      "responsable": "sop",
+      "colaboradores": [
+        "des",
+        "qa"
+      ],
       "pasos": [
         "Revisar que cada agente cumpla su Listo cuando",
         "Corregir lo que falla",
@@ -117,7 +134,10 @@
       "tipo": "primaria",
       "ciclo": true,
       "responsable": null,
-      "colaboradores": ["cso", "coo"],
+      "colaboradores": [
+        "cso",
+        "coo"
+      ],
       "pasos": [
         "Proponer el agente siguiente del catálogo al cerrar una etapa",
         "Pedir un referido",
@@ -130,7 +150,9 @@
       "tipo": "soporte",
       "ciclo": false,
       "responsable": "cpo",
-      "colaboradores": ["inv"],
+      "colaboradores": [
+        "inv"
+      ],
       "pasos": [
         "Definir a quién se le vende y la frase",
         "Escribir el DPT de cada agente del catálogo",
@@ -156,7 +178,9 @@
       "tipo": "soporte",
       "ciclo": false,
       "responsable": "cpo",
-      "colaboradores": ["coo"],
+      "colaboradores": [
+        "coo"
+      ],
       "pasos": [
         "Leer los learnings de cada caso",
         "Decidir qué cambia en el playbook",
@@ -169,7 +193,11 @@
       "tipo": "soporte",
       "ciclo": false,
       "responsable": "cto",
-      "colaboradores": ["ciso"],
+      "colaboradores": [
+        "ciso",
+        "des",
+        "qa"
+      ],
       "pasos": [
         "Construir cada agente del catálogo una vez para todos los clientes",
         "Guardar cada reunión y dato en su caso",

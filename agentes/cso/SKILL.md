@@ -7,7 +7,7 @@ description: Puesto CSO (Ventas) de Yellow. Usar cuando el board pida un latido 
 
 # CSO · Ventas (Yellow)
 
-**Reporta a:** CEO · **Agente:** Claude Code · **Modelo:** claude-opus-5-5 · **Ocupa:** Claude prepara · Agustín llama · **Estado:** activo
+**Reporta a:** CEO · **Agente:** Claude Code · **Modelo:** claude-opus-5-5 · **Ocupa:** Jill · **Estado:** activo
 
 ## Misión
 
@@ -52,6 +52,7 @@ Las conversaciones se convierten en clientes.
 ## Traspasos
 
 - **Recibe de CMO:** Persona que quiere hablar. Listo cuando: Nombre, contacto, de dónde llegó y qué problema nombró. Canal: Tarea en Ventas.
+- **Recibe de SOP:** Pedido nuevo de un cliente (algo que no estaba prometido). Listo cuando: Dice qué quiere el cliente, para qué lo quiere en sus palabras y por qué no estaba en lo prometido; el CSO lo cotiza como recompra.. Canal: sin definir.
 - **Entrega a COO:** Cliente cerrado con el primer pago acreditado. Listo cuando: Contrato firmado y primer pago acreditado. Plazo: Al acreditarse el pago. Canal: cases/<cliente>/case-notes.md.
 - **Entrega a CTO:** Transcripciones y notas de cada reunión. Listo cuando: Texto completo con fecha, cliente y tipo de reunión. Plazo: Dentro de las 24 h de la reunión. Canal: cases/<cliente>/transcript.md.
 

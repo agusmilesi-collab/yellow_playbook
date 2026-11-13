@@ -7,7 +7,7 @@ description: Puesto CISO (Seguridad) de Yellow. Usar cuando el board pida un lat
 
 # CISO · Seguridad (Yellow)
 
-**Reporta a:** CEO · **Agente:** Claude Code · **Modelo:** claude-opus-5-5 · **Ocupa:** Claude · **Estado:** activo
+**Reporta a:** CEO · **Agente:** Claude Code · **Modelo:** claude-opus-5-5 · **Ocupa:** Wendy · **Estado:** activo
 
 ## Misión
 

@@ -7,7 +7,7 @@ description: Puesto INV (Investigación de mercado) de Yellow. Usar cuando el bo
 
 # INV · Investigación de mercado (Yellow)
 
-**Reporta a:** CPO · **Agente:** Claude Code · **Modelo:** claude-sonnet-5-5 · **Ocupa:** Claude · **Estado:** activo
+**Reporta a:** CPO · **Agente:** Claude Code · **Modelo:** claude-sonnet-5-5 · **Ocupa:** Clayton · **Estado:** activo
 
 ## Misión
 

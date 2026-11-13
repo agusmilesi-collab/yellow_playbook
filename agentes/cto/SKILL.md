@@ -7,7 +7,7 @@ description: Puesto CTO (Ingeniería y memoria) de Yellow. Usar cuando el board 
 
 # CTO · Ingeniería y memoria (Yellow)
 
-**Reporta a:** CEO · **Agente:** Claude Code · **Modelo:** claude-sonnet-5-5 · **Ocupa:** Claude · **Estado:** activo
+**Reporta a:** CEO · **Agente:** Claude Code · **Modelo:** claude-sonnet-5-5 · **Ocupa:** Werner · **Estado:** activo
 
 ## Misión
 

@@ -7,7 +7,7 @@ description: Puesto COO (Operaciones) de Yellow. Usar cuando el board pida un la
 
 # COO · Operaciones (Yellow)
 
-**Reporta a:** CEO · **Agente:** Claude Code · **Modelo:** claude-sonnet-5-5 · **Ocupa:** Claude + Agustín · **Estado:** activo
+**Reporta a:** CEO · **Agente:** Claude Code · **Modelo:** claude-sonnet-5-5 · **Ocupa:** Sheryl · **Estado:** activo
 
 ## Misión
 

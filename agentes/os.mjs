@@ -488,7 +488,7 @@ if (cmd === "sync") {
     icono: String(f.icono ?? "persona"), reportaA: f.reportaA, agente: agentes.includes(f.agente) ? f.agente : "claude-code",
     ocupa: String(f.ocupa ?? "Claude"), estado: "activo", mision: String(f.mision ?? ""), criterio: String(f.criterio ?? ""), accountability: String(f.accountability ?? ""), modelo: String(f.modelo ?? "claude-opus-5-5"),
     kpis: [], skills: Array.isArray(f.skills) ? f.skills.filter((k) => k && k.ruta).map((k) => ({ nombre: String(k.nombre ?? k.ruta), ruta: String(k.ruta) })) : [],
-    presupuesto: { latidosMes: Number(f.presupuesto?.latidosMes) || 4, usdMes: null }, limites: String(f.limites ?? ""), trabajando: null,
+    avatar: /^\/os\/avatares\/[a-z0-9/_-]+\.(jpg|png|webp)$/.test(f.avatar ?? "") ? f.avatar : "", presupuesto: { latidosMes: Number(f.presupuesto?.latidosMes) || 4, usdMes: null, usdAreaMes: null }, limites: String(f.limites ?? ""), trabajando: null,
   };
   d.puestos.push(p);
   await guardarOS(d);
@@ -588,6 +588,19 @@ if (cmd === "sync") {
   p.presupuesto.latidosMes = Number(n);
   await guardarOS(d);
   console.log(`${p.sigla}: ${n} latidos por mes.`);
+} else if (cmd === "empleado") {
+  // empleado <puesto|board> [--nombre "<nombre>"] [--avatar /os/avatares/<archivo>.jpg]: quién ocupa el puesto y su foto
+  const flag = (n) => { const i = args.indexOf(`--${n}`); return i >= 0 ? args.splice(i, 2)[1] : undefined; };
+  const nombre = flag("nombre"), avatar = flag("avatar");
+  const [quien] = args;
+  if (avatar !== undefined && avatar !== "" && !/^\/os\/avatares\/[a-z0-9/_-]+\.(jpg|png|webp)$/.test(avatar)) throw new Error("La foto tiene que estar en /os/avatares/ (public/os/avatares del OS).");
+  const d = await leerOS();
+  const x = quien === "board" ? d.board : d.puestos.find((p) => p.id === quien);
+  if (!x || (nombre === undefined && avatar === undefined)) throw new Error('Uso: empleado <puesto|board> [--nombre "<nombre>"] [--avatar /os/avatares/<archivo>.jpg]');
+  if (nombre !== undefined) quien === "board" ? (x.nombre = nombre) : (x.ocupa = nombre);
+  if (avatar !== undefined) x.avatar = avatar;
+  await guardarOS(d);
+  console.log(`${quien === "board" ? "Board" : x.sigla}: ${quien === "board" ? x.nombre : x.ocupa}${x.avatar ? ` (${x.avatar})` : ""}.`);
 } else if (cmd === "presupuesto-ia") {
   // presupuesto-ia <puesto> <usd por mes|-> [--area <usd por mes|->]: topes de IA (los propone el CFO, los aprueba el board)
   const iA = args.indexOf("--area");
