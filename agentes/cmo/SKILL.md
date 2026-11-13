@@ -7,20 +7,30 @@ description: Puesto CMO (Marketing y contenido) de Yellow. Usar cuando el board 
 
 # CMO · Marketing y contenido (Yellow)
 
-**Reporta a:** CEO · **Agente:** Claude Code · **Ocupa:** Claude · **Estado:** activo
+**Reporta a:** CEO · **Agente:** Claude Code · **Modelo:** claude-sonnet-5-5 · **Ocupa:** Claude · **Estado:** activo
 
 ## Misión
 
 Que lleguen personas que quieren hablar con Agustín sobre cómo entregan su servicio.
 
+## Accountability: el resultado por el que responde
+
+Llega demanda calificada sin salir a buscarla.
+
 ## Objetivo actual
 
-Sin objetivo activo. Antes de trabajar, preguntarle al board qué resultado se espera de este puesto.
+**Las personas correctas llegan a Yellow solas**
 
-## KPIs (meta por mes)
+- Viene del objetivo del board: Yellow tiene clientes que pagan por su método
 
-- Contenidos publicados: sin meta todavía
-- Leads: sin meta todavía
+## Key Results (Cierre 2026, hasta 2026-12-31)
+
+- Pedidos de llamada desde el sitio: 0 → 4 pedidos (actual 0; en línea)
+- Contenidos publicados: 0 → 8 contenidos (actual 0; en línea)
+
+## Iniciativas activas
+
+- Sitio agustinmilesi.com: oferta en una frase, un caso y una acción para pedir llamada (mueve: Pedidos de llamada desde el sitio)
 
 ## Presupuesto
 

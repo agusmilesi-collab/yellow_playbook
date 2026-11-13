@@ -155,3 +155,13 @@ Hallazgos de la auditoría T04, aplicados en la sesión de consolidación del 20
 **Status:** pendiente
 
 **Nota:** ya está aplicada en el repo de Campos HR (contrato `CLAUDE.md`, los 7 prompts de `engine/`, `engine/validacion-humana.md` y `templates/outputs/propuesta.md`). Acá queda pendiente porque R1 reserva los cambios de `playbook/` a una sesión de consolidación.
+
+---
+
+### LRN-023 | 2026-11-13 | caso:meta | tipo:gap
+
+**Descripción:** en el latido del CFO del 13/11/2026 (estado de resultados de noviembre, margen de Lisandro, contrato modelo, medios de pago, cómo facturar) aparecieron tres huecos de `playbook/06-operations/finance.md`: (a) la situación impositiva sigue como "[Definir según tu monotributo / responsable inscripto]", aunque el contrato de Lisandro dice Monotributo; (b) los costos baseline hablan de Claude Pro USD 20 y hoy el gasto confirmado es Claude Max USD 100, más Vercel, Supabase, Resend y dominios sin monto; (c) no hay registro de horas por caso, y sin horas el margen por cliente (KR del CFO) no se puede medir.
+
+**Implicancia para el playbook:** `finance.md`: completar situación impositiva cuando el board conteste `agentes/cfo/como-facturar.md`; actualizar costos del negocio con los montos que conteste el board (`agentes/cfo/informes/2026-11-estado-de-resultados.md`, sección 5); agregar "horas por caso" a la planilla de tracking y la definición de margen que apruebe el board (`agentes/cfo/margen-lisandro.md`, sección 4). `contracts.md`: evaluar sumar la cláusula de atrasos de `agentes/cfo/contrato-modelo.md` si el board aprueba el modelo.
+
+**Status:** pendiente (espera respuestas del board)

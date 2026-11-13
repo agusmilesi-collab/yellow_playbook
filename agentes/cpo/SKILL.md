@@ -7,18 +7,31 @@ description: Puesto CPO (Diseño de servicio) de Yellow. Usar cuando el board pi
 
 # CPO · Diseño de servicio (Yellow)
 
-**Reporta a:** CEO · **Agente:** Claude Code · **Ocupa:** Claude + Agustín · **Estado:** activo
+**Reporta a:** CEO · **Agente:** Claude Code · **Modelo:** claude-opus-5-5 · **Ocupa:** Claude + Agustín · **Estado:** activo
 
 ## Misión
 
 Definir qué se vende, a quién y a qué precio, y entregarle a Marketing y a Ventas una oferta lista para contar.
 
+## Accountability: el resultado por el que responde
+
+La oferta de Yellow se vende a precio lleno.
+
 ## Objetivo actual
 
-**Oferta redefinida**
+**Yellow vende una oferta que el cliente ideal entiende y quiere comprar**
 
 - Definition of Done: offer.md e icp.md reescritos, con una frase de una línea, aprobados por el board y probados con 3 personas que los repiten con sus palabras.
-- Viene del objetivo del board: Redefinir la oferta: que cualquier persona entienda en una frase qué hace Yellow.
+- Viene del objetivo del board: Yellow tiene clientes que pagan por su método
+
+## Key Results (Cierre 2026, hasta 2026-12-31)
+
+- Propuestas aceptadas sin pedir descuento: 0 → 1 propuestas (actual 0; en línea)
+- Prospectos que dicen "eso me sirve" al escuchar la oferta: 0 → 5 prospectos (actual 0; en línea)
+
+## Iniciativas activas
+
+- Redefinir la frase y la oferta (offer.md e icp.md), probada con 3 personas (mueve: Prospectos que dicen "eso me sirve" al escuchar la oferta)
 
 ## Presupuesto
 
@@ -38,6 +51,7 @@ Definir qué se vende, a quién y a qué precio, y entregarle a Marketing y a Ve
 ## Traspasos
 
 - **Recibe de COO:** Lo aprendido en cada caso (learnings). Listo cuando: Learning escrito con caso, tipo e implicancia. Canal: learnings/learnings-pending.md.
+- **Recibe de INV:** Evidencia de mercado para decidir a quién y qué. Listo cuando: Informe con fuentes y una recomendación marcada como tal. Canal: learnings/oferta/.
 - **Entrega a CMO:** Oferta lista para contar (frase, pitch, a quién). Listo cuando: Frase, pitch de 90 s y cliente ideal aprobados por el board. Plazo: Al aprobarse la oferta. Canal: offer.md e icp.md del repo.
 
 ## Límites

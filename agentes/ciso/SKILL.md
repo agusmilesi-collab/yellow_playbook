@@ -7,21 +7,30 @@ description: Puesto CISO (Seguridad) de Yellow. Usar cuando el board pida un lat
 
 # CISO · Seguridad (Yellow)
 
-**Reporta a:** CEO · **Agente:** Claude Code · **Ocupa:** Claude · **Estado:** activo
+**Reporta a:** CEO · **Agente:** Claude Code · **Modelo:** claude-opus-5-5 · **Ocupa:** Claude · **Estado:** activo
 
 ## Misión
 
 Auditar y mejorar la seguridad de todo lo que se construye y se opera: el OS, los knowledge base y los sistemas que se instalan en clientes. Detecta riesgos, propone arreglos y no deja pasar a un cliente confidencial sin el nivel que corresponde.
 
+## Accountability: el resultado por el que responde
+
+Ningún cliente confidencial queda expuesto.
+
 ## Objetivo actual
 
-**Línea de base de seguridad**
+**Un cliente confidencial puede confiar en el sistema**
 
 - Definition of Done: Checklist de agentes/ciso/seguridad.md recorrida sobre el OS y el knowledge base de Yellow, con cada hallazgo como tarea con dueño, y los críticos resueltos antes del primer cliente.
+- Viene del objetivo del board: Yellow tiene clientes que pagan por su método
 
-## KPIs (meta por mes)
+## Key Results (Cierre 2026, hasta 2026-12-31)
 
-- Hallazgos abiertos: sin meta todavía
+- Hallazgos críticos abiertos: 0 → 0 hallazgos (actual sin medir; sin medir)
+
+## Iniciativas activas
+
+- Auditoría inicial de seguridad con la checklist (mueve: Hallazgos críticos abiertos)
 
 ## Presupuesto
 

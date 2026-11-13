@@ -7,20 +7,31 @@ description: Puesto CSO (Ventas) de Yellow. Usar cuando el board pida un latido 
 
 # CSO · Ventas (Yellow)
 
-**Reporta a:** CEO · **Agente:** Claude Code · **Ocupa:** Claude prepara · Agustín llama · **Estado:** activo
+**Reporta a:** CEO · **Agente:** Claude Code · **Modelo:** claude-opus-5-5 · **Ocupa:** Claude prepara · Agustín llama · **Estado:** activo
 
 ## Misión
 
 Convertir conversaciones en clientes: preparar cada llamada, estructurar lo que pasó y armar la propuesta.
 
+## Accountability: el resultado por el que responde
+
+Las conversaciones se convierten en clientes.
+
 ## Objetivo actual
 
-Sin objetivo activo. Antes de trabajar, preguntarle al board qué resultado se espera de este puesto.
+**Cada conversación con un prospecto avanza hacia una propuesta**
 
-## KPIs (meta por mes)
+- Viene del objetivo del board: Yellow tiene clientes que pagan por su método
 
-- Llamadas: sin meta todavía
-- Clientes nuevos: sin meta todavía
+## Key Results (Cierre 2026, hasta 2026-12-31)
+
+- Llamadas de discovery: 0 → 8 llamadas (actual 0; en línea)
+- Propuestas enviadas: 0 → 3 propuestas (actual 0; en línea)
+
+## Iniciativas activas
+
+- Guion de llamada con el método de Sandler (mueve: Llamadas de discovery)
+- Primeras llamadas con la red del board (mueve: Llamadas de discovery)
 
 ## Presupuesto
 
