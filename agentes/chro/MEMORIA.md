@@ -8,3 +8,4 @@ Lo que este puesto aprendió trabajando y no tiene que volver a preguntar. Una l
 - 2026-11-12: criterios de 7 puestos propuestos en criterios-2026-11-12.md; se cargan en el OS solo cuando el board los aprueba.
 - 2026-11-12: el board corrigió que un Chief responde por un resultado de negocio, no por un proceso (el CFO por el margen, no por cobrar a tiempo). Prueba: si el KR se cumple siguiendo un procedimiento, está un nivel abajo. Fuente: agentes/decisiones.md.
 - 2026-11-12: disparadores de crecimiento propuestos en accountability-y-crecimiento-2026-11-12.md; revisarlos en cada latido.
+- 2026-11-13: un PM no hace falta mientras las tareas pasen el Test de una tarea; disparador propuesto: coordinación de entregas bajo el COO con 3 casos en entrega a la vez o 2 con etapa vencida en el mismo mes (se superpone con "Implementación": evaluar si es un solo puesto). Fuente: evaluacion-pm.md.
