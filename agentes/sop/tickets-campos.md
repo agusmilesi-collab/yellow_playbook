@@ -14,25 +14,12 @@
 
 ## Comandos
 
-Cada comando va entre paréntesis, en una subterminal: `( cd ~/Documents/camposhr-site && set -a && . ./.env.local && set +a && <comando> )`. Si las credenciales de Campos quedan cargadas en la terminal, el script del OS de Yellow se conecta a la base de Campos y falla.
+Todo se hace con `node agentes/sop/tickets.mjs`, desde la raíz del repo yellow playbook. La herramienta busca las credenciales sola, así que nunca hay que cargarlas en la terminal:
 
-Leer un ticket con su conversación:
-
-```
-curl -s "$SUPABASE_URL/rest/v1/tickets?numero=eq.<N>&select=*,ticket_mensajes(autor,texto,created_at)" -H "apikey: $SUPABASE_SERVICE_KEY" -H "Authorization: Bearer $SUPABASE_SERVICE_KEY"
-```
-
-Cambiar el estado:
-
-```
-curl -s -X PATCH "$SUPABASE_URL/rest/v1/tickets?numero=eq.<N>" -H "apikey: $SUPABASE_SERVICE_KEY" -H "Authorization: Bearer $SUPABASE_SERVICE_KEY" -H "Content-Type: application/json" -d '{"estado":"En curso"}'
-```
-
-Escribir un mensaje (siempre firmado "Tony · Soporte Yellow"):
-
-```
-curl -s -X POST "$SUPABASE_URL/rest/v1/ticket_mensajes" -H "apikey: $SUPABASE_SERVICE_KEY" -H "Authorization: Bearer $SUPABASE_SERVICE_KEY" -H "Content-Type: application/json" -d '{"numero":<N>,"autor":"Tony · Soporte Yellow","texto":"<mensaje>"}'
-```
+- `abiertos`: los tickets en Nuevo, En curso y Bloqueado, con quién escribió último.
+- `ver <N>`: un ticket con toda su conversación.
+- `estado <N> "<estado>"`: lo cambia.
+- `mensaje <N> "<texto>"`: escribe en la conversación, firmado "Tony · Soporte Yellow".
 
 ## Reglas
 
