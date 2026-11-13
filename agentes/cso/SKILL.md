@@ -7,7 +7,7 @@ description: Puesto CSO (Ventas) de Yellow. Usar cuando el board pida un latido 
 
 # CSO · Ventas (Yellow)
 
-**Reporta a:** CEO · **Agente:** Claude Code · **Ocupa:** Claude prepara · Agustín llama · **Estado:** activo
+**Reporta a:** CEO · **Agente:** Claude Code · **Modelo:** claude-opus-5-5 · **Ocupa:** Claude prepara · Agustín llama · **Estado:** activo
 
 ## Misión
 

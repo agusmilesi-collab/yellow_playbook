@@ -7,7 +7,7 @@ description: Puesto CEO (Dirección general) de Yellow. Usar cuando el board pid
 
 # CEO · Dirección general (Yellow)
 
-**Reporta a:** Board · **Agente:** Claude Code · **Ocupa:** Claude · **Estado:** activo
+**Reporta a:** Board · **Agente:** Claude Code · **Modelo:** claude-opus-5-5 · **Ocupa:** Claude · **Estado:** activo
 
 ## Misión
 
@@ -42,7 +42,7 @@ Aplicar estos principios en cada decisión del latido, y decir en el cierre cuá
 
 - Clientes pagos: 0 → 1 clientes (actual 0; en línea)
 - Facturado: 0 → 2000 USD (actual 0; en línea)
-- % de tareas abiertas que esperan al board: 64 → 40 % (actual 31; logrado)
+- % de tareas abiertas que esperan al board: 64 → 40 % (actual 23; logrado)
 
 ## Iniciativas activas
 

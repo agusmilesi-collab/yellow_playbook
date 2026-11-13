@@ -7,7 +7,7 @@ description: Puesto CPO (Diseño de servicio) de Yellow. Usar cuando el board pi
 
 # CPO · Diseño de servicio (Yellow)
 
-**Reporta a:** CEO · **Agente:** Claude Code · **Ocupa:** Claude + Agustín · **Estado:** activo
+**Reporta a:** CEO · **Agente:** Claude Code · **Modelo:** claude-opus-5-5 · **Ocupa:** Claude + Agustín · **Estado:** activo
 
 ## Misión
 

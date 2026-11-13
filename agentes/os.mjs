@@ -24,6 +24,7 @@
 //   node scripts/os.mjs latidos [puesto]             lista los latidos con su id y sus entregas
 //   node scripts/os.mjs latido-entregas <latidoId> <tareaId,tareaId>   vincula entregas con un latido viejo
 //   node scripts/os.mjs accountability <puesto> "<texto>"   el resultado por el que responde (aprobado por el board)
+//   node scripts/os.mjs modelo <puesto> <claude-opus-5-5|claude-sonnet-5-5|claude-haiku-5-5|claude-fable-5-2>
 //   node scripts/os.mjs presupuesto <puesto> <latidos por mes>
 //   node scripts/os.mjs costo <puesto>               equivalente API de lo que lleva el latido en curso
 //   node scripts/os.mjs objetivo-editar <id> "<título>" [--dod "<texto>"]
@@ -232,7 +233,7 @@ function fichaSkill(d, p) {
   l.push("");
   l.push(`# ${p.sigla} · ${p.titulo} (${NOMBRE_EMPRESA})`);
   l.push("");
-  l.push(`**Reporta a:** ${sigla(p.reportaA)} · **Agente:** ${AGENTES[p.agente ?? "claude-code"] ?? p.agente} · **Ocupa:** ${p.ocupa} · **Estado:** ${p.estado}`);
+  l.push(`**Reporta a:** ${sigla(p.reportaA)} · **Agente:** ${AGENTES[p.agente ?? "claude-code"] ?? p.agente} · **Modelo:** ${p.modelo ?? "claude-opus-5-5"} · **Ocupa:** ${p.ocupa} · **Estado:** ${p.estado}`);
   l.push("");
   l.push("## Misión", "", p.mision, "");
   if (p.accountability) l.push("## Accountability: el resultado por el que responde", "", p.accountability, "");
@@ -438,7 +439,7 @@ if (cmd === "sync") {
   const p = {
     id: f.id, sigla: String(f.sigla ?? f.id.toUpperCase()).slice(0, 8), titulo: String(f.titulo ?? "").slice(0, 80),
     icono: String(f.icono ?? "persona"), reportaA: f.reportaA, agente: agentes.includes(f.agente) ? f.agente : "claude-code",
-    ocupa: String(f.ocupa ?? "Claude"), estado: "activo", mision: String(f.mision ?? ""), criterio: String(f.criterio ?? ""), accountability: String(f.accountability ?? ""),
+    ocupa: String(f.ocupa ?? "Claude"), estado: "activo", mision: String(f.mision ?? ""), criterio: String(f.criterio ?? ""), accountability: String(f.accountability ?? ""), modelo: String(f.modelo ?? "claude-opus-5-5"),
     kpis: [], skills: Array.isArray(f.skills) ? f.skills.filter((k) => k && k.ruta).map((k) => ({ nombre: String(k.nombre ?? k.ruta), ruta: String(k.ruta) })) : [],
     presupuesto: { latidosMes: Number(f.presupuesto?.latidosMes) || 4, usdMes: null }, limites: String(f.limites ?? ""), trabajando: null,
   };
@@ -481,6 +482,15 @@ if (cmd === "sync") {
   p.accountability = texto;
   await guardarOS(d);
   console.log(`${p.sigla}: accountability cargado.`);
+} else if (cmd === "modelo") {
+  // modelo <puesto> <claude-opus-5-5|claude-sonnet-5-5|claude-haiku-5-5|claude-fable-5-2>
+  const [puesto, m] = args;
+  const d = await leerOS();
+  const p = d.puestos.find((x) => x.id === puesto);
+  if (!p || !PRECIOS[m]) throw new Error(`Uso: modelo <puesto> <${Object.keys(PRECIOS).join("|")}>`);
+  p.modelo = m;
+  await guardarOS(d);
+  console.log(`${p.sigla}: ${m}.`);
 } else if (cmd === "presupuesto") {
   // presupuesto <puesto> <latidos por mes>
   const [puesto, n] = args;

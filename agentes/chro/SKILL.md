@@ -7,7 +7,7 @@ description: Puesto CHRO (Personas y diseño organizacional) de Yellow. Usar cua
 
 # CHRO · Personas y diseño organizacional (Yellow)
 
-**Reporta a:** CEO · **Agente:** Claude Code · **Ocupa:** Claude · **Estado:** activo
+**Reporta a:** CEO · **Agente:** Claude Code · **Modelo:** claude-opus-5-5 · **Ocupa:** Claude · **Estado:** activo
 
 ## Misión
 

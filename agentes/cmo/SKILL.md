@@ -7,7 +7,7 @@ description: Puesto CMO (Marketing y contenido) de Yellow. Usar cuando el board 
 
 # CMO · Marketing y contenido (Yellow)
 
-**Reporta a:** CEO · **Agente:** Claude Code · **Ocupa:** Claude · **Estado:** activo
+**Reporta a:** CEO · **Agente:** Claude Code · **Modelo:** claude-sonnet-5-5 · **Ocupa:** Claude · **Estado:** activo
 
 ## Misión
 
